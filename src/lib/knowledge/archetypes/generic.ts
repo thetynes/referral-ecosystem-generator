@@ -1,0 +1,131 @@
+import type { Archetype } from "../types";
+
+/**
+ * Fallback framework used when the business cannot be matched to a curated archetype.
+ * Deliberately generic and labelled as low-confidence: it describes partner *roles*
+ * that exist in almost every market, not industry-specific claims.
+ */
+export const genericFramework: Archetype = {
+  id: "generic",
+  label: "General referral framework",
+  keywords: [],
+  assumptions: [
+    "Your industry did not match a curated profile, so this ecosystem uses universal partner roles. Configure an AI provider, or add more detail about your services and customers, for an industry-specific analysis.",
+  ],
+  categories: [
+    {
+      id: "pre-purchase-advisors",
+      name: "Advisors your customers consult before buying",
+      type: "upstream",
+      direction: "inbound",
+      channel: "occasional",
+      opportunity: "Most purchases are preceded by advice from someone the customer already trusts, such as a consultant, inspector, accountant, or specialist.",
+      rationale: "Advisors shape the decision before vendors are compared.",
+      triggers: [
+        ["A customer identifies a problem your service solves", "They ask a trusted advisor what to do", "The advisor", "At diagnosis or planning", "Their advice gets implemented well"],
+      ],
+      mutualValue: "Advisors gain a dependable resource; you receive pre-qualified customers.",
+      approach: "List the professionals your best customers consulted before hiring you, then contact the most common type first.",
+      scores: [4, 3, 3, 3, 3, 3, 3, 3, 3],
+      queries: ["consultant"],
+    },
+    {
+      id: "same-customer-vendors",
+      name: "Non-competing vendors serving the same customer",
+      type: "complementary",
+      direction: "reciprocal",
+      channel: "occasional",
+      opportunity: "Businesses selling different products or services to the same customer encounter needs that you meet.",
+      rationale: "A shared customer creates natural reciprocal referrals.",
+      triggers: [
+        ["A shared customer mentions a need outside the vendor's scope", "They need another provider", "The vendor", "During service delivery", "The customer sees them as helpful"],
+      ],
+      mutualValue: "Reciprocal referrals and joint offerings.",
+      approach: "Ask your best customers which other providers they work with, then approach those providers.",
+      scores: [3, 3, 3, 3, 4, 3, 4, 3, 4],
+      queries: ["services"],
+    },
+    {
+      id: "post-service-providers",
+      name: "Providers who serve customers after you",
+      type: "downstream",
+      direction: "reciprocal",
+      channel: "occasional",
+      opportunity: "Businesses that take over after your work is done (maintenance, support, next-stage services) can surface new opportunities and reciprocate.",
+      rationale: "Handoffs create mutual dependency and repeat contact with customers.",
+      triggers: [
+        ["Your engagement ends", "The customer needs ongoing or next-stage services", "You", "At completion", "A warm lead for the partner"],
+      ],
+      mutualValue: "Each side gains warm introductions.",
+      approach: "Define your handoff points and identify one strong partner for each.",
+      scores: [3, 3, 3, 2, 4, 3, 4, 3, 4],
+      queries: ["services"],
+    },
+    {
+      id: "customer-associations",
+      name: "Associations & communities your customers belong to",
+      type: "shared_audience",
+      direction: "inbound",
+      channel: "occasional",
+      opportunity: "Trade associations, professional bodies, and community groups gather your customers and need useful content and speakers.",
+      rationale: "Education builds credibility with many potential customers at once.",
+      triggers: [
+        ["The association plans programming", "Members want practical guidance", "Programme coordinator", "Each season", "Better member value"],
+      ],
+      mutualValue: "They gain content; you gain visibility.",
+      approach: "Offer an educational session, not a sales pitch.",
+      formats: ["Workshops", "Newsletter articles", "Webinars"],
+      seo: ["Editorial contributions and resource listings."],
+      scores: [3, 3, 3, 3, 4, 3, 3, 4, 4],
+      queries: ["association"],
+    },
+    {
+      id: "suppliers-distributors",
+      name: "Suppliers, manufacturers & distributors",
+      type: "distribution",
+      direction: "inbound",
+      channel: "recurring",
+      opportunity: "Companies whose products you use or sell are asked by end customers for qualified providers.",
+      rationale: "Suppliers want their products used well, and many run partner or installer programmes.",
+      triggers: [
+        ["An end customer buys a product that needs expertise to implement", "They need a qualified provider", "Supplier sales rep", "At purchase", "Successful product outcomes"],
+      ],
+      mutualValue: "Suppliers protect their brand; you gain enquiries.",
+      approach: "Ask your main suppliers whether they keep a list of recommended providers or partners.",
+      scores: [3, 3, 3, 3, 3, 4, 3, 3, 3],
+      queries: ["distributor"],
+    },
+    {
+      id: "trusted-generalists",
+      name: "Accountants, bankers & general business advisors",
+      type: "upstream",
+      direction: "inbound",
+      channel: "occasional",
+      opportunity: "Generalist advisors see business owners and households at decision points and are frequently asked for recommendations.",
+      rationale: "They are among the most trusted sources of recommendations for any purchase.",
+      triggers: [
+        ["A client plans an investment or change", "They need a provider", "Advisor", "During planning", "Better client outcomes"],
+      ],
+      mutualValue: "Advisors gain dependable resources for clients.",
+      approach: "Share concise information on who you serve best and what problems you solve.",
+      scores: [3, 3, 3, 3, 3, 3, 3, 4, 3],
+      queries: ["accounting firm"],
+    },
+    {
+      id: "local-business-networks",
+      name: "Chambers of commerce & business networks",
+      type: "shared_audience",
+      direction: "inbound",
+      channel: "occasional",
+      opportunity: "Business networks connect you with many partner types in one place.",
+      rationale: "They are low-cost to access and useful for discovering specific partners.",
+      triggers: [
+        ["Networking events and committees", "Members look for trusted providers", "Members", "Ongoing", "Stronger local networks"],
+      ],
+      mutualValue: "Members exchange referrals and expertise.",
+      approach: "Join one network and take an active role instead of attending sporadically.",
+      scores: [2, 2, 3, 2, 5, 3, 3, 5, 5],
+      queries: ["chamber of commerce"],
+    },
+  ],
+};
