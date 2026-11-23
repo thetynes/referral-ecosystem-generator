@@ -38,7 +38,7 @@ export function splitList(value: string | undefined | null): string[] {
   return Array.from(
     new Set(
       value
-        .split(/[,;\n•|]+|\s+and\s+/i)
+        .split(/[,;\n•|]+/)
         .map((s) => s.trim().replace(/^[-*]\s*/, ""))
         .filter((s) => s.length > 1 && s.length < 120),
     ),

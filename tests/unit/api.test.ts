@@ -11,6 +11,8 @@ import { setLLMProviderForTesting } from "@/lib/llm";
 import { setDiscoveryProviderForTesting } from "@/lib/discovery";
 import { MemoryStore, setStoreForTesting } from "@/lib/store";
 import type { AnalysisView } from "@/lib/schema";
+import { summarize, _resetMemoryAnalyticsForTesting } from "@/lib/analytics";
+import { capabilities } from "@/lib/config";
 import { EXCAVATION } from "./fixtures";
 
 let ipCounter = 0;
@@ -30,6 +32,9 @@ beforeEach(() => {
   delete process.env.DEV_MODE;
   delete process.env.STRIPE_SECRET_KEY;
   delete process.env.STRIPE_WEBHOOK_SECRET;
+  delete process.env.STRIPE_ALLOW_LIVE;
+  delete process.env.COMPANY_RESEARCH_ENABLED;
+  _resetMemoryAnalyticsForTesting();
 });
 
 async function create(): Promise<AnalysisView> {
@@ -83,6 +88,11 @@ describe("API", () => {
     expect((await discover(req("/api/discover", { json: { analysisId: v.id } }))).status).toBe(402);
     process.env.DEV_MODE = "true";
     const { token } = await (await devUnlock(req("/api/dev/unlock", { json: { analysisId: v.id, tier: "basic" } }))).json();
+    // Licensing gate comes first: research is off by default.
+    const gated = await discover(req("/api/discover", { json: { analysisId: v.id }, headers: { "x-entitlement": token } }));
+    expect(gated.status).toBe(503);
+    expect((await gated.json()).code).toBe("research_not_licensed");
+    process.env.COMPANY_RESEARCH_ENABLED = "true";
     const res = await discover(req("/api/discover", { json: { analysisId: v.id }, headers: { "x-entitlement": token } }));
     expect(res.status).toBe(503);
     expect((await res.json()).code).toBe("discovery_not_configured");
@@ -127,5 +137,38 @@ describe("API", () => {
     // verify falls through to Stripe API (unreachable with a dummy key) → not confirmed
     const vr = await verify(req("/api/checkout/verify?session_id=cs_test_unpaid"));
     expect(vr.status).not.toBe(200);
+  });
+
+  it("refuses live Stripe keys unless explicitly allowed", () => {
+    process.env.STRIPE_SECRET_KEY = "sk_live_abc";
+    process.env.STRIPE_WEBHOOK_SECRET = "whsec_x";
+    expect(capabilities().paymentsEnabled).toBe(false);
+    process.env.STRIPE_ALLOW_LIVE = "true";
+    expect(capabilities().paymentsMode).toBe("live");
+    process.env.STRIPE_SECRET_KEY = "sk_test_abc";
+    delete process.env.STRIPE_ALLOW_LIVE;
+    expect(capabilities().paymentsMode).toBe("test");
+    expect(capabilities().paidReportsAvailable).toBe(true);
+  });
+
+  it("records funnel analytics and separates simulated purchases", async () => {
+    process.env.STRIPE_SECRET_KEY = "sk_test_dummy";
+    process.env.STRIPE_WEBHOOK_SECRET = "whsec_test";
+    process.env.APP_ENV = "preview";
+    try {
+      const v = await create();
+      const payload = JSON.stringify({ id: "evt_3", object: "event", type: "checkout.session.completed", data: { object: { id: "cs_test_funnel", livemode: false, payment_status: "paid", metadata: { analysisId: v.id, tier: "basic" } } } });
+      const sig = Stripe.webhooks.generateTestHeaderString({ payload, secret: "whsec_test" });
+      await webhook(new Request("http://localhost/api/stripe/webhook", { method: "POST", body: payload, headers: { "stripe-signature": sig } }));
+      // A retried webhook must not double count.
+      await webhook(new Request("http://localhost/api/stripe/webhook", { method: "POST", body: payload, headers: { "stripe-signature": Stripe.webhooks.generateTestHeaderString({ payload, secret: "whsec_test" }) } }));
+      const s = await summarize(1);
+      const row = (n: string) => s.counts.find((c) => c.name === n) ?? { real: 0, simulated: 0 };
+      expect(row("intake_completed").real).toBe(1);
+      expect(row("map_generated").real).toBe(1);
+      expect(row("purchase_completed")).toEqual({ name: "purchase_completed", real: 0, simulated: 1 });
+    } finally {
+      delete process.env.APP_ENV;
+    }
   });
 });

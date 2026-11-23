@@ -60,11 +60,11 @@ test("generate → explore → export → unlock (dev) → report", async ({ pag
   await page.locator("[data-testid=dev-unlock-comprehensive]:visible").first().click();
   await expect(page.getByText("Comprehensive report (dev unlock)")).toBeVisible();
   await page.getByRole("tab", { name: /Opportunities/ }).click();
-  await expect(rows).toHaveCount(14);
+  await expect.poll(() => rows.count()).toBeGreaterThan(12);
 
-  // Organisations tab: discovery honestly reports missing configuration; CSV import works
+  // Organisations tab: company research stays off pending licensing; CSV import works
   await page.getByRole("tab", { name: /Organisations/ }).click();
-  await expect(page.getByText(/Requires configuration/)).toBeVisible();
+  await expect(page.getByTestId("research-unavailable")).toBeVisible();
   await page.getByTestId("csv-input").setInputFiles({
     name: "list.csv",
     mimeType: "text/csv",

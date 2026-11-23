@@ -1,0 +1,1896 @@
+{
+  "id": "7bccc453-5830-49aa-847c-1322e62dc633",
+  "createdAt": "2026-11-23T23:18:23.058Z",
+  "isDemo": false,
+  "profile": {
+    "displayName": "Sample Excavation & Waterproofing (illustrative)",
+    "website": null,
+    "industry": "Excavation and basement waterproofing contractor",
+    "services": [
+      "Excavation",
+      "exterior foundation waterproofing",
+      "weeping tile replacement",
+      "drainage",
+      "grading",
+      "demolition"
+    ],
+    "serviceArea": "Sarnia, Ontario and Lambton County",
+    "geography": {
+      "country": "CA",
+      "region": "Ontario",
+      "scope": "regional"
+    },
+    "idealCustomer": "Homeowners with wet basements, custom home builders, property managers, commercial property owners",
+    "customerSegments": [
+      "Homeowners with wet basements",
+      "custom home builders",
+      "property managers",
+      "commercial property owners"
+    ],
+    "projectValue": null,
+    "targetIndustries": [],
+    "growthPriority": "recurring",
+    "existingReferrals": [],
+    "expansionMarkets": []
+  },
+  "engine": {
+    "mode": "knowledge_base",
+    "provider": null,
+    "model": null,
+    "archetypeId": "site-construction",
+    "archetypeLabel": "Excavation & site construction + Basement waterproofing & foundation repair",
+    "matchConfidence": "high",
+    "notes": [],
+    "version": "1.0.0",
+    "costUsd": null
+  },
+  "categories": [
+    {
+      "id": "custom-home-builders",
+      "name": "Custom & infill home builders",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Every new build or teardown-rebuild needs excavation, foundation digging, backfill, and final grading. Builders choose a site contractor and tend to reuse one who performs reliably.",
+      "rationale": "Builders control supplier selection before the homeowner is involved, and a single builder can generate multiple projects per season. This is a repeatable channel, not an occasional referral.",
+      "triggers": [
+        {
+          "event": "A builder purchases a lot or secures a building permit",
+          "whyNeed": "The schedule now depends on site work starting on time",
+          "whoRecognizes": "Builder or site superintendent",
+          "referralMoment": "When the build schedule is being set, before the foundation crew is booked",
+          "partnerValue": "A dependable dig-to-backfill crew keeps their schedule and inspection dates intact"
+        },
+        {
+          "event": "A teardown is approved for an infill rebuild",
+          "whyNeed": "Demolition, removal, and new excavation are needed in sequence",
+          "whoRecognizes": "Builder or project manager",
+          "referralMoment": "During pre-construction planning",
+          "partnerValue": "One contractor handling demolition and excavation reduces coordination"
+        }
+      ],
+      "mutualValue": "Builders gain schedule reliability, fewer delays between trades, and a contractor who understands their inspection sequence. You gain recurring, predictable volume.",
+      "approach": "Request a meeting with the site superintendent rather than the owner alone. Bring examples of similar lots (tight infill, poor soils), your typical lead time, and how you handle surprises such as high water tables or buried debris. Offer a first project at standard rates with a debrief afterward.",
+      "decisionMaker": "Site superintendent (owner on smaller builders)",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Pre-season scheduling call",
+        "Joint site-planning review on a difficult lot"
+      ],
+      "digitalAuthority": [
+        "Publish case studies of difficult lots completed with the builder's permission and a link to their project page."
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Raised because your description mentions “builder”.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Raised because your description mentions “builder”.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Builders reuse proven site contractors across multiple homes per season.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "custom home builder",
+        "home builder",
+        "infill builder"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "new-home-warranty-builders",
+      "name": "Builders' warranty & customer-care departments",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "New homes come with statutory warranty coverage that, in Ontario, includes water penetration through the basement or foundation walls in the early years. When an owner reports a leak, the builder's service department must investigate and repair within set timelines, and many subcontract the repair.",
+      "rationale": "Builders already have a legal obligation and a budget to fix the problem; what they lack is a crew that responds quickly and documents the work well enough to close the warranty file. A single production or semi-custom builder can generate a steady stream of these calls.",
+      "triggers": [
+        {
+          "event": "A new-home owner submits a warranty claim for a basement leak",
+          "whyNeed": "The builder must investigate and repair within warranty timelines",
+          "whoRecognizes": "Builder's customer-care coordinator",
+          "referralMoment": "As soon as the claim is logged, before the warranty inspection date",
+          "partnerValue": "Closes warranty files on time and avoids escalation to the warranty administrator"
+        },
+        {
+          "event": "Spring thaw or heavy rain produces a cluster of claims in one subdivision",
+          "whyNeed": "Several homes need the same repair at once",
+          "whoRecognizes": "Warranty manager",
+          "referralMoment": "During the seasonal claim spike",
+          "partnerValue": "One reliable contractor handles the whole subdivision consistently"
+        }
+      ],
+      "mutualValue": "Builders gain fast, well-documented repairs that protect their warranty record. You gain recurring, pre-approved work with a reliable payer.",
+      "approach": "Ask for the warranty or customer-care manager, not the sales office. Offer a standard repair scope, a turnaround commitment, and photo documentation formatted for warranty files. Offer to handle the first claim and share your report.",
+      "decisionMaker": "Builder's warranty / customer-care manager",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Standing service agreement",
+        "Warranty-ready repair reports"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Encounters customers who need you routinely; it is built into their workflow.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Warranty claims recur every season across a builder's active subdivisions.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "new home builder",
+        "home builder customer care"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "general-contractors",
+      "name": "Commercial general contractors",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "GCs subcontract site preparation, excavation, and grading on commercial, institutional, and multi-residential projects, usually through invited bids or prequalified subcontractor lists.",
+      "rationale": "Project values are higher and a GC that trusts you will invite you to bid repeatedly. Access is gated by prequalification and estimating relationships rather than casual referrals.",
+      "triggers": [
+        {
+          "event": "The GC is awarded a tender or negotiated contract",
+          "whyNeed": "Site work is typically the first trade on site and is on the critical path",
+          "whoRecognizes": "Estimator or project manager",
+          "referralMoment": "When subcontractor bids are being solicited, often before award",
+          "partnerValue": "A responsive, prequalified sub reduces bid risk and schedule exposure"
+        },
+        {
+          "event": "A project hits unexpected soil or groundwater conditions",
+          "whyNeed": "Additional excavation, dewatering, or remediation scope appears mid-project",
+          "whoRecognizes": "Site superintendent",
+          "referralMoment": "As soon as the change is identified",
+          "partnerValue": "Fast mobilisation prevents costly delays to following trades"
+        }
+      ],
+      "mutualValue": "GCs need reliable subcontractors who price accurately and show up. You gain access to larger, recurring projects.",
+      "approach": "Ask to be added to the GC's bidders list and complete their prequalification package (insurance certificates, safety records, equipment list, references). Respond to every invitation, even with a no-bid, to stay on the list.",
+      "decisionMaker": "Estimator / project manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Prequalification submission",
+        "Lunch-and-learn for estimators on soil risk"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Raised because your description mentions “commercial”.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Raised because your description mentions “commercial”.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 2,
+          "rationale": "Prequalification, safety documentation, and bonding requirements raise the bar to entry.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "general contractor commercial",
+        "construction management company"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "restoration-mould",
+      "name": "Water-damage restoration & mould remediation firms",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Restoration companies dry out flooded basements and remove mould, but they rarely fix the cause. When the water came through the foundation, the homeowner needs a waterproofing repair or the restoration work will fail again.",
+      "rationale": "Groundwater seepage is commonly excluded from standard home insurance, so the homeowner often pays for the cause themselves right after an insured clean-up. The restorer is the trusted person in the house at that moment, and a repeat flood is a callback they want to avoid.",
+      "triggers": [
+        {
+          "event": "Mitigation is complete but moisture readings point to foundation seepage",
+          "whyNeed": "The source must be repaired before drywall goes back",
+          "whoRecognizes": "Restoration estimator",
+          "referralMoment": "Before reconstruction is scheduled",
+          "partnerValue": "Prevents repeat mould and callbacks on their work"
+        },
+        {
+          "event": "An insurer declines the seepage portion of a claim",
+          "whyNeed": "The homeowner must fund the foundation repair separately",
+          "whoRecognizes": "Restoration project manager",
+          "referralMoment": "When the claim decision is explained to the homeowner",
+          "partnerValue": "Their client gets a credible next step instead of a dead end"
+        }
+      ],
+      "mutualValue": "Restorers protect their workmanship and reputation; you receive motivated homeowners at the moment of need. You can refer flood and mould clean-up back.",
+      "approach": "Offer a quick-turnaround site assessment for their files and a short written explanation of seepage versus covered water damage that they can give homeowners.",
+      "decisionMaker": "Restoration project manager or estimator",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Encounters customers who need you routinely; it is built into their workflow.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "water damage restoration",
+        "mould remediation"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "civil-geotech-engineers",
+      "name": "Civil & geotechnical engineers",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Engineers prepare grading, drainage, and stormwater plans and soil reports long before a contractor is chosen. Owners frequently ask them who can build what they designed.",
+      "rationale": "This is the earliest professional touchpoint in many projects. Engineers do not usually sell referrals, but a contractor known for building to spec is a natural recommendation.",
+      "triggers": [
+        {
+          "event": "A geotechnical report finds poor soils or a high water table",
+          "whyNeed": "The site needs over-excavation, engineered fill, or dewatering",
+          "whoRecognizes": "Geotechnical engineer",
+          "referralMoment": "When the owner asks who is capable of executing the recommendations",
+          "partnerValue": "A competent contractor protects the engineer's design and reduces field problems"
+        },
+        {
+          "event": "A site plan requires lot grading or stormwater approval",
+          "whyNeed": "Grading must match an approved plan and pass municipal review",
+          "whoRecognizes": "Civil engineer or site plan designer",
+          "referralMoment": "After approval, when the owner seeks pricing",
+          "partnerValue": "Fewer as-built discrepancies and re-inspections"
+        }
+      ],
+      "mutualValue": "Engineers benefit when designs are built correctly and as-built surveys pass. You receive early, well-defined projects.",
+      "approach": "Share examples of plans you have executed accurately, including as-built results. Offer constructability feedback during design. Never offer payment for recommendations; engineers' professional codes generally prohibit it.",
+      "decisionMaker": "Project engineer (P.Eng.)",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Constructability review",
+        "Joint presentation to local builders on lot-grading approvals"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": "Professional engineers are bound by codes of ethics that typically prohibit accepting benefits for recommending contractors. Build the relationship on competence, not compensation.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Raised because your description mentions “drainage”.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Raised because your description mentions “drainage”.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "civil engineering firm",
+        "geotechnical engineer",
+        "site plan engineer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "basement-finishers",
+      "name": "Basement finishing & renovation contractors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Before a basement can be finished, moisture must be addressed. Renovators find damp walls, efflorescence, and cracks during demolition, and they do not want to warranty a finished basement built over a leaking foundation.",
+      "rationale": "Every basement renovation passes through this checkpoint, and the renovator decides who the homeowner calls.",
+      "triggers": [
+        {
+          "event": "Demolition exposes cracks, damp insulation, or efflorescence",
+          "whyNeed": "Waterproofing must happen before framing and drywall",
+          "whoRecognizes": "Renovation site lead",
+          "referralMoment": "Immediately, before the schedule slips",
+          "partnerValue": "Protects their schedule and their finished work from callbacks"
+        },
+        {
+          "event": "A homeowner plans a basement apartment or rec room",
+          "whyNeed": "Lenders, insurers, and buyers expect a dry basement",
+          "whoRecognizes": "Renovation estimator",
+          "referralMoment": "During pre-construction review",
+          "partnerValue": "Fewer surprises after the contract is signed"
+        }
+      ],
+      "mutualValue": "Renovators avoid callbacks and keep their schedule; you get a steady flow of pre-qualified work. You can refer finishing projects back after repairs.",
+      "approach": "Offer renovators a 48-hour assessment for jobs in progress and a written moisture report they can attach to their contract file.",
+      "decisionMaker": "Renovation company owner or estimator",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Encounters customers who need you routinely; it is built into their workflow.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "basement renovation contractor",
+        "basement finishing"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "plumbers-drain",
+      "name": "Plumbers & drain inspection specialists",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Camera inspections reveal collapsed sewer laterals, root intrusion, and failed drain lines that can only be fixed by digging. Many plumbing companies do not own excavation equipment.",
+      "rationale": "Plumbers diagnose the problem first. When the fix requires excavation, the plumber is the person the property owner asks for a contractor.",
+      "triggers": [
+        {
+          "event": "A sewer backup or recurring blockage",
+          "whyNeed": "A camera inspection shows a broken or collapsed lateral that requires excavation",
+          "whoRecognizes": "Plumber or drain technician",
+          "referralMoment": "Immediately after the camera inspection",
+          "partnerValue": "They complete the plumbing portion while you handle the dig, so the job closes faster"
+        },
+        {
+          "event": "An older property is bought with original clay or cast-iron sewer lines",
+          "whyNeed": "Pre-purchase scoping flags replacement",
+          "whoRecognizes": "Drain inspection company",
+          "referralMoment": "During the purchase or renovation planning",
+          "partnerValue": "They can offer a complete solution to their client"
+        }
+      ],
+      "mutualValue": "Plumbers keep the customer and the plumbing scope; you provide the excavation they cannot. Fast, coordinated scheduling is the main value.",
+      "approach": "Target plumbing companies that advertise camera inspections but not excavation. Offer emergency availability windows and a simple process for joint quoting.",
+      "decisionMaker": "Plumbing owner or drain-camera technician",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Joint quoting process",
+        "Emergency call-out agreement"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 5,
+          "rationale": "Decision-makers are easy to meet and talk to.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "drain camera inspection",
+        "plumbing company sewer repair"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "home-inspectors-wp",
+      "name": "Home inspectors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Inspection reports flag efflorescence, high moisture readings, stained finishes, and cracks during a purchase, which is exactly when buyers need a credible repair estimate.",
+      "rationale": "Inspectors identify the need at a high-stakes moment. Their reputation depends on giving clients a trustworthy next step, not on selling repairs.",
+      "triggers": [
+        {
+          "event": "An inspection finds active moisture or a significant crack",
+          "whyNeed": "The buyer needs a repair cost before the condition deadline",
+          "whoRecognizes": "Home inspector",
+          "referralMoment": "Within the conditional period, usually days",
+          "partnerValue": "Their client gets clarity, and the inspector is seen as helpful rather than deal-breaking"
+        }
+      ],
+      "mutualValue": "Inspectors gain a resource that gives honest, fast quotes; you meet motivated buyers.",
+      "approach": "Offer a guaranteed quote turnaround for buyers under condition and a one-page guide to moisture findings that inspectors can attach to reports. Never offer referral payments.",
+      "decisionMaker": "Independent home inspector",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Many home-inspector associations' codes of ethics restrict compensation for contractor referrals.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "Limited repeat potential.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "home inspector"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "property-managers",
+      "name": "Property management companies",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Property managers encounter excavation, drainage, grading, demolition, and other property-maintenance needs across every property they manage.",
+      "rationale": "One relationship can cover many properties. They value reliability and documentation over the lowest price, and they keep approved vendor lists.",
+      "triggers": [
+        {
+          "event": "Water infiltration or pooling around a managed building",
+          "whyNeed": "Drainage correction or regrading is needed",
+          "whoRecognizes": "Property manager or maintenance coordinator",
+          "referralMoment": "When repeat complaints or insurance concerns arise",
+          "partnerValue": "Resolving the root cause reduces tenant complaints and liability"
+        },
+        {
+          "event": "Planned capital improvements such as parking expansion or utility upgrades",
+          "whyNeed": "Site preparation is required",
+          "whoRecognizes": "Asset or property manager",
+          "referralMoment": "During annual capital planning",
+          "partnerValue": "Accurate budgeting and fewer surprises"
+        }
+      ],
+      "mutualValue": "A reliable contractor helps property managers resolve issues efficiently and report clearly to owners. You may gain recurring project opportunities.",
+      "approach": "Establish a vendor relationship: provide service capabilities, geographic coverage, response expectations, insurance, and relevant project examples. Ask what their vendor onboarding requires.",
+      "decisionMaker": "Property manager / maintenance coordinator",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Vendor onboarding",
+        "Annual site-drainage walk-through offer"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Raised because your description mentions “property manager”.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Raised because your description mentions “property manager”.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Strong potential for a recurring commercial channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "property management company",
+        "commercial property management"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "realtors-conditional",
+      "name": "Realtors managing inspection conditions",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "When inspections reveal water issues, deals hinge on a written quote within days, whether for a price reduction, a holdback, or a seller repair. Listing agents also want leaks fixed before listing to avoid disclosure problems.",
+      "rationale": "Agents have many transactions a year and need contractors who respond inside a conditional period. Speed is the differentiator.",
+      "triggers": [
+        {
+          "event": "A buyer's inspection reports basement moisture",
+          "whyNeed": "The deal needs a quote to renegotiate",
+          "whoRecognizes": "Buyer's agent",
+          "referralMoment": "Within 24–72 hours of the inspection",
+          "partnerValue": "Keeps the deal together"
+        },
+        {
+          "event": "A seller knows of past leaks before listing",
+          "whyNeed": "Repair or documentation reduces disclosure risk",
+          "whoRecognizes": "Listing agent",
+          "referralMoment": "During listing preparation",
+          "partnerValue": "Cleaner sale and fewer post-closing disputes"
+        }
+      ],
+      "mutualValue": "Agents save deals; you receive time-sensitive, ready-to-buy work.",
+      "approach": "Promote a 'deal-saver' quote service with a fixed turnaround to a few active brokerages.",
+      "decisionMaker": "Buyer's or listing agent",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Real estate registrants' referral-fee rules generally prohibit paying non-registrants for referrals. Keep this relationship non-compensated.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "real estate brokerage"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "concrete-foundation",
+      "name": "Concrete & foundation forming contractors",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Foundation crews depend on accurate excavation before forming and timely backfill after. They are on the same projects and often asked to recommend the dig crew.",
+      "rationale": "Adjacent sequence trades refer each other because a bad handoff costs both of them time.",
+      "triggers": [
+        {
+          "event": "A forming crew is booked for a new foundation",
+          "whyNeed": "The excavation must be ready to elevation and schedule",
+          "whoRecognizes": "Forming contractor",
+          "referralMoment": "When the builder asks who should dig",
+          "partnerValue": "A dependable handoff protects their pour schedule"
+        }
+      ],
+      "mutualValue": "Each side protects the other's schedule; both become a stronger package to builders.",
+      "approach": "Coordinate on a shared job first, then propose a standing arrangement to recommend each other to builders without exclusivity.",
+      "decisionMaker": "Forming-crew owner",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Joint bid package to builders"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "concrete foundation contractor",
+        "foundation forming"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "landscapers-hardscapers",
+      "name": "Landscape & hardscape contractors",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Landscapers sell grading, drainage, retaining walls, and outdoor projects but often lack equipment for larger digs, rock removal, or regrading.",
+      "rationale": "Landscapers meet the homeowner first for outdoor work, and larger scopes regularly exceed their equipment.",
+      "triggers": [
+        {
+          "event": "A backyard design includes regrading, retaining walls, or a pool",
+          "whyNeed": "Bulk excavation or material removal is needed",
+          "whoRecognizes": "Landscape designer",
+          "referralMoment": "Before the project is priced",
+          "partnerValue": "They can accept larger projects"
+        },
+        {
+          "event": "You finish rough grading",
+          "whyNeed": "The customer needs topsoil, sod, and planting",
+          "whoRecognizes": "You",
+          "referralMoment": "At project completion",
+          "partnerValue": "A ready-to-close lead"
+        }
+      ],
+      "mutualValue": "They expand what they can sell; you receive the heavy work and pass along finishing work.",
+      "approach": "Offer to price the heavy portion of their larger quotes. Keep the customer-facing role clear.",
+      "decisionMaker": "Landscape designer or owner",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Subcontract pricing",
+        "Seasonal referral exchange"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Raised because your description mentions “grading”.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Raised because your description mentions “grading”.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 5,
+          "rationale": "Decision-makers are easy to meet and talk to.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 5,
+          "rationale": "Easy to start with a single conversation.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "landscape contractor",
+        "hardscape contractor"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "insurance-brokers-wp",
+      "name": "Home insurance brokers",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Brokers field calls when seepage claims are declined and when insurers require flood-mitigation devices, such as backwater valves or sump pumps, for sewer-backup coverage or better pricing.",
+      "rationale": "The broker is the advisor clients call when coverage disappoints them, and mitigation requirements are increasingly common in flood-prone areas.",
+      "triggers": [
+        {
+          "event": "A client's seepage claim is denied",
+          "whyNeed": "The cause still needs to be fixed at the owner's cost",
+          "whoRecognizes": "Broker",
+          "referralMoment": "When the denial is explained",
+          "partnerValue": "The broker offers a constructive next step"
+        },
+        {
+          "event": "A renewal requires or rewards flood-mitigation devices",
+          "whyNeed": "Installation must be documented",
+          "whoRecognizes": "Broker",
+          "referralMoment": "Before renewal",
+          "partnerValue": "Keeps the client insured and satisfied"
+        }
+      ],
+      "mutualValue": "Brokers retain clients and reduce future claims; you get motivated customers.",
+      "approach": "Provide brokers with a plain-language explainer on seepage versus covered water damage and a checklist of mitigation documentation insurers typically ask for.",
+      "decisionMaker": "Personal-lines insurance broker",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Client explainer",
+        "Broker lunch-and-learn"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": "Brokers are regulated and may not be able to recommend specific contractors. Position this as client education.",
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "insurance broker"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "pool-installers",
+      "name": "Inground pool installers",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Inground pool installation starts with excavation, and many pool companies subcontract the dig and haul-away.",
+      "rationale": "Pool companies sell many similar jobs each season, so one relationship can produce repeat volume.",
+      "triggers": [
+        {
+          "event": "A pool contract is signed",
+          "whyNeed": "The dig must happen before the pool kit or shell can be installed",
+          "whoRecognizes": "Pool installer",
+          "referralMoment": "When the installation schedule is set",
+          "partnerValue": "Reliable dig dates keep their install crews busy"
+        }
+      ],
+      "mutualValue": "They avoid owning heavy equipment; you gain seasonal repeat work.",
+      "approach": "Contact pool companies before the season starts with capacity, pricing approach, and haul-away logistics.",
+      "decisionMaker": "Pool company owner or installation scheduler",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "inground pool installer",
+        "pool builder"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "flood-subsidy-programs",
+      "name": "Municipal basement-flooding protection programs",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Many municipalities offer subsidies for backwater valves, sump pumps, or downspout disconnection, especially after major storms. Homeowners look for contractors who can complete the work and the paperwork correctly.",
+      "rationale": "Subsidies lower the homeowner's cost and create a burst of demand after each storm or program announcement. Contractors who get the forms right become the names residents share.",
+      "triggers": [
+        {
+          "event": "A storm floods basements across a neighbourhood",
+          "whyNeed": "Residents apply for subsidies and need eligible work done",
+          "whoRecognizes": "Program coordinator and ward councillor offices",
+          "referralMoment": "In the weeks after the storm",
+          "partnerValue": "Programs succeed when work is completed and documented properly"
+        }
+      ],
+      "mutualValue": "Programs need compliant installations; you gain subsidy-backed customers.",
+      "approach": "Learn each local program's eligibility and documentation rules and produce subsidy-ready invoices. Ask whether the municipality publishes contractor information, but expect it not to endorse anyone.",
+      "decisionMaker": "Municipal program coordinator (water or engineering department)",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Municipal programs typically do not endorse contractors. Never imply municipal approval.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "basement flooding subsidy program"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "restoration-insurance",
+      "name": "Restoration contractors & insurance adjusters",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "After fires, floods, or structural damage, restoration companies handle interior work while demolition, foundation exposure, and site cleanup often need an excavation contractor.",
+      "rationale": "Claims-driven work is urgent and has an approved budget behind it, but volume is irregular.",
+      "triggers": [
+        {
+          "event": "A total-loss fire or structural failure",
+          "whyNeed": "Demolition and debris removal are required before rebuilding",
+          "whoRecognizes": "Insurance adjuster or restoration project manager",
+          "referralMoment": "Once the claim scope is approved",
+          "partnerValue": "A contractor who documents work properly speeds claim closure"
+        },
+        {
+          "event": "Flooding caused by exterior drainage failure",
+          "whyNeed": "Excavation and drainage correction are needed to prevent recurrence",
+          "whoRecognizes": "Restoration company",
+          "referralMoment": "After mitigation, during repair planning",
+          "partnerValue": "Prevents repeat claims"
+        }
+      ],
+      "mutualValue": "Adjusters and restorers need documentation and fast mobilisation; you gain urgent, budgeted work.",
+      "approach": "Show claim-ready documentation habits: photos, itemised invoices, and timelines. Ask restoration firms which subcontractors they lack.",
+      "decisionMaker": "Restoration project manager or insurance adjuster",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Raised because your description mentions “demolition”.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Raised because your description mentions “demolition”.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Opportunities are likely to be infrequent.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "fire and flood restoration",
+        "disaster restoration company"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "structural-engineers-wp",
+      "name": "Structural engineers & foundation assessors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "When cracks, bowing walls, or settlement appear, owners hire an engineer to determine whether the problem is structural. The engineer's report specifies the repair and the owner then needs a qualified contractor.",
+      "rationale": "Engineers define the scope and influence the contractor choice for the highest-value foundation repairs.",
+      "triggers": [
+        {
+          "event": "An engineer confirms structural cracking or wall movement",
+          "whyNeed": "Repairs must follow the engineer's specification",
+          "whoRecognizes": "Engineer",
+          "referralMoment": "When the report is delivered",
+          "partnerValue": "Their specification is executed correctly"
+        }
+      ],
+      "mutualValue": "Engineers want their designs built correctly; you get well-defined, higher-value projects.",
+      "approach": "Show engineers examples of specified repairs you have completed and offer to coordinate inspections.",
+      "decisionMaker": "Professional engineer (P.Eng.)",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Engineers' codes of ethics generally prohibit accepting benefits for recommending contractors.",
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Opportunities are likely to be infrequent.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "structural engineer residential"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "grading-eaves",
+      "name": "Eavestrough, grading & landscaping contractors",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Many damp basements are caused by short downspouts, clogged eavestroughs, or soil sloping toward the house. Recommending these cheaper fixes first builds trust, and these contractors see foundation problems they cannot fix.",
+      "rationale": "Honest diagnosis creates referral partners. A contractor known for saying 'fix the downspout first' gets the foundation work when it is truly needed.",
+      "triggers": [
+        {
+          "event": "Your assessment shows surface water as the main cause",
+          "whyNeed": "Eavestrough or grading work is the right first fix",
+          "whoRecognizes": "You",
+          "referralMoment": "During assessment",
+          "partnerValue": "A ready-to-book job for the partner"
+        },
+        {
+          "event": "A landscaper regrading a yard sees water marks on the foundation",
+          "whyNeed": "Foundation repair may be needed",
+          "whoRecognizes": "Landscaper",
+          "referralMoment": "During site work",
+          "partnerValue": "Their client is protected and they look knowledgeable"
+        }
+      ],
+      "mutualValue": "Both sides look honest and helpful to homeowners.",
+      "approach": "Build a small reciprocal circle and share a 'start with the outside' checklist for homeowners.",
+      "decisionMaker": "Owner of the eavestrough or landscaping company",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 3,
+          "rationale": "Moderate overlap with your core services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 2,
+          "rationale": "Referred work tends to be below your typical engagement value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 5,
+          "rationale": "Decision-makers are easy to meet and talk to.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 5,
+          "rationale": "Easy to start with a single conversation.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "eavestrough contractor",
+        "landscape grading contractor"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "septic-designers",
+      "name": "Septic system designers & installers",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Septic replacement and new rural builds require significant excavation. Designers specify systems, and some installers sub out the excavation.",
+      "rationale": "In rural service areas, septic work is a steady source of excavation demand linked to property sales and failures.",
+      "triggers": [
+        {
+          "event": "A septic inspection fails during a property sale",
+          "whyNeed": "A replacement system must be designed and installed",
+          "whoRecognizes": "Septic designer or inspector",
+          "referralMoment": "Once the design is complete",
+          "partnerValue": "Faster installation helps the sale close"
+        }
+      ],
+      "mutualValue": "Designers need competent installers; you gain specialised, higher-margin work.",
+      "approach": "If you are not licensed to install septic systems, partner with a licensed installer for the excavation portion.",
+      "decisionMaker": "Septic designer (qualified designer) or installer",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "septic system design",
+        "septic installer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "radon-mitigation",
+      "name": "Radon mitigation professionals",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Radon mitigation often involves sealing foundation cracks, sump openings, and floor joints. Homeowners testing for radon are already thinking about their foundation.",
+      "rationale": "Shared work areas and a health-driven trigger make this an overlooked handoff, especially during radon-awareness campaigns.",
+      "triggers": [
+        {
+          "event": "A radon test exceeds the guideline",
+          "whyNeed": "Mitigation may require sealing the foundation",
+          "whoRecognizes": "Radon professional",
+          "referralMoment": "When designing the mitigation system",
+          "partnerValue": "A more complete, effective installation"
+        }
+      ],
+      "mutualValue": "Coordinated sealing improves both outcomes; reciprocal referrals.",
+      "approach": "Offer coordinated sealing for mitigation installs and ask certified professionals to share your contact for foundation issues they find.",
+      "decisionMaker": "Certified radon mitigation professional",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 3,
+          "rationale": "Moderate overlap with your core services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Opportunities are likely to be infrequent.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 2,
+          "rationale": "Referred work tends to be below your typical engagement value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "Limited repeat potential.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "radon mitigation"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "aggregate-suppliers",
+      "name": "Aggregate, topsoil & landscape supply yards",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Homeowners and small contractors buy gravel, fill, and topsoil and often ask the yard who can spread, grade, or install it.",
+      "rationale": "Counter staff are asked for recommendations daily; this is an overlooked, low-cost channel.",
+      "triggers": [
+        {
+          "event": "A homeowner orders material for a driveway or yard project",
+          "whyNeed": "They realise the job needs equipment and skill",
+          "whoRecognizes": "Supply yard counter staff",
+          "referralMoment": "At the point of sale",
+          "partnerValue": "A recommended installer brings the yard larger, repeat material orders"
+        }
+      ],
+      "mutualValue": "You buy materials there and bring them installation customers who keep ordering material; they gain a trusted installer to recommend.",
+      "approach": "Become a regular account, leave a short capability sheet, and ask whether they keep a list of installers.",
+      "decisionMaker": "Yard manager / counter staff",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Installer list at the counter",
+        "Co-branded 'how much gravel do I need' guide"
+      ],
+      "digitalAuthority": [
+        "A useful material-calculator page that the yard links to from its product pages."
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 3,
+          "rationale": "Moderate overlap with your core services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 2,
+          "rationale": "Referred work tends to be below your typical engagement value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 5,
+          "rationale": "Decision-makers are easy to meet and talk to.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 5,
+          "rationale": "Easy to start with a single conversation.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "aggregate supplier",
+        "landscape supply yard",
+        "topsoil supplier"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "basement-rental-investors",
+      "name": "Landlords & investors converting basements to rental units",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Adding a basement apartment requires a dry basement, and investors who do this repeatedly need a dependable waterproofing contractor for each property. Investor clubs and secondary-suite designers concentrate this audience.",
+      "rationale": "Provincial and municipal rules increasingly allow additional units, so investors are converting more basements. Each investor can bring several properties.",
+      "triggers": [
+        {
+          "event": "An investor buys a property to add a basement unit",
+          "whyNeed": "Moisture must be resolved before the unit is built",
+          "whoRecognizes": "Investor or their designer",
+          "referralMoment": "Before permit drawings are finalised",
+          "partnerValue": "Protects the rental income and tenant relationships"
+        }
+      ],
+      "mutualValue": "Investors get predictable repairs across properties; you gain repeat clients.",
+      "approach": "Present at local real-estate investor meetups about the true cost of moisture in rental basements, and offer portfolio pricing.",
+      "decisionMaker": "Small-portfolio investor or their project manager",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Investor meetup talk",
+        "Pre-purchase basement checklist"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Strong potential for a recurring commercial channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "real estate investor club",
+        "secondary suite designer"
+      ],
+      "existingRelationship": false
+    }
+  ],
+  "assumptions": [
+    "Site work is largely won through relationships with whoever controls the project before excavation starts (builders, engineers, GCs, property owners' advisors).",
+    "Seasonality matters: most residential site work is scheduled before and during the main build season, so relationship-building is most effective in the off-season.",
+    "Most waterproofing jobs begin as someone else's problem: a failed inspection, a denied insurance claim, a warranty call, or a renovation that uncovered moisture. The professionals present at those moments matter more than homeowners searching online.",
+    "Trust is fragile in this category because homeowners fear being oversold. Partners who see you recommend the cheaper fix first are more likely to keep referring.",
+    "No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing."
+  ],
+  "guardrails": [
+    {
+      "title": "Prequalification is the real gatekeeper for commercial work",
+      "body": "General contractors and property managers typically require proof of insurance, workplace-safety clearance (e.g. WSIB clearance in Ontario), and sometimes a recognised safety certification before you can be referred or invited to bid. Having these ready often matters more than the introduction itself."
+    },
+    {
+      "title": "Diagnose before you sell",
+      "body": "Many wet basements are caused by grading, downspouts, or plumbing rather than the foundation. Referral partners, especially inspectors, insurers, and engineers, will stop referring if their clients feel oversold. Documented diagnosis protects the relationship."
+    },
+    {
+      "title": "Partnerships are not paid-referral arrangements",
+      "body": "This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals."
+    },
+    {
+      "title": "Outreach in Canada: CASL applies",
+      "body": "Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA)."
+    },
+    {
+      "title": "No automated outreach",
+      "body": "This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline."
+    }
+  ]
+}

@@ -131,6 +131,8 @@ export const PartnerCategorySchema = z.object({
   triggers: z.array(TriggerEventSchema).min(1).max(6),
   mutualValue: z.string().max(600),
   approach: z.string().max(700),
+  decisionMaker: z.string().max(240).nullable().default(null),
+  overlooked: z.boolean().default(false),
   collaborationFormats: z.array(z.string().max(160)).max(8),
   digitalAuthority: z.array(z.string().max(240)).max(5),
   regulatoryNote: z.string().max(600).nullable(),
@@ -160,6 +162,8 @@ export const EngineInfoSchema = z.object({
   matchConfidence: z.enum(["high", "medium", "low"]),
   notes: z.array(z.string()),
   version: z.string(),
+  /** Estimated AI cost for this analysis (null when no AI call was made). Server-side only. */
+  costUsd: z.number().nullable().optional(),
 });
 export type EngineInfo = z.infer<typeof EngineInfoSchema>;
 

@@ -24,7 +24,7 @@ import {
   type NodeProps,
 } from "@xyflow/react";
 import { toPng } from "html-to-image";
-import { ChevronDown, ChevronRight, Repeat2, Check } from "lucide-react";
+import { ChevronDown, ChevronRight, Repeat2, Check, Eye } from "lucide-react";
 import type { BusinessProfile, RelationshipType, ScoredCategory } from "@/lib/schema";
 import { layoutEcosystem, NODE_SIZES } from "@/lib/graph-layout";
 import { TYPE_META, DIRECTION_META } from "@/lib/ui-meta";
@@ -113,6 +113,11 @@ const PartnerNode = memo(function PartnerNode({ data }: NodeProps<Node<PartnerDa
           {c.channelType === "recurring" && (
             <span className="inline-flex items-center gap-0.5" title="Potential recurring channel">
               <Repeat2 className="size-3" /> recurring
+            </span>
+          )}
+          {c.overlooked && (
+            <span className="inline-flex items-center gap-0.5 text-accent" title="Often overlooked by businesses in this industry">
+              <Eye className="size-3" />
             </span>
           )}
           {c.existingRelationship && (

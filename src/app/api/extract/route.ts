@@ -3,6 +3,8 @@ import { z } from "zod";
 import { extractFromWebsite } from "@/lib/extract";
 import { UnsafeUrlError } from "@/lib/extract/ssrf";
 import { jsonError, limitOrNull, readJson } from "@/lib/http";
+import { readCookie, SESSION_COOKIE, testerFromRequest } from "@/lib/beta";
+import { track } from "@/lib/analytics";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -21,7 +23,10 @@ export async function POST(req: Request) {
   const parsed = BodySchema.safeParse(body);
   if (!parsed.success) return jsonError("Enter a website address.", 400);
   try {
-    return NextResponse.json(await extractFromWebsite(parsed.data.url));
+    const tester = await testerFromRequest(req);
+    const result = await extractFromWebsite(parsed.data.url, tester);
+    await track("website_read", { tester, session: readCookie(req, SESSION_COOKIE), props: { method: result.method } });
+    return NextResponse.json(result);
   } catch (err) {
     if (err instanceof UnsafeUrlError) return jsonError(err.message, 422);
     return jsonError("We couldn't read that website. You can fill in the details manually.", 422);

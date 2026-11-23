@@ -28,6 +28,7 @@ import { WeightsPanel } from "./weights-panel";
 import { UpgradeCard } from "./upgrade-card";
 import { OrganizationsPanel, type DiscoveryState } from "./organizations-panel";
 import { cn } from "@/lib/utils";
+import { trackClient } from "@/lib/track-client";
 
 function useIsDesktop() {
   const [desktop, setDesktop] = useState(true);
@@ -139,6 +140,23 @@ export function Workspace({ id }: { id: string }) {
   }, [isDesktop]);
 
   const ranked = useMemo(() => (view ? rankCategories(view.categories, weights) : []), [view, weights]);
+
+  // Analytics: which relationships testers actually open, and which views they use.
+  useEffect(() => {
+    if (!selectedId || !view) return;
+    const c = view.categories.find((x) => x.id === selectedId);
+    trackClient("relationship_explored", {
+      analysisId: view.id,
+      once: `${view.id}:${selectedId}`,
+      props: { categoryId: selectedId, type: c?.relationshipType ?? null, overlooked: Boolean(c?.overlooked) },
+    });
+  }, [selectedId, view]);
+  useEffect(() => {
+    if (view) trackClient("view_changed", { analysisId: view.id, once: `${view.id}:tab:${tab}`, props: { tab } });
+  }, [tab, view]);
+  useEffect(() => {
+    if (view && view.access.tier === "free" && !view.isDemo) trackClient("upgrade_viewed", { analysisId: view.id, once: `${view.id}:upgrade` });
+  }, [view]);
   const filtered = useMemo(() => ranked.filter((c) => visibleTypes.has(c.relationshipType)), [ranked, visibleTypes]);
   const presentTypes = useMemo(() => TYPE_ORDER.filter((t) => ranked.some((c) => c.relationshipType === t)), [ranked]);
   const selected = ranked.find((c) => c.id === selectedId) ?? null;
@@ -194,6 +212,7 @@ export function Workspace({ id }: { id: string }) {
 
   async function exportPng() {
     setExportError(null);
+    trackClient("export_downloaded", { analysisId: view?.id, props: { kind: "png" } });
     if (tab !== "map") setTab("map");
     await new Promise((r) => setTimeout(r, 350));
     try {
@@ -276,7 +295,7 @@ export function Workspace({ id }: { id: string }) {
         </div>
         <div className="flex flex-wrap gap-2">
           <Button variant="outline" size="sm" onClick={exportPng} data-testid="export-png"><FileImage /> Image</Button>
-          <Button variant="outline" size="sm" onClick={() => downloadText(`${slugify(view.profile.displayName)}-opportunities.csv`, opportunitiesCsv(ranked))} data-testid="export-csv">
+          <Button variant="outline" size="sm" onClick={() => { trackClient("export_downloaded", { analysisId: view.id, props: { kind: "csv" } }); downloadText(`${slugify(view.profile.displayName)}-opportunities.csv`, opportunitiesCsv(ranked)); }} data-testid="export-csv">
             <FileSpreadsheet /> CSV
           </Button>
           <Button variant="outline" size="sm" onClick={() => downloadText(`${slugify(view.profile.displayName)}-ecosystem.json`, JSON.stringify({ ...view, weights, organizations: allOrgs }, null, 2), "application/json")}>

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { trackClient } from "@/lib/track-client";
 import { useRouter } from "next/navigation";
 import { ArrowRight, Check, ChevronDown, Globe, Loader2 } from "lucide-react";
 import { BusinessInputSchema, type BusinessInput } from "@/lib/schema";
@@ -62,7 +63,17 @@ export function IntakeForm() {
   const [extractMsg, setExtractMsg] = useState<string | null>(null);
   const [suggestion, setSuggestion] = useState<Suggestion | null>(null);
 
+  const [ai, setAi] = useState<{ available: boolean; reason: string | null; model: string | null } | null>(null);
+  const [useAi, setUseAi] = useState(true);
+  useEffect(() => {
+    fetch("/api/capabilities")
+      .then((r) => r.json())
+      .then((c) => setAi({ available: Boolean(c.aiForYou?.available), reason: c.aiForYou?.reason ?? null, model: c.aiModel ?? null }))
+      .catch(() => undefined);
+  }, []);
+
   const set = (k: keyof BusinessInput) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    trackClient("intake_started", { once: "intake_started" });
     setForm((f) => ({ ...f, [k]: e.target.value }));
     setErrors((er) => ({ ...er, [k]: undefined }));
   };
@@ -114,7 +125,7 @@ export function IntakeForm() {
     }
     setSubmitting(true);
     try {
-      const res = await fetch("/api/analyze", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ input: parsed.data }) });
+      const res = await fetch("/api/analyze", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ input: parsed.data, useAi: ai?.available ? useAi : false }) });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Something went wrong.");
       clientStore.saveAnalysis(data);
@@ -233,7 +244,16 @@ export function IntakeForm() {
       {submitError && <p className="rounded-md bg-[#fdecec] px-3 py-2 text-[13px] text-[#8a1c1c]" role="alert">{submitError}</p>}
 
       <div className="flex flex-col gap-3 border-t border-line pt-6 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-[12px] text-ink-4">The free analysis includes the interactive map and your top five partner categories.</p>
+        <div className="space-y-1.5">
+          {ai?.available && (
+            <label className="flex items-center gap-2 text-[12.5px] text-ink-2">
+              <input type="checkbox" checked={useAi} onChange={(e) => setUseAi(e.target.checked)} className="size-3.5 accent-[#0e1116]" data-testid="use-ai" />
+              Use AI analysis (beta{ai.model ? ` · ${ai.model}` : ""}). Uncheck to see the curated industry profile.
+            </label>
+          )}
+          {ai && !ai.available && ai.reason && <p className="text-[12px] text-ink-4">{ai.reason} You'll get the curated analysis.</p>}
+          <p className="text-[12px] text-ink-4">The free analysis includes the interactive map and your top five partner categories.</p>
+        </div>
         <Button type="submit" size="lg" data-testid="generate-submit">Generate my referral ecosystem <ArrowRight /></Button>
       </div>
     </form>

@@ -5,6 +5,7 @@ export default defineConfig({
   test: {
     include: ["tests/unit/**/*.test.ts", "tests/unit/**/*.test.tsx"],
     environment: "node",
+    env: { STORE_DRIVER: "memory" },
   },
   resolve: { alias: { "@": path.resolve(__dirname, "src") } },
 });

@@ -6,11 +6,22 @@ import { homeTrades } from "./archetypes/trades";
 import { accountingFinancial, marketingAgency } from "./archetypes/professional";
 import { healthcarePractice } from "./archetypes/health";
 import { genericFramework } from "./archetypes/generic";
+import { waterproofing, concreteContractor } from "./archetypes/waterproofing-concrete";
+import { renovation, customBuilder } from "./archetypes/renovation-builders";
+import { familyLaw, criminalLaw } from "./archetypes/legal-practice";
+import { propertyManagement } from "./archetypes/property-management";
 
 export const ARCHETYPES: Archetype[] = [
   siteConstruction,
+  waterproofing,
+  concreteContractor,
+  renovation,
+  customBuilder,
   immigrationLaw,
+  familyLaw,
+  criminalLaw,
   generalLegal,
+  propertyManagement,
   softwareAgency,
   homeTrades,
   accountingFinancial,
@@ -27,6 +38,8 @@ export function getArchetype(id: string): Archetype | undefined {
 
 export interface ArchetypeMatch {
   archetype: Archetype;
+  /** A second profile from the same family when the business clearly spans both (e.g. excavation + waterproofing). */
+  secondary?: Archetype;
   confidence: "high" | "medium" | "low";
   score: number;
   matchedTerms: string[];
@@ -90,6 +103,20 @@ export function matchArchetype(fields: { industry: string; services?: string; ot
     return { archetype: GENERIC_ARCHETYPE, confidence: "low", score: top?.score ?? 0, matchedTerms: [], alternatives };
   }
   const ambiguous = second && second.score >= 3 && second.score >= top.score * 0.8;
-  const confidence: ArchetypeMatch["confidence"] = top.score >= 6 && !ambiguous ? "high" : "medium";
-  return { archetype: top.archetype, confidence, score: top.score, matchedTerms: top.matchedTerms, alternatives };
+  const blend =
+    second &&
+    top.archetype.family &&
+    second.archetype.family === top.archetype.family &&
+    second.score >= Math.max(6, top.score * 0.4)
+      ? second.archetype
+      : undefined;
+  const confidence: ArchetypeMatch["confidence"] = top.score >= 6 && (!ambiguous || blend) ? "high" : "medium";
+  return {
+    archetype: top.archetype,
+    secondary: blend,
+    confidence,
+    score: top.score,
+    matchedTerms: top.matchedTerms,
+    alternatives: blend ? alternatives.filter((a) => a.id !== blend.id) : alternatives,
+  };
 }

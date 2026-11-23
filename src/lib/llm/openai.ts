@@ -7,19 +7,30 @@ export class OpenAIProvider implements LLMProvider {
   readonly name = "openai" as const;
   private client: OpenAI;
 
-  constructor(apiKey: string, readonly model: string) {
-    this.client = new OpenAI({ apiKey, maxRetries: 2, timeout: 120_000 });
+  constructor(
+    apiKey: string,
+    readonly model: string,
+    baseURL = "https://api.openai.com/v1",
+    private effort: "low" | "medium" | "high" = "medium",
+  ) {
+    this.client = new OpenAI({ apiKey, baseURL, maxRetries: 2, timeout: 180_000 });
   }
 
-  async generateObject<T>({ system, prompt, schema, schemaName, maxTokens = 16000 }: GenerateObjectOptions<T>): Promise<T> {
+  async generateObject<T>({ system, prompt, schema, schemaName, maxTokens = 16000, onUsage }: GenerateObjectOptions<T>): Promise<T> {
     try {
       const response = await this.client.responses.parse({
         model: this.model,
         instructions: system,
         input: prompt,
         max_output_tokens: maxTokens,
+        // Reasoning models only; LLM_EFFORT trades depth for latency and cost.
+        ...(/^(gpt-5|gpt-6|o\d)/.test(this.model) ? { reasoning: { effort: this.effort } } : {}),
         text: { format: zodTextFormat(schema, schemaName) },
       });
+      onUsage?.({ inputTokens: response.usage?.input_tokens ?? 0, outputTokens: response.usage?.output_tokens ?? 0 });
+      if (response.status === "incomplete") {
+        throw new LLMError("The AI response was truncated.", "invalid_output", true);
+      }
       if (response.output_parsed == null) {
         throw new LLMError("The AI response did not match the expected structure.", "invalid_output", true);
       }

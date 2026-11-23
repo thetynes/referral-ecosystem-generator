@@ -2,7 +2,8 @@ import { NextResponse } from "next/server";
 import type Stripe from "stripe";
 import { config } from "@/lib/config";
 import { getStore } from "@/lib/store";
-import { getStripe, paidSessionFrom } from "@/lib/payments/stripe";
+import { getStripe, paidSessionFrom, type PaidSession } from "@/lib/payments/stripe";
+import { recordPurchase } from "@/lib/payments/purchase";
 
 export const runtime = "nodejs";
 
@@ -25,7 +26,13 @@ export async function POST(req: Request) {
 
   if (event.type === "checkout.session.completed" || event.type === "checkout.session.async_payment_succeeded") {
     const paid = paidSessionFrom(event.data.object as Stripe.Checkout.Session);
-    if (paid) await (await getStore()).set("checkout", paid.sessionId, paid);
+    if (paid) {
+      const store = await getStore();
+      const already = await store.get<PaidSession>("checkout", paid.sessionId);
+      await store.set("checkout", paid.sessionId, paid);
+      if (!already) await recordPurchase(paid);
+    }
   }
   return NextResponse.json({ received: true });
 }
+

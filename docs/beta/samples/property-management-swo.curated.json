@@ -1,0 +1,1011 @@
+{
+  "id": "7db934d3-016d-47ce-a207-22dd9ec4861a",
+  "createdAt": "2026-11-23T23:22:13.988Z",
+  "isDemo": false,
+  "profile": {
+    "displayName": "Sample Property Management (illustrative)",
+    "website": null,
+    "industry": "Residential property management company",
+    "services": [
+      "Tenant placement",
+      "rent collection",
+      "maintenance coordination",
+      "Landlord",
+      "Tenant Board filings",
+      "owner reporting"
+    ],
+    "serviceArea": "London, Kitchener-Waterloo and Southwestern Ontario",
+    "geography": {
+      "country": "CA",
+      "region": "Ontario",
+      "scope": "regional"
+    },
+    "idealCustomer": "Owners of single-family rentals, small multiplexes, student rentals and secondary suites",
+    "customerSegments": [
+      "Owners of single-family rentals",
+      "small multiplexes",
+      "student rentals",
+      "secondary suites"
+    ],
+    "projectValue": null,
+    "targetIndustries": [],
+    "growthPriority": "recurring",
+    "existingReferrals": [],
+    "expansionMarkets": []
+  },
+  "engine": {
+    "mode": "knowledge_base",
+    "provider": null,
+    "model": null,
+    "archetypeId": "property-management",
+    "archetypeLabel": "Property management",
+    "matchConfidence": "high",
+    "notes": [],
+    "version": "1.0.0",
+    "costUsd": null
+  },
+  "categories": [
+    {
+      "id": "ltb-paralegals",
+      "name": "Landlord-tenant paralegals",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Self-managing landlords who end up at the Landlord and Tenant Board over arrears or a difficult tenancy often decide afterward that they do not want to manage the property themselves again.",
+      "rationale": "The paralegal meets the owner at peak frustration and is asked, 'How do I stop this happening again?' You can refer your own tribunal files to them in return.",
+      "triggers": [
+        {
+          "event": "A self-managing landlord files for arrears or termination",
+          "whyNeed": "They need better tenant screening and ongoing management",
+          "whoRecognizes": "Paralegal",
+          "referralMoment": "After the hearing or settlement",
+          "partnerValue": "Their client avoids a repeat case"
+        },
+        {
+          "event": "A managed tenancy needs a tribunal application",
+          "whyNeed": "You need representation",
+          "whoRecognizes": "You",
+          "referralMoment": "When the file is ready",
+          "partnerValue": "Steady, well-documented files for the paralegal"
+        }
+      ],
+      "mutualValue": "Paralegals gain a steady flow of well-documented files; you gain owners ready to delegate.",
+      "approach": "Send your tribunal work to one or two landlord-side paralegals and ask them to share your information with clients who want ongoing help.",
+      "decisionMaker": "Paralegal who represents landlords at the tribunal",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Paralegals are law society licensees with referral-fee rules. Keep the arrangement non-compensated.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "landlord paralegal"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "investor-realtors",
+      "name": "Realtors with investor buyers",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "An investor buying a rental needs a rent estimate before buying and a tenant-placement plan at closing. Agents who work with investors are asked for manager recommendations repeatedly.",
+      "rationale": "A single investor-focused agent can produce several new management contracts a year, and your rent analysis helps them sell properties.",
+      "triggers": [
+        {
+          "event": "An investor makes an offer on a rental property",
+          "whyNeed": "They need realistic rent and expense assumptions",
+          "whoRecognizes": "Buyer's agent",
+          "referralMoment": "Before the offer is firm",
+          "partnerValue": "Investors buy with confidence"
+        },
+        {
+          "event": "The purchase closes",
+          "whyNeed": "The unit must be leased or the existing tenancy taken over",
+          "whoRecognizes": "Agent",
+          "referralMoment": "At closing",
+          "partnerValue": "A smooth handover"
+        }
+      ],
+      "mutualValue": "Agents gain rent analyses that help them sell; you gain new doors at closing.",
+      "approach": "Offer free rent assessments on investment listings and a guaranteed lease-up plan for agents' buyers.",
+      "decisionMaker": "Buyer's agent who works with investors",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Real estate registrants may not pay referral fees to non-registrants. Keep the relationship non-compensated unless both parties are registered and the rules are met.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Encounters customers who need you routinely; it is built into their workflow.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Strong potential for a recurring commercial channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "real estate agent investment property"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "estate-executors-pm",
+      "name": "Estate lawyers & executors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Estates often hold tenanted rentals or vacant homes during administration, and executors, who frequently live elsewhere, must protect the asset. Vacant properties may also face insurance conditions such as regular inspections.",
+      "rationale": "Executors have a fiduciary duty and little time, so professional management solves a real problem, sometimes for months or years.",
+      "triggers": [
+        {
+          "event": "An estate includes a tenanted rental",
+          "whyNeed": "Rent collection, maintenance, and tenancy obligations continue",
+          "whoRecognizes": "Executor",
+          "referralMoment": "Early in estate administration",
+          "partnerValue": "Protects the estate and the executor's duty"
+        },
+        {
+          "event": "An estate home sits vacant pending sale",
+          "whyNeed": "Insurance and security conditions require oversight",
+          "whoRecognizes": "Estate lawyer",
+          "referralMoment": "When the property becomes vacant",
+          "partnerValue": "Reduces risk to the estate"
+        }
+      ],
+      "mutualValue": "Executors meet their duties with documented oversight; you gain interim and long-term contracts.",
+      "approach": "Offer an estate-property service (inspections, rent collection, sale preparation) and introduce it to estate lawyers.",
+      "decisionMaker": "Executor (often advised by the estate lawyer)",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "estate lawyer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "investor-accountants",
+      "name": "Accountants for real-estate investors",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Accountants prepare rental income schedules each year and see owners with poor records, unclaimed expenses, and losses. That is a sign the owner is struggling to manage.",
+      "rationale": "Clean monthly owner statements make the accountant's job easier, which gives them a reason to recommend you.",
+      "triggers": [
+        {
+          "event": "Tax season reveals messy rental records",
+          "whyNeed": "The owner needs better management and reporting",
+          "whoRecognizes": "Accountant",
+          "referralMoment": "At year-end",
+          "partnerValue": "Cleaner files next year"
+        }
+      ],
+      "mutualValue": "Accountants get organised records; you get owners who are ready to delegate. You can refer investor clients to them.",
+      "approach": "Show accountants your owner statement format and year-end package.",
+      "decisionMaker": "Accountant with a real-estate investor practice",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "accountant real estate investors"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "vendor-network-pm",
+      "name": "Maintenance contractors & trades",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Trades serving self-managing landlords see the struggles first: repeated emergency calls, tenant access problems, slow payment, and deferred maintenance. They are often asked if they know a good property manager.",
+      "rationale": "You can offer trades the thing they want most, which is steady, well-organised work orders that get paid on time.",
+      "triggers": [
+        {
+          "event": "A trade gets a third emergency call from the same self-managing landlord",
+          "whyNeed": "The owner clearly needs management",
+          "whoRecognizes": "Tradesperson",
+          "referralMoment": "During the call",
+          "partnerValue": "Easier, more reliable work through the manager"
+        }
+      ],
+      "mutualValue": "Trades gain predictable volume and prompt payment; you gain owner introductions.",
+      "approach": "Build a vendor program with clear payment terms and tell vendors you welcome introductions.",
+      "decisionMaker": "Owner of the plumbing, HVAC, or handyman company",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "As an agent of owners, disclose any vendor rebates or referral arrangements to your clients.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 5,
+          "rationale": "Decision-makers are easy to meet and talk to.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Strong potential for a recurring commercial channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 5,
+          "rationale": "Easy to start with a single conversation.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "plumbing company",
+        "handyman services"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "relocation-accidental-landlords",
+      "name": "Relocation firms & employers moving staff",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Employees relocating for work often rent out their home rather than sell. These 'accidental landlords' need management because they will not be nearby.",
+      "rationale": "This is a clear trigger with an owner who cannot self-manage.",
+      "triggers": [
+        {
+          "event": "An employee accepts a transfer to another city",
+          "whyNeed": "Their home must be rented and managed remotely",
+          "whoRecognizes": "Relocation consultant",
+          "referralMoment": "During move planning",
+          "partnerValue": "A smoother relocation"
+        }
+      ],
+      "mutualValue": "Relocation firms improve their service; you gain remote owners.",
+      "approach": "Offer a relocation landlord package with remote reporting.",
+      "decisionMaker": "Relocation consultant or HR mobility coordinator",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Opportunities are likely to be infrequent.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "corporate relocation company"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "receivers-lenders",
+      "name": "Receivers, insolvency trustees & private lenders",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Properties in receivership or under a lender's enforcement need interim management for rent collection, maintenance, and tenant relations until they are sold.",
+      "rationale": "These engagements are niche and documentation-heavy, but they come from repeat institutional sources.",
+      "triggers": [
+        {
+          "event": "A lender enforces on a tenanted property",
+          "whyNeed": "Interim management is required",
+          "whoRecognizes": "Receiver or lender",
+          "referralMoment": "At appointment",
+          "partnerValue": "The asset is protected until sale"
+        }
+      ],
+      "mutualValue": "Receivers need reliable, well-documented management; you gain institutional clients.",
+      "approach": "Prepare a court-ready reporting format and introduce yourself to local insolvency firms.",
+      "decisionMaker": "Insolvency professional or private-lending asset manager",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 2,
+          "rationale": "Occasionally encounters relevant customer needs.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Opportunities are likely to be infrequent.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 2,
+          "rationale": "Decision-makers are gatekept or busy.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 2,
+          "rationale": "Difficult to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "licensed insolvency trustee",
+        "private mortgage lender"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "small-rental-builders",
+      "name": "Builders of small rental projects & additional units",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "New multiplexes, basement units, and garden suites need lease-up and ongoing management, and their owners are often first-time landlords.",
+      "rationale": "Zoning changes that permit more units per lot are creating new rental supply owned by individuals.",
+      "triggers": [
+        {
+          "event": "An additional-unit or multiplex project approaches completion",
+          "whyNeed": "Units need tenants and management",
+          "whoRecognizes": "Builder",
+          "referralMoment": "Before occupancy",
+          "partnerValue": "Their clients' projects succeed"
+        }
+      ],
+      "mutualValue": "Builders offer clients a complete solution; you gain new doors.",
+      "approach": "Offer builders a lease-up package they can present to clients.",
+      "decisionMaker": "Builder or developer of small multiplexes and secondary suites",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "infill builder",
+        "secondary suite builder"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "student-housing-offices",
+      "name": "University & college off-campus housing offices",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Student rental markets depend on off-campus housing listings and landlord education, and owners of student rentals struggle with turnover and compliance.",
+      "rationale": "This audience renews every year, and housing offices value professional landlords who follow the rules.",
+      "triggers": [
+        {
+          "event": "Annual student lease cycle",
+          "whyNeed": "Owners need tenants and compliant leases",
+          "whoRecognizes": "Housing office",
+          "referralMoment": "Before the leasing season",
+          "partnerValue": "Safer student housing"
+        }
+      ],
+      "mutualValue": "Offices gain compliant listings; you gain visibility with student-rental owners.",
+      "approach": "Use the official listing services and offer landlord-education sessions.",
+      "decisionMaker": "Off-campus housing coordinator",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Raised because your description mentions “student”.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Raised because your description mentions “student”.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "off-campus housing office"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "investor-networks",
+      "name": "Real-estate investor networks & meetups",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Investor groups gather owners who are deciding whether to self-manage.",
+      "rationale": "Education builds trust, and organisers need practical speakers.",
+      "triggers": [
+        {
+          "event": "The group plans a session on tenancy law or operations",
+          "whyNeed": "Members need practical guidance",
+          "whoRecognizes": "Organiser",
+          "referralMoment": "Monthly",
+          "partnerValue": "Valuable content"
+        }
+      ],
+      "mutualValue": "Organisers get credible speakers; you get prospects.",
+      "approach": "Teach the real numbers of self-management versus professional management.",
+      "decisionMaker": "Meetup organiser",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Talks",
+        "Workshops"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 5,
+          "rationale": "Decision-makers are easy to meet and talk to.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 5,
+          "rationale": "Easy to start with a single conversation.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "real estate investor meetup"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "landlord-insurance",
+      "name": "Landlord insurance brokers",
+      "relationshipType": "shared_audience",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Brokers insure rentals and see vacancy conditions, claims, and owners whose properties are poorly maintained.",
+      "rationale": "Professional management can affect risk, and brokers want fewer claims.",
+      "triggers": [
+        {
+          "event": "A landlord has a claim or vacancy issue",
+          "whyNeed": "Better oversight would reduce risk",
+          "whoRecognizes": "Broker",
+          "referralMoment": "At claim or renewal",
+          "partnerValue": "Lower risk for their client"
+        }
+      ],
+      "mutualValue": "Reciprocal referrals.",
+      "approach": "Share inspection and maintenance practices with brokers.",
+      "decisionMaker": "Commercial or landlord insurance broker",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 2,
+          "rationale": "Occasionally encounters relevant customer needs.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 3,
+          "rationale": "Moderate overlap with your core services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "insurance broker landlord"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "investor-mortgage-brokers",
+      "name": "Mortgage brokers for investors",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Lenders want evidence of rental income, such as signed leases and rent rolls. Brokers see investors adding properties.",
+      "rationale": "Financing events coincide with new acquisitions.",
+      "triggers": [
+        {
+          "event": "An investor refinances or buys another property",
+          "whyNeed": "They need documented rental income",
+          "whoRecognizes": "Broker",
+          "referralMoment": "During the application",
+          "partnerValue": "Smoother approvals"
+        }
+      ],
+      "mutualValue": "Brokers get clean documentation; you get new properties.",
+      "approach": "Provide lender-ready rent rolls for managed properties.",
+      "decisionMaker": "Mortgage broker",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "mortgage broker"
+      ],
+      "existingRelationship": false
+    }
+  ],
+  "assumptions": [
+    "Property-management contracts usually change hands at a moment of pain or transition: a purchase, a bad tenant, an inheritance, a move, or a lender stepping in. The professionals present at those moments are the strongest sources.",
+    "Your vendor network is both a cost centre and a referral network. Trades see self-managing owners struggle long before those owners call a manager.",
+    "No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing."
+  ],
+  "guardrails": [
+    {
+      "title": "Licensing and conflicts of interest",
+      "body": "In Ontario, leasing on behalf of owners for compensation is generally regulated real estate activity, and condominium management requires a separate licence. Real estate registrants may not pay referral fees to non-registrants. As an agent of owners, disclose any vendor rebates or referral arrangements to your clients. Confirm your obligations with the relevant regulators."
+    },
+    {
+      "title": "Partnerships are not paid-referral arrangements",
+      "body": "This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals."
+    },
+    {
+      "title": "Outreach in Canada: CASL applies",
+      "body": "Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA)."
+    },
+    {
+      "title": "No automated outreach",
+      "body": "This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline."
+    }
+  ]
+}

@@ -31,7 +31,9 @@ export function executiveOverview(analysis: Analysis, ranked: ScoredCategory[]):
   if (top.length) {
     paras.push(
       `The highest-priority partner categories under the current weighting are ${list(top)}.${
-        recurring.length ? ` ${recurring.length} of the top five could become recurring channels rather than occasional referral sources.` : ""
+        recurring.length
+          ? ` ${recurring.length === Math.min(5, ranked.length) ? "All of the top five" : `${recurring.length} of the top five`} could become recurring channels rather than occasional referral sources.`
+          : ""
       }`,
     );
   }

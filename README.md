@@ -4,6 +4,11 @@
 
 A Next.js application that maps the organisations surrounding a business's customers: upstream referral sources, complementary providers, downstream relationships, shared-audience partners, and commercial distribution channels. It explains *why* each relationship works through concrete trigger events, ranks opportunities with a transparent weighted model, and (as a paid feature) researches real organisations through official APIs, recording where every fact came from.
 
+> **Private beta:** see [`docs/beta/implementation-report.md`](docs/beta/implementation-report.md) for current status,
+> [`docs/beta/deployment.md`](docs/beta/deployment.md) for the Vercel + Supabase + Stripe test-mode setup,
+> [`docs/beta/data-licensing.md`](docs/beta/data-licensing.md) for why paid company research is disabled, and
+> [`docs/beta/sample-ecosystems.md`](docs/beta/sample-ecosystems.md) for the commercial-usefulness evaluation.
+
 ---
 
 ## 1. Architecture overview

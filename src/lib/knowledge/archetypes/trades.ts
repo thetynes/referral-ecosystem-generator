@@ -3,10 +3,11 @@ import type { Archetype } from "../types";
 export const homeTrades: Archetype = {
   id: "home-trades",
   label: "Home services & skilled trades",
+  family: "contractors",
   keywords: [
     "plumbing", "plumber", "hvac", "heating and cooling", "furnace", "air conditioning", "roofing", "roofer",
-    "electrician", "electrical contractor", "renovation", "remodeling", "remodelling", "handyman", "painting contractor",
-    "flooring", "windows and doors", "insulation", "heat pump", "kitchen renovation", "bathroom renovation",
+    "electrician", "electrical contractor", "handyman", "painting contractor",
+    "flooring", "windows and doors", "insulation", "heat pump",
   ],
   weakKeywords: ["contractor", "home services", "repair", "installation", "homeowners", "residential"],
   assumptions: [

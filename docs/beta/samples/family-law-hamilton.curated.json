@@ -1,0 +1,915 @@
+{
+  "id": "c8216621-195e-4743-9d19-298bbd35bab7",
+  "createdAt": "2026-11-23T23:15:15.810Z",
+  "isDemo": false,
+  "profile": {
+    "displayName": "Sample Family Law (illustrative)",
+    "website": null,
+    "industry": "Family law firm",
+    "services": [
+      "Separation agreements",
+      "parenting",
+      "support",
+      "property division",
+      "mediation support"
+    ],
+    "serviceArea": "Hamilton, Ontario",
+    "geography": {
+      "country": "CA",
+      "region": "Ontario",
+      "scope": "local"
+    },
+    "idealCustomer": "Separating spouses and parents",
+    "customerSegments": [
+      "Separating spouses",
+      "parents"
+    ],
+    "projectValue": null,
+    "targetIndustries": [],
+    "growthPriority": null,
+    "existingReferrals": [],
+    "expansionMarkets": []
+  },
+  "engine": {
+    "mode": "knowledge_base",
+    "provider": null,
+    "model": null,
+    "archetypeId": "family-law",
+    "archetypeLabel": "Family law",
+    "matchConfidence": "high",
+    "notes": [],
+    "version": "1.0.0",
+    "costUsd": null
+  },
+  "categories": [
+    {
+      "id": "spousal-buyout-brokers",
+      "name": "Mortgage brokers (spousal buyouts & refinancing)",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "When one spouse wants to keep the home, they must refinance to buy the other out, and lenders generally require a signed separation agreement before funding. Brokers meet separating clients early and need the legal side done properly and promptly.",
+      "rationale": "The broker's file cannot close until the separation agreement exists, so they actively need a responsive family lawyer. Clients also come to lawyers needing financing advice, so referrals run both ways.",
+      "triggers": [
+        {
+          "event": "A separating client asks a broker whether they can keep the home",
+          "whyNeed": "A separation agreement must be negotiated and signed before refinancing",
+          "whoRecognizes": "Mortgage broker",
+          "referralMoment": "At the first financing conversation",
+          "partnerValue": "The broker's file can close"
+        },
+        {
+          "event": "Your client needs to know whether they can afford to keep the home",
+          "whyNeed": "A financing pre-assessment informs the negotiation",
+          "whoRecognizes": "You",
+          "referralMoment": "Early in negotiations",
+          "partnerValue": "A qualified financing client for the broker"
+        }
+      ],
+      "mutualValue": "Brokers close refinances; you receive clients who need agreements. Your clients make better-informed settlement decisions.",
+      "approach": "Meet two or three brokers who handle spousal buyouts and agree on what each needs from the other and on timelines. Co-author a one-page 'keeping the home after separation' explainer.",
+      "decisionMaker": "Mortgage broker",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Mortgage brokers are regulated too. Referral relationships for lawyers and paralegals are regulated by the law society. Paying or receiving anything of value from non-licensees for referrals is generally prohibited, and licensee-to-licensee referral fees carry conditions such as client disclosure and limits. Build these relationships on expertise and reciprocity, and verify against current rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "mortgage broker"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "eap-legal-panels",
+      "name": "Employee Assistance Program (EAP) legal-advice services",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Many employer EAPs include short legal consultations and refer callers to panel lawyers. Family matters are among the most common reasons employees use these services.",
+      "rationale": "This is an established, recurring intake channel that many family lawyers never look into. Panel terms vary, so evaluate them carefully.",
+      "triggers": [
+        {
+          "event": "An employee calls their EAP about separation",
+          "whyNeed": "They receive a short consultation and need ongoing counsel",
+          "whoRecognizes": "EAP intake",
+          "referralMoment": "After the initial consultation",
+          "partnerValue": "The EAP delivers on its benefit promise"
+        }
+      ],
+      "mutualValue": "EAPs need responsive, qualified panel lawyers; you gain a steady flow of consultations.",
+      "approach": "Identify the major EAP providers serving employers in your area and ask how to join their legal panels. Review the fee terms against law society rules.",
+      "decisionMaker": "EAP provider's legal-network manager",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Law societies regulate participation in referral services and fee arrangements. Confirm that the panel's terms comply. Referral relationships for lawyers and paralegals are regulated by the law society. Paying or receiving anything of value from non-licensees for referrals is generally prohibited, and licensee-to-licensee referral fees carry conditions such as client disclosure and limits. Build these relationships on expertise and reciprocity, and verify against current rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Encounters customers who need you routinely; it is built into their workflow.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Strong potential for a recurring commercial channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "This partner type is not tied to one location, so partners outside your area can still send relevant work.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "employee assistance program provider"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "valuators-forensic",
+      "name": "Business valuators & forensic accountants",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "When a spouse owns a business or has variable self-employment income, valuation and income determination become central to property division and support.",
+      "rationale": "High-asset matters depend on these experts, and they are asked by business-owner clients and their accountants which family lawyer to hire.",
+      "triggers": [
+        {
+          "event": "A separating spouse owns a business",
+          "whyNeed": "Valuation and income analysis are required",
+          "whoRecognizes": "Valuator or the client's accountant",
+          "referralMoment": "Early in the matter",
+          "partnerValue": "A well-instructed engagement"
+        }
+      ],
+      "mutualValue": "Experts receive well-instructed retainers; you receive complex matters.",
+      "approach": "Co-present to accountants on business owners going through separation.",
+      "decisionMaker": "Chartered business valuator or forensic accountant",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "chartered business valuator",
+        "forensic accountant"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "criminal-defence-family",
+      "name": "Criminal defence lawyers",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Domestic charges often come with bail conditions, such as no-contact orders, that immediately affect parenting time and the matrimonial home. The family and criminal matters must be coordinated.",
+      "rationale": "This intersection is urgent and high-stakes, and coordination failures harm clients.",
+      "triggers": [
+        {
+          "event": "A client is charged and released with no-contact conditions",
+          "whyNeed": "Parenting arrangements and the home must be addressed in family court",
+          "whoRecognizes": "Defence lawyer",
+          "referralMoment": "Immediately after release",
+          "partnerValue": "Coordinated strategy"
+        }
+      ],
+      "mutualValue": "Coordinated representation and reciprocal referrals.",
+      "approach": "Agree on a quick-consult protocol and share guidance on how bail conditions interact with family proceedings.",
+      "decisionMaker": "Criminal defence lawyer",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Referral relationships for lawyers and paralegals are regulated by the law society. Paying or receiving anything of value from non-licensees for referrals is generally prohibited, and licensee-to-licensee referral fees carry conditions such as client disclosure and limits. Build these relationships on expertise and reciprocity, and verify against current rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "criminal defence lawyer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "immigration-family",
+      "name": "Immigration lawyers & licensed consultants",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Separation affects sponsored spouses, sponsorship undertakings, and children's status, and relocation disputes can involve international moves.",
+      "rationale": "Status questions can dominate a family matter, and neither practice can answer the other's questions.",
+      "triggers": [
+        {
+          "event": "A sponsored spouse separates",
+          "whyNeed": "Status and the sponsor's ongoing obligations must be reviewed",
+          "whoRecognizes": "Either lawyer",
+          "referralMoment": "At the first consultation",
+          "partnerValue": "Complete advice"
+        }
+      ],
+      "mutualValue": "Reciprocal referrals.",
+      "approach": "Co-author a short guide on separation and immigration status.",
+      "decisionMaker": "Immigration lawyer",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Referral relationships for lawyers and paralegals are regulated by the law society. Paying or receiving anything of value from non-licensees for referrals is generally prohibited, and licensee-to-licensee referral fees carry conditions such as client disclosure and limits. Build these relationships on expertise and reciprocity, and verify against current rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "immigration lawyer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "counsellors-family",
+      "name": "Family therapists & individual counsellors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Many people see a counsellor before deciding to separate and ask them for a lawyer who will not escalate conflict.",
+      "rationale": "Counsellors meet clients first and value lawyers with a constructive approach.",
+      "triggers": [
+        {
+          "event": "A client decides to separate during counselling",
+          "whyNeed": "They need legal information",
+          "whoRecognizes": "Counsellor",
+          "referralMoment": "When separation becomes likely",
+          "partnerValue": "Less conflict for their client"
+        }
+      ],
+      "mutualValue": "Counsellors gain a constructive lawyer to suggest; you meet clients early.",
+      "approach": "Offer counsellors a plain-language session on what separating clients should know legally.",
+      "decisionMaker": "Registered psychotherapist or social worker",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Counsellors' professional rules generally prohibit referral fees and require neutrality.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "family therapist",
+        "counselling services"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "mediators-family",
+      "name": "Family mediators",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Mediated agreements require independent legal advice (ILA), and mediators recommend lawyers who support settlement.",
+      "rationale": "ILA is a recurring, well-defined service, and mediators refer to settlement-oriented lawyers.",
+      "triggers": [
+        {
+          "event": "A mediated agreement is drafted",
+          "whyNeed": "Each party needs independent legal advice",
+          "whoRecognizes": "Mediator",
+          "referralMoment": "Before signing",
+          "partnerValue": "Agreements are signed and hold up"
+        }
+      ],
+      "mutualValue": "Mediators' agreements are finalised; you gain ILA and drafting work. You can refer clients to mediation.",
+      "approach": "Offer fixed-fee ILA with a clear turnaround for mediators' clients.",
+      "decisionMaker": "Family mediator",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "family mediator"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "estate-planners-family",
+      "name": "Estate-planning lawyers & insurance advisors",
+      "relationshipType": "downstream",
+      "direction": "outbound",
+      "channelType": "occasional",
+      "opportunity": "Separation and divorce can change how existing wills, powers of attorney, and beneficiary designations work, and support orders often require life insurance as security.",
+      "rationale": "Every concluded matter creates follow-on work you can refer out. This builds reciprocity with practices that see family issues first.",
+      "triggers": [
+        {
+          "event": "A separation agreement or order is finalised",
+          "whyNeed": "Wills, beneficiaries, and insurance securing support must be updated",
+          "whoRecognizes": "You",
+          "referralMoment": "At file closing",
+          "partnerValue": "A ready, warm client for the estate or insurance professional"
+        }
+      ],
+      "mutualValue": "Your clients are protected; estate and insurance professionals reciprocate with family-law referrals.",
+      "approach": "Add an 'after your agreement' checklist to every closing letter and name trusted estate and insurance professionals.",
+      "decisionMaker": "Estate-planning lawyer or life-insurance advisor",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Referral relationships for lawyers and paralegals are regulated by the law society. Paying or receiving anything of value from non-licensees for referrals is generally prohibited, and licensee-to-licensee referral fees carry conditions such as client disclosure and limits. Build these relationships on expertise and reciprocity, and verify against current rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 3,
+          "rationale": "Moderate overlap with your core services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 5,
+          "rationale": "Decision-makers are easy to meet and talk to.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 5,
+          "rationale": "Easy to start with a single conversation.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "estate planning lawyer",
+        "life insurance advisor"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "divorce-financial",
+      "name": "Financial planners & divorce financial specialists",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Separating clients need budgets, pension and tax analysis, and post-separation planning, and planners see clients considering separation.",
+      "rationale": "Better financial analysis leads to better settlements, and planners can refer clients early.",
+      "triggers": [
+        {
+          "event": "A client discloses a separation to their planner",
+          "whyNeed": "They need legal advice and a financial plan",
+          "whoRecognizes": "Planner",
+          "referralMoment": "At disclosure",
+          "partnerValue": "Coordinated advice"
+        }
+      ],
+      "mutualValue": "Coordinated, reciprocal advice.",
+      "approach": "Co-host a 'financial side of separation' session.",
+      "decisionMaker": "Financial planner (some hold divorce-specific designations)",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Advisors' referral arrangements may require disclosure. Referral relationships for lawyers and paralegals are regulated by the law society. Paying or receiving anything of value from non-licensees for referrals is generally prohibited, and licensee-to-licensee referral fees carry conditions such as client disclosure and limits. Build these relationships on expertise and reciprocity, and verify against current rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "financial planner"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "realtors-separation",
+      "name": "Realtors handling separation sales",
+      "relationshipType": "shared_audience",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Selling a matrimonial home requires both spouses' cooperation, and agents who handle these sales well are asked for family-lawyer names.",
+      "rationale": "Agents see separating couples at a decision point.",
+      "triggers": [
+        {
+          "event": "Separating spouses list their home",
+          "whyNeed": "The sale needs to align with the separation agreement",
+          "whoRecognizes": "Realtor",
+          "referralMoment": "At listing",
+          "partnerValue": "A smoother sale"
+        }
+      ],
+      "mutualValue": "Reciprocal referrals.",
+      "approach": "Share a short guide on selling a home during separation.",
+      "decisionMaker": "Realtor experienced with separation sales",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Real estate referral-fee rules apply. Referral relationships for lawyers and paralegals are regulated by the law society. Paying or receiving anything of value from non-licensees for referrals is generally prohibited, and licensee-to-licensee referral fees carry conditions such as client disclosure and limits. Build these relationships on expertise and reciprocity, and verify against current rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 3,
+          "rationale": "Moderate overlap with your core services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "real estate agent"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "community-family-services",
+      "name": "Community agencies & family-violence services",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Agencies supporting families and survivors of violence need lawyers who accept legal aid or provide pro bono summary advice.",
+      "rationale": "Mission-driven relationships built on contribution, not referral requests.",
+      "triggers": [
+        {
+          "event": "A client needs urgent legal advice about safety and children",
+          "whyNeed": "Legal help is required quickly",
+          "whoRecognizes": "Agency staff",
+          "referralMoment": "During crisis support",
+          "partnerValue": "Clients get safe, qualified help"
+        }
+      ],
+      "mutualValue": "Agencies gain reliable legal resources; you build community trust.",
+      "approach": "Offer pro bono clinics or accept legal aid certificates where appropriate.",
+      "decisionMaker": "Agency program coordinator",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 2,
+          "rationale": "Referred work tends to be below your typical engagement value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "family services agency"
+      ],
+      "existingRelationship": false
+    }
+  ],
+  "assumptions": [
+    "People rarely start with a family lawyer. They start with a counsellor, a mortgage broker, an accountant, an EAP, or a friend. The professionals who see the separation first shape who gets called.",
+    "Family law has strong reciprocal intersections with criminal, immigration, estate, and tax matters. Lawyers in those areas meet family-law clients at urgent moments.",
+    "No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing."
+  ],
+  "guardrails": [
+    {
+      "title": "Referral compensation",
+      "body": "Referral relationships for lawyers and paralegals are regulated by the law society. Paying or receiving anything of value from non-licensees for referrals is generally prohibited, and licensee-to-licensee referral fees carry conditions such as client disclosure and limits. Build these relationships on expertise and reciprocity, and verify against current rules."
+    },
+    {
+      "title": "Partnerships are not paid-referral arrangements",
+      "body": "This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals."
+    },
+    {
+      "title": "Outreach in Canada: CASL applies",
+      "body": "Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA)."
+    },
+    {
+      "title": "No automated outreach",
+      "body": "This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline."
+    }
+  ]
+}

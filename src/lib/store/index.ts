@@ -9,7 +9,7 @@ import path from "node:path";
 import { createHash } from "node:crypto";
 import { config } from "../config";
 
-export type Namespace = "analyses" | "entitlements" | "ai_cache" | "discovery" | "checkout";
+export type Namespace = "analyses" | "entitlements" | "ai_cache" | "ai_budget" | "discovery" | "checkout";
 
 export interface KVStore {
   get<T>(ns: Namespace, key: string): Promise<T | null>;
@@ -120,13 +120,42 @@ export class PostgresStore implements KVStore {
 }
 
 let instance: KVStore | null = null;
+let pool: SqlPool | null | undefined;
+
+/** Strip sslmode from the URL so our explicit TLS settings apply (pg lets URL params override config). */
+export function poolOptions(databaseUrl: string) {
+  const url = new URL(databaseUrl);
+  url.searchParams.delete("sslmode");
+  const ca = process.env.DATABASE_CA_CERT?.replace(/\\n/g, "\n");
+  const ssl =
+    process.env.DATABASE_SSL === "disable"
+      ? false
+      : ca
+        ? { ca, rejectUnauthorized: true }
+        : // Supabase's pooler presents its own CA; supply DATABASE_CA_CERT to enable full verification.
+          { rejectUnauthorized: false };
+  return { connectionString: url.toString(), ssl, max: 3, idleTimeoutMillis: 10_000 };
+}
+
+/** Shared Postgres pool when the postgres driver is configured (used by analytics too). */
+export async function getSqlPool(): Promise<SqlPool | null> {
+  if (pool !== undefined) return pool;
+  const { store } = config();
+  if (store.driver === "postgres" && store.databaseUrl) {
+    const { Pool } = await import("pg");
+    pool = new Pool(poolOptions(store.databaseUrl));
+  } else {
+    pool = null;
+  }
+  return pool;
+}
 
 export async function getStore(): Promise<KVStore> {
   if (instance) return instance;
   const { store } = config();
-  if (store.driver === "postgres" && store.databaseUrl) {
-    const { Pool } = await import("pg");
-    instance = new PostgresStore(new Pool({ connectionString: store.databaseUrl, max: 3 }));
+  const sql = await getSqlPool();
+  if (sql) {
+    instance = new PostgresStore(sql);
   } else if (store.driver === "file") {
     instance = new FileStore(path.resolve(store.dataDir));
   } else {
@@ -135,6 +164,7 @@ export async function getStore(): Promise<KVStore> {
   return instance;
 }
 
-export function setStoreForTesting(store: KVStore | null) {
+export function setStoreForTesting(store: KVStore | null, sqlPool?: SqlPool | null) {
   instance = store;
+  pool = sqlPool === undefined ? null : sqlPool;
 }

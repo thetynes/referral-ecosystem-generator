@@ -105,11 +105,11 @@ export function OrganizationsPanel({
           <div className="mt-3">
             {isDemo ? (
               <p className="text-[12px] text-ink-3">Not available for the illustrative example. Generate your own ecosystem first.</p>
-            ) : !caps.discoveryProvider ? (
-              <p className="flex gap-2 rounded-md bg-subtle px-3 py-2 text-[12px] text-ink-3">
+            ) : !caps.researchAvailable ? (
+              <p className="flex gap-2 rounded-md bg-subtle px-3 py-2 text-[12px] text-ink-3" data-testid="research-unavailable">
                 <Info className="mt-0.5 size-3.5 shrink-0" />
-                Requires configuration: no business-search provider (Google Places or Brave Search) is set up on this deployment. Use
-                CSV import instead.
+                Not available yet. We are confirming data-licensing permissions before researching and storing company information. Use
+                CSV import to add organisations you already know.
               </p>
             ) : !entitled ? (
               <p className="flex items-center gap-2 text-[12px] text-ink-3">

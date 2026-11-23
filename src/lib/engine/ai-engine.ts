@@ -10,7 +10,7 @@
 import { z } from "zod";
 import type { BusinessProfile, CriterionKey, CriterionRating, PartnerCategory } from "../schema";
 import { CRITERIA, RELATIONSHIP_TYPES } from "../schema";
-import { generateWithRetry, type LLMProvider } from "../llm";
+import { generateWithRetry, type LLMProvider, type TokenUsage } from "../llm";
 import { isExistingRelationshipName } from "./kb-engine";
 
 /* ---------- LLM-facing schemas (no length constraints; validated/clamped afterwards) ---------- */
@@ -45,6 +45,8 @@ const CategoryAnalysisSchema = z.object({
   ),
   mutualValue: z.string(),
   approach: z.string(),
+  decisionMaker: z.string(),
+  overlooked: z.boolean(),
   collaborationFormats: z.array(z.string()),
   digitalAuthority: z.array(z.string()),
   regulatoryNote: z.string(),
@@ -99,14 +101,18 @@ export async function runAiPipeline(
   provider: LLMProvider,
   profile: BusinessProfile,
   referenceCategoryNames: string[],
+  opts: { onUsage?: (u: TokenUsage) => void; maxOutputTokens?: number; batchSize?: number } = {},
 ): Promise<AiPipelineResult> {
   const business = describeBusiness(profile);
+  const { onUsage } = opts;
+  const maxOut = opts.maxOutputTokens ?? 16000;
 
   // Stage 2 — candidate partner categories
   const stage2 = await generateWithRetry(provider, {
     system: SYSTEM,
     schemaName: "partner_candidates",
-    maxTokens: 8000,
+    maxTokens: Math.min(8000, maxOut),
+    onUsage,
     schema: CandidatesResponseSchema,
     prompt: `<business_description>
 ${business}
@@ -122,14 +128,17 @@ Cover all five relationship types (upstream, complementary, downstream, shared_a
 
   // Stage 3 — relationship & trigger analysis, batched
   const batches: (typeof candidates)[] = [];
-  for (let i = 0; i < candidates.length; i += 5) batches.push(candidates.slice(i, i + 5));
+  // Smaller batches run in parallel: lower wall-clock latency at the same total token cost.
+  const size = Math.max(2, Math.min(8, opts.batchSize ?? 4));
+  for (let i = 0; i < candidates.length; i += size) batches.push(candidates.slice(i, i + size));
 
   const analysed = await Promise.all(
     batches.map((batch) =>
       generateWithRetry(provider, {
         system: SYSTEM,
         schemaName: "partner_analysis",
-        maxTokens: 16000,
+        maxTokens: maxOut,
+        onUsage,
         schema: AnalysisBatchResponseSchema,
         prompt: `<business_description>
 ${business}
@@ -144,6 +153,8 @@ For each category provide:
 - triggers: 2-3 specific trigger events.
 - mutualValue: why the partner would want this relationship. Avoid one-sided requests for referrals.
 - approach: a practical first step to start the relationship.
+- decisionMaker: the specific role at the partner organisation who decides whether a referral happens (a job title, not a person's name).
+- overlooked: true only if most businesses in this industry would not think of this relationship.
 - collaborationFormats: 0-4 concrete formats (workshops, co-authored resources, webinars, newsletter features, etc.).
 - digitalAuthority: 0-2 legitimate editorial or co-marketing ideas, or none if not relevant.
 - regulatoryNote: constraints on referral compensation or solicitation, or an empty string.
@@ -184,6 +195,8 @@ For each category provide:
         triggers,
         mutualValue: cut(a.mutualValue, 600),
         approach: cut(a.approach, 700),
+        decisionMaker: a.decisionMaker.trim() ? cut(a.decisionMaker.trim(), 240) : null,
+        overlooked: Boolean(a.overlooked),
         collaborationFormats: a.collaborationFormats.slice(0, 6).map((f) => cut(f, 160)),
         digitalAuthority: a.digitalAuthority.slice(0, 3).map((f) => cut(f, 240)),
         regulatoryNote: a.regulatoryNote.trim() ? cut(a.regulatoryNote.trim(), 600) : null,

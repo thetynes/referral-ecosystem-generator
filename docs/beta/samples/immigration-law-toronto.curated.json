@@ -1,0 +1,1363 @@
+{
+  "id": "df18df67-80d8-4697-b036-b5f3eafca18b",
+  "createdAt": "2026-11-23T23:20:04.347Z",
+  "isDemo": false,
+  "profile": {
+    "displayName": "Sample Immigration Law (illustrative)",
+    "website": null,
+    "industry": "Immigration law firm",
+    "services": [
+      "Work permits",
+      "LMIA",
+      "spousal sponsorship",
+      "permanent residence",
+      "refusals",
+      "judicial review",
+      "inadmissibility"
+    ],
+    "serviceArea": "Toronto, Ontario",
+    "geography": {
+      "country": "CA",
+      "region": "Ontario",
+      "scope": "local"
+    },
+    "idealCustomer": "Individuals and families, employers hiring foreign workers, international students, foreign nationals",
+    "customerSegments": [
+      "Individuals",
+      "families",
+      "employers hiring foreign workers",
+      "international students",
+      "foreign nationals"
+    ],
+    "projectValue": null,
+    "targetIndustries": [],
+    "growthPriority": null,
+    "existingReferrals": [],
+    "expansionMarkets": []
+  },
+  "engine": {
+    "mode": "knowledge_base",
+    "provider": null,
+    "model": null,
+    "archetypeId": "immigration-law",
+    "archetypeLabel": "Immigration law",
+    "matchConfidence": "high",
+    "notes": [],
+    "version": "1.0.0",
+    "costUsd": null
+  },
+  "categories": [
+    {
+      "id": "employers-hr",
+      "name": "Employers & HR departments hiring foreign talent",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Employers hiring or retaining foreign nationals need work permits, labour-market assessments, permit extensions, and permanent-residence support for key staff.",
+      "rationale": "One employer relationship can produce many matters over several years, and the employer often pays. Matters recur as permits expire.",
+      "triggers": [
+        {
+          "event": "An offer is extended to a candidate who needs a work permit",
+          "whyNeed": "Authorisation and timing must be secured before the start date",
+          "whoRecognizes": "HR manager or talent acquisition lead",
+          "referralMoment": "As soon as the hiring decision is made, before the offer date is fixed",
+          "partnerValue": "Avoids failed hires and start-date slippage"
+        },
+        {
+          "event": "A valued employee's work permit or post-graduation permit approaches expiry",
+          "whyNeed": "Without a new authorisation or a PR pathway, the employee must stop working",
+          "whoRecognizes": "HR or the employee's manager",
+          "referralMoment": "6–12 months before expiry",
+          "partnerValue": "Retains staff they have already trained"
+        }
+      ],
+      "mutualValue": "HR teams gain predictable timelines and compliance confidence; you gain recurring corporate matters.",
+      "approach": "Offer a short briefing for HR teams on permit timelines and employer compliance obligations. Follow up with a simple intake checklist they can use whenever they hire internationally.",
+      "decisionMaker": "HR manager / talent-acquisition lead",
+      "overlooked": false,
+      "collaborationFormats": [
+        "HR briefing or webinar",
+        "Employer compliance checklist"
+      ],
+      "digitalAuthority": [
+        "Publish an employer-focused guide to hiring international graduates and pitch it to HR association newsletters."
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Encounters customers who need you routinely; it is built into their workflow.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Strong potential for a recurring commercial channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "This partner type is not tied to one location, so partners outside your area can still send relevant work.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "companies hiring international workers",
+        "HR consulting firm"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "recruitment-agencies",
+      "name": "International recruitment & staffing agencies",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Recruiters who place foreign candidates encounter immigration questions before the employer or candidate has engaged counsel.",
+      "rationale": "Recruiters see demand early and in volume, but placements fail if immigration steps are mishandled.",
+      "triggers": [
+        {
+          "event": "A recruiter shortlists a candidate living abroad",
+          "whyNeed": "The candidate needs a work authorisation pathway that fits the role",
+          "whoRecognizes": "Recruiter",
+          "referralMoment": "At shortlisting, before the offer",
+          "partnerValue": "Fewer failed placements and faster fee collection"
+        }
+      ],
+      "mutualValue": "Recruiters protect their placement fees; you gain matters from employers and candidates.",
+      "approach": "Work only with recruiters who are properly licensed where required. In Ontario, recruiters of foreign nationals must hold a licence. Offer recruiters a quick eligibility pre-screen process they can explain to clients.",
+      "decisionMaker": "Recruitment agency owner or account manager",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Recruiters must not charge prohibited fees to foreign workers. Avoid any arrangement where you pay for referrals. Lawyers' referral relationships are regulated. Most jurisdictions prohibit paying or receiving anything of value from non-lawyers for referrals. Where licensee-to-licensee referral fees are allowed, they come with conditions such as client disclosure and fee limits. Build these relationships on reciprocity and expertise. Verify against your law society or bar's current rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Encounters customers who need you routinely; it is built into their workflow.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "This partner type is not tied to one location, so partners outside your area can still send relevant work.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "international recruitment agency",
+        "staffing agency foreign workers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "criminal-defence",
+      "name": "Criminal defence lawyers",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "When a non-citizen is charged, plea and sentencing decisions can have severe immigration consequences. Defence counsel need immigration advice before resolving the case.",
+      "rationale": "This is a high-stakes, time-sensitive intersection. In Canada, for example, a sentence of six months or more can remove a permanent resident's right to appeal removal. Defence lawyers who understand this need an immigration lawyer they can call quickly.",
+      "triggers": [
+        {
+          "event": "A non-citizen client is charged with an offence",
+          "whyNeed": "The outcome may trigger inadmissibility or removal",
+          "whoRecognizes": "Defence lawyer",
+          "referralMoment": "Before any plea or joint sentencing submission",
+          "partnerValue": "Protects the client and reduces risk of a later plea challenge"
+        },
+        {
+          "event": "You learn an immigration client has pending charges",
+          "whyNeed": "The criminal matter must be handled with immigration consequences in mind",
+          "whoRecognizes": "You",
+          "referralMoment": "Immediately",
+          "partnerValue": "A well-briefed criminal referral"
+        }
+      ],
+      "mutualValue": "Defence counsel get fast, specific immigration advice; you get urgent, high-value matters. Referrals flow both ways.",
+      "approach": "Offer a concise CPD-style session for defence lawyers on immigration consequences of pleas, and a fast consultation line for urgent questions.",
+      "decisionMaker": "Criminal defence lawyer",
+      "overlooked": true,
+      "collaborationFormats": [
+        "CPD presentation",
+        "Rapid-consult arrangement"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": "Lawyers' referral relationships are regulated. Most jurisdictions prohibit paying or receiving anything of value from non-lawyers for referrals. Where licensee-to-licensee referral fees are allowed, they come with conditions such as client disclosure and fee limits. Build these relationships on reciprocity and expertise. Verify against your law society or bar's current rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "criminal defence lawyer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "family-lawyers",
+      "name": "Family lawyers",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Separation, divorce, and custody disputes often involve spouses or children whose status depends on sponsorship. Sponsorship undertakings also continue after separation.",
+      "rationale": "Family lawyers routinely meet clients whose immigration status is affected, but rarely practise immigration law.",
+      "triggers": [
+        {
+          "event": "A sponsored spouse separates from the sponsor",
+          "whyNeed": "Status, sponsorship obligations, and pathways must be reviewed",
+          "whoRecognizes": "Family lawyer",
+          "referralMoment": "At the first family-law consultation",
+          "partnerValue": "More complete advice for their client"
+        },
+        {
+          "event": "A custody dispute involves relocation to or from another country",
+          "whyNeed": "Children's status and travel documents become central",
+          "whoRecognizes": "Family lawyer",
+          "referralMoment": "Before relocation terms are negotiated",
+          "partnerValue": "Avoids orders that conflict with immigration law"
+        }
+      ],
+      "mutualValue": "Each practice resolves a gap in the other's advice; referrals are reciprocal.",
+      "approach": "Propose a non-exclusive reciprocal referral relationship and co-present on immigration issues in family breakdown.",
+      "decisionMaker": "Family lawyer",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Lawyers' referral relationships are regulated. Most jurisdictions prohibit paying or receiving anything of value from non-lawyers for referrals. Where licensee-to-licensee referral fees are allowed, they come with conditions such as client disclosure and fee limits. Build these relationships on reciprocity and expertise. Verify against your law society or bar's current rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "family lawyer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "rcic-consultants",
+      "name": "Licensed immigration consultants (RCICs)",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Consultants handle applications but cannot represent clients in Federal Court. Refusals that need judicial review, complex inadmissibility, and litigation are natural handoffs to a lawyer.",
+      "rationale": "Consultants see many refusals first, and judicial review deadlines are short (often 15 days for decisions made in Canada). That creates urgent, well-defined referrals.",
+      "triggers": [
+        {
+          "event": "A client's application is refused",
+          "whyNeed": "Judicial review may be the only remedy, and the filing deadline is short",
+          "whoRecognizes": "Consultant",
+          "referralMoment": "Immediately after the refusal",
+          "partnerValue": "They keep the client relationship while the litigation is handled"
+        }
+      ],
+      "mutualValue": "Consultants can offer clients a litigation pathway without losing them; you gain urgent litigation matters. You can refer straightforward application work back.",
+      "approach": "Agree in writing how clients move between practices and back. Partner only with consultants in good standing with the regulator.",
+      "decisionMaker": "Licensed immigration consultant (RCIC)",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Consultants are regulated by the College of Immigration and Citizenship Consultants. Lawyers' referral relationships are regulated. Most jurisdictions prohibit paying or receiving anything of value from non-lawyers for referrals. Where licensee-to-licensee referral fees are allowed, they come with conditions such as client disclosure and fee limits. Build these relationships on reciprocity and expertise. Verify against your law society or bar's current rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Encounters customers who need you routinely; it is built into their workflow.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 3,
+          "rationale": "This partner type is not tied to one location, so partners outside your area can still send relevant work.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "regulated Canadian immigration consultant"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "universities-colleges",
+      "name": "University & college international offices",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "International students face study-permit, post-graduation work permit, and permanent-residence questions. Schools usually have in-house advisors who handle routine matters but lack capacity for complex ones.",
+      "rationale": "The audience is large and renews every year, but institutions often have neutrality policies and will not endorse individual firms. Education is the realistic entry point.",
+      "triggers": [
+        {
+          "event": "A student's study permit or status lapses",
+          "whyNeed": "Restoration or a new authorisation is needed under deadline",
+          "whoRecognizes": "International student advisor",
+          "referralMoment": "When the issue exceeds the advisor's scope",
+          "partnerValue": "A trusted resource for complex cases"
+        },
+        {
+          "event": "Graduation approaches",
+          "whyNeed": "Post-graduation work permit and permanent-residence planning begins",
+          "whoRecognizes": "Career services or student associations",
+          "referralMoment": "In the final semester",
+          "partnerValue": "Better graduate outcomes"
+        }
+      ],
+      "mutualValue": "Schools gain expert, accurate information sessions for students; you gain visibility with a renewing audience.",
+      "approach": "Offer free educational sessions through student associations, career services, or alumni offices rather than asking for referrals. Expect to be one of several resources listed.",
+      "decisionMaker": "International student advisor / career services lead",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Free information sessions",
+        "Plain-language guides for students",
+        "Alumni webinars"
+      ],
+      "digitalAuthority": [
+        "Contribute an accurate, regularly updated post-graduation work permit guide that student associations can link to."
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 2,
+          "rationale": "Institutional neutrality policies usually prevent direct endorsements.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 2,
+          "rationale": "Difficult to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "university international student office",
+        "college international centre"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "settlement-agencies",
+      "name": "Settlement agencies & newcomer non-profits",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Settlement organisations serve newcomers with free programmes and frequently meet clients whose legal issues exceed what they can provide.",
+      "rationale": "These organisations reach many people, but they are publicly funded, mission-driven, and must stay neutral. Pro bono contribution builds trust, while referral expectations do not.",
+      "triggers": [
+        {
+          "event": "A newcomer seeks settlement help and discloses a status problem",
+          "whyNeed": "The issue requires legal advice",
+          "whoRecognizes": "Settlement worker",
+          "referralMoment": "When the issue goes beyond their mandate",
+          "partnerValue": "Clients receive qualified help"
+        }
+      ],
+      "mutualValue": "They gain expert workshops and pro bono capacity; you gain community trust and visibility.",
+      "approach": "Offer pro bono clinics or workshops. Do not ask for referrals in exchange.",
+      "decisionMaker": "Settlement program manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Pro bono legal clinics",
+        "Workshops in community languages"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 2,
+          "rationale": "Referred work tends to be below your typical engagement value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "newcomer settlement services",
+        "immigrant services organization"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "global-mobility",
+      "name": "Corporate relocation & global mobility firms",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Relocation companies manage employee moves for corporations and need immigration counsel to coordinate permits with housing, schooling, and start dates.",
+      "rationale": "This is a professional, recurring channel that bundles many transferees per corporate client.",
+      "triggers": [
+        {
+          "event": "A corporation initiates an intra-company transfer",
+          "whyNeed": "Work authorisation must align with the relocation timeline",
+          "whoRecognizes": "Relocation consultant",
+          "referralMoment": "At relocation kickoff",
+          "partnerValue": "Their move timeline depends on the permit"
+        }
+      ],
+      "mutualValue": "Relocation firms deliver smoother moves; you gain corporate volume.",
+      "approach": "Position yourself as a responsive immigration partner with clear service-level commitments and reporting suited to corporate clients.",
+      "decisionMaker": "Relocation / global mobility consultant",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Strong potential for a recurring commercial channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 3,
+          "rationale": "This partner type is not tied to one location, so partners outside your area can still send relevant work.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "corporate relocation company",
+        "global mobility services"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "cross-border-accountants",
+      "name": "Accountants & cross-border tax advisors",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Tax advisors see clients planning to move in or out of the country, business owners hiring abroad, and investors whose plans depend on immigration status.",
+      "rationale": "Tax and immigration questions arrive together in relocation and investment decisions.",
+      "triggers": [
+        {
+          "event": "A client plans to relocate or establish residency",
+          "whyNeed": "Status and tax residency must be planned together",
+          "whoRecognizes": "Cross-border accountant",
+          "referralMoment": "During relocation planning",
+          "partnerValue": "More complete advice for their client"
+        }
+      ],
+      "mutualValue": "Both advisors offer more complete planning; referrals flow both ways.",
+      "approach": "Co-host a session for newcomers or relocating professionals on immigration and tax planning.",
+      "decisionMaker": "Cross-border tax accountant",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Joint seminar",
+        "Co-authored relocation checklist"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "cross-border tax accountant",
+        "accountant for newcomers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "newcomer-realtors-mortgage",
+      "name": "Realtors & mortgage brokers serving newcomers",
+      "relationshipType": "shared_audience",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Newcomers buying homes run into status-dependent questions such as eligibility, foreign-buyer restrictions, and how permit expiry affects a mortgage.",
+      "rationale": "These professionals meet the same clients at a major life decision and need accurate status information to close deals.",
+      "triggers": [
+        {
+          "event": "A work-permit holder applies for a mortgage",
+          "whyNeed": "Lenders want clarity on status and the permanent-residence timeline",
+          "whoRecognizes": "Mortgage broker",
+          "referralMoment": "During pre-approval",
+          "partnerValue": "Fewer failed approvals"
+        }
+      ],
+      "mutualValue": "They close more transactions with accurate information; you meet newcomers planning for the long term.",
+      "approach": "Offer a briefing for brokerages on status questions that affect buying. Co-create a client handout.",
+      "decisionMaker": "Mortgage broker or realtor serving newcomers",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Brokerage lunch-and-learn",
+        "Co-branded client handout"
+      ],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 3,
+          "rationale": "Moderate overlap with your core services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "mortgage broker newcomers",
+        "realtor newcomers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "community-associations",
+      "name": "Cultural associations, diaspora chambers & ethnic media",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Community associations, diaspora business chambers, and community-language media reach people with family-sponsorship, visitor, and business-immigration needs.",
+      "rationale": "Trust within communities drives legal referrals, and word of mouth inside these networks is strong.",
+      "triggers": [
+        {
+          "event": "A family plans to sponsor relatives",
+          "whyNeed": "They seek a trusted lawyer, often through community contacts",
+          "whoRecognizes": "Association leaders or community media",
+          "referralMoment": "Ongoing",
+          "partnerValue": "Members receive accurate information and avoid fraudulent agents"
+        }
+      ],
+      "mutualValue": "Associations gain useful programming; you build long-term community credibility.",
+      "approach": "Offer information sessions, Q&A segments in community media, and accurate written guidance. Warn against unlicensed agents.",
+      "decisionMaker": "Association leader or community-media editor",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Community Q&A sessions",
+        "Media interviews",
+        "Newsletter articles"
+      ],
+      "digitalAuthority": [
+        "Earned coverage and links from community media through genuinely useful explainers."
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "cultural association",
+        "chamber of commerce diaspora"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "certified-translators",
+      "name": "Certified translators",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Applicants need certified translations of civil documents early in the process, often before they have chosen representation.",
+      "rationale": "Translators meet applicants at the very start of their process. This channel is often overlooked.",
+      "triggers": [
+        {
+          "event": "An applicant orders translations of birth, marriage, or police documents",
+          "whyNeed": "They are preparing an application and may need representation",
+          "whoRecognizes": "Certified translator",
+          "referralMoment": "When the client asks for help with the application itself",
+          "partnerValue": "Translators are not permitted to advise, so a trusted referral serves their client"
+        }
+      ],
+      "mutualValue": "You send steady translation work their way; they have a qualified professional to recommend.",
+      "approach": "Use and recommend a small number of reliable certified translators. Propose a non-exclusive mutual recommendation relationship.",
+      "decisionMaker": "Certified translator",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 2,
+          "rationale": "Referred work tends to be below your typical engagement value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 5,
+          "rationale": "Decision-makers are easy to meet and talk to.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 5,
+          "rationale": "Easy to start with a single conversation.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "certified translator"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "healthcare-employers-ien",
+      "name": "Hospitals, long-term care & home-care employers recruiting internationally",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Healthcare employers facing staffing shortages recruit internationally educated nurses and other workers, who need work permits and, later, permanent residence.",
+      "rationale": "Recruitment programmes produce cohorts of candidates, so one employer relationship can generate many files a year.",
+      "triggers": [
+        {
+          "event": "A healthcare employer launches an international recruitment campaign",
+          "whyNeed": "Candidates need work authorisation aligned with licensing timelines",
+          "whoRecognizes": "Talent-acquisition lead",
+          "referralMoment": "Before offers are made",
+          "partnerValue": "Shorter vacancies and successful onboarding"
+        }
+      ],
+      "mutualValue": "Employers fill critical roles predictably; you gain cohort-based recurring work.",
+      "approach": "Offer a briefing on aligning work-permit timing with professional-licensing steps, then propose a cohort service model.",
+      "decisionMaker": "Director of talent acquisition / international recruitment lead",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Strong potential for a recurring commercial channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "hospital",
+        "long term care home"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "tfw-sector-employers",
+      "name": "Agriculture, trucking & food-processing employers",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Sectors that rely on temporary foreign workers apply for labour-market assessments and permits every year or season.",
+      "rationale": "Their needs are predictable and seasonal, and compliance errors are costly, so they value reliable counsel.",
+      "triggers": [
+        {
+          "event": "A seasonal hiring plan is set",
+          "whyNeed": "Labour-market and permit applications must be filed on time",
+          "whoRecognizes": "Operations manager",
+          "referralMoment": "Months before the season",
+          "partnerValue": "Workers arrive when needed"
+        }
+      ],
+      "mutualValue": "Employers gain dependable compliance; you gain annual repeat work.",
+      "approach": "Offer a compliance calendar and an annual application service.",
+      "decisionMaker": "Operations manager or HR lead responsible for foreign workers",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Employers must not recover recruitment fees from workers. Be wary of intermediaries who charge workers.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Strong potential for a recurring commercial channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "farm employer",
+        "trucking company"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "business-lawyers-immigration",
+      "name": "Corporate & commercial lawyers (cross-border deals and transfers)",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Business acquisitions, new Canadian subsidiaries, and executive transfers raise immigration questions that corporate lawyers do not answer.",
+      "rationale": "High-value, time-sensitive matters with reciprocal potential.",
+      "triggers": [
+        {
+          "event": "A foreign company establishes a Canadian entity",
+          "whyNeed": "Key staff need to transfer",
+          "whoRecognizes": "Corporate lawyer",
+          "referralMoment": "During structuring",
+          "partnerValue": "The transaction proceeds without delays"
+        }
+      ],
+      "mutualValue": "Reciprocal referrals on transactions.",
+      "approach": "Co-present on immigration considerations in cross-border transactions.",
+      "decisionMaker": "Corporate lawyer",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Lawyer-to-lawyer referral fees are subject to law society conditions.",
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Opportunities are likely to be infrequent.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "corporate lawyer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "religious-institutions",
+      "name": "Faith communities & religious institutions",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Faith communities sponsor religious workers, support newcomer families, and are often the first place members ask for help with immigration.",
+      "rationale": "These communities are trusted, and their questions include religious-worker permits and family sponsorship.",
+      "triggers": [
+        {
+          "event": "A congregation plans to bring in a religious worker",
+          "whyNeed": "A work permit is required",
+          "whoRecognizes": "Leadership",
+          "referralMoment": "During planning",
+          "partnerValue": "The appointment proceeds"
+        }
+      ],
+      "mutualValue": "Communities gain reliable guidance; you gain trust and referrals.",
+      "approach": "Offer information sessions and accurate written guidance, and warn against unlicensed agents.",
+      "decisionMaker": "Clergy or administrative leadership",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "church",
+        "mosque",
+        "temple"
+      ],
+      "existingRelationship": false
+    }
+  ],
+  "assumptions": [
+    "Immigration clients usually reach a lawyer through someone they already trust: an employer, school, community organisation, or another professional handling a related matter.",
+    "Many high-value matters (inadmissibility, refusals, removals) are time-sensitive. Partners who can spot the issue early are more valuable than partners with large audiences.",
+    "No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing."
+  ],
+  "guardrails": [
+    {
+      "title": "Referral compensation",
+      "body": "Lawyers' referral relationships are regulated. Most jurisdictions prohibit paying or receiving anything of value from non-lawyers for referrals. Where licensee-to-licensee referral fees are allowed, they come with conditions such as client disclosure and fee limits. Build these relationships on reciprocity and expertise. Verify against your law society or bar's current rules."
+    },
+    {
+      "title": "Only partner with authorised representatives",
+      "body": "In Canada, only lawyers, Québec notaries, paralegals (in limited contexts), and licensed consultants (RCICs) may represent or advise on immigration matters for a fee. Avoid informal 'agents' or unlicensed intermediaries, because referring to or accepting work through them creates real risk for clients and for you."
+    },
+    {
+      "title": "Partnerships are not paid-referral arrangements",
+      "body": "This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals."
+    },
+    {
+      "title": "Outreach in Canada: CASL applies",
+      "body": "Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA)."
+    },
+    {
+      "title": "No automated outreach",
+      "body": "This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline."
+    }
+  ]
+}

@@ -33,7 +33,9 @@ export function selectFreeCategories(ranked: ScoredCategory[], limit: number): S
  * Produce the client view of an analysis. Free access returns a limited set of categories
  * and a count of locked categories. It never returns fabricated placeholders.
  */
-export function toView(analysis: Analysis, entitlement: Entitlement | null, freeLimit: number): AnalysisView {
+export function toView(full: Analysis, entitlement: Entitlement | null, freeLimit: number): AnalysisView {
+  // Internal cost accounting never leaves the server.
+  const analysis: Analysis = { ...full, engine: { ...full.engine, costUsd: undefined } };
   if (entitlement || analysis.isDemo) {
     return {
       ...analysis,

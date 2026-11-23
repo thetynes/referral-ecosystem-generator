@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ArrowUpDown, Check, Repeat2, Search } from "lucide-react";
+import { ArrowUpDown, Check, Eye, Repeat2, Search } from "lucide-react";
 import type { ScoredCategory } from "@/lib/schema";
 import { TYPE_META, DIRECTION_META } from "@/lib/ui-meta";
 import { PriorityBadge } from "@/components/ui/badge";
@@ -23,6 +23,7 @@ export function OpportunityList({
   const [sort, setSort] = useState<SortKey>("score");
   const [recurringOnly, setRecurringOnly] = useState(false);
   const [highOnly, setHighOnly] = useState(false);
+  const [overlookedOnly, setOverlookedOnly] = useState(false);
 
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -31,9 +32,10 @@ export function OpportunityList({
       .filter((c) => !q || `${c.name} ${c.opportunity} ${c.triggers.map((t) => t.event).join(" ")}`.toLowerCase().includes(q))
       .filter((c) => !recurringOnly || c.channelType === "recurring")
       .filter((c) => !highOnly || c.priority === "High")
+      .filter((c) => !overlookedOnly || c.overlooked)
       .sort((a, b) => (sort === "score" ? b.score - a.score : a.name.localeCompare(b.name)))
       .map((c) => ({ c, rank: rankOf.get(c.id)! }));
-  }, [categories, query, sort, recurringOnly, highOnly]);
+  }, [categories, query, sort, recurringOnly, highOnly, overlookedOnly]);
 
   const toggle = (on: boolean, set: (v: boolean) => void, label: string) => (
     <button
@@ -58,6 +60,7 @@ export function OpportunityList({
         </div>
         {toggle(recurringOnly, setRecurringOnly, "Recurring channels")}
         {toggle(highOnly, setHighOnly, "High priority")}
+        {categories.some((c) => c.overlooked) && toggle(overlookedOnly, setOverlookedOnly, "Often overlooked")}
         <button
           type="button"
           onClick={() => setSort(sort === "score" ? "name" : "score")}
@@ -101,7 +104,9 @@ export function OpportunityList({
                   <div className="mt-0.5 flex gap-2 text-[11.5px] text-ink-3">
                     {c.channelType === "recurring" && <span className="inline-flex items-center gap-0.5"><Repeat2 className="size-3" /> recurring</span>}
                     {c.existingRelationship && <span className="inline-flex items-center gap-0.5 text-high"><Check className="size-3" /> existing</span>}
+                    {c.overlooked && <span className="inline-flex items-center gap-0.5 text-accent"><Eye className="size-3" /> overlooked</span>}
                   </div>
+                  {c.decisionMaker && <div className="mt-0.5 text-[11.5px] text-ink-3">Decides: {c.decisionMaker}</div>}
                 </td>
                 <td className="max-w-[280px] px-3 py-3 align-top text-[12.5px] text-ink-2">{c.triggers[0]?.event}</td>
                 <td className="px-3 py-3 text-right align-top">

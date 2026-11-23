@@ -1,0 +1,1564 @@
+{
+  "id": "f701001e-a942-4cdf-9fdb-96f395750c66",
+  "createdAt": "2026-11-23T23:17:41.939Z",
+  "isDemo": false,
+  "profile": {
+    "displayName": "Sample Family Law (illustrative)",
+    "website": null,
+    "industry": "Family law firm",
+    "services": [
+      "Separation agreements",
+      "parenting",
+      "support",
+      "property division",
+      "mediation support"
+    ],
+    "serviceArea": "Hamilton, Ontario",
+    "geography": {
+      "country": "CA",
+      "region": "Ontario",
+      "scope": "local"
+    },
+    "idealCustomer": "Separating spouses and parents",
+    "customerSegments": [
+      "Separating spouses",
+      "parents"
+    ],
+    "projectValue": null,
+    "targetIndustries": [],
+    "growthPriority": null,
+    "existingReferrals": [],
+    "expansionMarkets": []
+  },
+  "engine": {
+    "mode": "ai",
+    "provider": "openai",
+    "model": "gpt-5.5",
+    "archetypeId": "family-law",
+    "archetypeLabel": "Family law",
+    "matchConfidence": "high",
+    "notes": [],
+    "version": "1.0.0",
+    "costUsd": 0.584285
+  },
+  "categories": [
+    {
+      "id": "couples-counsellors",
+      "name": "Couples counsellors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Couples counsellors often see separating spouses before either person has contacted a lawyer, especially when counselling shifts from reconciliation to separation planning. The referral opportunity is to suggest each client obtain independent legal advice before making informal commitments about parenting, support, the home, or finances.",
+      "rationale": "This relationship makes commercial sense because counsellors encounter family-law needs early, at the point when clients are confused, emotionally distressed, and likely to value a trusted professional’s direction toward legal clarity.",
+      "triggers": [
+        {
+          "event": "Counselling reveals that one or both spouses believe separation is likely.",
+          "whyNeed": "Clients may start making informal promises about parenting time, support, or who stays in the home without understanding Ontario family-law consequences.",
+          "whoRecognizes": "Couples counsellor, marriage therapist, or clinical supervisor.",
+          "referralMoment": "When the discussion moves from relationship repair to practical separation planning.",
+          "partnerValue": "The counsellor can keep therapy focused on emotional support while reducing the risk that clients rely on unsafe or misunderstood legal assumptions."
+        },
+        {
+          "event": "High-conflict parenting discussions emerge during sessions.",
+          "whyNeed": "Parents may need advice on decision-making responsibility, parenting schedules, communication boundaries, and documentation before conflict escalates.",
+          "whoRecognizes": "Couples counsellor or family therapist.",
+          "referralMoment": "When clients ask what is “fair,” threaten to withhold parenting time, or cannot agree on child-related arrangements.",
+          "partnerValue": "The counsellor gains a clearer framework for helping parents communicate around the child without becoming the source of legal advice."
+        },
+        {
+          "event": "Safety concerns, coercive control, or intimidation are disclosed.",
+          "whyNeed": "The client may require urgent advice about safe separation, parenting exchanges, exclusive possession, support, or protective court steps.",
+          "whoRecognizes": "Counsellor, intake clinician, or clinical director.",
+          "referralMoment": "Immediately after safety planning and crisis supports are addressed, and before joint negotiation is encouraged.",
+          "partnerValue": "The counsellor can better protect client wellbeing by connecting the client with appropriate legal guidance instead of relying only on therapeutic planning."
+        }
+      ],
+      "mutualValue": "Counsellors receive a trusted legal-information pathway for clients whose therapy has uncovered separation issues, while the law firm receives early, well-contextualized introductions from professionals who understand the emotional dynamics of separation.",
+      "approach": "Offer a short, non-promotional lunch-and-learn for local counsellors on “legal issues therapists should not accidentally advise on during separation discussions,” including when to suggest independent legal advice and crisis referrals.",
+      "decisionMaker": "Clinical Director",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Lunch-and-learn for counselling teams",
+        "Plain-language referral guide on when separating clients need independent legal advice",
+        "Co-hosted client education webinar on emotional and legal preparation for separation",
+        "Resource sheet for therapists distinguishing therapeutic support from legal advice"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on preparing emotionally and practically for separation without giving legal advice",
+        "Guest Q&A for a counselling practice newsletter about common family-law misconceptions"
+      ],
+      "regulatoryNote": "Legal referrals should preserve client choice, avoid referral fees or improper inducements, and make clear that counsellors are not providing legal advice; counsellors must also comply with confidentiality, consent, and professional obligations.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Counsellors often encounter separation risk before formal legal steps begin.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The issues raised in counselling closely match separation agreements, parenting, support, property division, and mediation support.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Not every counselling file involves separation, but relationship breakdown is a recurring scenario for couples counsellors.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Clients referred early may require comprehensive advice across several family-law issues.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Private practice owners and clinical directors are usually reachable through professional networking and educational outreach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Counsellors regularly see new couples and families facing relationship breakdown.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The partner gains a safer support pathway and clearer role boundaries, while the firm gains timely referrals.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Counselling relationships are typically local, matching a Hamilton-area family-law practice.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A low-pressure educational approach is easy to initiate, though trust must be built carefully.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "couples counsellors",
+        "marriage counselling",
+        "family therapists"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "family-violence-agencies",
+      "name": "Family violence agencies",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Family violence agencies encounter clients at moments of urgent separation need, often before a lawyer is involved and before the client can safely negotiate. Staff may identify immediate legal issues around parenting, support, housing, safety, and possession of the family home, creating a strong referral opportunity for trauma-informed legal advice.",
+      "rationale": "The relationship makes commercial and mission sense because these agencies see acute family-law needs early, and timely legal help can prevent unsafe informal arrangements or missed procedural steps.",
+      "triggers": [
+        {
+          "event": "A client seeks crisis planning, shelter, or emergency safety planning after abuse or coercive control.",
+          "whyNeed": "The client may need advice about safe communication, parenting arrangements, support, home possession, and urgent court options.",
+          "whoRecognizes": "Crisis worker, shelter intake worker, or case manager.",
+          "referralMoment": "After immediate safety needs are addressed and when the client is ready to discuss separation logistics or legal protection.",
+          "partnerValue": "The agency can offer a concrete legal pathway without having to interpret family-law rights itself."
+        },
+        {
+          "event": "A survivor reports threats involving the children, finances, immigration status, or the home.",
+          "whyNeed": "Threats may directly affect parenting time, decision-making, support access, asset control, and safe occupancy arrangements.",
+          "whoRecognizes": "Family violence advocate, outreach worker, or safety planner.",
+          "referralMoment": "As soon as threats are disclosed and before the client responds to the other spouse or signs any document.",
+          "partnerValue": "Staff can reduce the risk of clients being pressured into unsafe or legally harmful concessions."
+        },
+        {
+          "event": "A client has upcoming court, police, child-protection, or housing-related deadlines connected to separation.",
+          "whyNeed": "The client may need coordinated advice on family-law procedure, interim arrangements, evidence, and safety-sensitive communication.",
+          "whoRecognizes": "Case manager, court support worker, or program coordinator.",
+          "referralMoment": "When the deadline is identified, with consent and clear urgency communicated to the legal referral recipient.",
+          "partnerValue": "The agency can help the client move from crisis response to structured next steps."
+        }
+      ],
+      "mutualValue": "The agency gains a trauma-informed legal referral route for clients in crisis, while the law firm builds trusted relationships with frontline workers who identify urgent and complex family-law needs early.",
+      "approach": "Request a meeting with the program manager to learn their referral protocol, provide a concise legal-issue spotting checklist, and clarify how clients can contact the firm safely and confidentially.",
+      "decisionMaker": "Program Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Legal issue-spotting workshop for frontline staff",
+        "Safety-sensitive referral protocol guide",
+        "Plain-language client handout on family-law issues after abuse",
+        "Trauma-informed separation planning webinar"
+      ],
+      "digitalAuthority": [
+        "Co-authored educational resource on legal-information steps after leaving an abusive relationship"
+      ],
+      "regulatoryNote": "Legal referrals involving vulnerable clients must avoid coercion, preserve client choice, protect confidentiality and safety, and avoid improper referral compensation; family violence agencies may also have strict consent, privacy, and funder rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Family violence agencies encounter urgent separation-related legal needs at the earliest and highest-risk stage.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Parenting, support, property, home possession, and safety-related separation issues are directly relevant.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Many agency clients have family-law needs, though readiness and capacity to engage a lawyer can vary.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Matters can be significant, but clients may have constrained finances or require legal aid or community supports.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Agencies are approachable through managers and coordinators, but referral processes may be formal and capacity-limited.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Frontline agencies repeatedly encounter separating spouses and parents in crisis.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The agency receives a reliable escalation path, and the firm helps clients before legal problems worsen.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Crisis, shelter, and support services are strongly local and relevant to Hamilton-area clients.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Trust, safeguarding, confidentiality, and trauma-informed protocols must be established before referrals flow.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "family violence services",
+        "women's shelter",
+        "domestic violence crisis support"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "mortgage-brokers",
+      "name": "Mortgage brokers",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Mortgage brokers often hear about separation when one spouse asks whether they can refinance, buy out the other spouse, stay in the home, or qualify on a single income. The referral opportunity arises when financing depends on a separation agreement, support obligations, property equalization, or clear title-transfer steps.",
+      "rationale": "This relationship makes commercial sense because mortgage questions frequently expose unresolved family-law issues, and legally structured settlements can make financing discussions more practical and less speculative.",
+      "triggers": [
+        {
+          "event": "A spouse asks about refinancing the matrimonial home to buy out the other spouse.",
+          "whyNeed": "The client may need advice on property division, equalization, support, title transfer, and whether a separation agreement is required for lender review.",
+          "whoRecognizes": "Mortgage broker or mortgage agent.",
+          "referralMoment": "Before the client commits to a buyout number or submits financing assumptions based on an informal agreement.",
+          "partnerValue": "The broker receives clearer documentation and fewer stalled applications based on uncertain settlement terms."
+        },
+        {
+          "event": "A separated client seeks mortgage qualification on one income.",
+          "whyNeed": "Support payments, child support, spousal support, debt allocation, and ongoing household expenses may affect borrowing capacity and must be legally clarified.",
+          "whoRecognizes": "Mortgage broker, underwriting support staff, or client intake coordinator.",
+          "referralMoment": "When income, support, or debt assumptions are unclear or based only on verbal promises.",
+          "partnerValue": "The broker can assess affordability with more reliable information and avoid wasting time on unworkable files."
+        },
+        {
+          "event": "Both spouses disagree about selling, keeping, or transferring the home.",
+          "whyNeed": "The dispute may require family-law advice about possession, sale, valuation, equalization, and interim responsibilities for mortgage and expenses.",
+          "whoRecognizes": "Mortgage broker or referral partner working with the broker.",
+          "referralMoment": "When the broker sees that financing cannot proceed until legal rights and obligations are resolved.",
+          "partnerValue": "The broker can redirect the dispute to the appropriate professional rather than becoming entangled in legal negotiations."
+        }
+      ],
+      "mutualValue": "Mortgage brokers gain legally clearer, more financeable files and a trusted place to send clients whose mortgage plans depend on settlement terms; the law firm gains referrals from a professional who sees property and support issues early.",
+      "approach": "Invite local mortgage brokers to a practical briefing on “what separation agreements and support clarity mean for mortgage qualification,” emphasizing neutral education rather than referral incentives.",
+      "decisionMaker": "Principal Broker",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Broker education session on separation agreements and refinancing",
+        "Co-created checklist for clients considering a matrimonial home buyout",
+        "Webinar on mortgage readiness during separation",
+        "Referral protocol for files needing legal clarity before financing"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on legal and mortgage steps before keeping the home after separation",
+        "Educational webinar recording on refinancing after separation"
+      ],
+      "regulatoryNote": "Mortgage brokering is regulated and legal services are regulated; avoid referral fees or inducements unless expressly compliant with all professional rules, disclose relationships where required, and ensure clients freely choose their lawyer and broker.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Mortgage brokers commonly encounter separation when clients try to refinance, buy out, or qualify alone.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Property division, support clarity, and separation agreements directly affect mortgage feasibility.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Separation-related financing is a recurring but not dominant part of a mortgage broker’s practice.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Home and property issues often lead to substantial family-law work, especially where agreements are needed.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Principal brokers and independent agents are generally accessible through local business networking.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Brokers regularly receive new client files involving life transitions, including separation.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both sides benefit because legal clarity improves financing viability and mortgage insight helps settlement planning.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Mortgage work is highly relevant to local homeowners and local property values.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The business case is easy to explain, though compliance boundaries must be respected.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "mortgage brokers",
+        "mortgage agents",
+        "home refinancing broker"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "financial-planners",
+      "name": "Financial planners",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Financial planners may learn about separation when clients disclose cash-flow stress, beneficiary changes, asset division worries, or uncertainty about support obligations. The referral opportunity is to encourage independent family-law advice before clients liquidate investments, change plans, agree to support terms, or divide assets informally.",
+      "rationale": "This relationship makes commercial sense because family-law outcomes often reshape a client’s entire financial plan, and planners benefit when legal obligations are clarified before financial recommendations are implemented.",
+      "triggers": [
+        {
+          "event": "A client discloses separation and asks how to manage cash flow on one household income.",
+          "whyNeed": "Support obligations, child expenses, housing costs, and interim arrangements may determine what cash-flow plan is realistic.",
+          "whoRecognizes": "Financial planner, financial advisor, or client relationship manager.",
+          "referralMoment": "Before the planner builds a post-separation budget based on uncertain support or property assumptions.",
+          "partnerValue": "The planner can create advice that is aligned with actual legal obligations rather than guesses."
+        },
+        {
+          "event": "A client wants to liquidate or transfer investments as part of a separation.",
+          "whyNeed": "Asset transfers, tax consequences, equalization, disclosure, and ownership issues should be considered within the legal settlement framework.",
+          "whoRecognizes": "Financial planner or portfolio service representative.",
+          "referralMoment": "Before transactions occur or one spouse relies on an informal division of assets.",
+          "partnerValue": "The planner reduces the risk of implementing transactions that later conflict with legal duties or settlement terms."
+        },
+        {
+          "event": "A client asks about beneficiary designations, insurance, retirement accounts, or estate planning after separation.",
+          "whyNeed": "Separation may affect obligations to a spouse or children, security for support, disclosure, and coordination with broader legal planning.",
+          "whoRecognizes": "Financial planner, insurance advisor, or wealth planning associate.",
+          "referralMoment": "When the client asks to make changes that are connected to the separation and may have family-law implications.",
+          "partnerValue": "The planner can stay within their advisory role and coordinate with legal advice before making consequential changes."
+        }
+      ],
+      "mutualValue": "Financial planners gain legal clarity that makes their financial plans more durable, while the law firm gains early access to clients whose separation has financial, support, and property dimensions.",
+      "approach": "Offer a continuing-education-style session for planners on family-law issue spotting during separation, with a checklist of questions that signal the need for independent legal advice.",
+      "decisionMaker": "Branch Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Continuing-education-style presentation for advisors",
+        "Co-authored separation financial readiness checklist",
+        "Client webinar on financial planning and legal steps during separation",
+        "Newsletter Q&A on support, property, and budgeting after separation"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on financial planning questions to ask before signing a separation agreement",
+        "Educational article on why legal obligations should be clarified before dividing assets"
+      ],
+      "regulatoryNote": "Financial advice and legal services are regulated; avoid improper referral compensation, preserve client choice, manage conflicts, and ensure planners do not provide legal advice or lawyers provide investment advice.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Financial planners often hear about separation early when clients worry about income, assets, and future security.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Support, property division, disclosure, and agreements are central to financial planning during separation.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Separation is a recurring life event among planning clients, though not the majority of files.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Clients with financial-planning relationships may have property, investment, and support issues requiring substantive legal work.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Independent planners are accessible, but larger institutions may have compliance controls around external referrals.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Planners maintain ongoing client relationships and repeatedly encounter major life changes.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Legal clarity improves financial recommendations, and financial insight helps clients make workable settlement decisions.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Many clients prefer local planners and lawyers, though some planning relationships are less geographically bound.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The value proposition is strong, but compliance review and institutional policies can slow collaboration.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "financial planners",
+        "wealth advisors",
+        "retirement planning advisors"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "school-social-workers",
+      "name": "School social workers",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "School social workers and student support staff may notice child behaviour, attendance, anxiety, or conflict that signals parental separation before the parents seek legal help. They should not steer families to a specific lawyer, but they can share neutral legal-information resources when parents ask about parenting schedules, decision-making, communication, or child-focused dispute resolution.",
+      "rationale": "This relationship has indirect commercial value because it builds trusted community visibility around child-centred separation issues, although referrals may be constrained by public-sector neutrality and student privacy obligations.",
+      "triggers": [
+        {
+          "event": "A child’s attendance, behaviour, anxiety, or school performance changes after parental conflict or separation.",
+          "whyNeed": "Parents may need guidance on parenting schedules, decision-making responsibility, communication, and how school routines fit into parenting arrangements.",
+          "whoRecognizes": "School social worker, student support worker, guidance counsellor, or principal.",
+          "referralMoment": "When a parent asks for resources about parenting arrangements or conflict is affecting the child’s school life.",
+          "partnerValue": "The school can provide neutral information that helps parents reduce conflict around the child without taking sides."
+        },
+        {
+          "event": "Parents disagree about school pickup, access to records, consent forms, or decision-making authority.",
+          "whyNeed": "The family may need legal advice on decision-making responsibility, parenting time, and written arrangements that the school can follow consistently.",
+          "whoRecognizes": "School social worker, principal, vice-principal, or administrative lead.",
+          "referralMoment": "When the school cannot safely or neutrally resolve the dispute through internal procedures alone.",
+          "partnerValue": "Clear legal arrangements reduce administrative conflict and help staff maintain student safety and consistency."
+        },
+        {
+          "event": "A parent asks school staff how parenting schedules, mediation, or court orders work.",
+          "whyNeed": "The parent needs reliable legal information or independent legal advice rather than informal guidance from school personnel.",
+          "whoRecognizes": "School social worker or guidance counsellor.",
+          "referralMoment": "At the point of inquiry, by providing a neutral resource list or general legal-information material rather than a personal endorsement.",
+          "partnerValue": "The staff member can support the family while staying within professional and institutional boundaries."
+        }
+      ],
+      "mutualValue": "School support staff gain neutral, child-focused legal-information resources that help de-escalate parent conflict, while the law firm gains community authority and occasional inbound inquiries from parents who need family-law help.",
+      "approach": "Offer a neutral, educational resource package for school social workers on child-focused separation issues, designed for review under school board policies and suitable for sharing as general information rather than as a preferred-provider referral.",
+      "decisionMaker": "Manager of Social Work Services",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Neutral parent information sheet on child-focused separation",
+        "Professional development session for school support staff",
+        "Community webinar on supporting children through separation",
+        "Resource list template covering legal information and family supports"
+      ],
+      "digitalAuthority": [
+        "Plain-language article on coordinating school routines during separation",
+        "Co-created general resource for parents on reducing school-related conflict after separation"
+      ],
+      "regulatoryNote": "Schools and school social workers must follow privacy, student-safety, conflict-of-interest, and public-sector neutrality rules; avoid solicitation, preferred-provider arrangements, or referral compensation, and present resources as general legal information rather than legal advice.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "School staff may notice separation-related stress through the child before parents seek formal help.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Parenting schedules, decision-making, and communication issues are directly relevant, though support and property issues are less visible.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Schools regularly encounter children affected by parental separation, but not every situation leads to a legal inquiry.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 2,
+          "rationale": "The channel is more community-authority oriented than commercially direct due to neutrality and referral constraints.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 2,
+          "rationale": "Decision-makers are harder to access because school boards and public institutions have formal approval processes.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Student support staff repeatedly encounter family transitions across school years.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Schools benefit from calmer parent communication and neutral resources, while the firm gains credibility with families.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Schools are inherently local and closely tied to Hamilton-area families.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 2,
+          "rationale": "Establishing collaboration can be slow because materials may require board review and strict neutrality.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "school social workers",
+        "student support services",
+        "school guidance counsellors"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "payroll-benefits-administrators",
+      "name": "Payroll benefits administrators",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Payroll and benefits administrators see separation signals when employees change addresses, remove a spouse from benefits, add dependent coverage, report support deductions, or ask about garnishment paperwork. The referral opportunity is early: before an employee signs informal support or parenting arrangements, the administrator can suggest independent Ontario family-law advice so employment records and deductions align with proper legal documentation.",
+      "rationale": "This relationship makes commercial sense because payroll issues can become costly and time-consuming when separation-related forms are incomplete, inconsistent, or unsupported by court orders or agreements. A family law firm can help employees understand the legal steps behind payroll changes, reducing avoidable disputes that land back on administrators.",
+      "triggers": [
+        {
+          "event": "Employee requests removal of a spouse or change to dependent benefits after separation.",
+          "whyNeed": "Benefit changes can interact with child support, spousal support, disclosure obligations, and separation-agreement terms.",
+          "whoRecognizes": "Benefits Administrator or HR Benefits Specialist.",
+          "referralMoment": "When the employee asks what documentation is needed or appears unsure whether a separation agreement or court order exists.",
+          "partnerValue": "Fewer incorrect benefit changes, fewer escalations, and clearer documentation for the file."
+        },
+        {
+          "event": "Payroll receives a support deduction order, garnishment notice, or request to process voluntary support payments.",
+          "whyNeed": "Employees may not understand the difference between informal payments, enforceable orders, and support terms that should be properly documented.",
+          "whoRecognizes": "Payroll Manager or Payroll Compliance Specialist.",
+          "referralMoment": "When the employee disputes the deduction, asks payroll for legal interpretation, or submits incomplete paperwork.",
+          "partnerValue": "The administrator avoids giving legal advice and can direct the employee to a qualified professional."
+        },
+        {
+          "event": "Employee updates home address, emergency contact, tax forms, and direct deposit during a marital breakdown.",
+          "whyNeed": "Multiple employment-record changes can indicate a separation that may require advice on property division, parenting schedules, and support.",
+          "whoRecognizes": "HR Operations Manager or Payroll Benefits Coordinator.",
+          "referralMoment": "After administrative changes reveal the employee is navigating separation without a formal agreement.",
+          "partnerValue": "A practical referral pathway helps the employer support the employee while maintaining role boundaries."
+        }
+      ],
+      "mutualValue": "The administrator gains a reliable, non-payroll resource for employees in a sensitive transition, while the law firm reaches people at the point when mishandled forms and informal arrangements can create legal problems. The relationship also supports better employee experience without requiring the administrator to interpret family-law obligations.",
+      "approach": "Offer a short, non-promotional briefing for payroll and benefits teams on “what payroll should and should not do when an employee separates,” including a one-page referral checklist for situations requiring legal advice.",
+      "decisionMaker": "Director of Payroll and Benefits",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Internal lunch-and-learn for payroll and HR benefits staff",
+        "One-page separation-related payroll documentation checklist",
+        "Employee benefits change FAQ with legal-advice disclaimers",
+        "Webinar for HR operations teams on support deductions and benefit changes"
+      ],
+      "digitalAuthority": [
+        "Co-authored educational article on administrative steps employees often face after separation"
+      ],
+      "regulatoryNote": "Referrals to a law firm should not involve commissions, fee-splitting, exclusivity, or pressure on employees; privacy and employment-confidentiality obligations must be respected, and the lawyer must comply with Law Society of Ontario marketing and referral rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Administrators see concrete separation-related administrative changes before or during the legal need.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Payroll and benefits issues often depend on proper support, parenting, and separation documentation.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "The need arises regularly in larger employee populations but less often in small payroll books.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Some matters will be limited advice, but others can become full separation, support, or parenting files.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Payroll and benefits leaders are reachable through HR channels, though they may be cautious about legal referrals.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Employee life events recur continuously, making this a repeat referral environment.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The partner reduces administrative disputes while employees receive appropriate legal guidance.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 3,
+          "rationale": "Many administrators operate broadly, so the best fit is employers or administrators serving Ontario-based employees.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is practical but requires careful positioning around privacy, neutrality, and no legal advice from payroll.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "payroll benefits administration services",
+        "employee benefits administrators",
+        "payroll outsourcing providers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "eap-providers",
+      "name": "EAP providers",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "EAP providers encounter separating spouses and parents when employees seek counselling, crisis support, workplace-stress help, or legal-information benefits. After initial intake, the provider can direct the employee toward independent local Ontario family-law advice for separation agreements, parenting, support, property division, and mediation preparation.",
+      "rationale": "EAPs need credible onward resources when emotional distress has a legal driver that counselling alone cannot resolve. A family law firm gives the EAP a trusted pathway for employees whose family conflict is affecting attendance, productivity, safety, or wellbeing.",
+      "triggers": [
+        {
+          "event": "Employee contacts the EAP because separation conflict is causing stress, anxiety, or workplace disruption.",
+          "whyNeed": "The emotional issue may be tied to unresolved parenting, financial support, or property questions that require legal advice.",
+          "whoRecognizes": "EAP Intake Clinician or Case Manager.",
+          "referralMoment": "After the intake identifies separation as the source of distress and the employee asks what practical steps to take next.",
+          "partnerValue": "The EAP can address the employee’s full situation without stepping outside counselling or information boundaries."
+        },
+        {
+          "event": "Employee uses an EAP legal-information session but needs Ontario-specific family-law representation or document review.",
+          "whyNeed": "General legal information is not a substitute for tailored advice on rights, obligations, negotiations, or agreements.",
+          "whoRecognizes": "EAP Legal Referral Coordinator or Member Services Advisor.",
+          "referralMoment": "When the employee’s questions move from general information to specific advice about parenting, support, or property.",
+          "partnerValue": "A quality onward referral reduces dissatisfaction with limited legal-information benefits."
+        },
+        {
+          "event": "Manager or HR refers an employee to the EAP after family breakdown affects attendance or performance.",
+          "whyNeed": "The employee may need both emotional support and legal structure to stabilize parenting schedules, support arrangements, and housing decisions.",
+          "whoRecognizes": "EAP Account Manager or Clinical Team Lead.",
+          "referralMoment": "When the EAP identifies legal uncertainty as a barrier to the employee regaining stability.",
+          "partnerValue": "Helping resolve the underlying legal uncertainty can improve the EAP’s workplace-stabilization objective."
+        }
+      ],
+      "mutualValue": "The EAP strengthens its care pathway for separation-related crises, while the law firm receives introductions to people who have already recognized a need for help. Employees benefit from a smoother transition from emotional support to concrete legal planning.",
+      "approach": "Propose a referral-resource briefing for EAP intake and legal-information teams, focused on when Ontario family-law advice is needed and how to make neutral, client-choice referrals.",
+      "decisionMaker": "EAP Provider Network Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Training session for EAP intake staff on family-law referral indicators",
+        "Employee-facing webinar on managing separation decisions before signing agreements",
+        "Resource sheet on counselling, mediation, and family-law advice pathways",
+        "Newsletter feature for employer clients on separation-related workplace stress"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on when separation stress also requires legal advice",
+        "Educational webinar recording hosted as an employee wellness resource"
+      ],
+      "regulatoryNote": "EAP referrals should preserve client choice, confidentiality, and informed consent; avoid commissions, exclusivity, or any implication that the EAP endorses a required lawyer, and ensure the law firm complies with Law Society of Ontario rules on marketing and referrals.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "EAPs directly encounter employees in separation-related emotional and legal stress.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The legal services map closely to the issues driving many separation-related EAP contacts.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Separation, parenting conflict, and support stress are recurring EAP issues across employer populations.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Many EAP contacts may need immediate advice, document review, negotiation support, or representation.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Provider network and clinical decision-makers are identifiable but may have formal vetting processes.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "EAPs repeatedly handle personal crises, making this a continuing referral channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The relationship helps the EAP resolve legal-adjacent barriers while giving the firm appropriate, need-based referrals.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Ontario-specific legal help is highly relevant when the EAP serves employees in the Hamilton area or Ontario generally.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The concept is strong, but onboarding may require compliance review and neutral referral protocols.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "employee assistance program providers",
+        "EAP provider network",
+        "workplace wellness legal information program"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "tax-accountants",
+      "name": "Tax accountants",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Tax accountants encounter separating spouses when filing status, credits, support payments, asset transfers, business income, and residence questions arise. The referral opportunity is to involve family-law advice before tax assumptions are embedded into a separation agreement or before clients file in a way that conflicts with support, property, or parenting arrangements.",
+      "rationale": "Accountants and family lawyers each need the other’s work to be accurate: legal terms affect tax reporting, and tax consequences affect settlement value. This relationship can produce reciprocal referrals because clients often need both legal documentation and tax planning during and after separation.",
+      "triggers": [
+        {
+          "event": "Client asks whether spousal support or child support is deductible, taxable, or reportable.",
+          "whyNeed": "Support treatment depends on the legal character, wording, timing, and documentation of the obligation.",
+          "whoRecognizes": "Tax Partner, CPA, or Personal Tax Manager.",
+          "referralMoment": "Before the client signs a separation agreement, changes payment practices, or files a return based on informal support.",
+          "partnerValue": "The accountant receives clearer documents and reduces the risk of preparing returns from ambiguous arrangements."
+        },
+        {
+          "event": "Client separates and asks who can claim child-related credits, benefits, or eligible-dependant amounts.",
+          "whyNeed": "Parenting schedules, support arrangements, and legal custody/residence terms can affect tax and benefit positions.",
+          "whoRecognizes": "Personal Tax Accountant or Client Manager.",
+          "referralMoment": "When the accountant sees that the client is relying on an informal parenting or support understanding.",
+          "partnerValue": "The accountant can avoid becoming the de facto adviser on family-law entitlements."
+        },
+        {
+          "event": "Separating spouses need to divide a home, investments, pension interests, or private-company shares.",
+          "whyNeed": "Property division can trigger tax issues, but the legal settlement must also address equalization, disclosure, and enforceability.",
+          "whoRecognizes": "Tax Planning Manager or CPA Advisor.",
+          "referralMoment": "Before proposed transfers, buyouts, or settlement numbers are finalized.",
+          "partnerValue": "The accountant can coordinate tax-efficient planning with legally workable settlement terms."
+        }
+      ],
+      "mutualValue": "Accountants gain cleaner legal documents, fewer filing ambiguities, and a trusted place to send clients when questions become legal rather than tax-based. The law firm gains access to clients at a financially important moment and can refer back when tax modelling or compliance is needed.",
+      "approach": "Invite local tax accountants to a small roundtable on separation agreements and tax-sensitive drafting, with a shared checklist for when legal and tax advice should be coordinated.",
+      "decisionMaker": "Tax Partner",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Joint client checklist for tax-sensitive separation issues",
+        "Continuing-education style lunch-and-learn for accountants",
+        "Coordinated case conference protocol for shared clients",
+        "Webinar on tax documents clients should gather during separation"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on tax questions to address before finalizing a separation agreement",
+        "Joint FAQ on support payments, credits, and asset transfers with clear professional-scope disclaimers"
+      ],
+      "regulatoryNote": "Accountants may be regulated by professional standards and must avoid unauthorized legal advice; referrals should preserve client choice and confidentiality, and the law firm should avoid improper referral compensation or fee-sharing under Law Society of Ontario rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Accountants often see separation through tax filing, support, credits, and asset-division questions.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Family-law advice is directly relevant when tax issues depend on separation terms.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Tax questions recur annually and at major settlement milestones.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Clients with tax complexity often have meaningful support, property, or business issues requiring legal work.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Partners and managers at accounting firms are relatively identifiable and accustomed to professional referral networks.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Accountants maintain ongoing client relationships and revisit separation consequences at filing time.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both professionals improve client outcomes by coordinating legal wording and tax treatment.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Local accountants serving Hamilton and Ontario clients are highly aligned with the firm’s service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Professional networking with accountants is common and can begin with practical education rather than formal arrangements.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "CPA tax accountants",
+        "personal tax accounting firms",
+        "tax planning accountants"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "business-valuators",
+      "name": "Business valuators",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Business valuators encounter separating spouses when a privately held business, professional practice, shareholder interest, or self-employment income must be valued for family-property or support purposes. The referral opportunity arises when valuation work depends on disclosure strategy, legal relevance, income analysis, or settlement terms that must be handled by family-law counsel.",
+      "rationale": "Although less frequent, these matters can be commercially significant because business ownership often creates complex property division, income, and disclosure issues. Valuators benefit from legally framed instructions and clients whose family-law process supports reliable valuation work.",
+      "triggers": [
+        {
+          "event": "A spouse requests valuation of a private business or professional practice for separation negotiations.",
+          "whyNeed": "The valuation must fit Ontario family-property rules, disclosure obligations, and the intended settlement process.",
+          "whoRecognizes": "Business Valuator or Valuation Engagement Partner.",
+          "referralMoment": "Before the scope of work is finalized or when the client lacks family-law counsel to define the valuation purpose.",
+          "partnerValue": "Clear legal instructions reduce scope creep and disputes over what the report is meant to answer."
+        },
+        {
+          "event": "The valuator identifies incomplete records, related-party transactions, retained earnings, or income normalization issues.",
+          "whyNeed": "These issues may affect both property value and support income, requiring legal disclosure requests and negotiation strategy.",
+          "whoRecognizes": "Chartered Business Valuator or Forensic Accounting Manager.",
+          "referralMoment": "When valuation questions reveal legal disclosure gaps or contested income positions.",
+          "partnerValue": "The valuator can stay within expert scope while counsel handles disclosure, production, and settlement implications."
+        },
+        {
+          "event": "A business-owner client wants to settle quickly using an informal estimate of company value.",
+          "whyNeed": "Informal numbers can lead to unfair or unenforceable settlements if legal rights, disclosure, and valuation assumptions are not addressed.",
+          "whoRecognizes": "Valuation Advisor or Litigation Support Manager.",
+          "referralMoment": "When the client asks the valuator to validate a proposed buyout or equalization figure without legal context.",
+          "partnerValue": "The partner reduces professional risk by ensuring the client receives legal advice before relying on valuation outputs."
+        }
+      ],
+      "mutualValue": "Valuators receive better-scoped engagements, clearer document requests, and clients who understand why valuation evidence matters. The law firm gains access to complex files where business value, income, and settlement structure are central to the family-law matter.",
+      "approach": "Set up a technical coffee meeting with valuation professionals to compare intake checklists for family-law valuation matters and define when counsel should be involved before valuation scope is set.",
+      "decisionMaker": "Valuation Practice Leader",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Shared intake checklist for business-owner separation matters",
+        "Technical roundtable on valuation scope in family-law files",
+        "Joint client briefing on preparing business records for separation",
+        "Referral protocol for disclosure and valuation coordination"
+      ],
+      "digitalAuthority": [
+        "Co-authored explainer on why business valuation and family-law advice should be coordinated in separation"
+      ],
+      "regulatoryNote": "Valuators may be bound by professional independence, expert-witness, and confidentiality standards; referrals should not compromise neutrality, and the law firm should avoid improper referral compensation, fee-sharing, or any arrangement inconsistent with Law Society of Ontario rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Valuators encounter a strong legal need when separation involves a private business, though only in a subset of matters.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Family-law advice is essential to define disclosure, valuation purpose, and settlement use.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Business-valuation needs are occasional compared with general separation, parenting, and support issues.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Business-owner separations often involve complex and higher-value legal work.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Valuation practice leaders and engagement partners are identifiable within advisory firms.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "The same valuator may see recurring family-law matters, but individual client needs are episodic.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both sides benefit from properly scoped work, cleaner disclosure, and legally usable valuation outputs.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Ontario valuation expertise is relevant, and proximity helps when working with local business-owner clients.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is professionally natural but requires trust around independence and role boundaries.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "business valuation firms",
+        "chartered business valuators",
+        "valuation advisory firms"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "estate-planning-lawyers",
+      "name": "Estate planning lawyers",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Estate planning lawyers encounter separating spouses when clients want to update wills, powers of attorney, beneficiary designations, trusts, or insurance planning after a relationship breakdown. The referral opportunity is to involve family-law counsel before estate documents conflict with unresolved property, support, beneficiary, or dependent obligations.",
+      "rationale": "Estate planning and family law intersect frequently after separation, and both practices can protect the client better when obligations are coordinated. The relationship is commercially sensible because referrals can flow both ways: separating clients later need estate updates, and estate-planning clients may first need family-law advice.",
+      "triggers": [
+        {
+          "event": "Client asks to remove a former spouse from a will, power of attorney, or beneficiary designation after separation.",
+          "whyNeed": "The client may still have family-law obligations or unresolved property and support rights that affect estate planning choices.",
+          "whoRecognizes": "Estate Planning Lawyer or Wills and Estates Associate.",
+          "referralMoment": "Before executing documents that assume the family-law issues are already resolved.",
+          "partnerValue": "The estate lawyer reduces the risk of drafting documents that conflict with existing or pending family-law obligations."
+        },
+        {
+          "event": "Client with minor children wants to revise guardianship, trust, or insurance arrangements after separation.",
+          "whyNeed": "Parenting arrangements, child support, decision-making responsibility, and beneficiary structures should be consistent with family-law advice.",
+          "whoRecognizes": "Estate Planning Lawyer or Trusts Lawyer.",
+          "referralMoment": "When the client describes informal parenting arrangements or unresolved support discussions.",
+          "partnerValue": "The estate lawyer can produce a plan grounded in the client’s actual legal rights and obligations."
+        },
+        {
+          "event": "Separated client has a new partner, blended family, or jointly owned property but no finalized separation agreement.",
+          "whyNeed": "Property division, equalization, support, and estate claims can overlap if separation terms remain unsettled.",
+          "whoRecognizes": "Wills and Estates Lawyer or Estate Administration Lawyer.",
+          "referralMoment": "When the estate lawyer identifies unfinished family-property or support issues during intake.",
+          "partnerValue": "The estate lawyer can sequence the work correctly and avoid downstream disputes."
+        }
+      ],
+      "mutualValue": "Estate lawyers gain confidence that their planning does not undermine or ignore family-law obligations, while the family law firm can refer clients back for post-separation wills, powers of attorney, beneficiary planning, and estate administration issues. Clients receive a more coherent plan across separation and future incapacity or death risks.",
+      "approach": "Host a lawyer-to-lawyer breakfast discussion on sequencing family-law settlements and estate-plan updates after separation, with mutual issue-spotting checklists.",
+      "decisionMaker": "Managing Partner or Estates Practice Group Leader",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Cross-practice issue-spotting checklist for separated clients",
+        "Joint seminar on wills, beneficiaries, and separation",
+        "Professional roundtable on blended-family planning after separation",
+        "Client handoff template for post-separation estate updates"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on estate documents to review after separation in Ontario",
+        "Joint webinar on how separation affects wills, powers of attorney, and beneficiary planning"
+      ],
+      "regulatoryNote": "Both parties are legal professionals regulated by the Law Society of Ontario; any referral arrangement must comply with professional conduct rules, client consent, confidentiality, conflict checks, and restrictions on referral fees or fee-sharing.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Estate lawyers often learn of separation when clients update planning documents.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Unresolved family-law rights can directly affect estate planning and beneficiary decisions.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Will and beneficiary updates are common life-event responses to separation.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Files can lead to full separation agreements, property advice, support advice, or post-resolution estate planning.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Practice leaders and managing partners are accessible through legal professional networks.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Estate lawyers repeatedly encounter life changes that create family-law referral needs.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The referral flow is naturally reciprocal and improves professional risk management for both practices.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Ontario-specific family and estate law makes local or provincial alignment highly important.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Lawyer-to-lawyer relationships are straightforward to initiate, subject to conflicts and professional obligations.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "estate planning lawyers",
+        "wills and estates law firms",
+        "trusts and estates lawyers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "criminal-defence-lawyers",
+      "name": "Criminal defence lawyers",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Criminal defence counsel may meet separating spouses or parents immediately after domestic allegations, bail conditions, no-contact orders, or peace-bond discussions. Those criminal-law steps can directly affect parenting time, home access, communication channels, and the ability to negotiate a separation agreement, creating an early referral point for coordinated family-law advice.",
+      "rationale": "The matters are occasional but high-urgency, and poor coordination between criminal conditions and family arrangements can create serious practical problems for the client. A relationship makes commercial sense because defence counsel can protect the criminal matter while the family lawyer addresses parenting, support, possession of the home, and communication structures.",
+      "triggers": [
+        {
+          "event": "A client is released on conditions prohibiting contact with a spouse or attendance at the family home.",
+          "whyNeed": "The client may need urgent family-law advice about parenting exchanges, belongings, home access, and permitted communication methods.",
+          "whoRecognizes": "Criminal defence lawyer or duty counsel-style defence practitioner.",
+          "referralMoment": "As soon as release conditions are reviewed and before the client tries to arrange parenting or property access informally.",
+          "partnerValue": "The defence lawyer reduces the risk that family conflict leads to a breach allegation or undermines the criminal strategy."
+        },
+        {
+          "event": "A peace bond or resolution discussion includes terms affecting children, residence, or contact.",
+          "whyNeed": "Family-law advice is needed to ensure criminal-law terms do not unintentionally conflict with parenting arrangements or future family orders.",
+          "whoRecognizes": "Criminal defence lawyer handling resolution discussions.",
+          "referralMoment": "Before the client agrees to terms that could restrict parenting time, exchanges, or communication.",
+          "partnerValue": "The defence lawyer can negotiate criminal terms with better awareness of family-law consequences."
+        },
+        {
+          "event": "A domestic allegation occurs during an active separation with disputes over parenting or the home.",
+          "whyNeed": "The family-law file may require urgent temporary arrangements, evidence preservation, and communication protocols that respect the criminal process.",
+          "whoRecognizes": "Criminal defence lawyer during intake or first appearance preparation.",
+          "referralMoment": "Once the lawyer learns there are children, shared property, or an ongoing separation.",
+          "partnerValue": "The defence lawyer gains a coordinated professional counterpart who can address issues outside the criminal retainer."
+        }
+      ],
+      "mutualValue": "Defence counsel gains practical family-law guidance that helps clients avoid breaches and conflicting strategies, while the family law firm receives urgent, high-need matters where early advice can materially affect outcomes. The relationship can also be reciprocal where family clients face allegations or need advice about potential criminal exposure.",
+      "approach": "Offer a short, non-promotional briefing for criminal defence lawyers on how bail, no-contact terms, and peace bonds interact with parenting schedules and separation agreements, with a simple referral checklist for urgent family-law issues.",
+      "decisionMaker": "Principal lawyer or managing partner",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Continuing-education style lunch-and-learn on domestic charges and parenting implications",
+        "Shared issue-spotting checklist for bail conditions and family-law needs",
+        "Cross-referral protocol for urgent matters involving children or home access"
+      ],
+      "digitalAuthority": [
+        "Co-authored plain-language article on how no-contact conditions can affect parenting arrangements after separation"
+      ],
+      "regulatoryNote": "Legal referrals must comply with Law Society of Ontario rules on confidentiality, conflicts, client consent, independent professional judgment, and any permitted referral-fee disclosure requirements; do not assume compensation, exclusivity, or endorsement.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Defence counsel directly encounters urgent family-law consequences when domestic allegations involve spouses, children, or the shared home.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Parenting, home access, communication, and separation agreements are highly relevant when criminal conditions affect family life.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "The overlap is meaningful but occasional compared with routine separation-intake channels.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "When the need arises, it is often urgent and complex enough to justify paid family-law advice.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Small criminal practices are reachable, but lawyers are busy and careful about referral relationships.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "A single defence firm may only see suitable family-law referral opportunities intermittently.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both sides benefit from avoiding conflicting legal strategies and protecting the client across related matters.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Criminal release conditions, family parenting logistics, and court processes are strongly local to the Hamilton/Ontario service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is practical to start, but professional-regulation and conflict considerations require a careful, non-transactional approach.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "criminal defence lawyers",
+        "domestic assault defence lawyers",
+        "peace bond lawyers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "immigration-counsel",
+      "name": "Immigration counsel",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Immigration counsel may encounter separating spouses where sponsorship, permanent residence applications, work or study status, travel documents, or relocation plans are affected by the breakdown of the relationship. A referral opportunity arises when family orders, parenting terms, consent to travel, or separation documentation are needed to support immigration strategy.",
+      "rationale": "Although not every separation has immigration implications, the overlap can be high-stakes where status, travel, or children’s cross-border arrangements are involved. The family law firm can help create legal clarity that immigration counsel can rely on when advising about applications, sponsorship issues, or mobility constraints.",
+      "triggers": [
+        {
+          "event": "A sponsored spouse separates from the sponsor during or after an immigration process.",
+          "whyNeed": "The client may need family-law advice on support, property, parenting, and documentation of separation while immigration counsel handles status consequences.",
+          "whoRecognizes": "Immigration lawyer or licensed immigration consultant working with the client.",
+          "referralMoment": "When the client discloses the separation or before submitting information that depends on relationship status.",
+          "partnerValue": "Immigration counsel receives clearer family-law facts and documents to align with immigration filings."
+        },
+        {
+          "event": "A parent wants to travel internationally or relocate with a child after separation.",
+          "whyNeed": "Parenting consent, decision-making responsibility, travel letters, or court orders may be required before immigration or travel steps can proceed safely.",
+          "whoRecognizes": "Immigration counsel advising on visas, passports, travel documents, or relocation.",
+          "referralMoment": "Before travel plans, applications, or relocation commitments are finalized.",
+          "partnerValue": "Immigration counsel reduces the risk of advising on travel plans that conflict with parenting rights or court orders."
+        },
+        {
+          "event": "A separation agreement or court order is requested to explain financial support, custody, or household composition in an immigration matter.",
+          "whyNeed": "A family lawyer may be needed to draft or review enforceable terms and ensure the document accurately reflects parenting and support arrangements.",
+          "whoRecognizes": "Immigration counsel preparing application evidence or responding to procedural fairness concerns.",
+          "referralMoment": "Before the document is submitted to immigration authorities or relied on as evidence.",
+          "partnerValue": "Immigration counsel gains stronger, legally coherent supporting documentation."
+        }
+      ],
+      "mutualValue": "Immigration counsel gains reliable family-law input for status, travel, and sponsorship issues, while the family law firm receives clients whose separation has added urgency and documentation needs. The relationship can be reciprocal when family clients need immigration advice about status, sponsorship, or cross-border parenting issues.",
+      "approach": "Create a short issue-spotting guide for immigration practitioners on when separation, parenting, and support issues require Ontario family-law advice, then invite a small group to discuss cross-border family scenarios.",
+      "decisionMaker": "Managing lawyer or principal counsel",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Joint webinar on separation, sponsorship, and parenting travel issues",
+        "Co-authored client checklist for separated parents dealing with travel documents",
+        "Professional roundtable on relocation and immigration-status complications"
+      ],
+      "digitalAuthority": [
+        "Co-authored FAQ on separation documents and immigration applications",
+        "Newsletter article on consent-to-travel issues for separated parents"
+      ],
+      "regulatoryNote": "Legal referrals must comply with Law Society of Ontario rules on confidentiality, conflicts, client consent, independent professional judgment, and any permitted referral-fee disclosure requirements; if working with immigration consultants, avoid implying legal endorsement beyond their licensed scope.",
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Immigration counsel encounters separation-related needs when relationship status, sponsorship, travel, or relocation becomes relevant.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Family-law documentation and parenting arrangements can be central to immigration and travel strategy.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "The need is occasional because many immigration matters do not involve active separation or children.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "When immigration and separation issues intersect, clients often need timely and careful legal advice.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Immigration practitioners are identifiable and locally networked, though referrals depend on trust and scope clarity.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "The same partner may produce sporadic rather than steady referral opportunities.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Both practices benefit from clearer documentation and coordinated advice for clients with overlapping legal problems.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Ontario family-law advice is relevant locally, even though immigration issues may involve federal or international elements.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is feasible with educational outreach, but cross-practice boundaries must be handled carefully.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "immigration lawyers",
+        "immigration counsel",
+        "licensed immigration consultants"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "family-mediators",
+      "name": "Family mediators",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Family mediators regularly meet separating spouses and parents who are actively negotiating parenting, support, property division, and separation-agreement terms. Referral opportunities arise when participants need independent legal advice, legal drafting, financial disclosure guidance, or advice before signing minutes of settlement or a separation agreement.",
+      "rationale": "This is one of the most commercially logical channels because mediators encounter clients at the exact point where legal advice is needed to make negotiated outcomes durable and informed. The family law firm can support clients without undermining the mediator’s neutrality, and can refer suitable low-conflict clients back to mediation where appropriate.",
+      "triggers": [
+        {
+          "event": "Mediation participants reach tentative minutes of settlement or a memorandum of understanding.",
+          "whyNeed": "Each party may need independent legal advice before converting terms into a binding separation agreement or court order.",
+          "whoRecognizes": "Family mediator.",
+          "referralMoment": "Immediately after tentative terms are reached and before either party signs binding documents.",
+          "partnerValue": "The mediator improves the durability of settlements and reduces the risk of later claims that a party did not understand the terms."
+        },
+        {
+          "event": "One or both parties arrive at mediation without complete financial disclosure.",
+          "whyNeed": "Legal advice may be needed on disclosure obligations, support calculations, property valuation, and risks of incomplete information.",
+          "whoRecognizes": "Family mediator during intake or disclosure review.",
+          "referralMoment": "Before substantive negotiations begin or before financial terms are finalized.",
+          "partnerValue": "The mediator gets better-prepared participants and a more balanced negotiation process."
+        },
+        {
+          "event": "A mediation reveals power imbalance, uncertainty about rights, or confusion over parenting and support law.",
+          "whyNeed": "A party may need independent advice to understand legal entitlements, options, and risks before continuing negotiations.",
+          "whoRecognizes": "Family mediator observing the process.",
+          "referralMoment": "When the issue becomes apparent and before the client makes concessions they may later regret.",
+          "partnerValue": "The mediator protects process integrity and maintains neutrality by directing participants to independent advice."
+        }
+      ],
+      "mutualValue": "Mediators gain legally informed participants, more complete disclosure, and agreements that are less likely to unravel, while the family law firm receives clients who are already engaged in resolution and need advice or drafting. The firm can also refer appropriate clients to mediation, creating a genuine reciprocal pathway without compromising mediator neutrality.",
+      "approach": "Meet with local family mediators to agree on a clear independent-legal-advice and drafting workflow, including turnaround expectations, conflict checks, and how to preserve mediator neutrality.",
+      "decisionMaker": "Lead mediator or mediation practice director",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Independent legal advice referral workflow",
+        "Joint public webinar on preparing for family mediation",
+        "Co-authored mediation preparation checklist",
+        "Professional case conference format for non-confidential process issues with client consent"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on what to do before and after family mediation",
+        "Newsletter feature explaining independent legal advice after mediation"
+      ],
+      "regulatoryNote": "Family-law referrals and independent legal advice must comply with Law Society of Ontario duties on conflicts, confidentiality, client consent, independent judgment, and referral-fee rules; mediators must preserve neutrality and should not appear to endorse one lawyer for both parties.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Mediators encounter separating spouses and parents precisely when legal advice, disclosure review, or drafting is often needed.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The firm’s services directly support mediation outcomes through advice, agreement drafting, and parenting/support/property guidance.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 5,
+          "rationale": "Family mediators repeatedly work with the same client profile and regularly identify legal-advice needs.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Many referrals may be limited-scope or advice-focused, but they are highly relevant and can develop into broader retainers.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Mediation practices are usually approachable through professional networking and shared education.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "The need for independent advice and drafting recurs across many mediation files.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both parties benefit from better-prepared clients, clearer agreements, and reciprocal resolution pathways.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Family mediation and Ontario family-law advice are strongly tied to the local court and professional ecosystem.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The partnership is relatively easy to establish if neutrality, conflicts, and independent-advice boundaries are clear.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "family mediators",
+        "separation mediators",
+        "parenting mediators"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "co-parenting-professionals",
+      "name": "Co-parenting professionals",
+      "relationshipType": "downstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Co-parenting coaches, parenting coordinators, counsellors working on co-parenting issues, and similar professionals often see families after an agreement or order is already in place. They may identify recurring conflict over exchanges, holidays, decision-making, relocation, communication apps, or compliance, which can signal the need for variation, enforcement, or clarification advice.",
+      "rationale": "This channel is downstream but valuable because post-agreement conflict often creates repeat legal needs and early intervention can prevent escalation. The relationship also supports the firm’s clients after legal documents are signed by connecting them with practical co-parenting help.",
+      "triggers": [
+        {
+          "event": "Parents repeatedly dispute exchanges, holiday schedules, or communication rules despite an existing agreement or order.",
+          "whyNeed": "A lawyer may need to advise on interpretation, enforcement, variation, or clearer drafting of parenting terms.",
+          "whoRecognizes": "Co-parenting coach, parenting coordinator, or family counsellor focused on co-parenting.",
+          "referralMoment": "When practical coaching cannot resolve the dispute because the legal terms are unclear or not being followed.",
+          "partnerValue": "The professional can keep their work within practical support boundaries and avoid giving legal advice."
+        },
+        {
+          "event": "One parent raises relocation, school change, medical decision-making, or major activity disputes.",
+          "whyNeed": "These issues may require legal advice about decision-making responsibility, notice requirements, consent, or court remedies.",
+          "whoRecognizes": "Co-parenting professional during sessions or parenting coordination meetings.",
+          "referralMoment": "Before parents act unilaterally or before conflict escalates into a crisis.",
+          "partnerValue": "The professional gains clearer legal parameters for ongoing coaching or coordination."
+        },
+        {
+          "event": "A parent reports non-compliance with support, parenting time, or communication provisions.",
+          "whyNeed": "The client may need advice on enforcement options, documentation, or whether a variation is more appropriate than continued informal negotiation.",
+          "whoRecognizes": "Co-parenting professional monitoring recurring conflict patterns.",
+          "referralMoment": "When non-compliance becomes repeated or materially affects the child or parent’s stability.",
+          "partnerValue": "The professional can redirect legal issues to counsel while focusing on behaviour, communication, and child-centred planning."
+        }
+      ],
+      "mutualValue": "Co-parenting professionals gain clarity on when issues are legal rather than coaching-based, while the family law firm can offer clients practical post-resolution support that may reduce future conflict. The relationship is strongest when both sides respect scope boundaries and focus on child-centred outcomes.",
+      "approach": "Invite co-parenting professionals to a short roundtable on common post-agreement failure points, with a shared issue-spotting guide distinguishing coaching issues from legal-advice issues.",
+      "decisionMaker": "Practice director or senior co-parenting professional",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Workshop on post-separation parenting plans and common conflict points",
+        "Shared legal-versus-coaching issue-spotting checklist",
+        "Client handout on when to seek legal advice during co-parenting conflict",
+        "Referral pathway for post-agreement support with client consent"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on when co-parenting conflict becomes a legal issue",
+        "Webinar on making parenting plans workable after separation"
+      ],
+      "regulatoryNote": "If the professional is a regulated health or social-service provider, referrals must respect confidentiality, informed consent, professional scope, and rules against improper inducements; lawyers must also comply with Law Society of Ontario referral, conflict, and confidentiality obligations.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "These professionals regularly see separated parents struggling with the practical consequences of legal arrangements.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Variation, enforcement, clarification, and parenting advice are directly relevant to recurring co-parenting disputes.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Co-parenting conflict is a recurring issue across many post-separation families.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Some matters may be limited-scope, but repeated or escalating disputes can require substantial legal work.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable, but the category is fragmented across coaching, counselling, and coordination practices.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "The same professionals may repeatedly identify families whose legal terms no longer fit or are not being followed.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both sides benefit when legal boundaries and practical parenting support reinforce each other.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Parenting schedules, school issues, and local support resources are highly local to the service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is practical but requires careful scope boundaries, especially where counselling or child-related services are involved.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "co-parenting coaches",
+        "parenting coordinators",
+        "family counsellors co-parenting"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "realtors-and-appraisers",
+      "name": "Realtors and appraisers",
+      "relationshipType": "downstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Realtors and appraisers encounter separating spouses when the matrimonial home must be listed, valued for a buyout, refinanced, or sold as part of property division. They may notice unresolved authority to sell, disagreement over listing price, valuation disputes, occupation issues, or uncertainty about how sale proceeds will be handled, creating a referral opportunity for family-law advice.",
+      "rationale": "The home is often a major asset in separation, so real estate steps frequently expose unresolved legal issues that can delay transactions. A family-law relationship helps real estate professionals avoid stalled listings and valuation disputes while the law firm gains clients with concrete property-division needs.",
+      "triggers": [
+        {
+          "event": "One spouse wants to list or sell the matrimonial home but the other spouse disagrees or will not sign documents.",
+          "whyNeed": "Family-law advice may be needed on authority to sell, possession, consent, court remedies, and temporary arrangements.",
+          "whoRecognizes": "Realtor during listing discussions or intake.",
+          "referralMoment": "Before taking the listing or promising a sale timeline that depends on both spouses’ cooperation.",
+          "partnerValue": "The realtor avoids a stalled or disputed listing and can proceed only when authority and expectations are clearer."
+        },
+        {
+          "event": "Separating spouses request an appraisal for a buyout or equalization calculation but disagree on date, assumptions, or value.",
+          "whyNeed": "Legal advice may be needed on valuation date, disclosure, expert evidence, and how the value fits into property division.",
+          "whoRecognizes": "Appraiser or realtor asked for market opinions.",
+          "referralMoment": "When the professional sees the valuation is being used in a separation negotiation or dispute.",
+          "partnerValue": "The appraiser receives clearer instructions and reduces the risk of being pulled into a legal dispute beyond their valuation role."
+        },
+        {
+          "event": "A pending sale raises questions about net proceeds, mortgage payout, liens, or who remains in the home until closing.",
+          "whyNeed": "A separation agreement, interim arrangement, or legal advice may be needed to address proceeds, expenses, occupancy, and closing logistics.",
+          "whoRecognizes": "Realtor, appraiser, or real estate transaction coordinator.",
+          "referralMoment": "As soon as unresolved separation terms threaten listing, negotiation, or closing.",
+          "partnerValue": "The real estate professional improves the likelihood of a smoother transaction and fewer last-minute conflicts."
+        }
+      ],
+      "mutualValue": "Realtors and appraisers gain clearer authority, instructions, and transaction conditions, while the family law firm receives clients with immediate property-division and agreement needs. The law firm can also refer clients who need a valuation or sale handled by professionals who understand separation sensitivities.",
+      "approach": "Provide a practical briefing for real estate and valuation professionals on matrimonial-home red flags, including when to pause and suggest independent family-law advice before listing, valuing, or closing.",
+      "decisionMaker": "Broker of record, team lead, or appraisal practice owner",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Lunch-and-learn on matrimonial-home issues during separation",
+        "Checklist for listing or valuing property owned by separating spouses",
+        "Client seminar on selling or buying out the family home after separation",
+        "Referral protocol for valuation requests in family-law files"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on selling the matrimonial home during separation",
+        "Newsletter Q&A on appraisals and buyouts in property division"
+      ],
+      "regulatoryNote": "Real estate and appraisal professionals are regulated and must avoid legal advice, conflicts, misleading endorsements, and improper inducements; lawyers must comply with Law Society of Ontario rules on referrals, confidentiality, conflicts, and client consent.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Real estate and appraisal professionals directly encounter separating spouses when the home must be valued, sold, or refinanced.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Property division, sale authority, occupation, and net-proceeds terms are core family-law issues.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Home valuation or sale is common in separations involving owned property, though not every client owns a home.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Property disputes often justify legal advice because the financial stakes and transaction deadlines are significant.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Brokers, team leads, and appraisal practice owners are relatively accessible through local professional networking.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Active real estate professionals repeatedly encounter divorce or separation-related sale and valuation issues.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both sides benefit from fewer stalled transactions, clearer instructions, and better-informed clients.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Real estate transactions, local market valuations, and Ontario matrimonial-home rules are highly local.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship is straightforward to start through education and checklists, provided legal and real estate scopes remain distinct.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "realtors divorce real estate",
+        "real estate appraisers",
+        "matrimonial home appraisers"
+      ],
+      "existingRelationship": false
+    }
+  ],
+  "assumptions": [
+    "Customer journey used for the analysis: Relationship strain, safety concerns, or one spouse starts planning a separation. → Immediate questions arise about children, home occupancy, money, and communication boundaries. → The couple gathers documents and values property, debts, income, pensions, and any business interests. → Temporary parenting, support, and housing arrangements are negotiated, mediated, or litigated. → A separation agreement or court order is finalized and implemented with lenders, employers, schools, and advisors. → Post-separation issues emerge, such as enforcement, relocation, income changes, remarriage, or parenting conflict..",
+    "People rarely start with a family lawyer. They start with a counsellor, a mortgage broker, an accountant, an EAP, or a friend. The professionals who see the separation first shape who gets called.",
+    "Family law has strong reciprocal intersections with criminal, immigration, estate, and tax matters. Lawyers in those areas meet family-law clients at urgent moments.",
+    "No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing."
+  ],
+  "guardrails": [
+    {
+      "title": "Referral compensation",
+      "body": "Referral relationships for lawyers and paralegals are regulated by the law society. Paying or receiving anything of value from non-licensees for referrals is generally prohibited, and licensee-to-licensee referral fees carry conditions such as client disclosure and limits. Build these relationships on expertise and reciprocity, and verify against current rules."
+    },
+    {
+      "title": "Partnerships are not paid-referral arrangements",
+      "body": "This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals."
+    },
+    {
+      "title": "Outreach in Canada: CASL applies",
+      "body": "Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA)."
+    },
+    {
+      "title": "No automated outreach",
+      "body": "This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline."
+    }
+  ]
+}

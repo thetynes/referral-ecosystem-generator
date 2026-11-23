@@ -1,0 +1,1578 @@
+{
+  "id": "57841bdb-04c7-4401-ad67-a3cc1fdc45d4",
+  "createdAt": "2026-11-23T23:22:13.981Z",
+  "isDemo": false,
+  "profile": {
+    "displayName": "Sample Immigration Law (illustrative)",
+    "website": null,
+    "industry": "Immigration law firm",
+    "services": [
+      "Work permits",
+      "LMIA",
+      "spousal sponsorship",
+      "permanent residence",
+      "refusals",
+      "judicial review",
+      "inadmissibility"
+    ],
+    "serviceArea": "Toronto, Ontario",
+    "geography": {
+      "country": "CA",
+      "region": "Ontario",
+      "scope": "local"
+    },
+    "idealCustomer": "Individuals and families, employers hiring foreign workers, international students, foreign nationals",
+    "customerSegments": [
+      "Individuals",
+      "families",
+      "employers hiring foreign workers",
+      "international students",
+      "foreign nationals"
+    ],
+    "projectValue": null,
+    "targetIndustries": [],
+    "growthPriority": null,
+    "existingReferrals": [],
+    "expansionMarkets": []
+  },
+  "engine": {
+    "mode": "ai",
+    "provider": "openai",
+    "model": "gpt-5.5",
+    "archetypeId": "immigration-law",
+    "archetypeLabel": "Immigration law",
+    "matchConfidence": "high",
+    "notes": [],
+    "version": "1.0.0",
+    "costUsd": 0.61239
+  },
+  "categories": [
+    {
+      "id": "employers-and-hr-teams",
+      "name": "Employers and HR teams",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Employers and HR teams encounter foreign national candidates and employees before immigration deadlines become urgent: offer stage, onboarding, internal transfers, permit renewals, and role changes. The referral opportunity is to connect the employer or worker with immigration counsel early enough to assess work authorization, LMIA needs, compliance risk, and timing before a hiring decision or expiry date becomes critical.",
+      "rationale": "This relationship makes strong commercial sense because employer-side immigration needs are recurring, time-sensitive, and often tied to business-critical hiring or retention decisions. A Toronto immigration law firm can support both one-off employee matters and repeat employer files involving work permits, LMIAs, extensions, status maintenance, inadmissibility concerns, and refusals.",
+      "triggers": [
+        {
+          "event": "Foreign candidate selected for a Canadian role",
+          "whyNeed": "The candidate may need a work permit, LMIA-supported pathway, or confirmation of an LMIA-exempt category before they can lawfully start work.",
+          "whoRecognizes": "HR Manager, Talent Acquisition Manager, or People Operations lead.",
+          "referralMoment": "Before the written offer, start date, or relocation timeline is finalized.",
+          "partnerValue": "The employer reduces failed starts, timeline surprises, and non-compliance risk."
+        },
+        {
+          "event": "Existing employee’s work permit is nearing expiry",
+          "whyNeed": "The employee may need an extension, maintained status strategy, LMIA renewal, employer-specific permit update, or PR pathway planning.",
+          "whoRecognizes": "HR compliance staff, payroll, or the employee’s manager during internal renewal tracking.",
+          "referralMoment": "Several months before expiry, before payroll or scheduling consequences arise.",
+          "partnerValue": "The employer improves workforce continuity and avoids last-minute disruption."
+        },
+        {
+          "event": "Role, location, employer, or job duties change for a foreign worker",
+          "whyNeed": "Changes may affect whether the worker’s current authorization remains valid, especially for employer-specific permits or LMIA-based roles.",
+          "whoRecognizes": "HR Business Partner, Compensation/Job Evaluation team, or hiring manager.",
+          "referralMoment": "Before the promotion, transfer, or job description change is implemented.",
+          "partnerValue": "The employer can proceed with internal changes while managing immigration compliance."
+        }
+      ],
+      "mutualValue": "HR teams gain a reliable legal education and escalation channel for complex work authorization issues, while the law firm gains access to recurring, high-intent matters that arise naturally in recruiting and retention workflows. The relationship can be framed around risk reduction, better planning, and employee experience rather than referral compensation.",
+      "approach": "Offer a short compliance-focused briefing for HR and talent acquisition teams on common work authorization triggers, expiry planning, LMIA timing, and when legal advice should be sought, followed by a simple escalation protocol for urgent situations.",
+      "decisionMaker": "Director of Human Resources",
+      "overlooked": false,
+      "collaborationFormats": [
+        "HR lunch-and-learn on work authorization and LMIA planning",
+        "Permit-expiry checklist for HR teams",
+        "Private Q&A session for recruiters and HR business partners",
+        "Template escalation guide for immigration-sensitive hiring scenarios"
+      ],
+      "digitalAuthority": [
+        "Co-authored employer guide on avoiding immigration issues during hiring and onboarding",
+        "Guest educational article for an HR newsletter on work permit renewal planning"
+      ],
+      "regulatoryNote": "Immigration law is a regulated legal service. Any referral relationship must avoid improper fee-sharing, undisclosed referral fees, misleading endorsements, or pressure on clients; clients should remain free to choose counsel and receive appropriate information about the lawyer’s role and fees.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "HR teams encounter immigration needs at the earliest and most commercially important points: recruiting, onboarding, renewals, and internal employee changes.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Work permits, LMIAs, status changes, refusals, and employer compliance align directly with the firm’s services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Employers with foreign workers or international hiring needs may face repeated matters, though frequency depends on hiring volume.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Employer immigration files can involve urgent, high-stakes legal work and may lead to repeat matters across multiple employees.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "HR decision-makers are identifiable and reachable through professional education, compliance topics, and business networks.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Hiring cycles, permit expiries, role changes, and retention planning create ongoing referral opportunities.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The partner gains reduced compliance risk and smoother workforce planning, while the firm gains relevant legal matters.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Toronto and Ontario employers regularly deal with local hiring, onboarding, and compliance issues involving foreign nationals.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship can start with education and practical tools, though trust-building is required before referrals occur.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "HR associations immigration compliance",
+        "employer work permit compliance training",
+        "talent acquisition foreign workers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "international-recruiters",
+      "name": "International recruiters",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "International recruiters encounter candidates before employers fully understand immigration feasibility, timing, or refusal risk. The referral opportunity is to bring immigration legal review into the placement process before expectations are set, especially where a work permit, LMIA-supported role, prior refusal, inadmissibility concern, or status transition could affect the hire.",
+      "rationale": "This relationship is commercially logical because immigration barriers can directly determine whether a placement succeeds. Recruiters benefit from better candidate readiness and fewer failed placements, while the law firm receives matters tied to active job opportunities and employer demand.",
+      "triggers": [
+        {
+          "event": "Foreign candidate is shortlisted for a Canadian employer",
+          "whyNeed": "The candidate may need a work permit, LMIA assessment, employer-specific permit, or advice on whether they can start by the employer’s required date.",
+          "whoRecognizes": "International Recruitment Consultant or Account Manager.",
+          "referralMoment": "Before the recruiter presents final timelines or before the employer issues an offer.",
+          "partnerValue": "The recruiter avoids overpromising and improves the chance of a successful placement."
+        },
+        {
+          "event": "Candidate discloses a prior visa refusal, overstay, criminal charge, or inadmissibility concern",
+          "whyNeed": "The issue may affect eligibility for a work permit or entry to Canada and may require a legal strategy before proceeding.",
+          "whoRecognizes": "Recruitment consultant during screening or document collection.",
+          "referralMoment": "Immediately after the concern is identified and before the candidate is submitted to the employer.",
+          "partnerValue": "The recruiter protects the client relationship by identifying serious barriers early."
+        },
+        {
+          "event": "Employer asks whether an LMIA-supported hire is realistic",
+          "whyNeed": "The employer may need legal advice on LMIA requirements, recruitment evidence, wage considerations, and processing strategy.",
+          "whoRecognizes": "Recruiter, business development manager, or employer account lead.",
+          "referralMoment": "Before the recruiter structures the search around foreign candidates or commits to start dates.",
+          "partnerValue": "The recruiter can advise the employer on process expectations without providing unauthorized legal advice."
+        }
+      ],
+      "mutualValue": "Recruiters gain a practical escalation partner for immigration-sensitive placements, helping them protect their credibility with both candidates and employers. The law firm gains upstream access to candidates and employers with immediate, concrete immigration needs connected to a job opportunity.",
+      "approach": "Create a recruiter-facing triage checklist that identifies when a candidate should be referred for immigration legal advice, then offer a short training session on what recruiters can and cannot say about Canadian work authorization.",
+      "decisionMaker": "Managing Director of Recruitment",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Recruiter training on work authorization red flags",
+        "Candidate immigration-readiness checklist",
+        "Employer-facing webinar on hiring foreign workers",
+        "Referral protocol for candidates with refusals or inadmissibility concerns"
+      ],
+      "digitalAuthority": [
+        "Educational Q&A article for recruiter audiences on when work authorization needs legal review",
+        "Co-branded guide on immigration timing considerations in international hiring"
+      ],
+      "regulatoryNote": "Immigration law is a regulated legal service. Recruiters should not provide legal advice unless authorized, and any referral arrangement must avoid improper referral fees, misleading claims, exclusivity, or pressure on candidates or employers to retain a particular lawyer.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Recruiters identify immigration barriers before placement, often before employers fully appreciate the legal implications.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Work permits, LMIAs, refusals, and inadmissibility issues are directly relevant to international recruitment.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Recruiters specializing in cross-border or international talent may encounter these issues regularly, though volume varies by desk and sector.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Matters are often tied to urgent employment opportunities and can involve both candidate and employer-side legal needs.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Recruitment firm leaders and account managers are commercially motivated and generally open to practical resources that reduce failed placements.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Each new search involving foreign talent can create another immigration assessment or referral opportunity.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The recruiter protects placement outcomes while the law firm receives highly relevant inbound matters.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Toronto and Ontario employers use recruiters for specialized and international hiring, though some recruiter relationships may be national rather than local.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A practical checklist or training session is a low-friction way to begin, provided boundaries around legal advice are clear.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "international recruitment agencies Canada",
+        "foreign worker recruiters",
+        "global talent recruitment firms"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "college-international-offices",
+      "name": "College international offices",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "College international offices interact with international students throughout the student lifecycle: admission, arrival, academic changes, co-op preparation, graduation, PGWP timing, family issues, and status expiry. The referral opportunity is to provide legal education and appropriate escalation options when students need legal advice on study permit conditions, PGWP eligibility, spousal sponsorship or permits, permanent residence planning, refusals, or inadmissibility.",
+      "rationale": "This is commercially relevant because international students and their families often have multiple immigration needs over time, from study authorization to work authorization and permanent residence. While offices may provide general information, legal issues and complex cases need referral pathways to licensed immigration counsel.",
+      "triggers": [
+        {
+          "event": "Student approaches graduation or program completion",
+          "whyNeed": "PGWP timing, eligibility, passport validity, part-time study history, and status maintenance can affect the student’s ability to work after graduation.",
+          "whoRecognizes": "International Student Advisor or International Office Coordinator.",
+          "referralMoment": "Before the student completes the program or submits a PGWP application, especially if there are eligibility concerns.",
+          "partnerValue": "The office reduces crisis cases and supports better student outcomes after graduation."
+        },
+        {
+          "event": "Student changes program, takes a break, fails courses, or drops below full-time status",
+          "whyNeed": "Academic changes may affect study permit compliance, PGWP eligibility, and future status strategy.",
+          "whoRecognizes": "Academic advisor, registrar staff, or international student advisor.",
+          "referralMoment": "As soon as the academic status change is requested or recorded.",
+          "partnerValue": "The office helps students understand when general advice is insufficient and legal review may be needed."
+        },
+        {
+          "event": "Student receives a refusal, procedural fairness letter, or inadmissibility concern",
+          "whyNeed": "The matter may require legal analysis, response strategy, reconsideration, appeal options, or judicial review assessment.",
+          "whoRecognizes": "International office staff when the student asks for help or discloses the decision.",
+          "referralMoment": "Immediately, because response and court deadlines can be short.",
+          "partnerValue": "The office can support the student without stepping beyond its advisory role or missing urgent deadlines."
+        }
+      ],
+      "mutualValue": "International offices gain credible legal education resources, clearer escalation pathways, and reduced pressure on staff to handle complex legal situations beyond their mandate. The law firm gains visibility with a recurring population that has genuine immigration needs across study, work, family, refusal, and permanent residence stages.",
+      "approach": "Propose a non-promotional legal education session for international students and advisors on PGWP timing, status maintenance, and when to seek legal advice, paired with a plain-language resource the office can share.",
+      "decisionMaker": "Director of International Student Services",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Student workshop on PGWP and status maintenance",
+        "Advisor training on immigration red flags and referral boundaries",
+        "Plain-language handout on when legal advice is needed",
+        "Webinar for graduating international students"
+      ],
+      "digitalAuthority": [
+        "Educational article for an international student newsletter on avoiding PGWP timing mistakes",
+        "Co-authored student resource on immigration red flags after academic changes"
+      ],
+      "regulatoryNote": "Immigration law is a regulated legal service. Educational institutions should avoid implying endorsement, exclusivity, or guaranteed outcomes; referrals should preserve student choice and avoid unauthorized legal advice by non-licensee staff.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "International offices encounter students at intake, academic transitions, graduation, and crisis points where immigration needs are visible.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Study status, PGWP issues, spousal permits, PR planning, refusals, judicial review, and inadmissibility align closely with the firm’s services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 5,
+          "rationale": "International student needs recur every academic term and peak around graduation, intake, and permit expiry periods.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Individual student matters may vary in scope, but the lifecycle can lead to multiple legal needs over time.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are identifiable, but institutions may have formal approval processes and cautious policies around external legal providers.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Each cohort creates repeated education and referral opportunities over multiple years.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The office gains risk-aware student support while the firm gains access to students with legitimate legal needs.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Toronto and Ontario have a large local ecosystem of colleges and international students needing Canadian immigration support.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Workshops are straightforward, but institutional procurement, neutrality, and endorsement concerns can slow relationship development.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "college international student services",
+        "international student office",
+        "PGWP student advisor"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "co-op-placement-offices",
+      "name": "Co-op placement offices",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Co-op placement offices encounter international students when a work term, internship, or post-graduation role is being arranged and authorization questions can threaten the placement. The referral opportunity is to identify students and employers who need legal advice before a co-op start date, employer onboarding deadline, or transition from study to post-graduation work.",
+      "rationale": "This relationship is commercially sensible because co-op authorization issues are practical, urgent, and tied to real employment opportunities. The law firm can help students and sometimes employers resolve uncertainty around work authorization, permit conditions, status gaps, refusals, or post-graduation transition planning.",
+      "triggers": [
+        {
+          "event": "International student accepts a co-op or internship offer",
+          "whyNeed": "The student may need a valid co-op work permit, confirmation of work authorization conditions, or advice if the permit is delayed or missing.",
+          "whoRecognizes": "Co-op Coordinator, Work-Integrated Learning Advisor, or employer relations staff.",
+          "referralMoment": "Immediately after offer acceptance and before the work term start date or employer onboarding process.",
+          "partnerValue": "The office reduces cancelled placements and protects employer confidence in the program."
+        },
+        {
+          "event": "Employer questions whether an international student can legally work",
+          "whyNeed": "The employer may need clarity on co-op permits, study permit conditions, SIN requirements, or whether the work term fits within authorization limits.",
+          "whoRecognizes": "Employer Relations Manager or placement advisor.",
+          "referralMoment": "Before the employer withdraws the placement or imposes a start-date deadline the student cannot meet.",
+          "partnerValue": "The office can respond responsibly without providing legal advice and preserve the employer relationship."
+        },
+        {
+          "event": "Student is nearing graduation and has a job offer connected to the placement",
+          "whyNeed": "The student may need PGWP advice, maintained status planning, employer-specific work permit assessment, or PR pathway planning.",
+          "whoRecognizes": "Co-op advisor, career services advisor, or employer relations staff.",
+          "referralMoment": "Before graduation, program completion confirmation, or the proposed full-time start date.",
+          "partnerValue": "The office supports stronger graduate employment outcomes and smoother employer transitions."
+        }
+      ],
+      "mutualValue": "Co-op offices gain a trusted education and escalation resource that helps prevent failed placements, confused employers, and last-minute student emergencies. The firm gains access to students and employers at the exact moment work authorization becomes operationally important.",
+      "approach": "Offer a concise training session for co-op and employer relations staff on work authorization red flags, followed by a one-page referral guide for students whose co-op eligibility or PGWP transition is uncertain.",
+      "decisionMaker": "Director of Work-Integrated Learning",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Co-op work authorization checklist for students",
+        "Training for placement advisors on immigration red flags",
+        "Employer-facing information session on international student work authorization",
+        "Graduating student webinar on PGWP and job-start timing"
+      ],
+      "digitalAuthority": [
+        "Co-authored FAQ for co-op students on when to seek immigration legal advice",
+        "Educational newsletter feature for employers hosting international co-op students"
+      ],
+      "regulatoryNote": "Immigration law is a regulated legal service. Placement staff should avoid giving legal advice or guaranteeing outcomes, and any referral pathway should preserve student choice, avoid exclusivity, and avoid improper compensation or misleading endorsement.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Co-op offices see the need early because work authorization questions arise before placements, onboarding, and work-term start dates.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Co-op permits, study permit work conditions, PGWP transitions, refusals, and employer concerns are highly relevant, though some matters may be simpler than full employer immigration files.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Needs recur each co-op cycle and around graduation, especially in programs with many international students.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Student matters may be moderate in scope, but urgent work authorization issues can lead to broader work permit or PR planning needs.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Co-op offices are identifiable but may be cautious about external referrals and subject to institutional policies.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Every placement cycle produces new students and employers with potential authorization questions.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The office prevents placement failures and employer confusion while the firm receives timely, relevant immigration matters.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Toronto and Ontario educational institutions and employers regularly participate in co-op and work-integrated learning placements involving international students.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Initial educational collaboration is feasible, but formal referral pathways may require institutional approval.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "co-op placement office",
+        "work-integrated learning office",
+        "career services international students"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "criminal-defence-lawyers",
+      "name": "Criminal defence lawyers",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Criminal defence lawyers encounter foreign nationals, permanent residents, sponsored spouses, and citizenship applicants at a point where a criminal charge or plea strategy can materially affect immigration status. The referral opportunity is strongest before a plea, discharge, sentencing position, or trial resolution is finalized, when immigration consequences can still be factored into defence strategy.",
+      "rationale": "This relationship makes commercial sense because criminal matters can create urgent, high-stakes immigration problems involving inadmissibility, removal risk, permanent residence eligibility, sponsorship issues, and future citizenship applications. It is also reciprocal because immigration counsel may need criminal defence input when clients face charges, warrants, probation issues, or record-related questions.",
+      "triggers": [
+        {
+          "event": "A foreign national, permanent resident, or PR applicant is charged with a criminal offence.",
+          "whyNeed": "The charge and its potential disposition may affect admissibility, removal risk, work or study status, sponsorship eligibility, or future PR and citizenship plans.",
+          "whoRecognizes": "Defence counsel, intake lawyer, or duty counsel-style advisor handling the criminal file.",
+          "referralMoment": "Immediately after charge intake and before any plea discussions, resolution position, or election decisions are made.",
+          "partnerValue": "The defence lawyer can give better-informed advice and avoid resolving the criminal matter in a way that unintentionally worsens the client’s immigration position."
+        },
+        {
+          "event": "A plea, discharge, peace bond, conditional sentence, or sentencing proposal is being considered.",
+          "whyNeed": "Different criminal outcomes can have different immigration consequences, including inadmissibility, loss of appeal rights, or complications with applications already in process.",
+          "whoRecognizes": "Defence counsel preparing resolution discussions or sentencing submissions.",
+          "referralMoment": "Before the client accepts a resolution or the sentencing position is put to the court.",
+          "partnerValue": "The defence lawyer can assess whether a legally available criminal resolution is also workable from an immigration perspective."
+        },
+        {
+          "event": "A permanent resident or foreign national has a conviction and receives immigration correspondence, removal-related notices, or application refusals.",
+          "whyNeed": "The client may require advice on inadmissibility, enforcement, appeals, applications for relief, or judicial review deadlines.",
+          "whoRecognizes": "Defence counsel who handled the underlying matter or is contacted after the immigration issue surfaces.",
+          "referralMoment": "As soon as the client mentions immigration correspondence, a missed application, a refusal, or border/enforcement contact.",
+          "partnerValue": "The defence lawyer can support the client beyond the criminal file while staying within their own area of competence."
+        }
+      ],
+      "mutualValue": "The criminal defence firm gains a reliable immigration resource for clients whose criminal strategy has status consequences, while the immigration firm can refer clients who need defence representation or criminal-record advice. Both sides improve client outcomes by coordinating timing-sensitive legal strategy without blurring professional responsibilities.",
+      "approach": "Offer a short, practical briefing for criminal defence lawyers on immigration consequences of common criminal dispositions, with a simple issue-spotting checklist they can use at intake and before resolution discussions.",
+      "decisionMaker": "Managing Partner or Senior Criminal Defence Lawyer",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Lunch-and-learn on criminal inadmissibility and plea consequences",
+        "Intake checklist for identifying immigration-risk clients",
+        "Joint CPD-style webinar on coordinating criminal and immigration timelines",
+        "Case conference protocol for shared clients with consent"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on why criminal charges can affect immigration status even before conviction",
+        "Educational webinar recording on immigration issue-spotting in criminal defence files"
+      ],
+      "regulatoryNote": "Legal referrals should be client-directed, conflict-checked, and compliant with professional conduct rules; referral compensation, solicitation, confidentiality, privilege, and any implication of endorsement must be handled in accordance with applicable law society requirements.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Criminal defence lawyers directly encounter clients at the moment when criminal outcomes may create immigration consequences.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The connection to inadmissibility, PR risk, sponsorship complications, refusals, and judicial review is highly direct.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Not every criminal file involves a non-citizen or immigration objective, but the issue arises often enough in a diverse urban market to justify relationship building.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Matters can be urgent and complex, involving high-value legal work such as inadmissibility advice, enforcement response, applications, appeals, or judicial review.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Senior defence lawyers are reachable through professional networks, but trust and competence must be established before referrals occur.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "A defence firm may only occasionally encounter immigration-sensitive files, but the relationship can generate repeated referrals over time.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both practices benefit because immigration clients may need criminal defence counsel and defence clients may need immigration advice.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Criminal and immigration consequences often require local legal coordination in Toronto and Ontario while still engaging federal immigration law.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is practical to start through education, but regulated referral rules and trust barriers make it moderately effortful.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "criminal defence lawyers",
+        "criminal law firms",
+        "criminal defence barristers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "family-lawyers",
+      "name": "Family lawyers",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Family lawyers encounter spouses, partners, parents, and children when relationship changes, custody arrangements, support disputes, or family violence may affect immigration status or sponsorship plans. The referral opportunity arises before pleadings, affidavits, settlements, or sponsorship evidence are finalized, because family-law narratives and documentation can later influence immigration credibility and eligibility.",
+      "rationale": "This relationship makes commercial sense because family breakdowns and cross-border family arrangements often overlap with spousal sponsorship, dependent-child issues, status restoration, misrepresentation risk, and safety-sensitive immigration options. It is reciprocal because immigration clients frequently need family-law advice on separation, custody, support, marriage validity, or domestic violence protections.",
+      "triggers": [
+        {
+          "event": "A sponsored spouse or partner separates from the sponsor during or after an immigration process.",
+          "whyNeed": "Separation may affect sponsorship evidence, eligibility, credibility, address history, dependent status, or allegations of misrepresentation.",
+          "whoRecognizes": "Family lawyer advising on separation, divorce, support, or parenting arrangements.",
+          "referralMoment": "Before pleadings, settlement terms, affidavits, or correspondence characterize the relationship history in a way that may affect immigration filings.",
+          "partnerValue": "The family lawyer can avoid creating inconsistencies between family-law materials and immigration records."
+        },
+        {
+          "event": "A custody, parenting, relocation, or child support dispute involves a child or parent with temporary status, PR status, or an overseas residence history.",
+          "whyNeed": "Parenting orders, travel consent, relocation plans, and dependent-child status can affect sponsorship, PR applications, and admissibility or documentation requirements.",
+          "whoRecognizes": "Family lawyer handling parenting arrangements, relocation requests, or child-related financial disclosure.",
+          "referralMoment": "Before finalizing parenting plans, travel terms, relocation proposals, or child-related settlement language.",
+          "partnerValue": "The family lawyer can craft family-law solutions that do not unintentionally disrupt immigration options or travel plans."
+        },
+        {
+          "event": "A client experiencing domestic violence, coercive control, or sponsor-related threats has precarious immigration status.",
+          "whyNeed": "The client may need urgent immigration advice on status, applications, safety-related options, evidence preservation, and the risks of relying on the sponsor.",
+          "whoRecognizes": "Family lawyer, family-law intake counsel, or lawyer assisting with protection-related remedies.",
+          "referralMoment": "At intake or immediately after safety planning begins, before the client withdraws applications, leaves the home, or communicates with immigration authorities without advice.",
+          "partnerValue": "The family lawyer can coordinate safety and immigration strategy while reducing the risk that the client remains trapped by status concerns."
+        }
+      ],
+      "mutualValue": "Family lawyers gain immigration input that helps them manage status-sensitive relationship disputes, while the immigration firm gains access to trusted family-law support for clients whose immigration problems are tied to separation, children, support, or abuse. The partnership creates better coordinated advice for vulnerable clients and reduces inconsistent filings across legal processes.",
+      "approach": "Create a concise cross-referral guide covering spousal sponsorship breakdown, dependent children, family violence, and document consistency, then invite family lawyers to a small roundtable on common overlap issues.",
+      "decisionMaker": "Managing Partner or Senior Family Lawyer",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Roundtable on spousal sponsorship breakdown and family-law evidence",
+        "Co-authored client guide on separation during sponsorship",
+        "Workshop on immigration considerations in parenting and relocation disputes",
+        "Mutual issue-spotting checklist for family-law and immigration intakes"
+      ],
+      "digitalAuthority": [
+        "Educational article on how separation can affect spousal sponsorship",
+        "Joint webinar on immigration and family-law issues in cross-border families"
+      ],
+      "regulatoryNote": "Legal referrals should be client-directed, conflict-checked, and compliant with professional conduct rules; referral compensation, solicitation, confidentiality, privilege, and communications involving vulnerable clients must be handled in accordance with applicable law society requirements.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Family lawyers often encounter relationship and child-related events that can reveal immigration risks before an immigration filing or dispute is resolved.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The overlap with spousal sponsorship, dependants, misrepresentation, status, and safety-related immigration concerns is direct.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Only a subset of family files involve immigration status, but the overlap is recurring in a local market with cross-border families.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Matters can lead to substantial immigration work such as sponsorship strategy, status restoration, PR applications, responses to concerns, or refusals.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Family lawyers are accessible through bar networks and education, though trust and sensitivity are important barriers.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Referrals are occasional rather than constant, but repeat opportunities arise from separation, sponsorship, children, and domestic violence matters.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Immigration firms frequently need reliable family-law counsel for clients with relationship, parenting, or safety issues.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Family-law proceedings are local or provincial while immigration consequences are federal, making coordinated Ontario-based relationships valuable.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is feasible through shared education but requires care around conflicts, confidentiality, and vulnerable-client communications.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "family lawyers",
+        "divorce lawyers",
+        "family law firms"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "employment-lawyers",
+      "name": "Employment lawyers",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Employment lawyers encounter foreign workers and employers when a termination, workplace dispute, investigation, or compliance issue may affect a work permit, LMIA condition, restoration deadline, or future permanent residence strategy. The referral opportunity is strongest immediately after a job-status change or before settlement terms are finalized, because immigration timelines and employment-law remedies need to be coordinated.",
+      "rationale": "This relationship makes commercial sense because employment disruptions can quickly create status problems for workers and compliance exposure for employers. It is reciprocal because immigration clients often need employment-law advice on termination, unpaid wages, workplace harassment, human rights concerns, restrictive covenants, or employer obligations.",
+      "triggers": [
+        {
+          "event": "A foreign worker on an employer-specific work permit is terminated, laid off, constructively dismissed, or placed on leave.",
+          "whyNeed": "The worker’s ability to continue working, change employers, restore status, maintain PR eligibility, or meet application deadlines may be affected.",
+          "whoRecognizes": "Employment lawyer advising the employee or employer on termination, severance, or workplace transition.",
+          "referralMoment": "Immediately after the employment change and before severance terms or transition dates are finalized.",
+          "partnerValue": "The employment lawyer can negotiate or advise with a clearer understanding of immigration deadlines and work-authorization limits."
+        },
+        {
+          "event": "An employer faces a workplace investigation, compliance concern, wage issue, or allegation involving a foreign worker.",
+          "whyNeed": "Employer non-compliance may affect LMIA obligations, work permit conditions, future hiring ability, and the worker’s status or PR plans.",
+          "whoRecognizes": "Employment counsel advising the employer or employee during the investigation or compliance review.",
+          "referralMoment": "Before written findings, admissions, settlement language, or corrective actions are finalized.",
+          "partnerValue": "The employment lawyer can address workplace issues without overlooking immigration compliance consequences."
+        },
+        {
+          "event": "Settlement negotiations involve continued employment, reference letters, job duties, payroll records, or termination characterization for a foreign worker.",
+          "whyNeed": "The wording and documentation may affect PR evidence, work experience claims, LMIA compliance, or future applications.",
+          "whoRecognizes": "Employment lawyer negotiating severance or settlement terms.",
+          "referralMoment": "Before settlement documents, release language, or employment confirmation letters are signed.",
+          "partnerValue": "The employment lawyer can add value by ensuring employment documentation supports, rather than undermines, the client’s immigration position."
+        }
+      ],
+      "mutualValue": "Employment lawyers gain a dependable immigration contact for work-authorized employees and employers with LMIA or permit exposure, while the immigration firm gains a trusted employment-law resource for clients dealing with job loss, workplace disputes, or employment documentation. Both firms can help clients avoid inconsistent advice across workplace and immigration processes.",
+      "approach": "Host a targeted briefing for employment lawyers on what to do when a foreign worker is terminated, including a one-page checklist on status, work authorization, LMIA implications, and settlement-document issues.",
+      "decisionMaker": "Managing Partner or Senior Employment Lawyer",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Briefing on termination of employer-specific work permit holders",
+        "Settlement-document checklist for foreign-worker files",
+        "Webinar on employment disputes and immigration compliance",
+        "Joint employer-facing workshop on LMIA and workplace obligations"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on immigration considerations after termination of a foreign worker",
+        "Newsletter Q&A on employment settlements and permanent residence evidence"
+      ],
+      "regulatoryNote": "Legal referrals should be client-directed, conflict-checked, and compliant with professional conduct rules; referral compensation, solicitation, confidentiality, privilege, and employer-employee conflict issues must be handled in accordance with applicable law society requirements.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Employment lawyers encounter the exact job-status events that can trigger urgent work permit, LMIA, restoration, and PR issues.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The services align closely with work permits, LMIAs, employer compliance, permanent residence, and refusals.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Only some employment files involve foreign workers or employers hiring them, but those matters arise regularly enough to support a focused referral relationship.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "These matters can generate employer-side and individual immigration work, including urgent permit strategy, LMIA advice, PR planning, and compliance responses.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Employment lawyers are professionally accessible, but referrals depend on demonstrated competence and sensitivity to client conflicts.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Employment firms may repeatedly encounter foreign-worker issues through terminations, investigations, settlements, and employer advisory work.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The relationship is strongly reciprocal because immigration clients often need employment-law advice and employment clients often need immigration advice.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Toronto and Ontario employment issues often intersect with federally regulated immigration status and employer-specific work authorization.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A practical checklist or briefing creates an easy entry point, although regulated referral and conflict rules still require care.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "employment lawyers",
+        "labour and employment law firms",
+        "workplace lawyers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "corporate-transaction-lawyers",
+      "name": "Corporate transaction lawyers",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Corporate transaction lawyers encounter founders, executives, investors, acquirers, and employers when a business acquisition, Canadian expansion, branch launch, or cross-border hiring plan depends on moving people into Canada. The referral opportunity arises during diligence, structuring, closing preparation, or post-closing integration before unrealistic start dates, relocation promises, or hiring commitments are made.",
+      "rationale": "This relationship makes commercial sense because business transactions often fail to account for work authorization, LMIA strategy, intra-company transfer eligibility, owner-operator or founder considerations, and longer-term PR planning. It is reciprocal because immigration counsel may need corporate lawyers for incorporations, acquisitions, shareholder agreements, corporate records, and business structuring relevant to immigration files.",
+      "triggers": [
+        {
+          "event": "A company acquisition, asset purchase, merger, or post-closing integration involves foreign executives, key employees, or transferred staff.",
+          "whyNeed": "The transaction may require work permits, intra-company transfer analysis, employer compliance planning, or documentation showing continuity of employment and corporate relationships.",
+          "whoRecognizes": "Corporate transaction lawyer conducting diligence, drafting transaction documents, or planning closing deliverables.",
+          "referralMoment": "During diligence or integration planning, before closing timelines and employee-transfer commitments are finalized.",
+          "partnerValue": "The transaction lawyer can reduce execution risk by identifying immigration constraints before they disrupt closing or integration."
+        },
+        {
+          "event": "A foreign company is launching a Canadian branch, subsidiary, or operating presence.",
+          "whyNeed": "Founders, managers, or specialized staff may need work permits, corporate documentation, payroll planning, and a pathway to future PR.",
+          "whoRecognizes": "Corporate lawyer advising on incorporation, shareholder structure, commercial contracts, or Canadian market entry.",
+          "referralMoment": "Before incorporation and launch timelines are presented as sufficient to start Canadian work activities.",
+          "partnerValue": "The corporate lawyer can offer more complete market-entry advice and avoid gaps between corporate setup and legal work authorization."
+        },
+        {
+          "event": "A startup, founder-led business, or investor-backed company plans cross-border hiring or founder relocation to Canada.",
+          "whyNeed": "Work permit eligibility, LMIA requirements or exemptions, founder roles, employment terms, and PR strategy may affect hiring and relocation timelines.",
+          "whoRecognizes": "Corporate lawyer advising on financing, shareholder agreements, founder arrangements, or employment-related transaction terms.",
+          "referralMoment": "Before financing milestones, employment offers, relocation promises, or board materials assume a specific start date in Canada.",
+          "partnerValue": "The corporate lawyer can help clients plan commercially realistic timelines and avoid commitments that immigration rules cannot support."
+        }
+      ],
+      "mutualValue": "Corporate transaction lawyers gain a specialist resource that helps deals, launches, and relocations proceed without work-authorization surprises, while the immigration firm gains a trusted corporate-law partner for clients needing incorporations, acquisitions, governance documents, or transaction support. The relationship helps both sides serve business clients whose legal needs span entity structure and people mobility.",
+      "approach": "Develop a short due-diligence addendum for transactions and Canadian market-entry files that flags when immigration review is needed, then offer to walk corporate lawyers through common scenarios in a small practice-group session.",
+      "decisionMaker": "Corporate Practice Group Leader or Managing Partner",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Practice-group session on immigration diligence in acquisitions and expansions",
+        "Market-entry checklist covering corporate setup and work authorization",
+        "Co-authored guide for foreign founders entering Canada",
+        "Webinar on intra-company transfers and transaction planning"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on immigration due diligence in Canadian acquisitions and expansions",
+        "Founder-focused webinar on corporate setup versus work authorization"
+      ],
+      "regulatoryNote": "Legal referrals should be client-directed, conflict-checked, and compliant with professional conduct rules; referral compensation, solicitation, confidentiality, privilege, and multi-party transaction conflicts must be handled in accordance with applicable law society requirements.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Corporate transaction lawyers can spot immigration needs early when deals, expansions, or relocations depend on moving key people.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The overlap with work permits, LMIAs, intra-company transfers, employer compliance, and PR strategy is highly relevant.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Only a subset of corporate transactions involve foreign personnel or Canadian relocation, so the need is less frequent than in individual-facing legal practices.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Business immigration matters tied to transactions can be commercially significant and may involve multiple employees, executives, or employer-side mandates.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Corporate lawyers are reachable through professional networks, but gaining mindshare in transaction workflows requires targeted education and credibility.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Referrals may be occasional, but corporate practices can repeatedly encounter market-entry, expansion, and acquisition scenarios over time.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The relationship is genuinely mutual because immigration clients often need corporate structuring and transaction support.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Toronto and Ontario are relevant for Canadian business setup and employment planning, though some transaction parties may be national or international.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "It is moderately easy to start through checklists and practice-group education, but referrals require integration into deal workflows.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "corporate transaction lawyers",
+        "business law firms",
+        "mergers and acquisitions lawyers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "settlement-agencies",
+      "name": "Settlement agencies",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Settlement agencies meet newcomers and families when immigration status problems first surface during intake, benefits navigation, housing, employment, language training, or family support. The referral opportunity is to route legal issues such as expiring status, sponsorship complications, work authorization, refusals, or inadmissibility concerns to appropriate immigration counsel before clients miss deadlines or rely on non-legal advice.",
+      "rationale": "This relationship makes commercial sense because settlement workers repeatedly encounter immigration-law questions but must stay within service boundaries, while the firm gains access to clients with timely, high-relevance legal needs. It also supports safer triage and better outcomes for vulnerable clients.",
+      "triggers": [
+        {
+          "event": "A newcomer discloses that their temporary status, work permit, study permit, or visitor record is expiring soon.",
+          "whyNeed": "They may need a work permit extension, restoration strategy, maintained-status guidance, or advice on risks of falling out of status.",
+          "whoRecognizes": "Settlement Worker or Case Manager",
+          "referralMoment": "During intake or case-management follow-up, as soon as the deadline or uncertainty is identified.",
+          "partnerValue": "The agency avoids giving legal advice while helping the client reach qualified support before a crisis."
+        },
+        {
+          "event": "A client asks about sponsoring a spouse, partner, child, parent, or other family member.",
+          "whyNeed": "Family sponsorship eligibility, documentation, prior refusals, relationship evidence, inadmissibility, or status issues may require legal assessment.",
+          "whoRecognizes": "Family Services Coordinator or Settlement Counsellor",
+          "referralMoment": "Before the client submits forms or relies on informal community advice.",
+          "partnerValue": "The agency improves family-reunification support without taking responsibility for legal strategy."
+        },
+        {
+          "event": "A client brings a refusal letter, procedural fairness letter, removal-related concern, or inadmissibility question.",
+          "whyNeed": "Deadlines for reconsideration, appeal, judicial review, or response can be short and fact-specific.",
+          "whoRecognizes": "Frontline Settlement Worker or Program Manager",
+          "referralMoment": "Immediately upon seeing the document or hearing about enforcement/refusal issues.",
+          "partnerValue": "The agency can de-escalate risk and refer urgent legal matters to counsel instead of trying to interpret complex decisions."
+        }
+      ],
+      "mutualValue": "The agency gains a reliable legal triage pathway, educational support for staff, and clearer boundaries around what frontline workers can and cannot advise on; the law firm gains recurring, need-based referrals from a trusted community touchpoint.",
+      "approach": "Offer a short, no-cost training session for settlement staff on identifying immigration-law red flags, urgent deadlines, and how to make neutral referrals while preserving client choice.",
+      "decisionMaker": "Settlement Services Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Staff red-flag training workshop",
+        "Client information session on status expiry and sponsorship basics",
+        "Plain-language referral checklist for frontline workers",
+        "Newsletter Q&A on common immigration-law issues"
+      ],
+      "digitalAuthority": [
+        "Co-authored plain-language guide on when settlement questions become legal questions",
+        "Educational webinar recording hosted as a community resource"
+      ],
+      "regulatoryNote": "Immigration legal services are regulated; referrals should be neutral, client-directed, non-exclusive, and compliant with lawyer professional-conduct rules, confidentiality obligations, and any agency funding restrictions.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Settlement staff regularly hear immigration-status, sponsorship, refusal, and inadmissibility issues during intake and case management.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The issues they encounter map directly to work permits, sponsorship, PR, refusals, judicial review, and inadmissibility services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 5,
+          "rationale": "Newcomer-serving agencies encounter these questions continually across multiple programs.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Many matters can become substantial legal files, though some clients may have limited ability to pay or require legal-aid-style options.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Program managers are identifiable, but agencies may have formal referral policies and funder constraints.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "The relationship can generate ongoing referrals because settlement work is continuous and intake-driven.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The agency receives safer client pathways and staff education while the firm receives relevant referrals.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Local Toronto and Ontario newcomer agencies serve the exact geographic market.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A training-first, boundary-respecting approach is practical, provided referrals remain neutral and compliant.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "settlement agencies newcomers",
+        "immigrant settlement services",
+        "newcomer community services"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "certified-translators",
+      "name": "Certified translators",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Certified translators see immigration clients when official documents need translation for sponsorship, permanent residence, work permits, inadmissibility responses, and litigation-related materials. They can identify when the documents point to a broader legal issue and refer before translated materials are used in a weak or incomplete submission.",
+      "rationale": "The relationship is commercially sensible because immigration files frequently require certified translations, and translators are often involved before an application is filed. The firm can send clients needing reliable translations, while translators can route clients with legal complexity to counsel.",
+      "triggers": [
+        {
+          "event": "A client requests translation of marriage, divorce, birth, adoption, or identity documents for a sponsorship or PR package.",
+          "whyNeed": "Family relationships, prior marriages, name inconsistencies, or missing civil documents can create legal and evidentiary issues.",
+          "whoRecognizes": "Certified Translator or Translation Project Coordinator",
+          "referralMoment": "Before the client submits the translated documents with an application.",
+          "partnerValue": "The translator receives clearer document instructions and reduces the risk of being blamed for problems that are actually legal or evidentiary."
+        },
+        {
+          "event": "A client requests translation of police certificates, court records, charges, convictions, or military documents.",
+          "whyNeed": "These documents may raise criminality, security, or admissibility concerns requiring legal analysis.",
+          "whoRecognizes": "Certified Translator or Intake Coordinator",
+          "referralMoment": "As soon as the nature of the document is identified, before the client assumes translation alone solves the issue.",
+          "partnerValue": "The translator stays within their professional role while helping the client avoid a serious filing mistake."
+        },
+        {
+          "event": "A client requests translation of a refusal letter, procedural fairness letter, or immigration decision.",
+          "whyNeed": "There may be response, reconsideration, appeal, or judicial review deadlines that require urgent legal advice.",
+          "whoRecognizes": "Translation Intake Specialist or Certified Translator",
+          "referralMoment": "Immediately upon intake, especially where dates and deadlines are visible.",
+          "partnerValue": "The translator provides useful triage without interpreting the legal merits of the decision."
+        }
+      ],
+      "mutualValue": "Translators gain a dependable source of clients who need certified document work and clearer legal context for formatting and terminology, while the firm gains a trusted translation pathway and timely referrals from document-triggered legal needs.",
+      "approach": "Create a mutual process guide covering translation requirements for common immigration documents, how translators can flag legal red flags without giving advice, and how the firm will refer translation-only needs back to certified providers.",
+      "decisionMaker": "Managing Translator",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Document-preparation checklist for immigration clients",
+        "Joint client handout on certified translation requirements",
+        "Lunch-and-learn on translation red flags in immigration files",
+        "Referral workflow for urgent refusal or court-document translations"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on common translation mistakes in immigration applications",
+        "Educational FAQ on certified translations for immigration documents"
+      ],
+      "regulatoryNote": "Referrals to legal counsel should not involve improper fee-sharing or exclusivity, and translators should avoid giving legal advice beyond translation scope.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Translators often see the exact documents that reveal sponsorship, inadmissibility, refusal, or PR issues.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Translated documents are closely tied to the firm’s core immigration services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Certified translation needs arise regularly in immigration applications and responses.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Some referrals may be document-limited, but complex sponsorship, refusal, and inadmissibility matters can be valuable.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Owners or managing translators are usually reachable and can make practical workflow decisions.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Both sides can refer repeatedly because immigration files routinely require translated documents.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The firm and translator each fill a necessary, non-competing role in the same client journey.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Local availability helps, though translation services can also operate remotely across Ontario and Canada.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship is straightforward if both parties keep legal advice and translation services clearly separated.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "certified immigration translators",
+        "certified document translation",
+        "certified translators association"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "immigration-medical-clinics",
+      "name": "Immigration medical clinics",
+      "relationshipType": "complementary",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Immigration medical clinics encounter applicants for permanent residence, work permits, study permits, sponsorship, and other immigration processes when medical exams are required. Clinic staff may hear legal-status concerns, deadline issues, sponsorship context, or possible medical inadmissibility questions and can neutrally direct patients to seek legal advice rather than trying to answer immigration-law questions.",
+      "rationale": "This relationship makes commercial sense because medical exams sit at a critical point in the immigration journey, often after an application has started but before a final decision. The firm receives highly relevant referrals for complex or anxious clients, while clinics reduce inappropriate legal questions and improve patient navigation.",
+      "triggers": [
+        {
+          "event": "A patient asks whether a medical condition could affect their immigration application.",
+          "whyNeed": "Medical inadmissibility, procedural fairness, excessive-demand issues, or documentation strategy may require legal advice.",
+          "whoRecognizes": "Clinic Coordinator or Panel Physician",
+          "referralMoment": "When the question is raised during scheduling, examination, or follow-up, without the clinic opining on legal consequences.",
+          "partnerValue": "The clinic protects its medical role and directs legal questions to qualified counsel."
+        },
+        {
+          "event": "A patient attending an immigration medical exam reveals a refusal history, procedural fairness letter, or urgent deadline.",
+          "whyNeed": "The medical exam may be only one part of a broader refusal, response, or judicial review strategy.",
+          "whoRecognizes": "Clinic Administrator or Nurse",
+          "referralMoment": "Immediately after the issue is disclosed, especially if the patient has a dated immigration letter.",
+          "partnerValue": "The clinic can avoid being pulled into deadline-sensitive legal interpretation while still helping the patient take next steps."
+        },
+        {
+          "event": "An employer-sponsored foreign worker or family member is unsure what medical exam results mean for work authorization or PR processing.",
+          "whyNeed": "Misunderstanding the relationship between medical admissibility, work permits, and PR can lead to poor timing or incorrect assumptions.",
+          "whoRecognizes": "Patient Services Coordinator",
+          "referralMoment": "At exam booking or post-exam administrative follow-up when the patient asks immigration-status questions.",
+          "partnerValue": "The clinic improves patient experience by providing a compliant referral path for non-medical questions."
+        }
+      ],
+      "mutualValue": "Clinics gain a reliable, neutral place to send legal questions that are outside healthcare scope, and the law firm gains referrals from clients whose immigration process is active and often time-sensitive. Both sides can educate clients on the distinction between medical examination and legal admissibility advice.",
+      "approach": "Meet with the clinic manager to propose a compliant referral protocol and a one-page patient handout explaining when immigration medical questions should be discussed with a lawyer rather than clinic staff.",
+      "decisionMaker": "Clinic Manager",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Clinic staff briefing on legal-versus-medical boundaries",
+        "Patient handout on immigration medical exams and legal questions",
+        "Webinar on medical inadmissibility basics for non-legal audiences",
+        "Referral script for administrative staff"
+      ],
+      "digitalAuthority": [
+        "Educational article explaining the difference between immigration medical exams and legal admissibility advice"
+      ],
+      "regulatoryNote": "Healthcare referrals must remain neutral, patient-choice based, and compliant with professional obligations; no improper inducements, commissions, exclusivity, or pressure should be used, and clinic staff should not provide legal advice.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Clinics encounter applicants at a point where medical, status, and admissibility concerns frequently intersect.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "The fit is strongest for medical inadmissibility, PR, sponsorship, work permits, and refusal-related matters.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Immigration medical clinics see a steady flow of immigration applicants, though not every patient needs legal counsel.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred matters can involve complex, high-stakes immigration issues, especially inadmissibility or refusals.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Clinic managers are identifiable, but healthcare compliance and neutrality concerns can make partnership approval more cautious.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Medical exams are a repeated part of immigration processing, creating recurring opportunities for compliant triage.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clinics benefit by redirecting legal questions appropriately, while the firm receives relevant referrals.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Local clinics serving Toronto and Ontario applicants align closely with the firm’s service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is feasible but requires careful positioning to respect healthcare referral rules and patient autonomy.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "immigration medical clinic",
+        "panel physician immigration medical exam",
+        "immigration medical exam clinic"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "cross-border-accountants",
+      "name": "Cross-border accountants",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Cross-border accountants work with individuals relocating to Canada, foreign nationals with Canadian tax obligations, employers hiring foreign workers, and owner-managers planning Canadian operations. They may identify immigration-status assumptions during tax residency planning, payroll setup, business structuring, or compensation advice and can refer before clients make filings or hiring decisions based on incorrect status assumptions.",
+      "rationale": "The relationship is commercially sensible because tax, payroll, and immigration decisions often affect one another for mobile individuals and employers. The firm can refer clients needing tax planning, while accountants can refer clients whose status, work authorization, LMIA, PR, or business immigration assumptions require legal review.",
+      "triggers": [
+        {
+          "event": "An individual or family is relocating to Canada and asks about tax residency, foreign income, or timing of a move.",
+          "whyNeed": "Immigration status, work authorization, sponsorship, and PR strategy may need to align with tax residency and relocation timing.",
+          "whoRecognizes": "Cross-Border Tax Manager or Partner",
+          "referralMoment": "Before the client finalizes move dates, employment start dates, or Canadian filings based on assumed immigration eligibility.",
+          "partnerValue": "The accountant can provide better-coordinated planning and avoid tax advice being undermined by immigration constraints."
+        },
+        {
+          "event": "An employer is setting up payroll or contractor arrangements for a foreign worker.",
+          "whyNeed": "Work authorization, LMIA requirements, employer compliance, and job-offer details may need legal review before payroll begins.",
+          "whoRecognizes": "Payroll Advisory Manager or Employer Services Accountant",
+          "referralMoment": "Before payroll onboarding, job-start dates, or assumptions that a person can work in Canada.",
+          "partnerValue": "The accountant reduces risk of payroll and compliance problems caused by unauthorized or improperly structured work."
+        },
+        {
+          "event": "An owner-manager or entrepreneur plans to acquire, start, or expand a Canadian business while seeking status in Canada.",
+          "whyNeed": "Business structure, ownership, active management, work authorization, and PR strategy can be interdependent.",
+          "whoRecognizes": "Tax Partner or Business Advisory Manager",
+          "referralMoment": "During entity structuring or transaction planning, before incorporation, acquisition, or operational commitments are made.",
+          "partnerValue": "The accountant can coordinate tax and business planning with realistic immigration pathways."
+        }
+      ],
+      "mutualValue": "Accountants gain a legal partner who can resolve status and work-authorization questions that affect tax and payroll advice, while the law firm gains access to higher-complexity individual, employer, and owner-manager immigration matters. Both can offer clients a more coordinated relocation and compliance experience without stepping outside professional scopes.",
+      "approach": "Invite a cross-border tax practice leader to a planning meeting focused on shared client scenarios, then develop a neutral referral checklist for status, payroll, relocation, and owner-manager red flags.",
+      "decisionMaker": "Cross-Border Tax Partner",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Joint relocation planning webinar",
+        "Checklist for tax and immigration timing issues",
+        "Employer briefing on payroll, LMIA, and work authorization boundaries",
+        "Co-presented seminar for owner-managers moving to Canada"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on coordinating tax residency and immigration status when moving to Canada",
+        "Webinar on employer payroll setup and foreign-worker authorization considerations"
+      ],
+      "regulatoryNote": "Accounting and financial professionals are regulated and may have independence, confidentiality, and inducement rules; referrals should avoid improper compensation, exclusivity, or client-pressure arrangements, and each professional must stay within their licensed scope.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Cross-border accountants often encounter immigration-status assumptions during relocation, payroll, and business planning.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "The fit is strong for work permits, LMIA, PR planning, employer compliance, and owner-manager scenarios.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "These triggers are meaningful but more occasional than settlement or translation touchpoints.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Matters can involve employers, business owners, families, and complex planning, making them commercially significant.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Practice leaders and partners are identifiable but may be selective and relationship-driven.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Referrals can recur through ongoing advisory work, but client immigration needs are not present in every accounting engagement.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both parties help clients avoid misalignment between tax, payroll, business, and immigration decisions.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Toronto and Ontario have strong cross-border mobility and employer needs, though some accounting work may be national or remote.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "A relationship is practical but usually requires trust-building and careful professional-boundary management.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "cross border tax accountants",
+        "Canada US tax accountants",
+        "international tax advisors"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "realtors-and-mortgage-brokers",
+      "name": "Realtors and mortgage brokers",
+      "relationshipType": "downstream",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Realtors and mortgage brokers encounter newcomers and foreign nationals when housing plans expose immigration-status, income-documentation, or residency-timing issues. The referral opportunity arises when a transaction is delayed or at risk because the client needs legal advice on work authorization, PR status, sponsorship timing, inadmissibility, or documentation after a refusal.",
+      "rationale": "Although housing professionals are usually downstream of the immigration need, they have strong motivation to connect clients with competent immigration counsel when status uncertainty threatens a lease, purchase, financing approval, or closing.",
+      "triggers": [
+        {
+          "event": "A newcomer buyer cannot satisfy mortgage documentation or residency requirements during pre-approval.",
+          "whyNeed": "They may need advice on work permit validity, PR timing, employment authorization, or how immigration status affects documentation they can provide.",
+          "whoRecognizes": "Mortgage broker or mortgage agent.",
+          "referralMoment": "As soon as the status or document issue blocks pre-approval or lender underwriting, before the client makes a firm offer.",
+          "partnerValue": "The broker reduces wasted underwriting time and helps preserve a viable financing path."
+        },
+        {
+          "event": "A tenant applicant is asked for proof of legal status, employment authorization, or stable income during a lease application.",
+          "whyNeed": "The client may need legal guidance on current status, maintained status, work permit conditions, or urgent restoration/refusal options.",
+          "whoRecognizes": "Realtor, leasing representative, or brokerage administrator.",
+          "referralMoment": "When the client cannot confidently explain their status or provide documentation requested by the landlord.",
+          "partnerValue": "The housing professional avoids misstatements, protects the transaction, and helps the client address the issue with a qualified legal advisor."
+        },
+        {
+          "event": "A home purchase or sale is affected by a spouse abroad, pending sponsorship, or inadmissibility/refusal concern.",
+          "whyNeed": "Family immigration timing can affect occupancy, financing plans, closing logistics, and whether family members can enter or remain in Canada.",
+          "whoRecognizes": "Realtor or mortgage broker during intake, offer preparation, or closing coordination.",
+          "referralMoment": "Before the client structures the transaction around assumptions about sponsorship approval, PR timing, or entry to Canada.",
+          "partnerValue": "The professional helps the client make better-informed housing decisions and reduces the risk of a collapsed deal."
+        }
+      ],
+      "mutualValue": "The partner gains a reliable place to send clients with legal immigration questions that are outside their licensed scope, while the law firm gains access to clients at a high-stakes moment when unresolved status issues affect major financial decisions.",
+      "approach": "Offer a short briefing for brokerage teams on “immigration-status questions housing professionals should not answer themselves” and provide a simple referral checklist for when to suggest independent legal advice.",
+      "decisionMaker": "Broker of Record or Managing Mortgage Broker",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Team lunch-and-learn for real estate or mortgage offices",
+        "Client-facing checklist on housing documents and immigration-status questions",
+        "Joint webinar on newcomer housing planning and immigration timing",
+        "Referral protocol for urgent status-related transaction issues"
+      ],
+      "digitalAuthority": [
+        "Co-authored educational article on common immigration-status questions that arise during renting or buying",
+        "Newsletter Q&A explaining when housing professionals should recommend independent immigration legal advice"
+      ],
+      "regulatoryNote": "Real estate, mortgage, and legal services are regulated. Any referral process should avoid unauthorized legal advice, undisclosed compensation, misleading endorsements, client-pressure tactics, and conflicts of interest; lawyers must comply with Ontario legal-profession rules on referrals, confidentiality, and marketing.",
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "They encounter the need after immigration issues surface in housing or financing rather than at the start of the immigration journey.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Status, work authorization, PR timing, sponsorship, and refusals can directly affect housing and financing documentation.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "The issue is occasional within their broader client base, but more common in newcomer-heavy markets.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Clients facing housing or financing disruption often have urgent and meaningful immigration-law needs.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are identifiable but busy and often relationship-driven, so trust-building is needed.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Referrals can recur where the office regularly serves newcomers, but they are not constant.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The partner benefits from smoother transactions and clearer boundaries around legal questions.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Housing, financing, and immigration-status issues are highly relevant to newcomers in the Toronto and Ontario market.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is practical to start, but regulated-profession boundaries and disclosure requirements require care.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "newcomer real estate services",
+        "mortgage brokers foreign workers",
+        "real estate brokerage newcomer clients"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "cultural-associations",
+      "name": "Cultural associations",
+      "relationshipType": "shared_audience",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Cultural associations encounter immigrants, families, international students, workers, and sponsors through community programming and member support. They are often trusted early sources of guidance when members face marriage, graduation, job changes, family separation, refusals, or questions about permanent residence pathways.",
+      "rationale": "This relationship makes commercial sense because the association has recurring immigration-related questions within its community, and the law firm can provide practical education while being available for members who need individualized legal advice.",
+      "triggers": [
+        {
+          "event": "A member marries or plans to sponsor a spouse or partner.",
+          "whyNeed": "They may need advice on eligibility, inland versus overseas sponsorship, proof of relationship, status in Canada, and refusal risks.",
+          "whoRecognizes": "Association president, community program coordinator, or member services coordinator.",
+          "referralMoment": "When the member asks process-specific questions or before they submit a sponsorship package based on informal community advice.",
+          "partnerValue": "The association supports families with reliable information and reduces reliance on rumours or outdated experiences."
+        },
+        {
+          "event": "A member graduates, loses status, changes employers, or needs a work permit pathway.",
+          "whyNeed": "They may need advice on work permit options, LMIA issues, maintained status, restoration, or PR planning.",
+          "whoRecognizes": "Youth coordinator, employment program coordinator, or settlement volunteer lead.",
+          "referralMoment": "When the member’s deadline, permit expiry, or employment offer creates urgency.",
+          "partnerValue": "The association helps members act before deadlines are missed and strengthens its role as a practical community resource."
+        },
+        {
+          "event": "A member receives a refusal, procedural fairness letter, inadmissibility concern, or removal-related communication.",
+          "whyNeed": "They may require urgent legal assessment for reconsideration, appeal options, judicial review, or inadmissibility strategy.",
+          "whoRecognizes": "Association leader, community advocate, or volunteer intake coordinator.",
+          "referralMoment": "Immediately after the member discloses the refusal or deadline-sensitive government correspondence.",
+          "partnerValue": "The association can respond responsibly without attempting to interpret complex legal documents itself."
+        }
+      ],
+      "mutualValue": "The association gains credible educational programming and a responsible referral outlet for questions beyond its capacity, while the firm builds trust with communities that repeatedly face immigration decisions across family, study, work, and permanent residence stages.",
+      "approach": "Propose a no-cost legal-information session tailored to the association’s members, with clear boundaries that individual legal advice requires a private consultation.",
+      "decisionMaker": "Executive Director or Community Program Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Community legal-information workshop",
+        "Member webinar on sponsorship, work permits, or PR pathways",
+        "Plain-language immigration deadline checklist",
+        "Association newsletter Q&A column"
+      ],
+      "digitalAuthority": [
+        "Co-authored plain-language guide on avoiding common immigration-application mistakes",
+        "Recorded educational webinar hosted by the association and archived as a member resource"
+      ],
+      "regulatoryNote": "Immigration legal services are regulated. Educational programming should distinguish general legal information from individualized legal advice, avoid guarantees or pressure, protect confidentiality, and ensure any referral or marketing practice complies with Ontario legal-profession rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Association leaders often hear immigration questions early because members seek trusted community guidance before choosing a professional.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Family sponsorship, work permits, PR, refusals, and inadmissibility issues align closely with common newcomer and diaspora needs.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Immigration questions arise repeatedly in active communities, especially around life events and status deadlines.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Some inquiries will be informational, but deadline-sensitive or complex cases can become substantial legal matters.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are usually identifiable and open to useful community programming if approached respectfully.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Membership turnover, family events, graduation, employment changes, and sponsorship needs create ongoing referral moments.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The association receives valuable programming and member support, while the firm gains trust-based visibility.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Local cultural associations are strongly connected to immigrant and newcomer communities in Toronto and Ontario.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A workshop or resource partnership is relatively easy to pilot with low operational burden.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "cultural association immigration programs",
+        "ethnic community association newcomer services",
+        "diaspora association family sponsorship workshop"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "language-test-centres",
+      "name": "Language test centres",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Language test centres encounter applicants preparing for PR, study, licensing, and employer-supported immigration processes before they finalize an application strategy. Staff are not immigration advisors, but they hear timing and eligibility questions when candidates try to align test dates, scores, and document deadlines with immigration plans.",
+      "rationale": "The relationship is commercially sensible because language testing is often upstream of PR and other immigration filings, giving the firm access to applicants before avoidable timing or eligibility mistakes are built into the case.",
+      "triggers": [
+        {
+          "event": "A candidate asks which test date or score is needed for permanent residence, work, study, or licensing.",
+          "whyNeed": "The answer depends on the person’s immigration pathway, expiry dates, profile strategy, and supporting documents, which require legal assessment rather than test-centre advice.",
+          "whoRecognizes": "Test centre administrator, candidate services representative, or test preparation coordinator.",
+          "referralMoment": "Before the candidate books a test date or relies on assumed score requirements in an application plan.",
+          "partnerValue": "The centre avoids off-scope advice while helping candidates make better-informed planning decisions."
+        },
+        {
+          "event": "A candidate is retaking a test because a previous score, expiry date, or application timing caused a problem.",
+          "whyNeed": "They may need advice on whether language results are still valid, how retesting affects PR timing, or whether a refusal or returned application requires a broader strategy.",
+          "whoRecognizes": "Test booking coordinator or preparation instructor.",
+          "referralMoment": "When the candidate explains that retesting is tied to a refused, returned, or delayed immigration application.",
+          "partnerValue": "The centre improves candidate experience by directing them to proper help rather than simply selling another test attempt."
+        },
+        {
+          "event": "An employer-sponsored or international-student candidate asks how language results fit with a work permit, LMIA, PR, or post-graduation plan.",
+          "whyNeed": "They may need coordinated advice on status, eligibility, employer documents, deadlines, and pathway selection.",
+          "whoRecognizes": "Customer service lead or test preparation program manager.",
+          "referralMoment": "When the candidate’s questions go beyond registration logistics into immigration consequences or pathway planning.",
+          "partnerValue": "The centre protects staff from unauthorized advice and positions itself as a responsible part of the candidate journey."
+        }
+      ],
+      "mutualValue": "The test centre gains a vetted legal referral path for immigration-process questions it should not answer, while the firm reaches motivated applicants at an early planning stage when legal strategy can prevent wasted tests, missed deadlines, or weak applications.",
+      "approach": "Create a short staff guide titled “When language-test questions become immigration-law questions” and offer a brief training session for administrators and preparation instructors.",
+      "decisionMaker": "Test Centre Manager or Candidate Services Manager",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Staff training on referral boundaries",
+        "Candidate webinar on language-test timing in immigration planning",
+        "Printed or digital referral checklist at registration",
+        "Educational handout on test validity and immigration deadlines"
+      ],
+      "digitalAuthority": [
+        "Guest educational article on how to plan language testing around immigration deadlines",
+        "Co-hosted webinar on language-test preparation and immigration planning boundaries"
+      ],
+      "regulatoryNote": "Test centre staff should not provide immigration legal advice unless properly authorized. Any collaboration should avoid implying guaranteed outcomes, official endorsement, or preferential treatment, and the law firm must comply with legal-profession marketing, confidentiality, and referral rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "They encounter applicants before or during a key prerequisite step in many immigration pathways.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Language-test timing, validity, and scores are closely connected to PR, study, work, and refusal-risk planning.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Centres regularly handle candidates whose testing is tied to immigration goals, though not every candidate needs legal help.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Candidates with pathway uncertainty, deadlines, prior refusals, or employer-linked plans can become strong legal-service prospects.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Managers are identifiable, but centres may be cautious about external professional relationships and neutrality.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "New candidates continuously enter the testing cycle, creating repeated education and referral opportunities.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The centre reduces off-scope advice requests and improves candidate support while the firm gains early-stage visibility.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Local and Ontario-based candidates often need nearby legal advice, though some test candidates may be outside the firm’s practical service focus.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "A low-risk educational partnership is feasible, but brand, neutrality, and compliance concerns may slow adoption.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "language test centre immigration candidates",
+        "language testing centre candidate services",
+        "English language test preparation immigration"
+      ],
+      "existingRelationship": false
+    }
+  ],
+  "assumptions": [
+    "Customer journey used for the analysis: Trigger emerges: a Toronto-area employer wants to hire a foreign worker, a student graduates, a couple plans sponsorship, a family receives a refusal, or an in… → Early triage: the customer needs to understand eligibility, deadlines, risk factors, and whether an LMIA, work permit, sponsorship, PR path, reconsideration, o… → Evidence gathering: identity, employment, relationship, education, language, medical, police, financial, and refusal records are collected and translated where… → Application or response: forms, submissions, employer compliance steps, sponsorship packages, PR applications, or court materials are prepared and filed. → Decision point: approval, procedural fairness letter, refusal, removal risk, or inadmissibility finding determines whether follow-up, appeal strategy, or judic… → Settlement and status maintenance: the customer manages work, school, housing, family reunification, renewals, employer changes, and long-term PR/citizenship p….",
+    "Immigration clients usually reach a lawyer through someone they already trust: an employer, school, community organisation, or another professional handling a related matter.",
+    "Many high-value matters (inadmissibility, refusals, removals) are time-sensitive. Partners who can spot the issue early are more valuable than partners with large audiences.",
+    "No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing."
+  ],
+  "guardrails": [
+    {
+      "title": "Referral compensation",
+      "body": "Lawyers' referral relationships are regulated. Most jurisdictions prohibit paying or receiving anything of value from non-lawyers for referrals. Where licensee-to-licensee referral fees are allowed, they come with conditions such as client disclosure and fee limits. Build these relationships on reciprocity and expertise. Verify against your law society or bar's current rules."
+    },
+    {
+      "title": "Only partner with authorised representatives",
+      "body": "In Canada, only lawyers, Québec notaries, paralegals (in limited contexts), and licensed consultants (RCICs) may represent or advise on immigration matters for a fee. Avoid informal 'agents' or unlicensed intermediaries, because referring to or accepting work through them creates real risk for clients and for you."
+    },
+    {
+      "title": "Partnerships are not paid-referral arrangements",
+      "body": "This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals."
+    },
+    {
+      "title": "Outreach in Canada: CASL applies",
+      "body": "Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA)."
+    },
+    {
+      "title": "No automated outreach",
+      "body": "This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline."
+    }
+  ]
+}

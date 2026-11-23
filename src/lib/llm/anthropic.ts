@@ -15,11 +15,13 @@ export class AnthropicProvider implements LLMProvider {
     apiKey: string,
     readonly model: string,
     private effort: "low" | "medium" | "high" = "medium",
+    baseURL = "https://api.anthropic.com",
   ) {
-    this.client = new Anthropic({ apiKey, maxRetries: 2, timeout: 120_000 });
+    // baseURL is explicit so the SDK never inherits an unrelated ANTHROPIC_BASE_URL from the host environment.
+    this.client = new Anthropic({ apiKey, baseURL, maxRetries: 2, timeout: 120_000 });
   }
 
-  async generateObject<T>({ system, prompt, schema, maxTokens = 16000 }: GenerateObjectOptions<T>): Promise<T> {
+  async generateObject<T>({ system, prompt, schema, maxTokens = 16000, onUsage }: GenerateObjectOptions<T>): Promise<T> {
     try {
       const response = await this.client.beta.messages.parse({
         model: this.model,
@@ -30,6 +32,7 @@ export class AnthropicProvider implements LLMProvider {
         output_config: { effort: this.effort, format: betaZodOutputFormat(schema) },
         messages: [{ role: "user", content: prompt }],
       });
+      onUsage?.({ inputTokens: response.usage?.input_tokens ?? 0, outputTokens: response.usage?.output_tokens ?? 0 });
       if (response.stop_reason === "refusal") {
         throw new LLMError("The AI provider declined this request.", "refusal");
       }

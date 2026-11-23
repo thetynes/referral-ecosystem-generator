@@ -5,6 +5,8 @@ import { capabilities } from "@/lib/config";
 import { getStore } from "@/lib/store";
 import { createCheckoutSession, getStripe } from "@/lib/payments/stripe";
 import { jsonError, limitOrNull, readJson } from "@/lib/http";
+import { track } from "@/lib/analytics";
+import { readCookie, SESSION_COOKIE, testerFromRequest } from "@/lib/beta";
 
 export const runtime = "nodejs";
 
@@ -30,6 +32,13 @@ export async function POST(req: Request) {
   if (!analysis) return jsonError("Analysis not found. Generate it again before purchasing.", 404);
   try {
     const url = await createCheckoutSession(stripe, analysis.id, parsed.data.tier);
+    await track("checkout_started", {
+      tester: await testerFromRequest(req),
+      session: readCookie(req, SESSION_COOKIE),
+      analysisId: analysis.id,
+      simulated: caps.paymentsMode !== "live",
+      props: { tier: parsed.data.tier, paymentsMode: caps.paymentsMode },
+    });
     return NextResponse.json({ url });
   } catch (err) {
     console.error("checkout failed", err);

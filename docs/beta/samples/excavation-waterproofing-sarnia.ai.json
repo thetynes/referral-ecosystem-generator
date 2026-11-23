@@ -1,0 +1,1578 @@
+{
+  "id": "f6705045-fe69-425a-b660-d6b747908437",
+  "createdAt": "2026-11-23T23:20:04.318Z",
+  "isDemo": false,
+  "profile": {
+    "displayName": "Sample Excavation & Waterproofing (illustrative)",
+    "website": null,
+    "industry": "Excavation and basement waterproofing contractor",
+    "services": [
+      "Excavation",
+      "exterior foundation waterproofing",
+      "weeping tile replacement",
+      "drainage",
+      "grading",
+      "demolition"
+    ],
+    "serviceArea": "Sarnia, Ontario and Lambton County",
+    "geography": {
+      "country": "CA",
+      "region": "Ontario",
+      "scope": "regional"
+    },
+    "idealCustomer": "Homeowners with wet basements, custom home builders, property managers, commercial property owners",
+    "customerSegments": [
+      "Homeowners with wet basements",
+      "custom home builders",
+      "property managers",
+      "commercial property owners"
+    ],
+    "projectValue": null,
+    "targetIndustries": [],
+    "growthPriority": "recurring",
+    "existingReferrals": [],
+    "expansionMarkets": []
+  },
+  "engine": {
+    "mode": "ai",
+    "provider": "openai",
+    "model": "gpt-5.5",
+    "archetypeId": "site-construction",
+    "archetypeLabel": "Excavation & site construction + Basement waterproofing & foundation repair",
+    "matchConfidence": "high",
+    "notes": [],
+    "version": "1.0.0",
+    "costUsd": 0.558285
+  },
+  "categories": [
+    {
+      "id": "home-inspectors",
+      "name": "Home Inspectors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Home inspectors meet homeowners and buyers at the point where basement moisture, exterior grading, foundation cracks, efflorescence, or suspected drainage failure can affect a purchase, renovation plan, or maintenance decision. The referral opportunity is to recommend an independent excavation and waterproofing assessment before the client waives conditions, negotiates repairs, or invests in interior finishes that may later be damaged by water entry.",
+      "rationale": "This relationship makes commercial sense because inspectors identify symptoms but typically do not perform invasive exterior repairs, while the contractor can provide a clear scope and budget for problems that materially affect property decisions. The contractor gains early access to motivated owners, and the inspector gains a reliable specialist who helps clients act on inspection findings without the inspector stepping outside their advisory role.",
+      "triggers": [
+        {
+          "event": "Pre-purchase inspection notes damp basement odour, staining, efflorescence, or previous water lines on foundation walls.",
+          "whyNeed": "The buyer needs to understand whether the issue is minor condensation, grading-related seepage, failed waterproofing, or a larger exterior drainage problem before finalizing the purchase or negotiating repairs.",
+          "whoRecognizes": "Home Inspector",
+          "referralMoment": "Immediately after the inspection report is delivered, especially while conditions, price negotiations, or repair credits are still open.",
+          "partnerValue": "The inspector gives the client a practical next step and reduces ambiguity around a material inspection finding."
+        },
+        {
+          "event": "Inspection identifies negative grading, downspouts discharging near the foundation, settled walkways, or visible foundation cracking.",
+          "whyNeed": "These exterior conditions can direct water toward the foundation and may require grading, drainage correction, excavation, or waterproofing before interior damage escalates.",
+          "whoRecognizes": "Home Inspector",
+          "referralMoment": "When reviewing exterior and basement findings with the buyer or homeowner at the end of the inspection.",
+          "partnerValue": "The inspector strengthens the usefulness of the report by connecting visible symptoms to qualified follow-up assessment."
+        },
+        {
+          "event": "Homeowner inspection before renovation finds signs that a finished basement has previous or active water intrusion risk.",
+          "whyNeed": "The owner should address exterior waterproofing, weeping tile, and drainage before investing in flooring, framing, drywall, or built-ins.",
+          "whoRecognizes": "Home Inspector",
+          "referralMoment": "Before the client hires renovation trades or commits to basement finishing plans.",
+          "partnerValue": "The inspector helps the homeowner avoid costly rework and reinforces their role as a risk-reduction advisor."
+        }
+      ],
+      "mutualValue": "Home inspectors get a responsive technical resource for clients who need excavation or waterproofing input, while the contractor receives well-qualified inquiries at the point where decisions are urgent. The contractor can also help inspectors understand current repair methods and warning signs, improving the inspector’s confidence when advising clients without asking them to diagnose beyond their scope.",
+      "approach": "Offer a short, non-sales educational briefing for local inspectors on exterior waterproofing warning signs, weeping tile failure indicators, grading issues, and what information helps produce a useful assessment; provide a simple checklist they can share as a client follow-up resource.",
+      "decisionMaker": "Owner-Operator or Lead Home Inspector",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Inspector education lunch-and-learn on wet basement warning signs",
+        "Client-facing checklist for post-inspection waterproofing follow-up",
+        "Seasonal maintenance guide covering grading, downspouts, and basement moisture prevention",
+        "Technical Q&A session for inspectors on when excavation is warranted versus when it may not be"
+      ],
+      "digitalAuthority": [
+        "Co-authored educational article on what basement moisture findings in a home inspection can mean",
+        "Guest newsletter feature explaining exterior drainage red flags homeowners should not ignore"
+      ],
+      "regulatoryNote": "Home inspectors involved in real estate transactions should avoid undisclosed conflicts of interest, pressure tactics, or compensation that could compromise perceived independence; any referral relationship should be transparent and educational rather than an undisclosed paid endorsement.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Inspectors directly encounter visible signs of basement moisture, grading defects, and foundation issues before the customer chooses a repair path.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Their findings often map directly to exterior waterproofing, weeping tile, drainage, grading, or excavation assessments.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Basement moisture and drainage concerns arise regularly in residential inspections, especially in older housing stock and during wet seasons.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Inspection-driven leads can involve urgent repair budgeting, purchase negotiation, or pre-renovation work with meaningful project value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Many inspection businesses are owner-operated or small teams, making the decision-maker relatively easy to identify and approach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Inspectors perform inspections continuously and can become a steady source of recurring inbound opportunities.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The inspector gains a credible technical follow-up path and the contractor gains early-stage, problem-aware prospects.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Home inspection referrals are inherently local or regional and align well with a Sarnia and Lambton County service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship can start with education and responsiveness, though trust must be built carefully to avoid perceived conflicts.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "home inspectors",
+        "property inspection services",
+        "residential home inspection"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "drain-camera-plumbers",
+      "name": "Drain Camera Plumbers",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Drain camera plumbers are called when homeowners, property managers, or commercial owners experience backups, slow drains, floor drain issues, or suspected exterior drainage failure. When camera work or repeated service calls suggest failed weeping tile, collapsed exterior drainage, root intrusion, or water entering around the foundation rather than through plumbing alone, they can refer to an excavation and waterproofing contractor before the customer pays for repeated temporary fixes.",
+      "rationale": "This relationship is commercially strong because plumbing diagnostics often reveal whether the problem is inside the pipe, outside the foundation, or connected to groundwater and drainage conditions. The exchange can be genuinely reciprocal: the excavator can refer customers back to plumbers when investigations indicate sewer, floor drain, sump, or plumbing defects rather than foundation waterproofing failure.",
+      "triggers": [
+        {
+          "event": "Camera inspection shows collapsed, blocked, or compromised exterior drainage lines connected to foundation drainage.",
+          "whyNeed": "The customer may need excavation, weeping tile replacement, drainage correction, or waterproofing rather than repeated snaking or cleaning.",
+          "whoRecognizes": "Drain Camera Technician or Licensed Plumber",
+          "referralMoment": "Immediately after camera findings are reviewed with the customer and before booking another temporary service call.",
+          "partnerValue": "The plumber avoids repeat call frustration and positions themselves as a diagnostic expert who brings in the right specialist."
+        },
+        {
+          "event": "Recurring basement backups or floor drain issues occur after heavy rain despite previous plumbing service.",
+          "whyNeed": "Rain-linked recurrence may indicate groundwater management, exterior drainage, grading, or foundation seepage issues that plumbing repairs alone will not solve.",
+          "whoRecognizes": "Service Plumber or Drain Division Manager",
+          "referralMoment": "After the second or recurring rain-related service call when symptoms suggest a broader drainage problem.",
+          "partnerValue": "The plumber protects customer trust by recommending a broader assessment instead of over-servicing a problem outside their scope."
+        },
+        {
+          "event": "Root intrusion or pipe failure is located outside the building envelope near foundation drainage or underground services.",
+          "whyNeed": "Excavation may be required to expose, replace, reroute, or coordinate repairs around drainage, waterproofing, and underground infrastructure.",
+          "whoRecognizes": "Drain Camera Technician",
+          "referralMoment": "Once the location and depth are identified and excavation is likely needed.",
+          "partnerValue": "The plumber gains a reliable excavation partner who can handle site work safely and coordinate access for pipe repair."
+        }
+      ],
+      "mutualValue": "Plumbers benefit from a trusted excavation partner for exterior access, drainage failures, and foundation-related water problems, while the waterproofing contractor benefits from diagnostics that distinguish plumbing issues from foundation seepage. Both parties can protect client trust by referring to the appropriate specialist instead of forcing every water problem into their own service line.",
+      "approach": "Meet with the plumbing owner or drain division manager to compare service boundaries, create a simple triage guide for plumbing versus foundation water-entry symptoms, and agree on a communication process for shared jobs that require both diagnostics and excavation.",
+      "decisionMaker": "Owner, Service Manager, or Drain Division Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Joint triage checklist for wet basement versus drain backup symptoms",
+        "Cross-training session on camera findings that indicate exterior excavation needs",
+        "Shared job handoff protocol for excavation access around failed underground lines",
+        "Homeowner maintenance guide on sump systems, floor drains, downspouts, and foundation drainage"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide explaining when a wet basement is a plumbing issue versus an exterior waterproofing issue",
+        "Educational video or article on what drain camera findings can reveal about exterior drainage problems"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Drain camera plumbers directly encounter customers with basement water, backups, and exterior drainage symptoms at the diagnostic stage.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Their findings can point precisely to weeping tile replacement, excavation, drainage, grading, or waterproofing needs.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Drain calls and camera inspections are recurring service events, especially during wet weather and in properties with older infrastructure.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "A referral can lead to substantive excavation, drainage, or waterproofing projects rather than minor service visits.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Local plumbing firms often have identifiable owners or service managers who can approve informal referral and handoff practices.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Plumbers receive recurring calls year-round and can repeatedly identify exterior drainage issues.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The relationship is naturally reciprocal because both trades encounter water problems that sometimes belong to the other discipline.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Drain service work is local, making it well aligned with a regional Lambton County contractor.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The practical overlap is easy to explain, though trust depends on clean communication and not taking over each other’s scope.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "drain camera plumbers",
+        "drain inspection services",
+        "sewer camera inspection"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "restoration-contractors",
+      "name": "Restoration Contractors",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Restoration contractors meet homeowners, property managers, insurers, and commercial owners immediately after water damage, when the visible loss has been cleaned up but the underlying water source may remain unresolved. If the source appears to be foundation seepage, failed exterior waterproofing, drainage failure, or grading-related intrusion, the referral should happen before walls, flooring, insulation, or finishes are rebuilt.",
+      "rationale": "This relationship makes sense because restoration firms can dry, remediate, and rebuild, but unresolved exterior water entry creates repeat losses and dissatisfied clients. The excavation and waterproofing contractor gains access to urgent, high-need customers, while the restoration contractor improves project outcomes and can receive interior reinstatement or mitigation referrals when waterproofing clients need cleanup or rebuild work.",
+      "triggers": [
+        {
+          "event": "Flood cleanup reveals water entering through foundation cracks, cold joints, window wells, or wall-floor intersections during rain or thaw.",
+          "whyNeed": "Drying and interior repair will not prevent recurrence if the exterior foundation, drainage, or waterproofing system is failing.",
+          "whoRecognizes": "Restoration Project Manager or Water Mitigation Supervisor",
+          "referralMoment": "After emergency mitigation and source investigation, but before reconstruction or finishing begins.",
+          "partnerValue": "The restoration contractor reduces the risk of rebuilding over an unresolved moisture source."
+        },
+        {
+          "event": "A finished basement loss shows repeated staining, mould risk, warped flooring, or prior patch repairs along exterior foundation walls.",
+          "whyNeed": "Repeated damage suggests a chronic water-management issue that may require excavation, waterproofing, weeping tile replacement, or grading correction.",
+          "whoRecognizes": "Restoration Estimator or Project Manager",
+          "referralMoment": "During the estimating and rebuild planning stage, before finalizing the reconstruction scope.",
+          "partnerValue": "The restoration contractor can offer the client a more complete path to a durable repair rather than only cosmetic reinstatement."
+        },
+        {
+          "event": "Commercial or multi-unit property experiences water intrusion affecting tenant areas, storage, mechanical rooms, or below-grade spaces.",
+          "whyNeed": "The owner or property manager needs a permanent exterior drainage or waterproofing plan to reduce operational disruption and repeated claims or service calls.",
+          "whoRecognizes": "Commercial Restoration Project Manager",
+          "referralMoment": "When stabilizing the loss and advising the owner on recurrence prevention before repairs are closed out.",
+          "partnerValue": "The restoration contractor strengthens client retention by helping prevent repeat disruptions."
+        }
+      ],
+      "mutualValue": "Restoration contractors gain a specialist who can address exterior causes of repeat water damage, while the waterproofing contractor gains timely referrals from active loss situations. Both can coordinate sequencing so mitigation, excavation, waterproofing, and interior reinstatement happen in the right order, improving the client experience.",
+      "approach": "Request a meeting with the restoration operations manager or project managers to build a simple wet-basement handoff workflow, including when to call for an exterior assessment before reconstruction and how to coordinate scheduling around active mitigation jobs.",
+      "decisionMaker": "Operations Manager, Restoration Project Manager, or Estimating Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Joint workflow for water-loss jobs where exterior waterproofing may be required",
+        "Lunch-and-learn for restoration estimators on exterior water-entry indicators",
+        "Client handout on why source correction should happen before basement rebuilds",
+        "Post-loss prevention checklist for homeowners and property managers"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on what to do after a basement flood before rebuilding",
+        "Educational checklist for property managers on preventing repeat below-grade water damage"
+      ],
+      "regulatoryNote": "Restoration work may involve insurer, adjuster, or property-manager relationships; any referral practices should avoid undisclosed incentives, misrepresentation of cause, or pressure on policyholders, and should respect insurance claim procedures.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Restoration teams see water-damaged basements and below-grade spaces at the moment the need is obvious and urgent.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Many restoration scenarios require exterior source correction through waterproofing, drainage, grading, or excavation before interior repairs last.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Water losses occur repeatedly across residential, rental, and commercial properties, especially around storms, thaw, and plumbing failures.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Source-correction work after a loss can involve significant excavation and waterproofing scope, especially before reconstruction.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are identifiable, but larger restoration operations may have formal vendor processes or insurer-influenced workflows.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Restoration contractors continuously handle water losses and can generate recurring opportunities over time.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both parties can exchange work and improve project outcomes by separating emergency mitigation, exterior correction, and interior reinstatement.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Restoration response is local or regional, which matches the contractor’s Sarnia and Lambton County operating area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The value is clear, but trust, scheduling reliability, and insurer-related processes can make the relationship take longer to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "water damage restoration contractors",
+        "flood restoration services",
+        "basement flood cleanup"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "civil-geotechnical-engineers",
+      "name": "Civil Geotechnical Engineers",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Civil and geotechnical engineers encounter property owners, builders, developers, and commercial clients when soil conditions, slope stability, groundwater, bearing capacity, settlement, or foundation performance are being evaluated. They can identify drainage and waterproofing requirements early, creating a referral opportunity for a contractor capable of executing excavation, grading, drainage, and foundation waterproofing work according to technical recommendations.",
+      "rationale": "This relationship makes commercial sense because engineering recommendations often require a competent contractor to implement site drainage, excavation, waterproofing, or corrective grading. The contractor benefits from technically informed projects, while the engineer benefits from execution partners who understand drawings, site constraints, documentation, and the importance of following specifications.",
+      "triggers": [
+        {
+          "event": "Geotechnical review for an addition, custom home, or commercial project identifies high groundwater, poor drainage, clay soils, or below-grade foundation risk.",
+          "whyNeed": "The client may need engineered drainage, grading, waterproofing, or excavation measures planned before construction begins.",
+          "whoRecognizes": "Geotechnical Engineer or Project Engineer",
+          "referralMoment": "After preliminary findings or design recommendations are discussed, before tendering or contractor selection.",
+          "partnerValue": "The engineer can help the client find a contractor capable of implementing recommendations without diluting professional responsibility."
+        },
+        {
+          "event": "Structural or site investigation finds foundation settlement, hydrostatic pressure, slope drainage issues, or water accumulation against the building.",
+          "whyNeed": "Corrective work may require excavation, water management, drainage installation, grading changes, or exterior waterproofing coordinated with engineering direction.",
+          "whoRecognizes": "Civil Engineer, Geotechnical Engineer, or Structural Project Lead",
+          "referralMoment": "When the repair concept moves from investigation to implementation planning.",
+          "partnerValue": "The engineer gains a field-capable contractor who can execute and communicate site conditions clearly."
+        },
+        {
+          "event": "Commercial property owner needs drainage improvements for parking areas, below-grade spaces, retaining areas, or service entrances.",
+          "whyNeed": "The project may require excavation, grading, drainage installation, demolition, or waterproofing to manage water and protect building infrastructure.",
+          "whoRecognizes": "Civil Project Manager or Consulting Engineer",
+          "referralMoment": "During design development or when recommending qualified contractors for pricing.",
+          "partnerValue": "The engineer can improve project delivery by involving a contractor familiar with regional soils, access constraints, and drainage realities."
+        }
+      ],
+      "mutualValue": "Engineers gain a dependable contractor who can follow specifications, provide constructability feedback, document unexpected site conditions, and execute drainage or waterproofing work professionally. The contractor gains credibility and access to higher-complexity residential, commercial, and builder projects where the need is defined before construction or repair decisions are locked in.",
+      "approach": "Introduce the contractor’s capabilities through a concise technical capability sheet covering excavation, waterproofing, weeping tile replacement, drainage, grading, demolition, insurance, safety practices, and project documentation; ask for a short meeting to understand how they prefer contractors to price or execute engineer-directed work.",
+      "decisionMaker": "Principal Engineer, Civil Project Manager, or Geotechnical Project Manager",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Technical capability briefing for engineers and project managers",
+        "Constructability review meeting on drainage and waterproofing details",
+        "Field walkthrough process for engineer-directed foundation or drainage repairs",
+        "Continuing education-style session on practical excavation constraints and waterproofing installation considerations"
+      ],
+      "digitalAuthority": [
+        "Co-authored technical explainer on when drainage design and exterior waterproofing should be coordinated",
+        "Educational article on translating geotechnical recommendations into site drainage and foundation protection work"
+      ],
+      "regulatoryNote": "Professional engineers are regulated and must preserve independence, objectivity, and client trust; referrals should not involve undisclosed compensation, improper inducements, or any arrangement that could compromise professional judgment.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Engineers encounter relevant needs early on complex residential, commercial, and site-condition projects, though not every file involves waterproofing.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Their recommendations can directly call for excavation, grading, drainage, foundation waterproofing, or corrective water-management work.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Compared with inspectors, plumbers, and restoration firms, relevant engineering referrals are less frequent and more project-specific.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Engineer-influenced projects can be higher-complexity and commercially valuable, especially for custom homes, additions, and commercial properties.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Principals and project managers can be identified, but professional services firms may be cautious about contractor relationships.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "The stream is occasional rather than high-volume, although a trusted relationship can repeat across suitable projects.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Engineers value competent execution and field feedback, while the contractor gains credibility and technically qualified opportunities.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Engineering work may be regional, but site-specific projects in Sarnia and Lambton County are still highly relevant when they arise.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Establishing trust requires professionalism, documentation, and respect for engineering independence, but the first conversation is straightforward.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "geotechnical engineering consultants",
+        "civil engineering consultants",
+        "foundation engineering services"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "custom-home-builders",
+      "name": "Custom Home Builders",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Custom home builders encounter excavation, grading, drainage, and foundation waterproofing needs before a homeowner ever experiences a wet-basement problem. The referral opportunity is to become a dependable site-prep and exterior waterproofing trade that builders involve during estimating, pre-construction planning, or before backfill.",
+      "rationale": "Builders have repeat projects and strong influence over trade selection, while the contractor can help reduce drainage-related callbacks, schedule delays, and homeowner complaints after occupancy.",
+      "triggers": [
+        {
+          "event": "New custom home or infill build reaches site-prep and foundation planning.",
+          "whyNeed": "Excavation, grading strategy, perimeter drainage, and waterproofing must be coordinated before foundation backfill limits access.",
+          "whoRecognizes": "Builder, construction manager, site supervisor, or project estimator.",
+          "referralMoment": "During estimating, pre-construction scheduling, or immediately after foundation drawings and site elevations are reviewed.",
+          "partnerValue": "The builder gains a specialist who can price early, coordinate with foundation trades, and reduce later water-management issues."
+        },
+        {
+          "event": "Addition, basement walk-out, or garage expansion requires excavation near an existing foundation.",
+          "whyNeed": "Disturbing soil around an existing structure can expose drainage defects, create grading conflicts, or require exterior waterproofing tie-ins.",
+          "whoRecognizes": "Builder, site supervisor, designer, or project manager.",
+          "referralMoment": "Before excavation starts, when access, shoring, spoil removal, and drainage tie-ins are being planned.",
+          "partnerValue": "The builder reduces risk of hidden foundation-water problems disrupting the renovation schedule."
+        },
+        {
+          "event": "Homeowner reports wet basement or grading concerns during warranty or post-occupancy period.",
+          "whyNeed": "Water entry may be tied to exterior drainage, weeping tile, backfill settlement, or grading around the home.",
+          "whoRecognizes": "Warranty coordinator, builder owner, or site supervisor.",
+          "referralMoment": "When the builder confirms the issue is exterior water management rather than an interior finish defect.",
+          "partnerValue": "The builder gets a responsive regional contractor to resolve issues professionally and protect client satisfaction."
+        }
+      ],
+      "mutualValue": "The builder receives a reliable trade partner for bids, schedules, and warranty support; the contractor gains repeat project exposure and earlier involvement before waterproofing and drainage decisions are locked in.",
+      "approach": "Create a short builder-facing capability sheet covering excavation, exterior waterproofing, weeping tile, grading, and demolition, then request a meeting with the builder’s construction manager to review upcoming projects and handoff points.",
+      "decisionMaker": "Construction Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Pre-construction drainage and waterproofing checklist for builders",
+        "Lunch-and-learn for site supervisors on avoiding foundation-water callbacks",
+        "Preferred bid invite process for excavation and waterproofing scopes",
+        "Post-project debrief template for drainage or grading lessons learned"
+      ],
+      "digitalAuthority": [
+        "Co-authored homeowner guide on exterior waterproofing decisions during a custom build",
+        "Joint article on grading and drainage considerations before foundation backfill"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Builders encounter excavation, drainage, grading, and waterproofing needs before construction reaches backfill.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The contractor’s services directly support core site and foundation phases of custom residential construction.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Active builders generate repeated project opportunities, though timing depends on their build pipeline.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "New builds, additions, and warranty remediation can involve meaningful excavation and waterproofing scopes.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are identifiable and often open to dependable trade relationships, though established vendor lists may exist.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Builders can use the same contractor across multiple homes, additions, and warranty calls.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both sides gain from fewer schedule disruptions, clearer scopes, and reduced drainage-related callbacks.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Custom builders typically need local or regional trades who can respond on-site quickly.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship is straightforward to initiate with capability proof, insurance readiness, and a clear estimating process.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "custom home builders",
+        "infill home builders",
+        "residential construction managers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "commercial-property-managers",
+      "name": "Commercial Property Managers",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Commercial property managers encounter water problems when tenants report leaks, wet storage areas, flooded mechanical rooms, poor exterior drainage, or pavement runoff issues. The referral opportunity is to become a reliable regional vendor for diagnosing and resolving exterior foundation, drainage, grading, and excavation issues across multiple managed sites.",
+      "rationale": "Property managers have ongoing maintenance needs across portfolios and value vendors who respond quickly, document problems clearly, and reduce tenant disruption.",
+      "triggers": [
+        {
+          "event": "Tenant or building staff reports water intrusion in a basement, mechanical room, storage area, or lower-level unit.",
+          "whyNeed": "Persistent water entry often points to exterior foundation waterproofing failure, clogged or failed drainage, poor grading, or inadequate discharge paths.",
+          "whoRecognizes": "Property manager, facilities coordinator, building operator, or maintenance supervisor.",
+          "referralMoment": "After the initial maintenance inspection suggests the source is exterior drainage or foundation-related rather than a simple plumbing leak.",
+          "partnerValue": "The manager gets a specialist who can assess the site, explain options, and reduce repeat complaints."
+        },
+        {
+          "event": "Recurring pooling, ice buildup, or surface runoff appears near entrances, loading areas, parking lots, or foundation walls.",
+          "whyNeed": "Improper grading or drainage can create safety issues, tenant complaints, and water pressure against the building envelope.",
+          "whoRecognizes": "Property manager, maintenance staff, snow contractor, or facilities supervisor.",
+          "referralMoment": "When seasonal inspections or repeated service tickets show the problem is recurring and site-based.",
+          "partnerValue": "The manager gains a vendor who can address root causes rather than repeatedly handling symptoms."
+        },
+        {
+          "event": "Capital maintenance planning identifies aging foundation drains, exterior waterproofing, or demolition/site-prep work.",
+          "whyNeed": "Older properties may require planned excavation, weeping tile replacement, drainage improvements, or grading corrections to protect the asset.",
+          "whoRecognizes": "Asset manager, property manager, or facilities manager.",
+          "referralMoment": "During annual budget planning, capital reserve discussions, or before issuing maintenance tenders.",
+          "partnerValue": "The manager receives practical scope input and budgetary planning support for future work."
+        }
+      ],
+      "mutualValue": "The property manager gains a responsive, documented vendor for recurring water and drainage issues, while the contractor gains repeat maintenance, capital repair, and emergency assessment opportunities across a portfolio.",
+      "approach": "Offer a no-obligation portfolio triage conversation and provide a one-page water-intrusion intake form that helps managers route service requests to the right trade faster.",
+      "decisionMaker": "Property Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Seasonal drainage inspection checklist for managed properties",
+        "Lunch-and-learn for maintenance coordinators on exterior water-intrusion signs",
+        "Vendor onboarding package with insurance, safety, and response procedures",
+        "Capital planning walkthrough for high-risk drainage areas"
+      ],
+      "digitalAuthority": [
+        "Educational article for commercial owners on when wet basements indicate exterior foundation failure",
+        "Co-branded maintenance checklist for spring grading and drainage inspections"
+      ],
+      "regulatoryNote": "Property management and real-estate-related procurement may involve conflict-of-interest, disclosure, condominium, or internal vendor-list rules; avoid undisclosed referral compensation and follow the manager’s procurement policies.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Managers directly receive tenant complaints and maintenance tickets that reveal water intrusion and drainage problems.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Excavation, exterior waterproofing, drainage, grading, and demolition are highly relevant to recurring building-envelope and site issues.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 5,
+          "rationale": "Portfolio managers encounter repeated maintenance issues across multiple properties over time.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Commercial drainage and foundation repairs can be substantial and may lead to multi-site work.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are identifiable, but vendor approval, procurement processes, and budget controls can slow access.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Managed portfolios create ongoing inspection, repair, and capital maintenance opportunities.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The contractor solves repeat pain points while the manager improves tenant service and asset protection.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Property managers need regional contractors who can attend sites quickly and understand local soil, drainage, and weather conditions.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Initial contact is practical, but onboarding, insurance documentation, and approval thresholds may add friction.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "commercial property managers",
+        "facilities management firms",
+        "commercial building maintenance managers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "general-contractors",
+      "name": "General Contractors",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "General contractors encounter the need when renovation, commercial, or site-prep scopes require excavation, demolition, grading, drainage, or exterior foundation work. The referral opportunity is to become a trusted subcontractor who can quote clearly, mobilize reliably, and coordinate with other trades when subsurface or water-management issues appear.",
+      "rationale": "GCs repeatedly need dependable specialists to protect schedules and reduce risk on jobs where hidden site conditions, drainage, or foundation access can affect the critical path.",
+      "triggers": [
+        {
+          "event": "Renovation or commercial fit-out uncovers foundation cracks, water entry, or failed exterior drainage.",
+          "whyNeed": "The GC may need exterior excavation, waterproofing, weeping tile replacement, or grading correction before finishes or structural work proceed.",
+          "whoRecognizes": "Project manager, superintendent, estimator, or site supervisor.",
+          "referralMoment": "As soon as the GC determines the issue is outside their in-house capability or affects the project schedule.",
+          "partnerValue": "The GC gets a specialist response that helps prevent delays and protects their relationship with the owner."
+        },
+        {
+          "event": "Project scope includes demolition, trenching, site grading, or drainage improvements.",
+          "whyNeed": "These scopes require equipment, site coordination, spoil handling, and practical understanding of water movement around structures.",
+          "whoRecognizes": "Estimator, project manager, or operations manager.",
+          "referralMoment": "During bid assembly, subcontractor tendering, or pre-construction scheduling.",
+          "partnerValue": "The GC gains accurate subcontract pricing and fewer coordination surprises."
+        },
+        {
+          "event": "Change order arises after poor soils, buried obstructions, or unexpected water conditions are found.",
+          "whyNeed": "Unexpected site conditions can require excavation, drainage redesign, grading changes, or exterior waterproofing before work can continue.",
+          "whoRecognizes": "Site superintendent, project manager, or owner’s representative.",
+          "referralMoment": "Immediately after discovery, before the GC commits to a workaround or revised schedule.",
+          "partnerValue": "The GC receives practical options and documentation to support change-order discussions."
+        }
+      ],
+      "mutualValue": "The GC gains a capable subcontractor for specialized excavation and water-management scopes, while the contractor gains repeat bid opportunities, emergency site calls, and referrals from projects where their expertise protects the schedule.",
+      "approach": "Ask to be added to the GC’s subcontractor bid list and provide a concise prequalification package including service scope, insurance, equipment capabilities, safety documentation, and project handoff process.",
+      "decisionMaker": "Project Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Subcontractor prequalification package",
+        "Site-condition escalation checklist for superintendents",
+        "Pre-bid walkthrough support for excavation and drainage scopes",
+        "Safety and access coordination meeting before mobilization"
+      ],
+      "digitalAuthority": [
+        "Technical explainer on managing exterior foundation-water issues during renovations",
+        "Co-authored checklist for GCs on excavation and drainage risks before bidding"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "GCs frequently identify excavation, demolition, drainage, and waterproofing needs during estimating and active construction.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The contractor’s services align directly with common subcontract scopes GCs need to deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Busy GCs create repeated opportunities, though not every project includes foundation or drainage work.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Subcontract scopes can be material, especially when excavation, waterproofing, and grading are combined.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Project managers and estimators are usually identifiable and accustomed to evaluating subcontractors.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "A reliable subcontractor can be invited repeatedly, although work is project-based and competitive.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The GC receives schedule support and specialist capability while the contractor gains steady bid flow.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "GCs benefit from regional subcontractors who can mobilize quickly and coordinate with local trades and inspectors.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Providing a strong subcontractor package and responsive estimating process makes the relationship relatively easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "general contractors",
+        "commercial renovation contractors",
+        "construction project managers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "concrete-forming-contractors",
+      "name": "Concrete Forming Contractors",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Concrete forming contractors are on site when foundations, additions, porches, retaining elements, or basement-related work are being laid out and poured. They can spot access, footing, drainage, grading, and waterproofing needs before backfill, creating a timely referral opportunity for exterior waterproofing, weeping tile, excavation, and grading work.",
+      "rationale": "Forming and waterproofing/excavation are adjacent scopes, and coordination before backfill helps both trades avoid rework, site congestion, and unclear responsibility for water-management details.",
+      "triggers": [
+        {
+          "event": "New foundation or addition is formed and ready for waterproofing, drainage, and backfill planning.",
+          "whyNeed": "Once forms are stripped, the window to install exterior waterproofing and perimeter drainage efficiently is limited before backfill.",
+          "whoRecognizes": "Forming contractor owner, foreman, site supervisor, or builder’s site lead.",
+          "referralMoment": "When forming dates are confirmed or immediately after the wall pour schedule is set.",
+          "partnerValue": "The forming contractor helps the builder keep the next phase moving smoothly and reduces blame for later water issues."
+        },
+        {
+          "event": "Forming crew notices poor footing drainage, high groundwater, soft soils, or site water accumulating around excavation.",
+          "whyNeed": "Water around footings can signal the need for drainage correction, weeping tile, grading changes, or excavation support before the foundation is enclosed.",
+          "whoRecognizes": "Foreman, forming crew lead, excavator operator, or site supervisor.",
+          "referralMoment": "Before the site is backfilled or before concrete work is delayed by water conditions.",
+          "partnerValue": "The forming contractor avoids schedule interruptions and can offer the client a practical next step."
+        },
+        {
+          "event": "Porch, walk-out, retaining wall, or basement entry work creates complex grade transitions.",
+          "whyNeed": "Grade transitions can concentrate water against foundation walls or require drainage tie-ins and exterior waterproofing details.",
+          "whoRecognizes": "Forming contractor, builder, site supervisor, or concrete estimator.",
+          "referralMoment": "During layout or before concrete placement fixes elevations and access constraints.",
+          "partnerValue": "The forming contractor reduces downstream complaints and improves coordination with adjacent trades."
+        }
+      ],
+      "mutualValue": "The forming contractor can bring in a specialist to solve drainage and waterproofing issues that affect their work, while the excavation and waterproofing contractor can refer foundation-forming needs when clients require adjacent concrete scope.",
+      "approach": "Meet with the owner or operations manager to map jobsite handoff points, then offer a simple referral protocol for when crews see drainage, waterproofing, or grading concerns before backfill.",
+      "decisionMaker": "Owner",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Jobsite handoff checklist for post-pour waterproofing and drainage",
+        "Crew toolbox talk on warning signs before backfill",
+        "Reciprocal scope clarification sheet for builders and homeowners",
+        "Pre-backfill coordination walkthrough"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on what should happen between foundation pour and backfill",
+        "Photo-based educational post explaining drainage and waterproofing checkpoints before backfill"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Forming crews are present at the exact stage when exterior waterproofing and drainage decisions are most time-sensitive.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Their foundation work sits directly beside excavation, weeping tile, waterproofing, and grading scopes.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Active forming contractors see many relevant projects, though not every job needs outside waterproofing support.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referrals may range from small coordination items to substantial drainage and exterior waterproofing scopes.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Owners and foremen are often accessible through jobsite networks and local trade relationships.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "The relationship can repeat across new foundations, additions, porches, and walk-out projects.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both trades benefit from cleaner sequencing, fewer callbacks, and better builder confidence.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Concrete forming and excavation coordination is highly local because crews, equipment, and schedules must align on site.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "It is relatively easy to start with a practical handoff checklist and crew-level communication.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "concrete forming contractors",
+        "foundation forming contractors",
+        "residential concrete foundation contractors"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "landscape-hardscape-contractors",
+      "name": "Landscape Hardscape Contractors",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Landscape and hardscape contractors often encounter homeowners when patios, retaining walls, walkways, drainage swales, and regrading work expose water moving toward the foundation or saturated soils around the house. The referral opportunity is strongest before they install finished surfaces, because foundation waterproofing, weeping tile replacement, or corrective grading should be addressed before stone, pavers, sod, or retaining structures are completed.",
+      "rationale": "This relationship makes commercial sense because unresolved subsurface drainage can undermine the landscaper’s finished work, while excavation and waterproofing projects often require surface restoration, grading, retaining walls, or landscaping afterward. Both businesses serve homeowners dealing with exterior water-management issues, but at different points in the same project lifecycle.",
+      "triggers": [
+        {
+          "event": "A patio, walkway, or retaining wall project reveals that surface water slopes toward the foundation.",
+          "whyNeed": "Water directed toward the foundation can contribute to wet basements, hydrostatic pressure, and premature failure of the new hardscape installation.",
+          "whoRecognizes": "Landscape estimator, hardscape project manager, or site foreperson.",
+          "referralMoment": "During site assessment or before finalizing the hardscape quote and drainage plan.",
+          "partnerValue": "The landscaper reduces the risk of callbacks, protects the durability of their installation, and can present a more complete solution to the homeowner."
+        },
+        {
+          "event": "Excavation for hardscape footings or retaining walls exposes saturated soil, clay buildup, failed drains, or foundation seepage signs.",
+          "whyNeed": "These signs suggest deeper drainage or foundation waterproofing issues that landscaping alone may not solve.",
+          "whoRecognizes": "Site foreperson, excavation crew lead, or owner-operator.",
+          "referralMoment": "Immediately after discovery and before covering or building over the affected area.",
+          "partnerValue": "The partner avoids burying a known problem and strengthens trust by bringing in a specialist rather than overextending their scope."
+        },
+        {
+          "event": "A homeowner requests regrading to solve basement dampness or pooling water near the house.",
+          "whyNeed": "Regrading may help surface flow, but persistent basement moisture can require exterior waterproofing, weeping tile replacement, or drainage corrections.",
+          "whoRecognizes": "Landscape designer, estimator, or sales lead.",
+          "referralMoment": "After initial assessment, before promising that grading alone will solve the basement issue.",
+          "partnerValue": "The landscaper can avoid unrealistic promises and may receive reciprocal referrals for surface restoration after waterproofing work."
+        }
+      ],
+      "mutualValue": "The partner gains fewer drainage-related callbacks, stronger project outcomes, and access to reciprocal surface-restoration opportunities after excavation. The waterproofing contractor gains early visibility into exterior water problems before homeowners commit budget to finished landscaping that may later need to be removed.",
+      "approach": "Offer a short on-site lunch-and-learn or field checklist on when grading and hardscape symptoms indicate a foundation drainage problem, then propose a simple two-way referral process for projects where each trade’s scope affects the other.",
+      "decisionMaker": "Owner or Operations Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Jobsite assessment checklist for drainage and foundation warning signs",
+        "Joint homeowner guide on grading, hardscaping, and basement water prevention",
+        "Cross-training session for estimators and forepersons",
+        "Post-excavation restoration referral process"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on how patios, retaining walls, and grading affect basement water risk",
+        "Before-and-after project story focused on drainage sequencing, without implying endorsement guarantees"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "These contractors directly encounter exterior drainage, grading, and soil conditions that often reveal waterproofing needs.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Their work is highly adjacent to excavation, drainage, grading, and exterior foundation waterproofing.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Landscape and hardscape crews regularly assess residential exteriors where water-management issues appear, especially during seasonal project work.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred jobs can be substantial because exterior waterproofing and weeping tile replacement are significant projects, though not every landscape issue requires excavation.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are often local owners or operations managers who are relatively reachable compared with larger institutional channels.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "The partner category has ongoing seasonal project flow and can produce repeat referral opportunities.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both parties can protect project quality and exchange complementary work without competing directly.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Landscape and hardscape services are inherently local and align well with a regional Lambton County service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship is straightforward to start because the trades already interact around grading, excavation, and restoration needs.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "landscape hardscape contractors",
+        "retaining wall contractors",
+        "grading and drainage contractors"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "asphalt-interlock-contractors",
+      "name": "Asphalt Interlock Contractors",
+      "relationshipType": "downstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Asphalt, driveway, and interlock contractors often arrive after excavation work because driveways, walkways, and paver areas may need reinstatement once waterproofing or drainage work is complete. They also encounter homeowners before resurfacing when settlement, poor slope, or water collecting near the foundation suggests a drainage or weeping tile issue that should be solved before new pavement or interlock is installed.",
+      "rationale": "The relationship is commercially sensible because paving or interlock installed over unresolved drainage problems may fail, settle, or direct water back toward the house. For the excavation contractor, a trusted reinstatement partner improves the customer experience after disruptive exterior waterproofing work and creates reciprocal referral paths.",
+      "triggers": [
+        {
+          "event": "A homeowner requests driveway or walkway replacement and the contractor sees settlement near the foundation or garage-to-house transition.",
+          "whyNeed": "Settlement may indicate poor drainage, washed-out base material, or water movement that could continue damaging the surface and possibly contribute to foundation moisture.",
+          "whoRecognizes": "Estimator, project manager, or crew supervisor.",
+          "referralMoment": "Before quoting final base preparation or scheduling resurfacing.",
+          "partnerValue": "The paving or interlock contractor avoids installing over unstable conditions and reduces future warranty disputes."
+        },
+        {
+          "event": "Water is visibly draining from a paved or interlock surface toward the foundation or basement window wells.",
+          "whyNeed": "Negative slope can increase basement water risk and may require drainage correction, grading, or exterior waterproofing before finished surfaces are installed.",
+          "whoRecognizes": "Estimator or site foreperson.",
+          "referralMoment": "During the initial site visit, before proposing the new slope and surface design.",
+          "partnerValue": "The partner can deliver a better-performing installation and position themselves as a problem-solver rather than just a resurfacing provider."
+        },
+        {
+          "event": "Exterior waterproofing or weeping tile replacement requires removal of driveway asphalt, interlock, or walkways.",
+          "whyNeed": "The customer will need reinstatement once excavation is backfilled and settled appropriately.",
+          "whoRecognizes": "Waterproofing project manager or excavation crew lead.",
+          "referralMoment": "At project close-out planning, ideally before excavation begins so expectations on timing and restoration are clear.",
+          "partnerValue": "The asphalt or interlock contractor receives well-qualified restoration opportunities from customers already committed to completing the exterior work."
+        }
+      ],
+      "mutualValue": "The partner gains better-prepared sites, fewer failures caused by water and settlement, and qualified restoration opportunities after excavation. The waterproofing contractor gains a reliable downstream solution for reinstatement and an upstream source of referrals when paving crews detect drainage risks before resurfacing.",
+      "approach": "Create a restoration handoff checklist covering timing, settlement expectations, base preparation, and drainage observations, then meet with owner-operators or estimators to discuss when each trade should be brought in.",
+      "decisionMaker": "Owner or Estimating Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Restoration handoff checklist for post-excavation driveways and walkways",
+        "Estimator field guide for drainage red flags before paving or interlock",
+        "Joint seasonal maintenance tips for homeowners preparing exterior surfaces",
+        "Preferred sequencing meeting for projects involving excavation and resurfacing"
+      ],
+      "digitalAuthority": [
+        "Co-authored homeowner article on why drainage should be checked before replacing a driveway or interlock walkway",
+        "Short video or photo guide explaining project sequencing after exterior waterproofing"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Paving and interlock contractors often see slope, settlement, and surface drainage issues that can signal deeper water problems.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Their services are strongly connected to excavation close-out and surface water management, though they do not usually diagnose foundation systems.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Driveway, walkway, and interlock projects are common and create repeated opportunities to notice drainage conflicts.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "A single referral can lead to meaningful excavation or waterproofing work, especially when resurfacing would otherwise cover the problem.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Many firms are locally owned with reachable owners, estimators, or operations leads.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "This category provides recurring seasonal project flow and recurring downstream restoration needs after excavation.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both trades benefit from correct sequencing, fewer callbacks, and reciprocal project opportunities.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Paving and interlock work is highly local and fits a regional service model.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The practical need for reinstatement after excavation makes the initial conversation easy and concrete.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "asphalt paving contractors",
+        "interlock driveway contractors",
+        "driveway resurfacing contractors"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "secondary-suite-designers",
+      "name": "Secondary Suite Designers",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Secondary suite designers encounter homeowners early when they are planning basement apartments, separate entrances, walk-outs, egress windows, underpinning-adjacent changes, or basement renovations. This is an upstream referral opportunity because moisture, grading, foundation drainage, and excavation feasibility should be addressed before drawings are finalized and before the homeowner invests in permits or interior finishes.",
+      "rationale": "This relationship makes commercial sense because basement living-space projects are vulnerable to delays and redesign if water intrusion, poor grading, or exterior excavation constraints are discovered late. The excavation and waterproofing contractor can help designers protect project feasibility, while designers can introduce the contractor before the customer locks in an unsuitable design.",
+      "triggers": [
+        {
+          "event": "A homeowner plans to convert a basement into a legal or functional rental suite and reports past dampness, musty odours, efflorescence, or water staining.",
+          "whyNeed": "Finished basement living space increases the cost and consequence of water intrusion, so exterior waterproofing or drainage correction may be needed before construction.",
+          "whoRecognizes": "Secondary suite designer, architectural technologist, or renovation planner.",
+          "referralMoment": "During discovery and site review, before final drawings and budget assumptions are completed.",
+          "partnerValue": "The designer reduces the risk of redesign, client dissatisfaction, and moisture-related failures after the suite is built."
+        },
+        {
+          "event": "The design includes a separate entrance, basement walk-out, or exterior stairwell below grade.",
+          "whyNeed": "Below-grade openings can create drainage and waterproofing risks that require excavation, grading, drainage tie-ins, or foundation protection.",
+          "whoRecognizes": "Designer, permit coordinator, or project manager.",
+          "referralMoment": "Before submitting permit drawings or finalizing the entrance location and drainage concept.",
+          "partnerValue": "The partner gains a practical constructability review that can improve approval readiness and reduce surprises during construction."
+        },
+        {
+          "event": "The planned layout depends on egress windows or window wells near areas with poor exterior drainage.",
+          "whyNeed": "Window wells and foundation penetrations can become water-entry points if grading and drainage are not properly addressed.",
+          "whoRecognizes": "Designer or site assessor.",
+          "referralMoment": "During preliminary layout and exterior review, before window locations and excavation scope are fixed.",
+          "partnerValue": "The designer can produce a more durable design and avoid specifying details that are difficult or risky to build."
+        }
+      ],
+      "mutualValue": "The designer gains constructability input that helps protect the budget, permit path, and long-term performance of basement suites. The waterproofing contractor gains early access to homeowners before interior finishing begins, when exterior drainage and foundation work are easier to justify and schedule.",
+      "approach": "Offer to review one or two sample basement-suite site scenarios with the designer and create a short pre-design moisture and drainage checklist they can use during client intake.",
+      "decisionMaker": "Principal Designer or Design Studio Owner",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Pre-design basement moisture and drainage checklist",
+        "Designer-contractor constructability review session",
+        "Homeowner webinar on preparing a basement for a secondary suite",
+        "Permit-planning checklist section on exterior drainage and below-grade entrances"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on moisture and drainage considerations before building a basement suite",
+        "Educational webinar recap on basement-suite planning risks related to water and excavation"
+      ],
+      "regulatoryNote": "Building design and permit-related work in Ontario may involve qualified designers and municipal code requirements; any referrals should be informational, non-exclusive, and subject to client choice and applicable professional obligations.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Designers meet homeowners before basement conversion work, which is a key moment to identify moisture and excavation constraints.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Basement waterproofing, drainage, grading, and excavation are directly relevant to below-grade living-space feasibility.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Secondary suite projects are less frequent than general exterior contracting work, but each one has strong need potential.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "When issues are present, the required waterproofing or excavation work can be significant and time-sensitive.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Small design practices may be reachable, but designers may be cautious about recommending contractors without trust.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "The category can generate repeat referrals over time, but project volume is more occasional than seasonal trade categories.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The designer benefits from reduced feasibility risk and the contractor benefits from early-stage introductions.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Secondary-suite planning is local to municipal requirements and regional housing demand, though designers may serve broader areas.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "It requires education and trust-building because the designer may not naturally think to involve a waterproofing contractor early.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "secondary suite designers",
+        "basement apartment designers",
+        "residential permit designers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "land-surveyors",
+      "name": "Land Surveyors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Land surveyors encounter homeowners, builders, and property owners during boundary work, site plans, grading plans, stake-outs, and drainage-related documentation before construction or regrading begins. They may not diagnose waterproofing problems, but they are well positioned to notice grade conflicts, limited drainage paths, encroachments, and site constraints that could affect foundation drainage and excavation planning.",
+      "rationale": "This relationship makes commercial sense because surveyors often see site constraints before contractors begin work, when drainage and excavation decisions can still be corrected. For the excavation and waterproofing contractor, surveyor referrals can identify complex or higher-value projects earlier; for surveyors, having a reliable contractor resource helps clients act on practical grade and drainage concerns without asking the surveyor to step outside their professional scope.",
+      "triggers": [
+        {
+          "event": "A survey or grading review shows that proposed grades direct water toward the foundation or leave insufficient fall away from the building.",
+          "whyNeed": "Poor grade design can contribute to basement water issues and may require regrading, drainage work, or foundation waterproofing before construction proceeds.",
+          "whoRecognizes": "Ontario Land Surveyor, survey project manager, or field crew chief.",
+          "referralMoment": "After identifying the constraint and before the client finalizes grading or starts site work.",
+          "partnerValue": "The surveyor helps the client resolve a practical site issue while staying within their measurement and advisory role."
+        },
+        {
+          "event": "A stake-out or site plan for an addition, garage, walk-out, or exterior renovation reveals tight setbacks, elevation constraints, or drainage conflicts near the foundation.",
+          "whyNeed": "Limited working space and grade constraints can materially affect excavation feasibility, drainage layout, and waterproofing approach.",
+          "whoRecognizes": "Survey project manager or field crew chief.",
+          "referralMoment": "Before excavation or permit-related construction planning proceeds too far.",
+          "partnerValue": "The partner reduces the likelihood of client disputes caused by constructability surprises that were visible from survey information."
+        },
+        {
+          "event": "A property owner requests drainage-related documentation or boundary clarification because of recurring pooling, swales, or neighbour water-flow concerns.",
+          "whyNeed": "The issue may require practical drainage correction, grading, or excavation beyond survey documentation.",
+          "whoRecognizes": "Surveyor, intake coordinator, or project manager.",
+          "referralMoment": "Once the surveyor has clarified the site facts and the client needs a contractor to evaluate remediation options.",
+          "partnerValue": "The surveyor can provide a helpful next step without offering construction services or taking responsibility for contractor work."
+        }
+      ],
+      "mutualValue": "The surveyor gains a trusted construction-side resource for clients who need to act on grading or drainage constraints, while maintaining professional boundaries. The waterproofing contractor gains early insight into projects where elevations, setbacks, and drainage paths will shape the scope and feasibility of excavation work.",
+      "approach": "Request a professional introduction meeting focused on role boundaries: explain the contractor’s excavation and drainage capabilities, ask what site conditions commonly create client questions, and offer a neutral checklist survey staff can use to suggest that clients seek contractor input.",
+      "decisionMaker": "Survey Firm Principal or Survey Project Manager",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Role-boundary briefing on when survey findings should prompt contractor evaluation",
+        "Client handout explaining next steps after drainage or grading constraints are identified",
+        "Technical lunch-and-learn on excavation access, grading constraints, and foundation drainage",
+        "Pre-construction coordination checklist for grade-sensitive projects"
+      ],
+      "digitalAuthority": [
+        "Educational article on how grading information can affect foundation drainage planning"
+      ],
+      "regulatoryNote": "Land surveying is a regulated profession in Ontario; referrals should avoid compensation arrangements or implied professional endorsement unless permitted by applicable rules, and client choice and professional independence should be preserved.",
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Surveyors encounter grade and drainage constraints early, but they may only occasionally see clear waterproofing needs.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Survey information is highly relevant to grading, drainage, and excavation feasibility, even though surveyors do not provide waterproofing services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Relevant referral moments are occasional because many surveys are boundary-focused and do not involve foundation drainage concerns.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "When a need is identified, the project can be complex and valuable because grade, drainage, and excavation constraints are central to the solution.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Firm principals and project managers are reachable but may be cautious due to professional obligations and liability boundaries.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "The relationship may produce repeat introductions, but not at the same cadence as contractor-to-contractor channels.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "The surveyor gains a practical next-step resource, but the benefit is more client-service oriented than directly commercial.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Surveying and site work are strongly tied to local properties, municipal requirements, and regional service areas.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 2,
+          "rationale": "Establishing the relationship requires careful positioning around professional independence, liability, and non-endorsement.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "land surveyors",
+        "grading plan surveyors",
+        "property surveyors"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "septic-system-contractors",
+      "name": "Septic System Contractors",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Septic contractors are often on rural and semi-rural properties when homeowners are already dealing with excavation, soggy yards, drainage confusion, or failed underground systems. They can identify when the issue is not septic-related but instead tied to foundation drainage, grading, weeping tile failure, or surface water moving toward the home. The referral opportunity is strongest when separating sanitary system problems from groundwater and foundation-waterproofing problems prevents misdiagnosis and duplicated excavation.",
+      "rationale": "The relationship makes commercial sense because both trades work around buried services, drainage paths, soil conditions, and heavy equipment access, but they solve different problems. Coordinated referrals can reduce customer confusion, protect each contractor from being blamed for the wrong water issue, and create opportunities to coordinate site work when excavation access is already planned.",
+      "triggers": [
+        {
+          "event": "A rural homeowner calls about standing water near the septic bed and also reports basement seepage after rain.",
+          "whyNeed": "The symptom may involve surface grading, foundation drainage, or weeping tile failure rather than only a septic system issue.",
+          "whoRecognizes": "Septic contractor, site estimator, or licensed installer during the initial inspection.",
+          "referralMoment": "After confirming the septic system is not the sole cause, before excavation scope is finalized.",
+          "partnerValue": "The septic contractor avoids taking responsibility for a foundation-water issue and helps the homeowner get the right specialist involved early."
+        },
+        {
+          "event": "A septic replacement or repair requires excavation near the house, driveway, or foundation wall.",
+          "whyNeed": "Once the property is already being disturbed, the homeowner may need grading correction, exterior waterproofing, drainage routing, or coordination around weeping tile outlets.",
+          "whoRecognizes": "Septic project manager or excavation lead during site planning.",
+          "referralMoment": "During pre-job planning, before machinery access, trenching routes, and restoration plans are locked in.",
+          "partnerValue": "The septic contractor can coordinate access and restoration more smoothly, reducing rework and customer frustration."
+        },
+        {
+          "event": "A septic contractor finds improper downspout discharge, poor grading, or groundwater being directed toward the foundation while assessing the lot.",
+          "whyNeed": "These conditions can contribute to wet basements and may require drainage, grading, or waterproofing work outside the septic contractor’s core scope.",
+          "whoRecognizes": "Septic inspector, estimator, or crew lead during site assessment.",
+          "referralMoment": "Immediately after documenting the drainage concern and explaining that it falls outside the septic scope.",
+          "partnerValue": "The partner builds trust by giving practical guidance without overextending into foundation waterproofing."
+        }
+      ],
+      "mutualValue": "Septic contractors gain a trusted specialist for non-septic water problems, fewer disputes about what caused standing water or basement seepage, and potential reciprocal introductions when excavation or drainage clients reveal septic concerns. The waterproofing contractor gains early access to rural homeowners already investigating underground water and soil issues, while customers receive clearer diagnosis and better-coordinated site work.",
+      "approach": "Create a one-page field guide that helps distinguish septic symptoms from foundation-drainage symptoms, then offer to review it over a short coffee meeting with the owner, operations manager, or lead estimator of local septic contractors.",
+      "decisionMaker": "Owner or Operations Manager",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Shared diagnostic checklist for homeowners with wet yards and wet basements",
+        "Informal cross-training session for estimators on septic-versus-foundation water symptoms",
+        "Coordinated site-planning call when both septic and foundation drainage work may be required",
+        "Homeowner handout on managing downspouts, grading, septic areas, and foundation drainage"
+      ],
+      "digitalAuthority": [
+        "Co-authored educational article on how homeowners can tell the difference between septic problems, yard drainage issues, and foundation seepage",
+        "Seasonal maintenance checklist covering septic protection, grading, and basement water prevention"
+      ],
+      "regulatoryNote": "Septic installation and alterations may be subject to licensing, permits, inspections, and local approval requirements; any referrals should avoid implying certification outside each contractor’s scope and should not assume referral compensation is permitted.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Septic contractors regularly encounter rural water, soil, and excavation problems that can reveal or be confused with foundation drainage issues.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "The services are highly adjacent because both involve excavation, drainage paths, and underground systems, while remaining distinct enough to avoid direct competition.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "The overlap is occasional rather than daily, usually appearing on rural properties with wet yards, failed systems, or excavation near the home.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "When relevant, the work can lead to meaningful excavation, grading, drainage, or exterior waterproofing projects.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Many septic contractors are owner-led or locally managed, making decision-makers relatively accessible.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "The relationship can produce repeat introductions over time, but the trigger is tied to specific rural property conditions rather than constant service cycles.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Both parties benefit from clearer problem diagnosis, reduced scope confusion, and coordinated excavation planning.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Rural and semi-rural properties in the service region make septic and foundation-drainage overlap locally relevant.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship is practical to start with a simple checklist, site-planning conversation, and clear boundaries between scopes.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "septic system contractors",
+        "licensed septic installers",
+        "septic repair contractors"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "arborists-tree-removal",
+      "name": "Arborists Tree Removal",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Arborists and tree removal contractors encounter homeowners when trees, stumps, roots, and access constraints are affecting the area around a home’s foundation. They may see root intrusion, heaved grading, blocked excavation access, or mature trees too close to foundation walls before waterproofing work can proceed. The referral opportunity arises when tree or root conditions are connected to drainage failure, foundation access, or a wet-basement complaint.",
+      "rationale": "This relationship makes commercial sense because exterior waterproofing and excavation often depend on safe access around the foundation, while tree removal and stump work can be a prerequisite to trenching. Arborists also benefit when they have a reliable contractor to address drainage or foundation problems that remain after the tree issue is handled.",
+      "triggers": [
+        {
+          "event": "A homeowner requests removal of a large tree or stump close to the foundation after noticing basement dampness or seepage.",
+          "whyNeed": "The tree may be blocking excavation access, roots may have affected drainage, or the homeowner may need exterior waterproofing after removal.",
+          "whoRecognizes": "Arborist, tree removal estimator, or crew supervisor during the site visit.",
+          "referralMoment": "After assessing tree removal feasibility and before promising that removal alone will solve the water issue.",
+          "partnerValue": "The arborist avoids overclaiming the cause of the wet basement and gives the customer a credible next step."
+        },
+        {
+          "event": "A waterproofing contractor identifies a tree, stump, or major root mass preventing safe excavation along the foundation wall.",
+          "whyNeed": "Tree removal or pruning may be required before exterior waterproofing, weeping tile replacement, or drainage work can proceed safely.",
+          "whoRecognizes": "Waterproofing estimator, excavation supervisor, or project manager during the foundation assessment.",
+          "referralMoment": "Before scheduling excavation equipment or finalizing the waterproofing project timeline.",
+          "partnerValue": "The arborist receives qualified work where tree removal is clearly tied to a larger property repair project."
+        },
+        {
+          "event": "An arborist sees roots entering old drainage lines, lifting hardscape, or altering slope toward the house.",
+          "whyNeed": "Root-related site changes can worsen surface-water movement and may require grading, drainage correction, or weeping tile evaluation.",
+          "whoRecognizes": "Certified arborist, estimator, or tree-care crew lead while inspecting roots and surrounding grade.",
+          "referralMoment": "Once the arborist has documented the root or grading concern and the homeowner mentions water near the foundation or basement seepage.",
+          "partnerValue": "The arborist strengthens their advisory role while staying within their tree-care scope."
+        }
+      ],
+      "mutualValue": "Arborists gain a dependable excavation and waterproofing partner when tree-related site conditions connect to drainage or foundation concerns, while the waterproofing contractor gains a reliable path to solve access barriers before excavation. Both can improve project sequencing for the homeowner and reduce delays caused by discovering tree, stump, or root conflicts too late.",
+      "approach": "Contact owner-operated tree removal and arborist firms with a simple “excavation access around foundations” referral checklist and propose a short site-walk protocol for cases where trees, roots, or stumps may affect waterproofing access.",
+      "decisionMaker": "Owner or Lead Arborist",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Site-readiness checklist for tree removal before foundation excavation",
+        "Mutual estimator training on recognizing access, root, and drainage conflicts",
+        "Joint homeowner handout on trees near foundations and basement-water risk",
+        "Pre-project site walk for jobs involving mature trees near excavation areas"
+      ],
+      "digitalAuthority": [
+        "Educational article on when trees near a foundation become an excavation or drainage concern",
+        "Homeowner guide on planning tree removal before exterior foundation waterproofing"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Arborists occasionally encounter wet-basement-related triggers when trees, roots, or stumps are close to foundations.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "The services are complementary because tree removal can enable excavation and root conditions can be connected to drainage problems.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "The overlap is situational and depends on mature trees or access conflicts near the foundation.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referrals can lead to valuable waterproofing or excavation jobs, but the number of relevant cases is likely limited.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Tree service firms are often locally managed, making owners and lead arborists approachable.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "The opportunity can repeat over time but is not a high-frequency recurring source compared with builders or property managers.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Each side can help the other remove project barriers and prevent incomplete solutions for homeowners.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Mature residential properties in the region can create tree, root, and foundation-access conflicts.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A simple checklist and reciprocal site-readiness process can establish the relationship without complex coordination.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "tree removal contractors",
+        "arborist services",
+        "stump removal contractors"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "construction-associations",
+      "name": "Construction Associations",
+      "relationshipType": "shared_audience",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Construction associations gather builders, remodelers, trades, suppliers, and property professionals who repeatedly face questions about excavation, drainage, grading, and wet-basement prevention. Rather than seeking simple lead swaps, the referral opportunity is to become a trusted educational resource for members whose projects require foundation waterproofing, weeping tile replacement, demolition, or site-drainage expertise. This can influence supplier selection early in custom home, renovation, and property-improvement planning.",
+      "rationale": "The relationship makes commercial sense because association members influence homeowner and commercial-owner decisions before excavation or waterproofing needs become urgent. Educational participation builds credibility with multiple referral sources at once and supports recurring visibility without relying on paid endorsements or direct competitor relationships.",
+      "triggers": [
+        {
+          "event": "A custom home builder is planning a new build on a lot with drainage, grading, or high groundwater concerns.",
+          "whyNeed": "Early excavation, foundation waterproofing, and drainage planning can prevent future wet-basement problems and costly rework.",
+          "whoRecognizes": "Builder, site supervisor, project manager, or association member discussing the project.",
+          "referralMoment": "During design, site-preparation, or pre-excavation planning before foundation work begins.",
+          "partnerValue": "The builder can reduce post-construction water complaints and strengthen their own project quality."
+        },
+        {
+          "event": "A renovator or general contractor discovers seepage, deteriorated foundation drainage, or poor exterior grading during a basement renovation.",
+          "whyNeed": "Interior finishes should not proceed until the source of water intrusion or drainage failure is addressed.",
+          "whoRecognizes": "Renovation contractor, project manager, or estimator while scoping the renovation.",
+          "referralMoment": "Before quoting finished basement work or before closing walls and installing finishes.",
+          "partnerValue": "The contractor avoids callbacks, protects the renovation result, and can provide a more complete solution to the client."
+        },
+        {
+          "event": "An association plans member education around risk reduction, building envelope performance, site preparation, or customer complaint prevention.",
+          "whyNeed": "Basement water prevention and drainage planning are practical topics that help members deliver better projects and identify when to bring in a specialist.",
+          "whoRecognizes": "Association executive director, education chair, events coordinator, or board member.",
+          "referralMoment": "When setting the education calendar, newsletter topics, or member lunch-and-learn agenda.",
+          "partnerValue": "The association gains useful, non-sales educational content that serves members and supports professional development."
+        }
+      ],
+      "mutualValue": "The association receives practical educational content for members, while builders and trades gain a specialist resource for drainage and waterproofing questions that can reduce project risk. The contractor gains recurring credibility with many upstream influencers and can reciprocate by referring homeowners to qualified builders, renovators, or trades when excavation projects reveal broader construction needs.",
+      "approach": "Offer a concise lunch-and-learn or technical checklist on preventing wet basements through excavation planning, grading, drainage, and exterior waterproofing, positioning it as member education rather than a sales presentation.",
+      "decisionMaker": "Executive Director or Education Committee Chair",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Lunch-and-learn for builders and renovators on wet-basement prevention",
+        "Member newsletter feature on drainage and grading mistakes that lead to callbacks",
+        "Technical checklist for pre-excavation and foundation-waterproofing planning",
+        "Panel discussion on site preparation, drainage, and building-envelope risk reduction"
+      ],
+      "digitalAuthority": [
+        "Association-hosted educational article on preventing basement water problems during construction planning",
+        "Co-branded downloadable checklist for builders on grading, drainage, and foundation waterproofing readiness"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Association members frequently encounter projects where excavation, drainage, grading, or basement water prevention matters.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The contractor’s services are directly relevant to builders, renovators, property professionals, and trades dealing with foundations and site work.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Member organisations repeatedly handle construction and renovation projects, creating recurring opportunities for education and referral.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Introductions from builders and property professionals can lead to substantial excavation, waterproofing, drainage, and demolition work.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Association staff and committee leaders are reachable, but access often requires a clear educational value proposition and scheduling patience.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Associations provide repeated touchpoints through events, newsletters, committees, and member programming.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Members gain practical risk-reduction knowledge while the contractor earns credibility with upstream project influencers.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Regional construction groups align well with a contractor serving a defined local market.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is feasible but usually requires formal outreach, content approval, and non-sales positioning.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "construction association",
+        "home builders association",
+        "building industry association"
+      ],
+      "existingRelationship": false
+    }
+  ],
+  "assumptions": [
+    "Customer journey used for the analysis: Trigger: homeowner, builder, or property owner sees water entry, cracks, pooling, failed drains, or a planned build/renovation exposes grading and foundation r… → Diagnosis: they seek inspections, drain scoping, engineering input, or contractor opinions to distinguish plumbing, grading, foundation, and drainage causes. → Planning: scope is defined for excavation, exterior waterproofing, weeping tile, demolition, drainage, grading, permits, access, and site protection. → Project delivery: excavation and waterproofing work must be coordinated with builders, trades, tenants, utilities, landscaping, and restoration schedules. → Close-out: backfill, grading, drainage discharge, hardscape repair, and interior restoration are completed. → Ongoing ownership: property managers, builders, and commercial owners need reliable repeat access when new sites, seasonal leaks, or drainage failures arise..",
+    "Site work is largely won through relationships with whoever controls the project before excavation starts (builders, engineers, GCs, property owners' advisors).",
+    "Seasonality matters: most residential site work is scheduled before and during the main build season, so relationship-building is most effective in the off-season.",
+    "Most waterproofing jobs begin as someone else's problem: a failed inspection, a denied insurance claim, a warranty call, or a renovation that uncovered moisture. The professionals present at those moments matter more than homeowners searching online.",
+    "Trust is fragile in this category because homeowners fear being oversold. Partners who see you recommend the cheaper fix first are more likely to keep referring.",
+    "No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing."
+  ],
+  "guardrails": [
+    {
+      "title": "Prequalification is the real gatekeeper for commercial work",
+      "body": "General contractors and property managers typically require proof of insurance, workplace-safety clearance (e.g. WSIB clearance in Ontario), and sometimes a recognised safety certification before you can be referred or invited to bid. Having these ready often matters more than the introduction itself."
+    },
+    {
+      "title": "Diagnose before you sell",
+      "body": "Many wet basements are caused by grading, downspouts, or plumbing rather than the foundation. Referral partners, especially inspectors, insurers, and engineers, will stop referring if their clients feel oversold. Documented diagnosis protects the relationship."
+    },
+    {
+      "title": "Partnerships are not paid-referral arrangements",
+      "body": "This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals."
+    },
+    {
+      "title": "Outreach in Canada: CASL applies",
+      "body": "Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA)."
+    },
+    {
+      "title": "No automated outreach",
+      "body": "This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline."
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import { getStore } from "@/lib/store";
 import { getStripe, paidSessionFrom, type PaidSession } from "@/lib/payments/stripe";
 import { issueEntitlement } from "@/lib/payments/entitlements";
 import { jsonError, limitOrNull } from "@/lib/http";
+import { recordPurchase } from "@/lib/payments/purchase";
 
 export const runtime = "nodejs";
 
@@ -25,7 +26,10 @@ export async function GET(req: Request) {
     try {
       const session = await stripe.checkout.sessions.retrieve(sessionId);
       paid = paidSessionFrom(session);
-      if (paid) await store.set("checkout", sessionId, paid);
+      if (paid) {
+        await store.set("checkout", sessionId, paid);
+        await recordPurchase(paid);
+      }
     } catch {
       return jsonError("We couldn't confirm this payment.", 404);
     }

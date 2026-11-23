@@ -1,0 +1,235 @@
+[
+  {
+    "slug": "family-law-hamilton",
+    "curatedProfile": "Family law",
+    "aiMode": "ai",
+    "aiModel": "gpt-5.5",
+    "aiNotes": [],
+    "seconds": 146,
+    "costUsd": 0.584285,
+    "curatedCount": 11,
+    "aiCount": 15,
+    "overlapApprox": 11,
+    "aiOnly": [
+      "School social workers",
+      "Payroll benefits administrators",
+      "EAP providers",
+      "Co-parenting professionals"
+    ],
+    "curatedOnly": [
+      "Employee Assistance Program (EAP) legal-advice services"
+    ],
+    "curated": [
+      {
+        "name": "Mortgage brokers (spousal buyouts & refinancing)",
+        "type": "upstream",
+        "priority": "High",
+        "score": 83,
+        "overlooked": true,
+        "decisionMaker": "Mortgage broker"
+      },
+      {
+        "name": "Family mediators",
+        "type": "complementary",
+        "priority": "High",
+        "score": 81,
+        "overlooked": false,
+        "decisionMaker": "Family mediator"
+      },
+      {
+        "name": "Business valuators & forensic accountants",
+        "type": "complementary",
+        "priority": "High",
+        "score": 78,
+        "overlooked": false,
+        "decisionMaker": "Chartered business valuator or forensic accountant"
+      },
+      {
+        "name": "Employee Assistance Program (EAP) legal-advice services",
+        "type": "distribution",
+        "priority": "High",
+        "score": 75,
+        "overlooked": true,
+        "decisionMaker": "EAP provider's legal-network manager"
+      },
+      {
+        "name": "Criminal defence lawyers",
+        "type": "complementary",
+        "priority": "High",
+        "score": 72,
+        "overlooked": false,
+        "decisionMaker": "Criminal defence lawyer"
+      },
+      {
+        "name": "Estate-planning lawyers & insurance advisors",
+        "type": "downstream",
+        "priority": "Medium",
+        "score": 69,
+        "overlooked": true,
+        "decisionMaker": "Estate-planning lawyer or life-insurance advisor"
+      },
+      {
+        "name": "Immigration lawyers & licensed consultants",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 68,
+        "overlooked": false,
+        "decisionMaker": "Immigration lawyer"
+      },
+      {
+        "name": "Financial planners & divorce financial specialists",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 67,
+        "overlooked": false,
+        "decisionMaker": "Financial planner (some hold divorce-specific designations)"
+      },
+      {
+        "name": "Family therapists & individual counsellors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 65,
+        "overlooked": false,
+        "decisionMaker": "Registered psychotherapist or social worker"
+      },
+      {
+        "name": "Realtors handling separation sales",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 60,
+        "overlooked": false,
+        "decisionMaker": "Realtor experienced with separation sales"
+      },
+      {
+        "name": "Community agencies & family-violence services",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 58,
+        "overlooked": false,
+        "decisionMaker": "Agency program coordinator"
+      }
+    ],
+    "ai": [
+      {
+        "name": "Family mediators",
+        "type": "complementary",
+        "priority": "High",
+        "score": 93,
+        "overlooked": false,
+        "decisionMaker": "Lead mediator or mediation practice director"
+      },
+      {
+        "name": "Couples counsellors",
+        "type": "upstream",
+        "priority": "High",
+        "score": 90,
+        "overlooked": false,
+        "decisionMaker": "Clinical Director"
+      },
+      {
+        "name": "Realtors and appraisers",
+        "type": "downstream",
+        "priority": "High",
+        "score": 88,
+        "overlooked": false,
+        "decisionMaker": "Broker of record, team lead, or appraisal practice owner"
+      },
+      {
+        "name": "Tax accountants",
+        "type": "complementary",
+        "priority": "High",
+        "score": 88,
+        "overlooked": false,
+        "decisionMaker": "Tax Partner"
+      },
+      {
+        "name": "EAP providers",
+        "type": "distribution",
+        "priority": "High",
+        "score": 85,
+        "overlooked": false,
+        "decisionMaker": "EAP Provider Network Manager"
+      },
+      {
+        "name": "Estate planning lawyers",
+        "type": "complementary",
+        "priority": "High",
+        "score": 83,
+        "overlooked": false,
+        "decisionMaker": "Managing Partner or Estates Practice Group Leader"
+      },
+      {
+        "name": "Family violence agencies",
+        "type": "upstream",
+        "priority": "High",
+        "score": 83,
+        "overlooked": false,
+        "decisionMaker": "Program Manager"
+      },
+      {
+        "name": "Mortgage brokers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 83,
+        "overlooked": false,
+        "decisionMaker": "Principal Broker"
+      },
+      {
+        "name": "Financial planners",
+        "type": "upstream",
+        "priority": "High",
+        "score": 78,
+        "overlooked": false,
+        "decisionMaker": "Branch Manager"
+      },
+      {
+        "name": "Business valuators",
+        "type": "complementary",
+        "priority": "High",
+        "score": 72,
+        "overlooked": true,
+        "decisionMaker": "Valuation Practice Leader"
+      },
+      {
+        "name": "Co-parenting professionals",
+        "type": "downstream",
+        "priority": "High",
+        "score": 72,
+        "overlooked": false,
+        "decisionMaker": "Practice director or senior co-parenting professional"
+      },
+      {
+        "name": "Criminal defence lawyers",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 68,
+        "overlooked": true,
+        "decisionMaker": "Principal lawyer or managing partner"
+      },
+      {
+        "name": "Payroll benefits administrators",
+        "type": "distribution",
+        "priority": "Medium",
+        "score": 64,
+        "overlooked": true,
+        "decisionMaker": "Director of Payroll and Benefits"
+      },
+      {
+        "name": "School social workers",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 63,
+        "overlooked": true,
+        "decisionMaker": "Manager of Social Work Services"
+      },
+      {
+        "name": "Immigration counsel",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 56,
+        "overlooked": true,
+        "decisionMaker": "Managing lawyer or principal counsel"
+      }
+    ]
+  }
+]

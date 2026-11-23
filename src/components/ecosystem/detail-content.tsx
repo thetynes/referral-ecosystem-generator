@@ -1,6 +1,6 @@
 "use client";
 
-import { AlertTriangle, ArrowRight, Check, Repeat2 } from "lucide-react";
+import { AlertTriangle, ArrowRight, Check, Eye, Repeat2, UserRound } from "lucide-react";
 import type { Organization, ScoredCategory } from "@/lib/schema";
 import { explainScore, type Weights } from "@/lib/scoring";
 import { TYPE_META, DIRECTION_META } from "@/lib/ui-meta";
@@ -47,6 +47,11 @@ export function DetailContent({
               "Occasional referrals"
             )}
           </Badge>
+          {category.overlooked && (
+            <Badge variant="accent">
+              <Eye className="size-3" /> Often overlooked
+            </Badge>
+          )}
           {category.existingRelationship && (
             <Badge variant="high">
               <Check className="size-3" /> You mentioned an existing relationship
@@ -56,6 +61,15 @@ export function DetailContent({
       </header>
 
       <Section title="Referral opportunity">{category.opportunity}</Section>
+      {category.decisionMaker && (
+        <div className="flex items-start gap-2 rounded-lg border border-line bg-panel px-3 py-2 text-[13px]">
+          <UserRound className="mt-0.5 size-4 shrink-0 text-ink-3" />
+          <div>
+            <span className="text-ink-3">Who decides: </span>
+            <span className="font-medium text-ink">{category.decisionMaker}</span>
+          </div>
+        </div>
+      )}
       <Section title="Why it makes commercial sense">{category.rationale}</Section>
 
       <Section title="Trigger events">

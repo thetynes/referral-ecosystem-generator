@@ -8,6 +8,13 @@ export interface GenerateObjectOptions<T> {
   schema: z.ZodType<T>;
   schemaName: string;
   maxTokens?: number;
+  /** Receives token usage for cost tracking. */
+  onUsage?: (usage: TokenUsage) => void;
+}
+
+export interface TokenUsage {
+  inputTokens: number;
+  outputTokens: number;
 }
 
 export interface LLMProvider {

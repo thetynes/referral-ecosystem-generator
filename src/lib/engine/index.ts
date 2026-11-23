@@ -15,16 +15,30 @@ import { AnalysisSchema } from "../schema";
 import { normalizeInput } from "./normalize";
 import { isExistingRelationshipName, runKnowledgeBase } from "./kb-engine";
 import { runAiPipeline } from "./ai-engine";
-import { getLLMProvider, LLMError } from "../llm";
+import { getLLMProvider, LLMError, type TokenUsage } from "../llm";
+import { checkAiAllowance, recordAiSpend } from "../ai-budget";
+import { config } from "../config";
 import { baseGuardrails } from "../knowledge/guardrails";
 import { getStore } from "../store";
 
 export const ENGINE_VERSION = "1.0.0";
 const AI_CACHE_TTL = 60 * 60 * 24 * 7;
 
+export class AiUnavailableError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "AiUnavailableError";
+  }
+}
+
 export interface GenerateOptions {
   /** Skip the AI provider even if configured. */
   forceKnowledgeBase?: boolean;
+  /**
+   * AI policy for this request. AI runs only when `requested` is true AND the configured access policy
+   * and spend caps allow it. Anonymous visitors get the curated analysis.
+   */
+  ai?: { requested: boolean; tester: string | null };
   /** Override the automatically matched industry profile (knowledge-base mode). */
   archetypeId?: string;
 }
@@ -32,8 +46,21 @@ export interface GenerateOptions {
 export async function generateAnalysis(input: BusinessInput, opts: GenerateOptions = {}): Promise<Analysis> {
   const profile = normalizeInput(input);
   const kb = runKnowledgeBase(profile, opts.archetypeId);
-  const provider = opts.forceKnowledgeBase ? null : getLLMProvider();
   const notes: string[] = [];
+  let provider = opts.forceKnowledgeBase || !opts.ai?.requested ? null : getLLMProvider();
+  const tester = opts.ai?.tester ?? null;
+  const fallbackMode = config().llm.fallback;
+  let costUsd: number | null = null;
+  if (provider) {
+    const allowance = await checkAiAllowance(tester);
+    if (!allowance.allowed) {
+      provider = null;
+      if (!allowance.silent) {
+        if (fallbackMode === "error") throw new AiUnavailableError(allowance.reason);
+        notes.push(`${allowance.reason} Showing the curated analysis instead.`);
+      }
+    }
+  }
 
   let categories = kb.categories;
   let mode: Analysis["engine"]["mode"] = "knowledge_base";
@@ -54,7 +81,17 @@ export async function generateAnalysis(input: BusinessInput, opts: GenerateOptio
       let result = await store.get<Awaited<ReturnType<typeof runAiPipeline>>>("ai_cache", cacheKey);
       if (!result) {
         const reference = kb.match.confidence === "low" ? [] : kb.match.archetype.categories.map((c) => c.name);
-        result = await runAiPipeline(provider, profile, reference);
+        const usage: TokenUsage = { inputTokens: 0, outputTokens: 0 };
+        const onUsage = (u: TokenUsage) => {
+          usage.inputTokens += u.inputTokens;
+          usage.outputTokens += u.outputTokens;
+        };
+        try {
+          result = await runAiPipeline(provider, profile, reference, { onUsage, maxOutputTokens: config().llm.maxOutputTokens, batchSize: config().llm.batchSize });
+        } finally {
+          // Record spend even when a later stage fails: the tokens were still billed.
+          if (usage.inputTokens + usage.outputTokens > 0) costUsd = await recordAiSpend(usage, tester);
+        }
         await store.set("ai_cache", cacheKey, result, AI_CACHE_TTL);
       } else {
         notes.push("Served from cache: an identical business description was analysed recently.");
@@ -72,6 +109,7 @@ export async function generateAnalysis(input: BusinessInput, opts: GenerateOptio
     } catch (err) {
       console.error("AI pipeline failed; falling back to knowledge base:", err instanceof Error ? err.message : err);
       const reason = err instanceof LLMError ? err.message : "The AI analysis could not be completed.";
+      if (fallbackMode === "error") throw new AiUnavailableError(reason);
       notes.push(`${reason} Showing the curated knowledge-base analysis instead.`);
     }
   }
@@ -99,10 +137,11 @@ export async function generateAnalysis(input: BusinessInput, opts: GenerateOptio
       provider: mode === "ai" ? provider!.name : null,
       model: mode === "ai" ? provider!.model : null,
       archetypeId: kb.match.archetype.id,
-      archetypeLabel: kb.match.archetype.label,
+      archetypeLabel: kb.match.secondary ? `${kb.match.archetype.label} + ${kb.match.secondary.label}` : kb.match.archetype.label,
       matchConfidence: mode === "ai" ? "high" : kb.match.confidence,
       notes,
       version: ENGINE_VERSION,
+      costUsd,
     },
     categories,
     assumptions,

@@ -6,6 +6,7 @@ import { verifyEntitlement } from "@/lib/payments/entitlements";
 import { discoverOrganizations, getDiscoveryProvider } from "@/lib/discovery";
 import { rankCategories, WEIGHT_PRESETS, presetForGrowthPriority } from "@/lib/scoring";
 import { jsonError, limitOrNull, readJson } from "@/lib/http";
+import { config } from "@/lib/config";
 
 export const runtime = "nodejs";
 export const maxDuration = 120;
@@ -55,6 +56,13 @@ export async function POST(req: Request) {
   const r = await load(req, parsed.data.analysisId);
   if (r.error) return r.error;
 
+  if (!config().discovery.researchEnabled) {
+    return jsonError(
+      "Company research is not available yet while data-licensing permissions are being confirmed. You can import your own CSV list instead.",
+      503,
+      { code: "research_not_licensed" },
+    );
+  }
   const provider = getDiscoveryProvider();
   if (!provider) {
     return jsonError(

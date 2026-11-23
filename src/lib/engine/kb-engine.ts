@@ -10,6 +10,9 @@ import { CRITERIA } from "../schema";
 import { containsTerm, getArchetype, matchArchetype, type ArchetypeMatch } from "../knowledge";
 import type { KBCategory } from "../knowledge/types";
 import { profileText } from "./normalize";
+import { rankCategories } from "../scoring";
+
+const BLEND_LIMIT = 22;
 
 const LEVEL_TEXT: Record<CriterionKey, [string, string, string, string, string]> = {
   needEncounter: [
@@ -153,6 +156,8 @@ export function adaptCategory(cat: KBCategory, profile: BusinessProfile, text: s
     })),
     mutualValue: cat.mutualValue,
     approach: cat.approach,
+    decisionMaker: cat.decisionMaker ?? null,
+    overlooked: Boolean(cat.overlooked),
     collaborationFormats: cat.formats ?? [],
     digitalAuthority: cat.seo ?? [],
     regulatoryNote: cat.regulatory ?? null,
@@ -181,11 +186,46 @@ export function runKnowledgeBase(profile: BusinessProfile, forcedArchetypeId?: s
     if (forced) match = { ...match, archetype: forced, confidence: "medium" };
   }
 
-  const categories = match.archetype.categories
-    .filter((c) => !c.requires || c.requires.some((k) => containsTerm(text, k)))
-    .map((c) => adaptCategory(c, profile, text));
+  const include = (c: KBCategory) => !c.requires || c.requires.some((k) => containsTerm(text, k));
+  let selected: KBCategory[];
+  if (match.secondary) {
+    // Blend two profiles from the same family. Drop categories that describe the business's own trades.
+    const self = new Set([...(match.archetype.selfCategoryIds ?? []), ...(match.secondary.selfCategoryIds ?? [])]);
+    const seen = new Set<string>();
+    // Two profiles often describe the same partner type with different names ("Plumbers & drain contractors").
+    const nameKey = (c: KBCategory) =>
+      c.name
+        .toLowerCase()
+        .replace(/[^a-z\s-]/g, " ")
+        .split(/[\s-]+/)
+        .filter((w) => w.length > 2 && !["the", "and", "your"].includes(w))
+        .slice(0, 2)
+        .map((w) => w.slice(0, 6))
+        .join("|");
+    selected = [];
+    const primary = match.archetype.categories.filter((c) => include(c) && !self.has(c.id));
+    const secondary = match.secondary.categories.filter((c) => include(c) && !self.has(c.id));
+    // Interleave so both profiles are represented, primary first.
+    for (let i = 0; i < Math.max(primary.length, secondary.length); i++) {
+      for (const c of [primary[i], secondary[i]]) {
+        if (!c || seen.has(c.id) || seen.has(nameKey(c))) continue;
+        seen.add(c.id);
+        seen.add(nameKey(c));
+        selected.push(c);
+      }
+    }
+  } else {
+    const self = new Set(match.archetype.selfCategoryIds ?? []);
+    selected = match.archetype.categories.filter((c) => include(c) && !self.has(c.id));
+  }
+  let categories = selected.map((c) => adaptCategory(c, profile, text));
+  if (match.secondary && categories.length > BLEND_LIMIT) {
+    // Keep the strongest relationships from both profiles rather than whatever came first.
+    const keep = new Set(rankCategories(categories).slice(0, BLEND_LIMIT).map((c) => c.id));
+    categories = categories.filter((c) => keep.has(c.id));
+  }
 
-  const assumptions = [...(match.archetype.assumptions ?? [])];
+  const assumptions = [...(match.archetype.assumptions ?? []), ...(match.secondary?.assumptions ?? [])];
   if (profile.expansionMarkets.length > 0) {
     assumptions.push(
       `You want to expand into ${profile.expansionMarkets.join(", ")}. Local partner types need to be identified separately in each new market.`,
@@ -195,5 +235,7 @@ export function runKnowledgeBase(profile: BusinessProfile, forcedArchetypeId?: s
     assumptions.push("No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing.");
   }
 
-  return { categories, match, assumptions, guardrails: match.archetype.guardrails ?? [] };
+  const guardrails = [...(match.archetype.guardrails ?? [])];
+  for (const g of match.secondary?.guardrails ?? []) if (!guardrails.some((x) => x.title === g.title)) guardrails.push(g);
+  return { categories, match, assumptions, guardrails };
 }

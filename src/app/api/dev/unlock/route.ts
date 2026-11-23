@@ -3,6 +3,8 @@ import { z } from "zod";
 import { config } from "@/lib/config";
 import { issueEntitlement } from "@/lib/payments/entitlements";
 import { jsonError, readJson } from "@/lib/http";
+import { track } from "@/lib/analytics";
+import { readCookie, SESSION_COOKIE, testerFromRequest } from "@/lib/beta";
 
 export const runtime = "nodejs";
 
@@ -20,5 +22,12 @@ export async function POST(req: Request) {
   const parsed = BodySchema.safeParse(body);
   if (!parsed.success) return jsonError("Invalid request.", 400);
   const token = issueEntitlement({ ...parsed.data, dev: true }, 30);
+  await track("dev_unlock", {
+    tester: await testerFromRequest(req),
+    session: readCookie(req, SESSION_COOKIE),
+    analysisId: parsed.data.analysisId,
+    simulated: true,
+    props: { tier: parsed.data.tier },
+  });
   return NextResponse.json({ token, tier: parsed.data.tier, dev: true });
 }

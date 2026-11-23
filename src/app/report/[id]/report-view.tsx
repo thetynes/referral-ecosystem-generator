@@ -14,6 +14,7 @@ import { StaticDiagram } from "@/components/ecosystem/static-diagram";
 import { OrganizationCard } from "@/components/ecosystem/organization-card";
 import { PriorityBadge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { trackClient } from "@/lib/track-client";
 
 function H2({ n, children, kind }: { n: number; children: React.ReactNode; kind?: "evidence" | "strategy" | "assumption" }) {
   const tag = kind === "evidence" ? "Evidence-backed" : kind === "strategy" ? "Strategic recommendation" : kind === "assumption" ? "Requires validation" : null;
@@ -47,6 +48,7 @@ export function ReportView({ id }: { id: string }) {
         return;
       }
       setView(v);
+      trackClient("report_requested", { analysisId: id, once: `report:${id}`, props: { tier: v.access.tier } });
       const saved = clientStore.getWeights(id);
       setWeights(saved?.weights ?? WEIGHT_PRESETS[presetForGrowthPriority(v.profile.growthPriority)].weights);
       const imported = clientStore.getImportedOrgs(id);
@@ -79,7 +81,7 @@ export function ReportView({ id }: { id: string }) {
         <div className="flex gap-2">
           <Button variant="outline" size="sm" onClick={() => downloadText(`${slugify(view.profile.displayName)}-opportunities.csv`, opportunitiesCsv(ranked))}><FileSpreadsheet /> Opportunities CSV</Button>
           {orgs.length > 0 && <Button variant="outline" size="sm" onClick={() => downloadText(`${slugify(view.profile.displayName)}-organisations.csv`, organizationsCsv(orgs, nameOf))}><FileSpreadsheet /> Organisations CSV</Button>}
-          <Button size="sm" onClick={() => window.print()} data-testid="print-report"><Printer /> Save as PDF</Button>
+          <Button size="sm" onClick={() => { trackClient("report_printed", { analysisId: id }); window.print(); }} data-testid="print-report"><Printer /> Save as PDF</Button>
         </div>
       </div>
 
@@ -134,7 +136,9 @@ export function ReportView({ id }: { id: string }) {
                 <div className="mt-0.5 text-[12px] text-ink-3">
                   {TYPE_META[c.relationshipType].label} · {DIRECTION_META[c.direction].label} · {c.channelType === "recurring" ? "potential recurring channel" : "occasional referrals"}
                   {c.existingRelationship ? " · existing relationship" : ""}
+                  {c.overlooked ? " · often overlooked" : ""}
                 </div>
+                {c.decisionMaker && <div className="mt-0.5 text-[12px] text-ink-3"><span className="font-medium text-ink-2">Who decides: </span>{c.decisionMaker}</div>}
                 <p className="mt-1.5">{c.opportunity}</p>
                 <p className="mt-1 text-ink-3"><span className="font-medium text-ink-2">Why: </span>{c.rationale}</p>
                 {c.regulatoryNote && <p className="mt-1 text-[12.5px] text-[#6b3d00]"><span className="font-medium">Regulatory: </span>{c.regulatoryNote}</p>}

@@ -17,6 +17,10 @@ export interface KBCategory {
   triggers: TriggerTuple[];
   mutualValue: string;
   approach: string;
+  /** The specific role at the partner organisation who decides whether a referral happens. */
+  decisionMaker?: string;
+  /** True when most businesses in the industry miss this relationship. */
+  overlooked?: boolean;
   formats?: string[];
   seo?: string[];
   regulatory?: string;
@@ -42,6 +46,10 @@ export interface Archetype {
   weakKeywords?: string[];
   /** If this archetype matches, it takes precedence over the more general archetype with this id. */
   specializes?: string;
+  /** Archetypes in the same family can be blended when a business spans both (e.g. excavation + waterproofing). */
+  family?: string;
+  /** Category ids (in other archetypes) that describe this archetype's own trade — excluded when blending. */
+  selfCategoryIds?: string[];
   categories: KBCategory[];
   guardrails?: { title: string; body: string }[];
   assumptions?: string[];

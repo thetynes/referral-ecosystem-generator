@@ -1,10 +1,10 @@
 import { config } from "../config";
 import { AnthropicProvider } from "./anthropic";
 import { OpenAIProvider } from "./openai";
-import { LLMError, type GenerateObjectOptions, type LLMProvider } from "./types";
+import { LLMError, type GenerateObjectOptions, type LLMProvider, type TokenUsage } from "./types";
 
 export { LLMError };
-export type { LLMProvider, GenerateObjectOptions };
+export type { LLMProvider, GenerateObjectOptions, TokenUsage };
 
 let override: LLMProvider | null | undefined;
 
@@ -17,8 +17,9 @@ export function setLLMProviderForTesting(provider: LLMProvider | null | undefine
 export function getLLMProvider(): LLMProvider | null {
   if (override !== undefined) return override;
   const { llm } = config();
-  if (llm.provider === "anthropic" && llm.anthropicKey) return new AnthropicProvider(llm.anthropicKey, llm.anthropicModel, llm.effort);
-  if (llm.provider === "openai" && llm.openaiKey) return new OpenAIProvider(llm.openaiKey, llm.openaiModel);
+  if (llm.provider === "anthropic" && llm.anthropicKey)
+    return new AnthropicProvider(llm.anthropicKey, llm.anthropicModel, llm.effort, llm.anthropicBaseUrl);
+  if (llm.provider === "openai" && llm.openaiKey) return new OpenAIProvider(llm.openaiKey, llm.openaiModel, llm.openaiBaseUrl, llm.effort);
   return null;
 }
 

@@ -11,16 +11,23 @@ export function getStripe(): Stripe | null {
   return client;
 }
 
-export const TIER_INFO: Record<Tier, { name: string; description: string }> = {
-  basic: {
-    name: "Basic Opportunity Report",
-    description: "Full partner-category analysis, named-organisation research for your top 5 categories, and PDF/CSV exports.",
-  },
-  comprehensive: {
+export function tierInfo(tier: Tier): { name: string; description: string } {
+  const research = config().discovery.researchEnabled;
+  if (tier === "basic") {
+    return {
+      name: "Basic Opportunity Report",
+      description: research
+        ? "Full partner-category analysis, named-organisation research for your top 5 categories, and PDF/CSV exports."
+        : "Every partner category with decision-makers, triggers and engagement approach, the ranked action plan, and PDF/CSV exports.",
+    };
+  }
+  return {
     name: "Comprehensive Partnership Report",
-    description: "Everything in Basic, plus named-organisation research across all partner categories.",
-  },
-};
+    description: research
+      ? "Everything in Basic, plus named-organisation research across all partner categories."
+      : "Everything in Basic, plus shared-audience and digital-authority opportunities for every category.",
+  };
+}
 
 export function priceFor(tier: Tier): number {
   const { payments } = config();
@@ -37,7 +44,7 @@ export async function createCheckoutSession(stripe: Stripe, analysisId: string, 
         price_data: {
           currency: payments.currency,
           unit_amount: priceFor(tier),
-          product_data: { name: TIER_INFO[tier].name, description: TIER_INFO[tier].description },
+          product_data: tierInfo(tier),
         },
       },
     ],
@@ -54,6 +61,10 @@ export interface PaidSession {
   analysisId: string;
   tier: Tier;
   sessionId: string;
+  /** false for Stripe test-mode payments (simulated transactions). */
+  livemode: boolean;
+  amountTotal: number | null;
+  currency: string | null;
 }
 
 /** Extract a verified paid entitlement from a Checkout Session object. */
@@ -62,5 +73,12 @@ export function paidSessionFrom(session: Stripe.Checkout.Session): PaidSession |
   const analysisId = session.metadata?.analysisId;
   const tier = session.metadata?.tier;
   if (!analysisId || (tier !== "basic" && tier !== "comprehensive")) return null;
-  return { analysisId, tier, sessionId: session.id };
+  return {
+    analysisId,
+    tier,
+    sessionId: session.id,
+    livemode: Boolean(session.livemode),
+    amountTotal: session.amount_total ?? null,
+    currency: session.currency ?? null,
+  };
 }

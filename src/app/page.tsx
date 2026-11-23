@@ -148,7 +148,10 @@ export default function Home() {
               <div className="text-[13px] font-medium text-ink-3">Basic Opportunity Report</div>
               <div className="mt-1 text-[28px] font-semibold">{formatMoney(caps.prices.basic, caps.prices.currency)} <span className="text-[13px] font-normal text-ink-3">one-time</span></div>
               <ul className="mt-4 space-y-2 text-[13.5px] text-ink-2">
-                {["Every partner category identified", "Named organisations for your top five categories, with sources", "Verified, inferred, and unknown fields clearly marked", "Ranked top-10 action plan", "PDF and CSV report exports"].map((f) => (
+                {(caps.researchAvailable
+                  ? ["Every partner category identified", "Named organisations for your top five categories, with sources", "Verified, inferred, and unknown fields clearly marked", "Ranked top-10 action plan", "PDF and CSV report exports"]
+                  : ["Every partner category identified", "Who decides at each partner, and the trigger to watch for", "Often-overlooked relationships flagged", "Ranked top-10 action plan", "PDF and CSV report exports"]
+                ).map((f) => (
                   <li key={f} className="flex gap-2"><Check className="mt-0.5 size-4 shrink-0 text-ink-3" />{f}</li>
                 ))}
               </ul>
@@ -157,7 +160,10 @@ export default function Home() {
               <div className="text-[13px] font-medium text-ink-3">Comprehensive Partnership Report</div>
               <div className="mt-1 text-[28px] font-semibold">{formatMoney(caps.prices.comprehensive, caps.prices.currency)} <span className="text-[13px] font-normal text-ink-3">one-time</span></div>
               <ul className="mt-4 space-y-2 text-[13.5px] text-ink-2">
-                {["Everything in Basic", "Named-organisation research across all categories", "Shared-audience and digital-authority opportunities", "Engagement strategy for every partner type"].map((f) => (
+                {(caps.researchAvailable
+                  ? ["Everything in Basic", "Named-organisation research across all categories", "Shared-audience and digital-authority opportunities", "Engagement strategy for every partner type"]
+                  : ["Everything in Basic", "Shared-audience and digital-authority opportunities", "Engagement strategy for every partner type"]
+                ).map((f) => (
                   <li key={f} className="flex gap-2"><Check className="mt-0.5 size-4 shrink-0 text-ink-3" />{f}</li>
                 ))}
               </ul>
@@ -166,8 +172,8 @@ export default function Home() {
           </div>
           <p className="mt-4 text-[12.5px] text-ink-4">
             {caps.paidReportsAvailable
-              ? "Paid reports are purchased from inside your ecosystem workspace."
-              : "Paid reports are not yet available on this deployment. They are only sold where live business research is configured."}
+              ? `Paid reports are purchased from inside your ecosystem workspace.${caps.paymentsMode === "test" ? " This preview uses Stripe test mode, so no real charges are made." : ""}`
+              : "Paid reports are not yet available on this deployment."}
           </p>
         </section>
 

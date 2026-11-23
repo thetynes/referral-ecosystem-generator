@@ -34,7 +34,8 @@ describe("archetype matching", () => {
 
   it("prefers specialised legal profiles over the general one", () => {
     expect(matchArchetype({ industry: "Immigration legal services" }).archetype.id).toBe("immigration-law");
-    expect(matchArchetype({ industry: "Family law firm" }).archetype.id).toBe("legal-general");
+    expect(matchArchetype({ industry: "Family law firm" }).archetype.id).toBe("family-law");
+    expect(matchArchetype({ industry: "Estate planning law firm" }).archetype.id).toBe("legal-general");
   });
 });
 

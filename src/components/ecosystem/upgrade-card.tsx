@@ -58,12 +58,18 @@ export function UpgradeCard({
             {lockedCount > 0 ? `${lockedCount} more partner ${lockedCount === 1 ? "category" : "categories"} identified` : "Go from categories to named organisations"}
           </div>
           <p className="text-[12.5px] leading-relaxed text-ink-3">
-            The full report unlocks every category, source-backed research on real organisations in your market, the ranked action plan,
-            and PDF/CSV exports.
+            The full report unlocks every partner category with its decision-makers, triggers, and engagement approach, plus the ranked
+            action plan and PDF/CSV exports.
+            {caps.researchAvailable ? " It also includes source-backed research on real organisations in your market." : ""}
           </p>
         </div>
       </div>
 
+      {caps.paidReportsAvailable && caps.paymentsMode === "test" && (
+        <p className="mt-3 rounded-md border border-dashed border-[#e3b65b] bg-[#fffaf0] px-3 py-2 text-[11.5px] text-[#7a4a00]">
+          Test payments only: no real charge is made. Use Stripe test card 4242 4242 4242 4242 with any future date and CVC.
+        </p>
+      )}
       {caps.paidReportsAvailable ? (
         <div className="mt-3 grid gap-2 sm:grid-cols-2">
           <Button variant="outline" onClick={() => checkout("basic")} disabled={Boolean(busy)}>
@@ -75,8 +81,7 @@ export function UpgradeCard({
         </div>
       ) : (
         <p className="mt-3 rounded-md bg-subtle px-3 py-2 text-[12px] text-ink-3">
-          Paid reports are not available on this deployment yet. They are only offered when payments and a business-research data
-          source are both configured.
+          Paid reports are not available on this deployment yet.
         </p>
       )}
 

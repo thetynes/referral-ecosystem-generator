@@ -18,6 +18,8 @@ export function opportunitiesCsv(ranked: ScoredCategory[]): string {
       priority: c.priority,
       score_0_100_heuristic: c.score,
       existing_relationship: c.existingRelationship ? "yes" : "no",
+      often_overlooked: c.overlooked ? "yes" : "no",
+      decision_maker: s(c.decisionMaker ?? ""),
       referral_opportunity: s(c.opportunity),
       why_it_makes_sense: s(c.rationale),
       trigger_events: s(c.triggers.map((t) => t.event).join(" | ")),
