@@ -359,3 +359,21 @@ Upstream partners (international recruitment & staffing agencies and certified t
 - **Partnerships are not paid-referral arrangements.** This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals.
 - **Outreach in Canada: CASL applies.** Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA).
 - **No automated outreach.** This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline.
+
+## AI comparison (gpt-5.5)
+
+- Employers and HR teams (Upstream, High 93). Decides: Director of Human Resources
+- Cultural associations (Shared audience, High 90). Decides: Executive Director or Community Program Manager
+- Settlement agencies (Distribution, High 90). Decides: Settlement Services Manager
+- College international offices (Distribution, High 89). Decides: Director of International Student Services
+- International recruiters (Upstream, High 86). Decides: Managing Director of Recruitment
+- Certified translators (Complementary, High 85). Decides: Managing Translator
+- Employment lawyers (Upstream, High 85). Decides: Managing Partner or Senior Employment Lawyer
+- Co-op placement offices (Upstream, High 82) · flagged overlooked. Decides: Director of Work-Integrated Learning
+- Language test centres (Distribution, High 82) · flagged overlooked. Decides: Test Centre Manager or Candidate Services Manager
+- Criminal defence lawyers (Upstream, High 81). Decides: Managing Partner or Senior Criminal Defence Lawyer
+- Family lawyers (Upstream, High 74). Decides: Managing Partner or Senior Family Lawyer
+- Corporate transaction lawyers (Upstream, High 72) · flagged overlooked. Decides: Corporate Practice Group Leader or Managing Partner
+- Immigration medical clinics (Complementary, High 72) · flagged overlooked. Decides: Clinic Manager
+- Cross-border accountants (Complementary, High 71) · flagged overlooked. Decides: Cross-Border Tax Partner
+- Realtors and mortgage brokers (Downstream, Medium 63). Decides: Broker of Record or Managing Mortgage Broker

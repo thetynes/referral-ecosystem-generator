@@ -1,0 +1,1148 @@
+{
+  "id": "2bc65228-57be-4eba-92ab-45d40f32ccbb",
+  "createdAt": "2026-11-23T23:24:09.525Z",
+  "isDemo": false,
+  "profile": {
+    "displayName": "Sample SEO Agency (illustrative)",
+    "website": null,
+    "industry": "SEO and digital marketing agency",
+    "services": [
+      "Local SEO",
+      "technical SEO",
+      "content",
+      "website migrations",
+      "Google Business Profile",
+      "paid search"
+    ],
+    "serviceArea": "Ontario, Canada (clients across Canada)",
+    "geography": {
+      "country": "CA",
+      "region": "Ontario",
+      "scope": "national"
+    },
+    "idealCustomer": "Local service businesses, law firms and home-service contractors",
+    "customerSegments": [
+      "Local service businesses",
+      "law firms",
+      "home-service contractors"
+    ],
+    "projectValue": null,
+    "targetIndustries": [],
+    "growthPriority": "higher_value",
+    "existingReferrals": [],
+    "expansionMarkets": []
+  },
+  "engine": {
+    "mode": "knowledge_base",
+    "provider": null,
+    "model": null,
+    "archetypeId": "marketing-agency",
+    "archetypeLabel": "Marketing, SEO & creative agency",
+    "matchConfidence": "high",
+    "notes": [],
+    "version": "1.0.0",
+    "costUsd": null
+  },
+  "categories": [
+    {
+      "id": "web-devs-mkt",
+      "name": "Web developers & software agencies",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Developers build sites and apps that need traffic and conversion; their clients ask who can market them.",
+      "rationale": "Launch is a natural handoff, and developers often lack marketing capability.",
+      "triggers": [
+        {
+          "event": "A website or app launches",
+          "whyNeed": "The client needs traffic and conversion",
+          "whoRecognizes": "Developer",
+          "referralMoment": "Before launch",
+          "partnerValue": "Their launch succeeds"
+        }
+      ],
+      "mutualValue": "Developers deliver successful launches; you can refer development work back.",
+      "approach": "Agree on non-solicitation and a launch checklist that includes SEO and analytics handoff.",
+      "decisionMaker": "Agency owner or project lead",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 3,
+          "rationale": "Reasonable fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "web development company",
+        "software development agency"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "business-consultants-mkt",
+      "name": "Business coaches & consultants",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Consultants identify growth problems and recommend marketing investment.",
+      "rationale": "Their recommendation shapes budgets and vendor selection.",
+      "triggers": [
+        {
+          "event": "A growth plan calls for lead generation",
+          "whyNeed": "Marketing execution is needed",
+          "whoRecognizes": "Business coach",
+          "referralMoment": "During planning",
+          "partnerValue": "Their plans are implemented"
+        }
+      ],
+      "mutualValue": "Consultants see results; you gain clients ready to invest.",
+      "approach": "Offer free marketing audits for consultants' clients.",
+      "decisionMaker": "Business coach / consultant",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 3,
+          "rationale": "This partner type works locally, while you serve a wide market. You would need partners in each target area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "business coach",
+        "management consultant"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "accountants-mkt",
+      "name": "Accountants & fractional CFOs",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Accountants see revenue trends and growth plans and are asked for marketing recommendations.",
+      "rationale": "They are trusted advisors with a view of the numbers.",
+      "triggers": [
+        {
+          "event": "Year-end review shows revenue stagnation",
+          "whyNeed": "Growth investment is needed",
+          "whoRecognizes": "Accountant",
+          "referralMoment": "At year-end planning",
+          "partnerValue": "Healthier client businesses"
+        }
+      ],
+      "mutualValue": "They support clients' growth; you can refer clients needing financial advice.",
+      "approach": "Share benchmarks on marketing spend and ROI tracking that accountants find credible.",
+      "decisionMaker": "Accountant or fractional CFO",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 3,
+          "rationale": "Moderate overlap with your core services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 3,
+          "rationale": "This partner type works locally, while you serve a wide market. You would need partners in each target area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "accounting firm",
+        "fractional CFO"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "pr-copy",
+      "name": "PR firms, copywriters & content studios",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Earned media and content work overlaps with digital marketing, and each side often lacks the other's capability.",
+      "rationale": "These are complementary skill sets serving the same clients.",
+      "triggers": [
+        {
+          "event": "A PR campaign generates coverage",
+          "whyNeed": "The client needs to capture search demand and convert traffic",
+          "whoRecognizes": "PR firm",
+          "referralMoment": "During campaign planning",
+          "partnerValue": "Measurable campaign outcomes"
+        }
+      ],
+      "mutualValue": "Joint offerings make both sides more competitive.",
+      "approach": "Co-pitch integrated campaigns.",
+      "decisionMaker": "PR firm principal",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 3,
+          "rationale": "Reasonable fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "public relations firm",
+        "copywriting agency"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "platform-partners-mkt",
+      "name": "Marketing platform partner programmes",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Marketing automation, CRM, and e-commerce platforms route customers to certified agencies.",
+      "rationale": "Customers search partner directories when they need help with the platform.",
+      "triggers": [
+        {
+          "event": "A business adopts a platform",
+          "whyNeed": "Implementation and marketing support are needed",
+          "whoRecognizes": "Platform partner team",
+          "referralMoment": "During onboarding",
+          "partnerValue": "Customer success and retention"
+        }
+      ],
+      "mutualValue": "Platforms retain customers; you gain inbound enquiries.",
+      "approach": "Specialise in one platform and complete certifications.",
+      "decisionMaker": "Platform partner-program manager",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 2,
+          "rationale": "Limited fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "platform partner agency"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "franchisors",
+      "name": "Franchisors & multi-location operators",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Franchise systems need local marketing for each location and often maintain approved-vendor lists.",
+      "rationale": "One approval can produce many location-level clients.",
+      "triggers": [
+        {
+          "event": "New franchise locations open",
+          "whyNeed": "Local marketing and listings are needed",
+          "whoRecognizes": "Franchise marketing director",
+          "referralMoment": "Before opening",
+          "partnerValue": "Consistent brand execution"
+        }
+      ],
+      "mutualValue": "Franchisors gain consistent local execution; you gain repeatable volume.",
+      "approach": "Develop a repeatable local-marketing package and pursue approved-vendor status.",
+      "decisionMaker": "Franchise marketing director",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Opportunities could arise regularly.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 2,
+          "rationale": "Decision-makers are gatekept or busy.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Strong potential for a recurring commercial channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 3,
+          "rationale": "Reasonable fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 2,
+          "rationale": "Difficult to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "franchise company headquarters"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "photo-video",
+      "name": "Photographers & videographers",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Visual creatives work with businesses on rebrands and launches that need distribution.",
+      "rationale": "They are adjacent to the same marketing budgets.",
+      "triggers": [
+        {
+          "event": "A business commissions a shoot for a rebrand",
+          "whyNeed": "The assets need a distribution strategy",
+          "whoRecognizes": "Photographer",
+          "referralMoment": "During the shoot planning",
+          "partnerValue": "Their work gets seen"
+        }
+      ],
+      "mutualValue": "Mutual referrals and joint packages.",
+      "approach": "Create joint packages for launches.",
+      "decisionMaker": "Photographer or production lead",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 3,
+          "rationale": "Moderate overlap with your core services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 2,
+          "rationale": "Referred work tends to be below your typical engagement value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 5,
+          "rationale": "Decision-makers are easy to meet and talk to.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "This partner type works locally, while you serve a wide market. You would need partners in each target area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 5,
+          "rationale": "Easy to start with a single conversation.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "commercial photographer",
+        "video production company"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "niche-associations-mkt",
+      "name": "Associations in your client niche",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Industry associations in the niches you serve gather your ideal clients and need educational content.",
+      "rationale": "Niche specialisation shortens sales cycles.",
+      "triggers": [
+        {
+          "event": "The association plans its education calendar",
+          "whyNeed": "Members want marketing guidance specific to their industry",
+          "whoRecognizes": "Programme committee",
+          "referralMoment": "Annually",
+          "partnerValue": "Relevant member education"
+        }
+      ],
+      "mutualValue": "Associations gain expert sessions; you gain credibility with buyers.",
+      "approach": "Publish niche benchmarks and speak at events.",
+      "decisionMaker": "Association programme committee",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Benchmark reports",
+        "Workshops",
+        "Newsletter columns"
+      ],
+      "digitalAuthority": [
+        "Original research that association sites cite and link to."
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 3,
+          "rationale": "This partner type works locally, while you serve a wide market. You would need partners in each target area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "industry association"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "printers-signs",
+      "name": "Commercial printers & sign shops",
+      "relationshipType": "shared_audience",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Print and sign businesses serve local businesses opening, rebranding, or promoting, which are often the same moments that need digital marketing.",
+      "rationale": "This is an overlooked local channel at a high-intent moment.",
+      "triggers": [
+        {
+          "event": "A business orders signage for a new location",
+          "whyNeed": "They need local search visibility and launch marketing",
+          "whoRecognizes": "Sign shop",
+          "referralMoment": "At order",
+          "partnerValue": "A more successful client"
+        }
+      ],
+      "mutualValue": "Joint new-business packages.",
+      "approach": "Offer a co-branded 'opening checklist' for new businesses.",
+      "decisionMaker": "Sign-shop owner",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 3,
+          "rationale": "Moderate overlap with your core services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 2,
+          "rationale": "Referred work tends to be below your typical engagement value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 5,
+          "rationale": "Decision-makers are easy to meet and talk to.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "This partner type works locally, while you serve a wide market. You would need partners in each target area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 5,
+          "rationale": "Easy to start with a single conversation.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "sign company",
+        "commercial printing"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "trademark-rebrand",
+      "name": "Trademark lawyers (forced rebrands & domain changes)",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "When a trademark dispute or clearance problem forces a business to rename, it must move its website to a new domain. Done poorly, that can cost much of its search visibility.",
+      "rationale": "This is an urgent, budgeted moment where SEO migration expertise is valuable and the lawyer is the first adviser involved.",
+      "triggers": [
+        {
+          "event": "A client receives a cease-and-desist or fails trademark clearance",
+          "whyNeed": "A rebrand and domain migration are needed",
+          "whoRecognizes": "Trademark lawyer",
+          "referralMoment": "When the rebrand decision is made",
+          "partnerValue": "Their client's business survives the rename intact"
+        }
+      ],
+      "mutualValue": "Lawyers give clients a practical next step; you get urgent, well-funded migration projects. You can refer clients needing trademark clearance before a launch.",
+      "approach": "Publish a rebrand-migration checklist and share it with IP lawyers. Offer a free migration-risk review for their clients.",
+      "decisionMaker": "Trademark lawyer or agent",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Opportunities are likely to be infrequent.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Good fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "trademark lawyer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "it-msps-migrations",
+      "name": "IT providers & web hosts during platform migrations",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "When businesses change website platforms, hosting, or domains, IT providers handle the technical move but not redirects, tracking, or search visibility.",
+      "rationale": "Migrations are where organic traffic is most often lost, and IT providers know they are coming months in advance.",
+      "triggers": [
+        {
+          "event": "A client schedules a website platform or domain migration",
+          "whyNeed": "Redirect mapping and search preservation are needed",
+          "whoRecognizes": "IT provider",
+          "referralMoment": "During migration planning",
+          "partnerValue": "No post-launch blame for lost traffic"
+        }
+      ],
+      "mutualValue": "IT providers avoid post-launch complaints; you get project work. You can refer IT work back.",
+      "approach": "Offer IT providers a fixed-price migration-protection package.",
+      "decisionMaker": "MSP account manager or hosting provider's solutions lead",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 2,
+          "rationale": "This partner type works locally, while you serve a wide market. You would need partners in each target area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "managed IT services",
+        "web hosting company"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "marketing-recruiters",
+      "name": "Recruiters filling marketing roles",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Companies that struggle to hire or keep a marketing manager often need an agency to cover the gap, or permanently.",
+      "rationale": "Recruiters see failed searches and vacancies first, and agencies can refer placements when clients want to bring work in-house.",
+      "triggers": [
+        {
+          "event": "A marketing manager search stalls or a key marketer resigns",
+          "whyNeed": "Work must continue during the vacancy",
+          "whoRecognizes": "Recruiter",
+          "referralMoment": "When the search drags on",
+          "partnerValue": "The client relationship is preserved"
+        }
+      ],
+      "mutualValue": "Recruiters keep clients happy during vacancies; you refer in-house hiring needs to them.",
+      "approach": "Propose a reciprocal arrangement with a marketing-focused recruiter.",
+      "decisionMaker": "Recruiter specialising in marketing and creative roles",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 3,
+          "rationale": "Reasonable fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "marketing recruitment agency"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "fractional-cmos",
+      "name": "Fractional CMOs & marketing strategists",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Fractional CMOs set strategy and budgets but need execution partners for SEO, content, and paid media.",
+      "rationale": "They control budgets across several clients and keep reusing reliable execution partners.",
+      "triggers": [
+        {
+          "event": "A fractional CMO completes a marketing plan",
+          "whyNeed": "Execution needs a specialist",
+          "whoRecognizes": "Fractional CMO",
+          "referralMoment": "At plan approval",
+          "partnerValue": "Their strategy gets delivered"
+        }
+      ],
+      "mutualValue": "They get dependable execution; you get recurring retainers.",
+      "approach": "Offer transparent reporting that fractional CMOs can present to their own clients.",
+      "decisionMaker": "Fractional CMO",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 3,
+          "rationale": "Reasonable fit with your service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "fractional CMO"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "commercial-leasing",
+      "name": "Commercial real-estate brokers & landlords",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "New tenants opening a location need local search visibility, a business profile, and launch marketing. Landlords of retail plazas want tenants to succeed.",
+      "rationale": "Leasing creates a predictable moment of need, and landlords benefit when tenants thrive.",
+      "triggers": [
+        {
+          "event": "A lease is signed for a new location",
+          "whyNeed": "The business needs local visibility before opening",
+          "whoRecognizes": "Leasing agent",
+          "referralMoment": "At lease signing",
+          "partnerValue": "Tenants succeed and renew"
+        }
+      ],
+      "mutualValue": "Landlords retain successful tenants; you gain launch clients.",
+      "approach": "Offer a new-location launch package and introduce it to leasing agents and plaza landlords.",
+      "decisionMaker": "Commercial leasing agent or landlord's tenant-relations manager",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "This partner type works locally, while you serve a wide market. You would need partners in each target area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "commercial real estate broker",
+        "retail plaza leasing"
+      ],
+      "existingRelationship": false
+    }
+  ],
+  "assumptions": [
+    "Agencies win clients primarily through referrals from other advisors and past clients. Partner channels that meet businesses at growth or change moments matter most.",
+    "No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing."
+  ],
+  "guardrails": [
+    {
+      "title": "Links are a by-product of genuine collaboration",
+      "body": "Shared-audience partnerships can produce earned, editorial links, but exchanging links for payment or as a condition of partnership violates search engine spam policies. Focus on resources and content that are useful to both audiences."
+    },
+    {
+      "title": "Partnerships are not paid-referral arrangements",
+      "body": "This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals."
+    },
+    {
+      "title": "Outreach in Canada: CASL applies",
+      "body": "Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA)."
+    },
+    {
+      "title": "No automated outreach",
+      "body": "This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline."
+    }
+  ]
+}

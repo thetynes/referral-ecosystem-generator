@@ -1,0 +1,1556 @@
+{
+  "id": "7ada4f30-9190-4075-bb3c-fff895983427",
+  "createdAt": "2026-11-23T23:27:49.017Z",
+  "isDemo": false,
+  "profile": {
+    "displayName": "Sample Custom Homes (illustrative)",
+    "website": null,
+    "industry": "Custom home builder",
+    "services": [
+      "Custom homes",
+      "design-build",
+      "infill rebuilds"
+    ],
+    "serviceArea": "Lambton County, Ontario",
+    "geography": {
+      "country": "CA",
+      "region": "Ontario",
+      "scope": "regional"
+    },
+    "idealCustomer": "Families building on their own lot, teardown-rebuild buyers",
+    "customerSegments": [
+      "Families building on their own lot",
+      "teardown-rebuild buyers"
+    ],
+    "projectValue": null,
+    "targetIndustries": [],
+    "growthPriority": null,
+    "existingReferrals": [],
+    "expansionMarkets": []
+  },
+  "engine": {
+    "mode": "ai",
+    "provider": "openai",
+    "model": "gpt-5.5",
+    "archetypeId": "custom-builder",
+    "archetypeLabel": "Custom home builder",
+    "matchConfidence": "high",
+    "notes": [],
+    "version": "1.0.0",
+    "costUsd": 0.545065
+  },
+  "categories": [
+    {
+      "id": "lot-teardown-realtors",
+      "name": "Lot teardown realtors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Realtors working with vacant lots, acreages, estate properties, and older homes being purchased primarily for land value often see the buyer before any builder is engaged. The referral opportunity is during property search, offer preparation, and conditional due diligence, when the buyer needs early input on feasibility, teardown implications, site servicing, budgeting, and timelines.",
+      "rationale": "This relationship makes commercial sense because realtor-introduced prospects are often already committed to acquiring land and need fast confidence on whether a custom home or infill rebuild is viable. The builder helps reduce failed conditions, unrealistic budgets, and post-closing surprises, while the realtor strengthens the transaction process without acting outside their expertise.",
+      "triggers": [
+        {
+          "event": "Buyer is considering an older home mainly for the lot value.",
+          "whyNeed": "They need to understand demolition, setbacks, servicing, zoning fit, access, and whether the desired home can be built within budget.",
+          "whoRecognizes": "Residential realtor, listing agent, or buyer representative handling teardown-oriented purchases.",
+          "referralMoment": "Before the offer is written or during the conditional period, especially before waiving inspection, financing, or due diligence conditions.",
+          "partnerValue": "The realtor helps the client make a confident offer and reduces the risk of the deal collapsing due to buildability or budget concerns."
+        },
+        {
+          "event": "Client is comparing a vacant lot, rural acreage, or infill parcel with limited site information.",
+          "whyNeed": "The buyer needs early builder input on site preparation, servicing, grading, access, driveway, septic or utility considerations, and likely construction sequencing.",
+          "whoRecognizes": "Realtor specializing in land, acreage, rural residential, or infill properties.",
+          "referralMoment": "When the client asks whether the lot is suitable for the home they want, before firming up the purchase.",
+          "partnerValue": "The realtor can keep momentum in the buying process while giving the client a path to practical answers from a qualified builder."
+        },
+        {
+          "event": "Offer includes conditions related to inspection, financing, zoning, or buyer due diligence.",
+          "whyNeed": "The buyer needs a quick feasibility conversation and order-of-magnitude cost awareness before making the purchase binding.",
+          "whoRecognizes": "Buyer’s agent managing the conditional timeline.",
+          "referralMoment": "Immediately after conditional acceptance, before the condition deadline.",
+          "partnerValue": "The realtor reduces last-minute uncertainty and supports a cleaner decision for the buyer."
+        }
+      ],
+      "mutualValue": "The realtor gains a trusted technical resource who can help clients assess buildability, risk, and budget before closing, while the builder is introduced to high-intent families before design and construction decisions are locked in. The relationship is strongest when framed as client education and due-diligence support rather than paid referral generation.",
+      "approach": "Invite a small group of land and teardown-focused realtors to a practical briefing on 'what to check before buying a teardown or vacant lot for a custom home' and provide a simple due-diligence checklist they can share with clients.",
+      "decisionMaker": "Broker of Record or Sales Representative leading land and residential redevelopment transactions",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Client due-diligence checklist for teardown and vacant-lot purchases",
+        "Lunch-and-learn for realtors on buildability red flags",
+        "Joint buyer education session for families considering teardown-rebuilds",
+        "Pre-offer feasibility call process for conditional purchases"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on questions to ask before buying a teardown property",
+        "Educational webinar on lot selection for custom homes"
+      ],
+      "regulatoryNote": "Real estate is regulated in Ontario; do not assume referral fees, commissions, exclusivity, client steering, or endorsements are permitted. Any collaboration should prioritize client choice, disclosure, and compliance with real estate brokerage rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Realtors often encounter the buyer at the earliest point when land or teardown feasibility questions arise.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The need maps directly to custom homes, design-build feasibility, and infill rebuild advice.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Land and teardown purchases recur regularly for active realtors, though only a subset of all residential transactions fit this profile.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "A successful referral can lead to a full custom home or rebuild project with substantial strategic value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Individual agents and brokerage team leads are generally reachable through local networking, education events, and direct professional outreach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Realtors who work in this niche can repeatedly encounter suitable buyers over time.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The realtor benefits from smoother transactions and better-informed clients, while the builder gains early access to qualified prospects.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Real estate activity is highly local, making regional relationships directly relevant to Lambton County projects.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship is practical to start with education-first outreach, though trust must be built carefully in a regulated context.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "teardown real estate agents",
+        "vacant land realtors",
+        "infill property realtors"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "construction-mortgage-brokers",
+      "name": "Construction mortgage brokers",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Construction mortgage brokers meet families when they are trying to finance a custom build, owner-owned lot project, or teardown-rebuild that requires staged advances. They can identify early when the client’s budget, appraisal assumptions, land equity, contingency, or draw schedule needs builder input before finalizing financing or choosing a construction partner.",
+      "rationale": "This relationship makes commercial sense because financing and build planning are tightly connected: unrealistic construction budgets can delay approvals, weaken applications, or create client dissatisfaction. The builder can provide practical costing and process clarity, while the broker gains better-prepared borrowers and fewer financing surprises.",
+      "triggers": [
+        {
+          "event": "Borrower asks about financing a custom home on land they already own.",
+          "whyNeed": "They need credible construction budgeting, timeline expectations, and clarity on what a lender may need from a builder during approval and draws.",
+          "whoRecognizes": "Construction mortgage broker or mortgage agent handling the financing inquiry.",
+          "referralMoment": "Before the borrower submits a financing application or commits to a design path that may not match lending constraints.",
+          "partnerValue": "The broker receives a more realistic project scope, cleaner documentation, and a borrower who better understands construction financing requirements."
+        },
+        {
+          "event": "Teardown-rebuild buyer is trying to determine total project affordability.",
+          "whyNeed": "They must account for land acquisition or existing mortgage, demolition, temporary housing, design, permits, construction, contingency, and draw timing.",
+          "whoRecognizes": "Mortgage broker advising on purchase-plus-construction or refinance options.",
+          "referralMoment": "When preliminary affordability is being tested, before the client removes financing conditions or finalizes the project budget.",
+          "partnerValue": "The broker can reduce budget mismatch and improve the quality of the lending conversation."
+        },
+        {
+          "event": "Financing application stalls because the project scope or cost estimate is incomplete.",
+          "whyNeed": "The borrower needs builder guidance to produce a more coherent scope, schedule, and cost framework for lender review.",
+          "whoRecognizes": "Mortgage broker or mortgage underwriting support contact.",
+          "referralMoment": "As soon as missing construction detail becomes the obstacle to financing progress.",
+          "partnerValue": "The broker can help move the file forward while supporting a more informed client decision."
+        }
+      ],
+      "mutualValue": "The broker gains access to a builder who can educate borrowers on real-world construction budgeting, staged draws, and project sequencing, while the builder meets prospects whose financing questions indicate serious purchase or build intent. The value is in better-prepared clients and smoother files, not assumed compensation.",
+      "approach": "Offer a short educational session for construction mortgage brokers on common custom-build cost omissions, documentation builders can provide, and timelines that affect draw financing.",
+      "decisionMaker": "Mortgage Broker Owner or Principal Broker",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Broker education session on construction-budget readiness",
+        "Co-created construction financing preparation checklist",
+        "Client Q&A webinar on financing a custom home",
+        "Process map outlining builder inputs needed for staged financing"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on preparing for a construction mortgage",
+        "Educational webinar on budgeting and financing a teardown-rebuild"
+      ],
+      "regulatoryNote": "Mortgage brokerage and financial services are regulated; do not assume referral fees, commissions, preferential steering, or financial advice by the builder are permitted. Any collaboration should preserve client choice, disclose relationships where required, and avoid unlicensed financing advice.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Construction mortgage brokers encounter clients precisely when financing constraints reveal the need for realistic builder input.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The partner’s client need closely aligns with custom home, design-build, and teardown-rebuild services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Brokers who handle construction lending may see these files repeatedly, though they are more specialized than standard mortgages.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Clients seeking construction financing are often serious, budget-aware prospects for large build projects.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Principal brokers and specialized mortgage agents are reachable, but trust and compliance concerns may slow relationship development.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "A broker active in construction lending can become a recurring source of early-stage introductions.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both sides benefit from clearer budgets, fewer stalled files, and clients who understand the financial and construction process.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Mortgage brokers may work regionally or provincially, but construction lending referrals remain useful when tied to the builder’s service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is valuable but requires careful positioning around education and compliance rather than referral incentives.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "construction mortgage brokers",
+        "construction financing mortgage broker",
+        "self build mortgage broker"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "land-use-planners",
+      "name": "Land use planners",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Land use planners encounter custom home and rebuild clients when zoning, severance, conservation, minor variance, site plan, or infill constraints need to be resolved before construction can proceed. They can introduce a builder when the planning path needs constructability input, practical costing, phasing insight, or design-build coordination to avoid approvals that are technically possible but difficult or expensive to build.",
+      "rationale": "This relationship makes commercial sense because planning approvals shape what can be built, where it can be placed, and how much complexity the project will carry. Builder involvement can help planners present more realistic applications, while the builder gains access to projects before design assumptions harden.",
+      "triggers": [
+        {
+          "event": "Client needs a minor variance for setbacks, lot coverage, height, or accessory elements.",
+          "whyNeed": "They need to know whether the proposed home can be practically designed and built within the constraints being requested.",
+          "whoRecognizes": "Land use planner preparing or advising on the variance application.",
+          "referralMoment": "Before finalizing the variance strategy or submitting drawings for approval.",
+          "partnerValue": "The planner can align the application with a buildable solution and reduce redesign after approval."
+        },
+        {
+          "event": "Infill rebuild faces zoning, servicing, conservation, or municipal review concerns.",
+          "whyNeed": "The client needs a builder who understands how approval timelines, site access, demolition, servicing, and construction sequencing affect feasibility and budget.",
+          "whoRecognizes": "Planner advising the owner or coordinating with municipal review processes.",
+          "referralMoment": "When constraints are first identified and before the client commits to a design that may be hard to execute.",
+          "partnerValue": "The planner can strengthen client advice with practical construction implications and avoid planning work that leads to unbuildable expectations."
+        },
+        {
+          "event": "A severance, lot creation, or rural residential site assessment raises questions about future home placement.",
+          "whyNeed": "The client needs early input on driveway access, grading, servicing, septic coordination, build envelope, and likely construction costs.",
+          "whoRecognizes": "Planner managing severance or land-use due diligence.",
+          "referralMoment": "During pre-consultation or feasibility review, before the application strategy is locked in.",
+          "partnerValue": "The planner can help the client make more informed land-use decisions and reduce downstream friction."
+        }
+      ],
+      "mutualValue": "The planner benefits from a builder who can translate planning constraints into practical construction implications, helping clients avoid unrealistic designs and post-approval changes. The builder benefits from early visibility into complex but viable custom home and infill rebuild projects where design-build coordination can add significant value.",
+      "approach": "Request a technical coffee meeting to discuss common infill and rural-lot approval issues, then propose a shared 'planning-to-construction readiness' checklist for mutual client education.",
+      "decisionMaker": "Principal Planner or Planning Consultant",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Planning-to-construction feasibility checklist",
+        "Technical roundtable on infill rebuild constraints",
+        "Joint client meeting protocol for complex lots",
+        "Educational session on constructability considerations during planning approvals"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on moving from planning approval to a buildable custom home",
+        "Educational explainer on zoning and constructability considerations for infill rebuilds"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Planners encounter clients when land-use constraints create early and important construction feasibility questions.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Planning outcomes directly affect custom home design, siting, cost, and build sequencing.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Relevant cases are occasional because not every custom home requires private planning support, but complex infill and rural projects often do.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Projects involving planning constraints can be substantial and benefit strongly from integrated design-build expertise.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Principal planners and consultants are accessible through professional networking but may be selective about builder relationships.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "The same planner may see repeated suitable files, but referral frequency depends on their caseload mix.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both parties benefit from aligning approvals with realistic construction execution and client expectations.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Land-use planning is highly tied to local municipal, county, and conservation authority requirements.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship requires technical credibility and patience, but can start through knowledge-sharing rather than sales outreach.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "land use planners",
+        "planning consultants",
+        "minor variance consultants"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "surveyors",
+      "name": "Surveyors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Surveyors encounter families and landowners when boundary, topographic, grading, setback, reference plan, or site information is needed for a potential custom build or rebuild. They can identify early when survey findings point to buildability risks or design implications and introduce a builder before the client commits to a layout, budget, or purchase decision.",
+      "rationale": "This relationship makes commercial sense because survey findings often reveal practical constraints that shape home placement, grading, access, and cost. A builder can help the client interpret the construction implications, while the surveyor benefits from fewer repeated surveys, redesigns, or client misunderstandings caused by site surprises.",
+      "triggers": [
+        {
+          "event": "Boundary or setback survey reveals the desired home footprint may not fit as expected.",
+          "whyNeed": "The client needs builder input on layout alternatives, siting options, and whether design changes are practical within the available build envelope.",
+          "whoRecognizes": "Ontario land surveyor or survey project manager reviewing the property constraints.",
+          "referralMoment": "After survey results are available but before the client finalizes design or purchase conditions.",
+          "partnerValue": "The surveyor helps the client act on the survey findings and reduces confusion about what the technical information means for construction."
+        },
+        {
+          "event": "Topographic survey shows grading, drainage, slope, or elevation challenges.",
+          "whyNeed": "The client needs construction sequencing and cost implications for excavation, foundation design, drainage, access, and site preparation.",
+          "whoRecognizes": "Surveyor, survey technologist, or field-to-office project lead preparing site data.",
+          "referralMoment": "When the surveyor delivers findings that materially affect site design or budget.",
+          "partnerValue": "The surveyor’s work becomes more useful to the client because it is connected to practical next steps."
+        },
+        {
+          "event": "Survey work is ordered during due diligence for a vacant lot, acreage, or teardown property.",
+          "whyNeed": "The buyer needs to understand whether boundary, easement, access, or site conditions affect the feasibility of the intended custom home.",
+          "whoRecognizes": "Survey firm owner, project manager, or survey coordinator handling the file.",
+          "referralMoment": "During the due-diligence window, especially before design assumptions or offer conditions are finalized.",
+          "partnerValue": "The surveyor supports a smoother client experience and may reduce rushed follow-up requests caused by late-stage buildability concerns."
+        }
+      ],
+      "mutualValue": "The surveyor gains a trusted construction contact who can help clients understand the practical meaning of survey findings, while the builder gains early access to clients facing real site constraints. The relationship improves project handoff from technical site data to buildable decisions without asking the surveyor to give construction advice outside their role.",
+      "approach": "Meet with survey firm owners or project managers to map common survey findings that affect custom builds, then create a simple handoff note explaining when a client should speak with a builder.",
+      "decisionMaker": "Survey Firm Principal or Survey Project Manager",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Survey-to-buildability handoff checklist",
+        "Technical lunch-and-learn on site constraints for custom homes",
+        "Shared client guide on reading survey findings before designing",
+        "Referral protocol for due-diligence timelines"
+      ],
+      "digitalAuthority": [
+        "Co-authored educational piece on survey issues that affect custom home placement",
+        "Client guide on what a topographic survey can reveal before building"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Surveyors encounter clients when site facts emerge that can directly trigger a need for builder guidance.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Survey information strongly informs custom home siting, grading, setbacks, and feasibility, though surveyors are not always involved in builder selection.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Suitable introductions are occasional because not every survey client is ready to build, but the fit is strong when buildability questions arise.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "A referral can lead to a substantial custom build or rebuild where early site knowledge improves project planning.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Survey firm principals and project managers can be reached locally, but their professional role may make them cautious about referrals.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Surveyors repeatedly see land and rebuild files, but only some create an appropriate referral moment.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The surveyor benefits when clients can act on technical findings, while the builder benefits from early site-specific conversations.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Surveying is locally grounded, and site conditions, boundaries, and municipal requirements are directly tied to the builder’s region.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "It is feasible to establish through technical collaboration, but referrals require trust and clear boundaries around professional advice.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "land surveyors",
+        "topographic surveyors",
+        "boundary survey services"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "estate-lawyers",
+      "name": "Estate lawyers",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Estate lawyers may encounter families deciding what to do with an inherited house, rural lot, or older property that could be sold, transferred, retained, or redeveloped. When heirs are weighing sale versus teardown-rebuild, the referral opportunity is to suggest early builder feasibility input before the family commits to a transaction, estate plan, or property strategy.",
+      "rationale": "This relationship makes commercial sense because estate-driven property decisions can unlock high-value custom home or infill rebuild projects, and early construction feasibility helps the lawyer’s client make better-informed estate and property decisions.",
+      "triggers": [
+        {
+          "event": "Heirs inherit an older home on a desirable lot and debate whether to sell it or rebuild for family use.",
+          "whyNeed": "They need practical input on teardown feasibility, likely build scope, site constraints, and whether a rebuild aligns with their budget before making an estate decision.",
+          "whoRecognizes": "Estate lawyer, estates clerk, or real estate law clerk handling the transfer or sale discussions.",
+          "referralMoment": "When the family asks whether keeping the property and rebuilding is realistic, before listing the property or finalizing transfer instructions.",
+          "partnerValue": "The lawyer helps the client avoid making a property decision without understanding the construction implications, while staying focused on legal advice."
+        },
+        {
+          "event": "An estate property is transferred to one beneficiary who wants to modernize or replace the existing home.",
+          "whyNeed": "The beneficiary may need a builder to assess whether renovation, addition, or full rebuild is the right path and what approvals or constraints could affect the plan.",
+          "whoRecognizes": "Estate lawyer or law clerk preparing transfer documents and speaking with the beneficiary about intended use.",
+          "referralMoment": "After the beneficiary indicates an intention to occupy, rebuild, or retain the property rather than sell immediately.",
+          "partnerValue": "The lawyer can connect the client to a practical next step without trying to advise on construction feasibility."
+        },
+        {
+          "event": "A rural or lake-area property in an estate has value tied to development potential rather than the existing dwelling.",
+          "whyNeed": "The family needs early insight into whether the lot can support a custom home, servicing, access, setbacks, and demolition-rebuild sequencing.",
+          "whoRecognizes": "Estate lawyer coordinating with beneficiaries, executors, or property advisors.",
+          "referralMoment": "When the executor or heirs are assessing options for distribution, sale, or retention of the property.",
+          "partnerValue": "The lawyer adds value by helping the client seek appropriate non-legal expertise before making irreversible estate or sale decisions."
+        }
+      ],
+      "mutualValue": "The lawyer’s clients receive a clearer path from legal ownership questions to practical property options, while the builder gains early visibility into serious teardown-rebuild or lot-retention opportunities. The relationship should be framed as access to construction feasibility education, not as legal endorsement or compensated referral activity.",
+      "approach": "Offer a short, plain-language feasibility checklist for estate properties being considered for teardown-rebuild, and ask for feedback from the estate lawyer or senior law clerk on where clients commonly get stuck.",
+      "decisionMaker": "Estate Lawyer or Managing Partner",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Estate property teardown-rebuild feasibility checklist",
+        "Private lunch-and-learn for lawyers and law clerks on construction feasibility questions clients ask",
+        "Client-facing guide on questions to ask before keeping an inherited property for a future build"
+      ],
+      "digitalAuthority": [
+        "Co-authored educational article on legal-versus-construction questions when heirs consider rebuilding an estate property"
+      ],
+      "regulatoryNote": "Legal services are regulated; do not assume referral fees, commissions, exclusivity, or legal endorsement are permitted, and ensure any introduction preserves the lawyer’s professional independence and client confidentiality.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Estate lawyers can encounter the need early when heirs are deciding whether a property should be sold, transferred, retained, or rebuilt.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "The fit is strong when an estate property is a viable teardown-rebuild or custom home lot, though not every estate file involves redevelopment.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "These opportunities are occasional because only a subset of estate matters involve buildable properties and heirs interested in rebuilding.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "A successful introduction can lead to a high-value custom home or infill rebuild project.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are identifiable but lawyers are busy and cautious about referral relationships.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "The same firm may see repeated estate property situations, but suitable rebuild opportunities will be intermittent.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The partner benefits by helping clients access practical feasibility information while the builder gains early-stage introductions.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Estate property decisions are highly local because lot value, municipal rules, rural servicing, and teardown feasibility depend on regional conditions.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 2,
+          "rationale": "The relationship requires trust-building and careful handling of professional conduct constraints, so it is not quick to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "estate lawyer probate real estate",
+        "wills estates lawyer property transfer",
+        "estate administration lawyer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "septic-well-specialists",
+      "name": "Septic well specialists",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Septic and well specialists encounter rural lot owners before a custom home design can be finalized, especially when servicing capacity determines where and what can be built. The referral opportunity arises when the owner needs a builder who can coordinate the home plan around septic location, well yield, setbacks, grading, and construction sequencing.",
+      "rationale": "This relationship makes commercial sense because servicing constraints can make or break a rural build, and early builder involvement reduces redesign, permit friction, and unrealistic site planning.",
+      "triggers": [
+        {
+          "event": "A family buys or owns a rural lot and requests a septic capacity review before building a larger custom home.",
+          "whyNeed": "The size and placement of the home may depend on septic capacity, reserve area, soil conditions, and required setbacks.",
+          "whoRecognizes": "Septic designer, installer, well technician, or project coordinator.",
+          "referralMoment": "When servicing limitations begin influencing the building envelope or before the client pays for detailed house plans.",
+          "partnerValue": "The specialist works with a builder who understands site constraints, reducing failed layouts and rework."
+        },
+        {
+          "event": "An existing rural home is being considered for teardown and replacement, but the old septic or well may not support the new design.",
+          "whyNeed": "The client needs to know whether servicing upgrades, relocation, or new system design will affect budget and construction feasibility.",
+          "whoRecognizes": "Septic inspector, well contractor, or servicing consultant assessing the property.",
+          "referralMoment": "After a servicing concern is identified and before the client commits to a final design or demolition timeline.",
+          "partnerValue": "The specialist gains a more coordinated project where servicing decisions are integrated into the build plan."
+        },
+        {
+          "event": "A lot has challenging soil, drainage, access, or setback conditions that complicate both servicing and home placement.",
+          "whyNeed": "The client needs a builder who can coordinate site planning with servicing realities instead of treating them as separate problems.",
+          "whoRecognizes": "Septic designer, well specialist, or excavation-related servicing contractor.",
+          "referralMoment": "When the specialist sees that servicing constraints will materially affect home orientation, driveway, grading, or foundation planning.",
+          "partnerValue": "The specialist avoids being blamed for constraints that should be addressed through coordinated site design."
+        }
+      ],
+      "mutualValue": "The specialist benefits from better-prepared clients, fewer impractical site plans, and smoother coordination between home design, servicing, and excavation. The builder benefits by entering rural projects before design decisions conflict with septic, well, and site constraints.",
+      "approach": "Create a joint site-feasibility conversation format: offer to review anonymized or hypothetical rural-build scenarios together and identify where builder input should occur in the servicing process.",
+      "decisionMaker": "Owner-Operator or Operations Manager",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Rural lot feasibility checklist covering septic, well, access, grading, and build envelope",
+        "Joint homeowner workshop on preparing a rural lot for a custom home",
+        "Cross-referral site review protocol for early-stage rural builds"
+      ],
+      "digitalAuthority": [
+        "Educational guide on how septic and well constraints affect custom home planning"
+      ],
+      "regulatoryNote": "Septic and well work may be subject to licensing, inspection, and local approval requirements; avoid implying that either party can guarantee permits, approvals, yield, or system suitability.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "These specialists often see rural-build feasibility issues before house plans are finalized.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Their work directly affects whether and how a custom home can be built on a rural lot.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Encounters are occasional because they apply mainly to rural or privately serviced properties.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Qualified referrals can represent substantial custom home opportunities, especially when a family already owns the lot.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Many firms have accessible owners or operations managers who are close to day-to-day client conversations.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "The same specialist may repeatedly encounter rural lot owners, though not all will be ready for a full build.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both parties benefit from fewer failed site plans, better sequencing, and more realistic client expectations.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Servicing feasibility is intensely local and highly relevant in regional areas with rural properties.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship can start pragmatically through technical coordination and shared checklists rather than formal referral arrangements.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "septic designer installer",
+        "well drilling contractor",
+        "septic inspection well testing"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "residential-designers",
+      "name": "Residential designers",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Residential designers encounter families when ideas, sketches, inspiration images, or early floor plans are becoming a possible custom home or infill rebuild. The referral opportunity is to introduce a design-build builder before drawings become too detailed, so scope, budget, site constraints, and construction method are aligned early.",
+      "rationale": "This relationship is commercially strong because residential design and custom construction are adjacent services, and early collaboration prevents budget disconnects that can damage both the client experience and the designer’s work.",
+      "triggers": [
+        {
+          "event": "A family approaches a designer with inspiration images and a target budget but no builder selected.",
+          "whyNeed": "They need construction input before the design advances beyond what the budget or site can support.",
+          "whoRecognizes": "Residential designer, design principal, or client intake lead.",
+          "referralMoment": "After initial design goals are understood but before detailed drawings or permit-ready documents are produced.",
+          "partnerValue": "The designer reduces redesign risk and improves the chance that the project proceeds to construction."
+        },
+        {
+          "event": "A teardown-rebuild client needs to understand whether the desired floor plan fits the existing lot, zoning constraints, and construction budget.",
+          "whyNeed": "A builder can assess constructability, demolition sequencing, site access, and likely cost implications while the designer develops the concept.",
+          "whoRecognizes": "Residential designer or architectural technologist.",
+          "referralMoment": "During concept design, before the client becomes attached to a layout that may be difficult or expensive to build.",
+          "partnerValue": "The designer’s recommendations are more likely to survive pricing and construction review."
+        },
+        {
+          "event": "A client has permit drawings or near-final plans but builder pricing indicates the design is over budget.",
+          "whyNeed": "They need a builder and designer to work together on value-aligned revisions rather than restarting the process alone.",
+          "whoRecognizes": "Residential designer, project manager, or client care coordinator.",
+          "referralMoment": "Immediately when budget misalignment appears, before client frustration leads to project abandonment.",
+          "partnerValue": "The designer protects the client relationship by offering a constructive path to a buildable solution."
+        }
+      ],
+      "mutualValue": "The designer gains a builder partner who can provide practical cost and constructability feedback, helping more designs reach construction. The builder gains access to clients earlier in the design journey and can reciprocate by introducing clients who need stronger design development before building.",
+      "approach": "Invite the designer to a project debrief over a non-confidential case study showing where early builder input improved budget alignment, then propose a simple collaboration workflow for concept-stage clients.",
+      "decisionMaker": "Principal Residential Designer or Design Director",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Concept-stage budget alignment session",
+        "Joint design-build discovery meeting for prospective clients",
+        "Co-created custom home planning guide",
+        "Designer-builder project debrief meetings"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on when to involve a builder in the custom home design process",
+        "Shared educational webinar on avoiding budget surprises in custom home planning"
+      ],
+      "regulatoryNote": "In Ontario, certain residential design and permit drawing work may require appropriate qualifications or registration; each party should stay within its professional scope and avoid misrepresenting design, engineering, or approval responsibilities.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Residential designers encounter clients at the exact point where a custom home idea is becoming a buildable project.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The services are directly complementary because design decisions strongly affect construction cost, feasibility, and execution.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Designers regularly meet homeowners planning new builds, rebuilds, additions, and major residential projects.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Introductions can lead to full custom home or design-build projects with substantial project value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Principals and design directors are usually identifiable and often open to builder relationships that help projects succeed.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "A productive designer relationship can generate repeated collaboration across multiple client projects.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both sides gain from better client outcomes, fewer redesigns, and a smoother path from concept to construction.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Local design knowledge, municipal requirements, lot conditions, and regional construction realities make geographic fit very important.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship is relatively easy to initiate because both parties already understand the value of coordinated design and construction.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "residential designer custom homes",
+        "architectural technologist residential design",
+        "home design drafting service"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "interior-designers",
+      "name": "Interior designers",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Interior designers encounter custom home clients when they start thinking about kitchens, bathrooms, built-ins, finishes, lighting, and furniture during planning or pre-construction. The referral opportunity is strongest when selections require builder coordination, budget discipline, lead-time planning, or construction-detail decisions that affect framing, mechanical, electrical, and millwork execution.",
+      "rationale": "This relationship makes commercial sense because interiors are a major part of the custom home experience, and early coordination between builder and designer reduces change orders, selection delays, and mismatched client expectations.",
+      "triggers": [
+        {
+          "event": "A client hires an interior designer before selecting a builder for a custom home or teardown-rebuild.",
+          "whyNeed": "The client needs a builder to translate interior goals into construction scope, allowances, scheduling, and site execution.",
+          "whoRecognizes": "Interior designer, studio principal, or client services lead.",
+          "referralMoment": "When design concepts begin affecting layout, plumbing locations, electrical plans, cabinetry, or finish budgets.",
+          "partnerValue": "The designer’s vision is more likely to be executed accurately and within a realistic construction framework."
+        },
+        {
+          "event": "A client is making kitchen, bath, flooring, lighting, or millwork selections that have structural, mechanical, or scheduling implications.",
+          "whyNeed": "A builder must coordinate rough-ins, framing details, supplier timelines, and installation sequencing before selections become costly changes.",
+          "whoRecognizes": "Interior designer, selections coordinator, or design project manager.",
+          "referralMoment": "Before final selections are issued or before the construction schedule locks in rough-in milestones.",
+          "partnerValue": "The designer avoids late compromises and protects the quality of the finished result."
+        },
+        {
+          "event": "A client’s finish expectations are out of step with the project budget or allowance assumptions.",
+          "whyNeed": "The client needs coordinated guidance from the builder and designer to prioritize spending and avoid budget shock.",
+          "whoRecognizes": "Interior designer or selections consultant reviewing preferred materials and fixtures.",
+          "referralMoment": "As soon as selection costs appear inconsistent with the build budget, before orders are placed.",
+          "partnerValue": "The designer maintains trust by helping the client make informed trade-offs rather than discovering conflicts during construction."
+        }
+      ],
+      "mutualValue": "The interior designer benefits from cleaner execution, fewer last-minute compromises, and better budget context for selections. The builder benefits from an organized selections process, clearer client decisions, and a trusted design partner for clients who need finish-level guidance.",
+      "approach": "Offer a collaborative selections-planning meeting to compare timelines, decision points, and common friction areas, then create a shared pre-construction selections checklist.",
+      "decisionMaker": "Principal Interior Designer or Studio Director",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Selections timeline checklist for custom home clients",
+        "Joint pre-construction selections consultation",
+        "Finish budgeting workshop",
+        "Project handoff template between interior designer and builder"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on when to make interior selections during a custom home build",
+        "Shared photo-led article explaining how early finish decisions affect construction planning"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Interior designers often encounter clients while choices are becoming construction decisions, though sometimes after a builder is already selected.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Interior design decisions directly affect custom home scope, coordination, budget, and client satisfaction.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Interior designers regularly work with homeowners planning kitchens, baths, finishes, and whole-home interiors.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referrals can support substantial custom home work and can also improve profitability by reducing selection chaos.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Studio principals and design leads are usually approachable and relationship-driven.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "A strong relationship can produce ongoing collaboration across many custom builds and client selections.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both parties gain from smoother execution, clearer budgets, and a better client experience.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Local supplier familiarity, site meetings, and regional client preferences make nearby relationships valuable.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "It is generally easy to start with a shared checklist or process conversation because both parties feel the pain of poor coordination.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "interior designer custom homes",
+        "kitchen bath interior designer",
+        "residential interior design studio"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "demolition-contractors",
+      "name": "Demolition contractors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Demolition contractors encounter teardown-rebuild buyers at the moment they are trying to remove an existing structure but may not yet have a complete rebuild plan, builder, permit sequence, or utility-disconnect schedule. A referral opportunity exists when the demolition scope reveals that the homeowner needs a coordinated design-build path before demolition timing creates cost, safety, or permitting issues.",
+      "rationale": "This relationship makes commercial sense because teardown decisions can lock in site logistics, budget assumptions, and schedule constraints that affect the entire custom build. The builder gains earlier access to serious rebuild prospects, while the demolition contractor gets cleaner scopes, fewer sequencing surprises, and better-coordinated projects.",
+      "triggers": [
+        {
+          "event": "Homeowner requests a quote to demolish an existing house on a lot they intend to rebuild on.",
+          "whyNeed": "The demolition scope is only one piece of a larger teardown-rebuild process involving design, permits, servicing, site planning, and construction budgeting.",
+          "whoRecognizes": "Owner, estimator, or project manager at the demolition contractor.",
+          "referralMoment": "After the initial site visit but before the homeowner books demolition, disconnects utilities, or assumes a permit timeline.",
+          "partnerValue": "The demolition contractor can avoid being blamed for delays caused by incomplete rebuild planning and can coordinate safer access, salvage, asbestos, and schedule expectations."
+        },
+        {
+          "event": "Demolition contractor identifies site constraints such as tight infill access, neighbouring structures, mature trees, grading issues, or limited staging space.",
+          "whyNeed": "These constraints affect both demolition and the future custom home design, foundation plan, equipment access, and construction sequencing.",
+          "whoRecognizes": "Estimator or field supervisor.",
+          "referralMoment": "When presenting the demolition quote and explaining assumptions or exclusions tied to site conditions.",
+          "partnerValue": "The contractor benefits from a builder who understands site logistics and can coordinate future work around realistic demolition constraints."
+        },
+        {
+          "event": "Client asks whether demolition should happen before plans, permits, or financing are finalized.",
+          "whyNeed": "Premature demolition can create holding costs, permit complications, insurance questions, or a vacant lot before the build is ready to proceed.",
+          "whoRecognizes": "Owner, sales estimator, or office manager handling inquiries.",
+          "referralMoment": "During the quote intake call or before the client signs the demolition agreement.",
+          "partnerValue": "The demolition contractor can provide a more professional advisory experience without stepping outside its scope."
+        }
+      ],
+      "mutualValue": "The partner can offer clients a more complete teardown-rebuild roadmap, reduce rushed or poorly sequenced demolition jobs, and work with a builder who respects site safety and scheduling. The builder receives introductions to homeowners who have already signalled serious intent to rebuild on their lot.",
+      "approach": "Create a one-page teardown-rebuild sequencing checklist and invite local demolition estimators to review it over a short site-planning coffee meeting, focusing on when demolition should and should not be scheduled.",
+      "decisionMaker": "Owner or Estimating Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Teardown-rebuild sequencing checklist",
+        "Joint pre-demolition site walk for referred clients",
+        "Lunch-and-learn on infill demolition planning",
+        "Shared client handoff template for permits, utilities, and site access"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide: “What to plan before demolishing a house for a rebuild”"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Demolition contractors meet teardown-rebuild prospects at a highly relevant early decision point.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "A demolition inquiry for an existing home often directly precedes an infill rebuild or custom home project.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "The need is meaningful but occasional because not every demolition inquiry involves an immediate custom rebuild.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "A successful referral can lead to a full custom home or design-build engagement.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are often owners, estimators, or project managers who are relatively reachable in regional contracting businesses.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "The same contractor may see repeated teardown inquiries, but suitable rebuild referrals will not occur on every job.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Both sides benefit from better sequencing, fewer surprises, and a more complete client experience.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Demolition work is inherently local or regional and closely tied to the builder’s service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship can start with practical coordination tools rather than a complex formal agreement.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "residential demolition contractor",
+        "house demolition contractor",
+        "infill demolition contractor"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "energy-advisors",
+      "name": "Energy advisors",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Energy advisors encounter families who are trying to understand efficiency targets, code compliance, home performance choices, or documentation for incentive-ready construction. They can refer when the homeowner needs a builder who can translate modelling recommendations into practical envelope, mechanical, window, and construction-detail decisions early in design.",
+      "rationale": "This relationship makes commercial sense because energy performance decisions are most cost-effective when integrated before plans and specifications are finalized. The builder gains credibility with performance-minded clients, while the advisor gets projects that are easier to model, verify, and document because the builder is engaged early.",
+      "triggers": [
+        {
+          "event": "Homeowner asks an energy advisor how to build a high-efficiency custom home on their lot.",
+          "whyNeed": "The client needs a builder who can integrate energy modelling recommendations into design, materials, mechanical planning, and budget trade-offs.",
+          "whoRecognizes": "Registered energy advisor or energy modelling consultant.",
+          "referralMoment": "Before the client finalizes drawings, window packages, insulation assemblies, or mechanical systems.",
+          "partnerValue": "The advisor receives better project information and fewer late-stage changes that make modelling and verification harder."
+        },
+        {
+          "event": "Family wants documentation for energy incentives, labels, or higher-performance construction goals.",
+          "whyNeed": "The client may not know which design and construction decisions must be made early to remain eligible or technically aligned with the target.",
+          "whoRecognizes": "Energy advisor or program documentation specialist.",
+          "referralMoment": "At the initial modelling consultation or when explaining the documentation pathway.",
+          "partnerValue": "The advisor can guide the client toward a builder who will respect documentation requirements and build to the modelled assumptions."
+        },
+        {
+          "event": "Architectural or preliminary plans show likely performance challenges such as large glazing areas, complex rooflines, or mechanical-space constraints.",
+          "whyNeed": "The client needs design-build input to balance aesthetics, comfort, code, efficiency, and budget before the design is too far advanced.",
+          "whoRecognizes": "Energy modeller reviewing plans.",
+          "referralMoment": "When the advisor flags risks in the preliminary model or plan review.",
+          "partnerValue": "The advisor can avoid repeated remodelling cycles caused by unresolved buildability or specification decisions."
+        }
+      ],
+      "mutualValue": "The advisor gains smoother files, clearer specifications, and clients who are more likely to follow through on performance recommendations. The builder gains access to clients who value quality, comfort, and lifecycle performance rather than selecting purely on lowest upfront price.",
+      "approach": "Offer a technical introduction meeting to compare the builder’s preferred assemblies and mechanical coordination process with the advisor’s modelling workflow, then develop a simple “energy decisions before design lock-in” checklist.",
+      "decisionMaker": "Principal Energy Advisor",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Client checklist on early energy-design decisions",
+        "Co-hosted homeowner webinar on high-performance custom homes",
+        "Design-stage coordination meeting template",
+        "Technical lunch-and-learn for design and estimating teams"
+      ],
+      "digitalAuthority": [
+        "Co-authored article: “Energy modelling decisions to make before finalizing custom home plans”",
+        "Educational webinar recording on efficiency choices for new custom homes"
+      ],
+      "regulatoryNote": "If the advisor is performing verification for a government, utility, or third-party program, avoid any compensation or referral arrangement that could compromise independence or conflict with program rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Energy advisors meet clients with a clear performance-related need, though not all will be choosing a builder at that moment.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Custom design-build work can directly implement the advisor’s recommendations when coordination starts early.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Energy-advisor involvement is common in performance-focused builds but still occasional compared with broader custom-home inquiries.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Performance-minded clients are often serious about quality and may value a capable design-build partner.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Advisors may be independent or program-affiliated, making access possible but sometimes constrained by workload or neutrality requirements.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Advisors see repeated projects, but referrals depend on whether the homeowner lacks a builder or needs design-build guidance.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Early builder involvement improves modelling accuracy, construction execution, and client understanding.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Energy advisors can work regionally, but site visits and local code familiarity still make regional relationships valuable.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is straightforward to discuss but must respect advisor independence and any program requirements.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "registered energy advisor",
+        "home energy modelling consultant",
+        "residential energy advisor"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "home-technology-integrators",
+      "name": "Home technology integrators",
+      "relationshipType": "downstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Home technology integrators encounter custom-home clients when they are planning structured wiring, security, networking, audio, automation, smart lighting, backup power, or future-ready infrastructure. While they are often downstream of builder selection, they can introduce the builder to future prospects when clients ask what it takes to design a custom home that properly supports technology from the beginning.",
+      "rationale": "This relationship makes commercial sense because technology infrastructure is much easier and cleaner to plan before framing, electrical rough-in, and drywall. The builder enhances the client experience by avoiding retrofit compromises, while the integrator gets brought in early enough to design better systems and reduce installation friction.",
+      "triggers": [
+        {
+          "event": "Client asks an integrator about smart home, security, networking, or audio plans before selecting a builder.",
+          "whyNeed": "The client needs a builder who will coordinate low-voltage pathways, equipment locations, conduit, power, and design allowances early.",
+          "whoRecognizes": "Technology consultant, systems designer, or owner at the integration firm.",
+          "referralMoment": "During the initial technology consultation, before the client has committed to a builder or finalized plans.",
+          "partnerValue": "The integrator can protect system quality by ensuring the home is designed to support the technology rather than forcing compromises later."
+        },
+        {
+          "event": "During a build, the homeowner requests automation, cameras, distributed audio, or robust home networking after framing has started.",
+          "whyNeed": "The builder needs a qualified integrator before walls close to avoid rework, change-order frustration, or poor cable routing.",
+          "whoRecognizes": "Builder project manager, electrician, or integrator sales lead.",
+          "referralMoment": "Before electrical and low-voltage rough-in is complete.",
+          "partnerValue": "The integrator receives warmer, better-timed opportunities with access to plans and site coordination."
+        },
+        {
+          "event": "Existing client of the integrator is upgrading technology and mentions plans to build or rebuild on a lot.",
+          "whyNeed": "The client needs early design-build guidance because technology, electrical, mechanical, office, entertainment, and backup-power requirements can affect layout and budget.",
+          "whoRecognizes": "Account manager, service technician, or systems designer.",
+          "referralMoment": "When the client first mentions a future custom home, teardown, or major rebuild rather than waiting until construction begins.",
+          "partnerValue": "The integrator can stay involved in the future home project and avoid being treated as a late-stage add-on."
+        }
+      ],
+      "mutualValue": "The integrator gets earlier involvement, better installation conditions, and fewer last-minute compromises, while the builder delivers a more polished custom-home experience. Both parties can position the home as future-ready without overstepping into each other’s scope.",
+      "approach": "Invite the integrator to review the builder’s typical plan set and construction schedule, then define a standard “technology planning checkpoint” before electrical rough-in.",
+      "decisionMaker": "Owner or Systems Design Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Pre-drywall technology planning checklist",
+        "Client showroom or demo-session invitation",
+        "Joint design consultation at plan-development stage",
+        "Builder-integrator rough-in coordination template"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide: “Smart home decisions to make before framing and wiring”"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Integrators often meet clients after builder selection, but they also hear about future custom-home plans from existing clients.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Their work is highly relevant to custom homes when planned before rough-in and drywall.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Technology requests are recurring in custom-home projects, especially for networking, security, and automation basics.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referrals may lead to full custom-home opportunities or enhance the value and satisfaction of existing builds.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Owners and systems designers in integration firms are usually reachable through practical project coordination discussions.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "A good integrator can be involved repeatedly across custom builds and client upgrades.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both parties benefit strongly from early coordination, cleaner installs, and fewer client disappointments.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Integrators usually operate regionally and need practical access to job sites for installation and service.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A useful partnership can start with a simple coordination checkpoint and preferred communication workflow.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "smart home integrator",
+        "home automation installer",
+        "low voltage systems integrator"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "landscape-designers",
+      "name": "Landscape designers",
+      "relationshipType": "downstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Landscape designers encounter homeowners investing in major property transformation, outdoor living, grading, driveways, drainage, pools, patios, and curb appeal. They are usually downstream of the home design, but they can refer when a homeowner’s exterior plans expose a larger rebuild, addition, or custom-home ambition that needs a design-build partner.",
+      "rationale": "This relationship makes commercial sense because exterior planning is tightly connected to home placement, grading, drainage, entries, garages, outdoor rooms, and construction access. The builder can bring landscape expertise in early for a cohesive site plan, while the designer can protect the exterior vision from being treated as an afterthought.",
+      "triggers": [
+        {
+          "event": "Homeowner asks a landscape designer to plan outdoor living around a future custom home or rebuild.",
+          "whyNeed": "The exterior plan depends on house siting, elevations, grading, drainage, driveway layout, and construction sequencing.",
+          "whoRecognizes": "Landscape designer, design consultant, or owner.",
+          "referralMoment": "Before the homeowner finalizes the home footprint, grading plan, or driveway location.",
+          "partnerValue": "The designer can influence key site decisions early instead of redesigning around fixed constraints later."
+        },
+        {
+          "event": "During a landscape consultation, the homeowner reveals that the existing house may be torn down or substantially rebuilt.",
+          "whyNeed": "The client needs a custom builder to evaluate feasibility, budget, schedule, and whether landscaping should wait until after construction.",
+          "whoRecognizes": "Landscape designer or sales/design lead.",
+          "referralMoment": "As soon as the conversation shifts from landscaping around the current house to changing or replacing the house.",
+          "partnerValue": "The designer avoids preparing plans that will be invalidated by future construction."
+        },
+        {
+          "event": "Builder’s client has preliminary home plans and starts asking about patios, retaining walls, pools, outdoor kitchens, planting, or drainage.",
+          "whyNeed": "The home and site should be coordinated before final grading, utility routing, hardscaping, and exterior access are locked in.",
+          "whoRecognizes": "Builder project manager, designer, or landscape designer.",
+          "referralMoment": "After the home footprint and major elevations are known, but before final grading and exterior finishes are fully committed.",
+          "partnerValue": "The designer gets a better brief, more accurate site information, and a realistic path into the project."
+        }
+      ],
+      "mutualValue": "The landscape designer gains earlier access to site information and avoids rework caused by late grading or access decisions. The builder offers clients a more complete property plan and may receive introductions from designers who hear about rebuild ambitions before a builder is chosen.",
+      "approach": "Set up a short portfolio and process exchange focused on how home siting, grading, and outdoor living decisions should be coordinated, then agree on a referral handoff point for clients considering rebuilds.",
+      "decisionMaker": "Principal Landscape Designer or Design Sales Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Site-planning workshop for homeowners",
+        "Outdoor living planning checklist for custom builds",
+        "Joint concept meeting once home footprint is known",
+        "Newsletter feature on coordinating grading, patios, and entries"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide: “Planning outdoor living before your custom home site plan is finalized”"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Landscape designers meet property-investing homeowners, but many are already past builder selection or focused only on exterior work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Their work strongly complements custom homes where siting, grading, and outdoor living are important.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Outdoor living and site-planning discussions recur often among custom-home and rebuild clients.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Some referrals can surface substantial rebuild or custom-home opportunities, while builder-originated projects can also create value for the designer.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Design principals and sales managers are generally approachable through portfolio reviews and project-coordination discussions.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "The relationship can recur across many projects because most custom homes eventually require exterior planning.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Early coordination improves both the home outcome and the landscape outcome.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Landscape design and installation are highly site-specific and usually regionally delivered.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The partnership can begin informally through shared planning tools and coordinated client meetings.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "landscape designer",
+        "residential landscape design",
+        "outdoor living designer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "aging-in-place-consultants",
+      "name": "Aging-in-place consultants",
+      "relationshipType": "shared_audience",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Aging-in-place consultants often meet older homeowners, adult children, and multigenerational families when the existing home no longer supports accessibility, main-floor living, caregiver support, or future mobility needs. When renovation cannot practically solve layout, structural, lot, or long-term family requirements, the referral opportunity is to introduce a custom home builder for feasibility guidance on teardown-rebuild, infill rebuild, or purpose-designed custom homes.",
+      "rationale": "This relationship makes commercial sense because the consultant identifies the lifestyle and accessibility problem early, before the family has committed to renovation or moving. The builder can help the family evaluate whether a custom rebuild is more practical than retrofitting, while the consultant remains valuable by shaping accessibility requirements that should be integrated into the design-build process.",
+      "triggers": [
+        {
+          "event": "An older homeowner wants to remain in the home but needs main-floor living, barrier-free entries, wider circulation, or accessible bathrooms.",
+          "whyNeed": "The existing structure may not have the footprint, ceiling heights, stair configuration, or cost-effective layout to support safe long-term aging in place.",
+          "whoRecognizes": "Aging-in-place consultant, accessibility consultant, occupational therapist, or adult children involved in planning.",
+          "referralMoment": "After the consultant identifies that renovation options may be limited or disproportionately expensive, but before the family chooses a contractor or designer.",
+          "partnerValue": "The consultant can provide a more complete solution path, stay involved in accessibility planning, and avoid leaving the family with a recommendation that the existing home cannot support."
+        },
+        {
+          "event": "A family is considering a multigenerational home with space for parents, adult children, or live-in caregiving.",
+          "whyNeed": "They may need a custom layout, privacy zones, accessible suites, extra parking, and design decisions that are difficult to achieve in a standard renovation.",
+          "whoRecognizes": "Aging-in-place consultant, family care planner, or accessibility-focused design advisor.",
+          "referralMoment": "When the family begins comparing renovation, addition, teardown-rebuild, and new custom build options.",
+          "partnerValue": "The consultant can help the family plan for care, dignity, safety, and independence while the builder handles feasibility, design-build coordination, and construction planning."
+        },
+        {
+          "event": "A post-injury, mobility, or progressive health change prompts a household to reassess whether their home can support future needs.",
+          "whyNeed": "Urgent accessibility needs often reveal deeper design constraints that may make a rebuild or custom home a better long-term option than piecemeal modifications.",
+          "whoRecognizes": "Accessibility consultant, occupational therapist, discharge planner, or family caregiver coordinating home changes.",
+          "referralMoment": "Once immediate safety issues are addressed and the family is ready to plan a durable housing solution.",
+          "partnerValue": "The consultant can protect the client from short-term fixes that fail later and can contribute professional accessibility requirements to the build brief."
+        }
+      ],
+      "mutualValue": "The partner gains a trusted construction feasibility resource for clients whose needs exceed simple modifications, while the builder gains early access to families making high-stakes decisions about whether to renovate, rebuild, or build new. Joint education also helps both parties position themselves as planning advisors rather than just service vendors.",
+      "approach": "Invite the consultant to review a short, non-sales educational checklist comparing accessibility renovation, teardown-rebuild, and custom home planning, then propose a joint seminar or client planning guide for families evaluating long-term housing options.",
+      "decisionMaker": "Principal Consultant or Accessibility Services Director",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Joint family education workshop on renovation vs rebuild for aging in place",
+        "Co-authored accessibility planning checklist for custom homes",
+        "Webinar for adult children helping parents evaluate housing options",
+        "Design consultation handoff process for clients who need construction feasibility input"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on when accessibility needs point to a rebuild instead of a renovation",
+        "Educational video or webinar explaining design-build considerations for multigenerational and aging-in-place homes"
+      ],
+      "regulatoryNote": "If the partner is a regulated healthcare professional, such as an occupational therapist, avoid referral fees, commissions, exclusivity, or anything that could compromise professional judgment or patient choice.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "These consultants encounter families at the moment a home no longer fits physical, caregiving, or long-term lifestyle needs.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Custom design-build and infill rebuilds are highly relevant when accessibility or multigenerational needs cannot be solved well through renovation alone.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "The need is meaningful but occasional, because only some accessibility planning clients will consider a full custom build or teardown-rebuild.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "When a fit exists, the project can align strongly with high-value custom home or rebuild work.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Independent consultants may be approachable, but healthcare-adjacent professionals can be cautious about referral relationships.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Referrals may recur over time, though not at the volume of broader home improvement or real estate channels.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both parties help families make better long-term housing decisions and can each remain involved in their area of expertise.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Accessibility and aging-in-place decisions are local because the home, lot, permitting, and family support network are tied to the service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "A relationship is practical to start with education-first collaboration, but trust and compliance boundaries must be handled carefully.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "aging in place consultant",
+        "accessibility consultant",
+        "occupational therapist home assessment"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "home-show-organizers",
+      "name": "Home show organizers",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Home show organizers gather residents who are actively exploring building, renovating, land, financing, design, and materials options. The referral opportunity is not a one-to-one referral from the organizer, but recurring access to motivated attendees through booths, seminars, panel discussions, and show content that helps families understand the custom build journey.",
+      "rationale": "This relationship makes commercial sense because home shows concentrate early-stage and mid-stage prospects who may not yet know whether to renovate, rebuild, or build on their own lot. The builder can educate attendees on feasibility, budgeting, timelines, and design-build process, while the organizer improves the quality and usefulness of show programming.",
+      "triggers": [
+        {
+          "event": "A family attends a home show after buying or inheriting land, or while considering building on an owned lot.",
+          "whyNeed": "They need guidance on design-build steps, site feasibility, budgeting, permitting, servicing, and how to select a builder before making costly decisions.",
+          "whoRecognizes": "Show organizer, exhibitor coordinator, seminar programmer, or attendee services staff.",
+          "referralMoment": "When the attendee asks for builder education, custom home guidance, or a seminar on building from scratch.",
+          "partnerValue": "The organizer provides practical content that increases attendee satisfaction and strengthens the show’s reputation as more than a vendor marketplace."
+        },
+        {
+          "event": "A teardown-rebuild buyer attends a show to compare renovation, addition, and new build options.",
+          "whyNeed": "They may not yet understand when an infill rebuild is more suitable than renovating an older home with structural, layout, or efficiency limitations.",
+          "whoRecognizes": "Seminar host, show floor staff, renovation exhibitors, or organizer managing attendee questions.",
+          "referralMoment": "During pre-show content planning, live seminars, or post-session follow-up resources for attendees seeking custom build planning.",
+          "partnerValue": "The organizer can offer a clearer planning pathway for attendees with complex projects, improving the educational value of the event."
+        },
+        {
+          "event": "Local residents attend the show seeking design inspiration, financing contacts, materials, or energy-efficient home ideas.",
+          "whyNeed": "Inspiration creates a need for a qualified build-planning resource who can translate preferences into a feasible custom home scope.",
+          "whoRecognizes": "Show organizer, stage programming manager, or exhibitor relations manager.",
+          "referralMoment": "When creating themed sessions, show guides, email features, or homeowner planning resources before and after the event.",
+          "partnerValue": "The organizer gains relevant expert content and can promote sessions that attract higher-intent attendees."
+        }
+      ],
+      "mutualValue": "The organizer gains credible educational programming and practical resources that make the event more useful for attendees, while the builder gains repeated visibility with homeowners actively researching construction decisions. The relationship works best when framed as attendee education rather than a request for preferential referrals.",
+      "approach": "Contact the exhibitor or programming manager with a concise proposal for a non-sales seminar, such as “What to Know Before Building on Your Own Lot” or “Renovate or Rebuild: How to Decide,” and offer a practical attendee checklist.",
+      "decisionMaker": "Show Manager or Exhibitor Relations Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Educational booth with build-planning checklist",
+        "Seminar on building on your own lot",
+        "Panel discussion on renovate vs rebuild vs custom home",
+        "Pre-show or post-show email feature with planning tips"
+      ],
+      "digitalAuthority": [
+        "Guest educational article for the show website on questions to ask before choosing a custom builder",
+        "Recorded seminar or recap resource shared through the show’s attendee newsletter"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Home shows attract people who are actively exploring home improvement, building, and design decisions, though not all are ready for a custom build.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Custom homes, design-build, and infill rebuild education fits naturally within home show programming.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Shows are recurring but seasonal or periodic rather than continuous.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "A small number of well-qualified attendees can represent substantial custom build opportunities.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Event managers and exhibitor coordinators are usually identifiable and accustomed to discussing participation formats.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Annual or recurring events allow repeated visibility, refreshed seminars, and follow-up content.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The organizer benefits from stronger educational content while the builder reaches attendees during active research.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Regional home shows are highly aligned with a local custom builder’s service area and buyer geography.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship is straightforward to initiate through exhibitor participation or a programming proposal.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "home show organizer",
+        "home and garden show exhibitor",
+        "home show seminar program"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "building-supply-showrooms",
+      "name": "Building supply showrooms",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Building supply showrooms encounter landowners and teardown-rebuild buyers while they are browsing windows, kitchens, exterior products, flooring, fixtures, or other selections before they have fully chosen a builder. The referral opportunity is for showroom staff to direct serious customers toward build-planning resources when product choices reveal a larger custom home or rebuild project.",
+      "rationale": "This relationship makes commercial sense because showrooms see early buying signals: customers asking about whole-home packages, premium materials, installation sequencing, energy performance, or design coordination. A qualified builder can turn product interest into a properly planned project, and the showroom benefits when products are specified, ordered, and installed within a well-managed build.",
+      "triggers": [
+        {
+          "event": "A landowner visits a showroom to select windows, exterior materials, kitchen products, or fixtures for a future custom home.",
+          "whyNeed": "They may be choosing products before understanding the design-build process, specifications, budget implications, or construction sequencing.",
+          "whoRecognizes": "Showroom manager, design consultant, sales representative, or contractor desk staff.",
+          "referralMoment": "When the customer says they are building on their own lot but has not yet selected a builder or finalized plans.",
+          "partnerValue": "The showroom can help the customer avoid mis-specified products and increase the chance that its materials are included in a professionally managed build."
+        },
+        {
+          "event": "A homeowner planning a teardown-rebuild asks about full-house material packages, high-performance windows, exterior cladding, or kitchen and bath selections.",
+          "whyNeed": "Their questions indicate a project larger than a simple product purchase and a need for builder-led feasibility, estimating, and coordination.",
+          "whoRecognizes": "Showroom sales consultant, kitchen and bath designer, window and door specialist, or account manager.",
+          "referralMoment": "Before the customer commits to detailed selections or pricing that may not fit the eventual build scope.",
+          "partnerValue": "The showroom protects customer satisfaction by connecting them with a builder who can integrate products correctly and manage realistic timelines."
+        },
+        {
+          "event": "A customer arrives with inspiration images but no construction drawings, specifications, or confirmed build budget.",
+          "whyNeed": "They need a design-build process to translate preferences into feasible plans, allowances, and product specifications.",
+          "whoRecognizes": "Design showroom consultant, product specialist, or estimating desk representative.",
+          "referralMoment": "When the showroom identifies that product selection is premature without a builder, drawings, or project scope.",
+          "partnerValue": "The showroom can maintain credibility by guiding the customer to the right next step instead of providing unreliable quotes or selections."
+        }
+      ],
+      "mutualValue": "The showroom gains better-qualified projects, fewer unrealistic product inquiries, and a higher likelihood that its products are specified correctly. The builder gains early visibility with customers making material and design decisions, plus access to product expertise that can improve client selections and project planning.",
+      "approach": "Meet with the showroom manager to create a simple “when to involve a builder” handout for customers planning a new home or rebuild, and offer to train showroom staff on early indicators of a serious custom build prospect.",
+      "decisionMaker": "Showroom Manager or Trade Sales Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Staff lunch-and-learn on custom build planning triggers",
+        "Customer selection night focused on material choices within a design-build process",
+        "Co-branded build-planning checklist for showroom visitors",
+        "Preferred process handoff for customers who need drawings, budgeting, and builder coordination"
+      ],
+      "digitalAuthority": [
+        "Educational showroom blog or guide on why product selections should align with the build plan",
+        "Joint video explaining how early material choices affect custom home budgets and timelines"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Showrooms often meet customers when product research reveals a broader building or rebuild project.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Custom homes and design-build projects depend heavily on coordinated product specification, selection, and installation planning.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Showrooms receive a steady flow of homeowners, landowners, and project planners, though only a portion are custom build prospects.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "A showroom-originated introduction can connect to a substantial whole-home build or infill rebuild project.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Showroom and trade sales managers are usually reachable and commercially motivated to build contractor relationships.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "The showroom has ongoing customer traffic and repeated opportunities to identify early-stage build needs.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both parties benefit when customers receive realistic planning guidance and products are specified within a viable construction process.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Regional showrooms tend to serve the same homeowners, lots, and contractors as the builder, though some may draw from a wider area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A practical relationship can begin with staff education, handouts, and informal handoff guidelines without complex setup.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "building supply showroom",
+        "kitchen and bath showroom",
+        "window and door showroom"
+      ],
+      "existingRelationship": false
+    }
+  ],
+  "assumptions": [
+    "Customer journey used for the analysis: Own or search for a lot, acreage, or teardown property. → Test feasibility: zoning, servicing, surveys, budget, financing, and permits. → Choose delivery model and shortlist builders/design partners. → Develop concept, specifications, selections, and construction budget. → Demolish or prepare the site, then build and manage inspections. → Move in, finish interiors/landscape/technology, and plan future upgrades..",
+    "Custom builds start long before construction: with a land purchase, a severance, financing, or a design. Builders who are present at those decisions win projects without competing on price alone.",
+    "No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing."
+  ],
+  "guardrails": [
+    {
+      "title": "Partnerships are not paid-referral arrangements",
+      "body": "This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals."
+    },
+    {
+      "title": "Outreach in Canada: CASL applies",
+      "body": "Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA)."
+    },
+    {
+      "title": "No automated outreach",
+      "body": "This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline."
+    }
+  ]
+}

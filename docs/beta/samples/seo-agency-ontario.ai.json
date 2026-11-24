@@ -1,0 +1,1571 @@
+{
+  "id": "505e22b0-8ef2-4fad-8291-7cbbfb8d1b17",
+  "createdAt": "2026-11-23T23:26:13.814Z",
+  "isDemo": false,
+  "profile": {
+    "displayName": "Sample SEO Agency (illustrative)",
+    "website": null,
+    "industry": "SEO and digital marketing agency",
+    "services": [
+      "Local SEO",
+      "technical SEO",
+      "content",
+      "website migrations",
+      "Google Business Profile",
+      "paid search"
+    ],
+    "serviceArea": "Ontario, Canada (clients across Canada)",
+    "geography": {
+      "country": "CA",
+      "region": "Ontario",
+      "scope": "national"
+    },
+    "idealCustomer": "Local service businesses, law firms and home-service contractors",
+    "customerSegments": [
+      "Local service businesses",
+      "law firms",
+      "home-service contractors"
+    ],
+    "projectValue": null,
+    "targetIndustries": [],
+    "growthPriority": "higher_value",
+    "existingReferrals": [],
+    "expansionMarkets": []
+  },
+  "engine": {
+    "mode": "ai",
+    "provider": "openai",
+    "model": "gpt-5.5",
+    "archetypeId": "marketing-agency",
+    "archetypeLabel": "Marketing, SEO & creative agency",
+    "matchConfidence": "high",
+    "notes": [],
+    "version": "1.0.0",
+    "costUsd": 0.59371
+  },
+  "categories": [
+    {
+      "id": "web-development-agencies",
+      "name": "Web development agencies",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Web development agencies encounter local service businesses, law firms, and contractors when a site is being redesigned, rebuilt, replatformed, or migrated. These projects create immediate SEO risk around redirects, information architecture, page speed, tracking, local landing pages, and Google Business Profile continuity, so the referral opportunity is strongest during discovery and scoping before design and development decisions are locked.",
+      "rationale": "This relationship makes commercial sense because poor SEO outcomes after launch often get blamed on the web developer, even when SEO was not in scope. A trusted SEO partner helps protect launch quality, reduces post-launch complaints, and creates reciprocal opportunities when SEO clients need design, development, conversion, or migration support.",
+      "triggers": [
+        {
+          "event": "Website redesign or rebuild proposal",
+          "whyNeed": "Design, navigation, copy, URL structure, and template choices can materially affect organic visibility and local conversion performance.",
+          "whoRecognizes": "Agency owner, account director, project manager, or UX lead.",
+          "referralMoment": "During discovery or proposal scoping, before the sitemap, platform, and budget are finalized.",
+          "partnerValue": "The developer can offer a safer launch plan and avoid being blamed for traffic or lead declines after launch."
+        },
+        {
+          "event": "CMS migration, domain change, or site consolidation",
+          "whyNeed": "Migrations require redirect mapping, indexation controls, analytics continuity, technical QA, and post-launch monitoring to prevent avoidable ranking loss.",
+          "whoRecognizes": "Technical lead, solutions architect, project manager, or web development director.",
+          "referralMoment": "As soon as migration scope is identified, before development tickets and launch timelines are finalized.",
+          "partnerValue": "The developer gets specialist support for a high-risk area while keeping the client’s confidence in the overall project."
+        },
+        {
+          "event": "New location, new practice area, or new service-line pages added to the website",
+          "whyNeed": "Local SEO, service-page structure, content strategy, internal linking, and Google Business Profile alignment are needed to turn new pages into qualified search visibility.",
+          "whoRecognizes": "Account manager, content strategist, project manager, or agency principal.",
+          "referralMoment": "When the content brief or site architecture is being planned.",
+          "partnerValue": "The developer can expand the strategic value of the build without needing to maintain a full SEO team in-house."
+        }
+      ],
+      "mutualValue": "The web agency gains a specialist who reduces launch risk, improves client satisfaction, and can refer back clients needing design, development, landing pages, speed improvements, or conversion-focused site work. The SEO agency gains early access to high-intent projects where technical decisions can still be influenced.",
+      "approach": "Offer a short migration-risk or redesign SEO checklist review for one active or recent project, then propose a simple referral and collaboration workflow for future builds without requiring exclusivity or referral fees.",
+      "decisionMaker": "Agency Principal or Director of Client Services",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Pre-launch SEO QA checklist for redesign projects",
+        "Joint website migration planning workshop",
+        "Shared redesign discovery template covering SEO, tracking, and local pages",
+        "Post-launch performance review session for mutual clients"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on how to redesign a service-business website without losing local search visibility",
+        "Joint webinar on website migrations, redirects, tracking, and SEO risk management"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Developers encounter the SEO need at the exact moment site decisions can create or prevent ranking and tracking problems.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Technical SEO, migrations, content structure, local pages, and tracking are directly relevant to web development projects.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Redesigns and migrations are common enough across agencies, though each individual client may only rebuild periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Migration and redesign SEO work is high-value because the risk, urgency, and complexity are significant.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Agency owners and client service leads are usually reachable through professional networks, events, and direct outreach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "A single web agency can create repeated opportunities across multiple client builds and retainers.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both sides can protect client outcomes and refer complementary work without competing directly.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Web agencies serving Ontario or Canadian service businesses align well with the agency’s local and national scope.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The value proposition is easy to explain, though trust must be built because both parties affect the client’s website.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "web development agency",
+        "website migration agency",
+        "custom website design agency"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "fractional-cmos",
+      "name": "Fractional CMOs",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Fractional CMOs advise growing law firms, home-service contractors, and other local service businesses that have outgrown ad hoc marketing but are not ready for a full in-house leadership team. They often define the channel strategy and need dependable execution partners for local SEO, technical SEO, content, paid search, reporting, and website changes.",
+      "rationale": "This relationship makes commercial sense because the fractional CMO owns strategy but often needs a trusted implementation team to deliver measurable channel progress. The SEO agency benefits from warm strategic introductions, while the CMO strengthens client outcomes without hiring specialists internally.",
+      "triggers": [
+        {
+          "event": "Marketing plan identifies organic search or local visibility as a growth channel",
+          "whyNeed": "The client needs execution across keyword strategy, local landing pages, Google Business Profile, technical fixes, content, and measurement.",
+          "whoRecognizes": "Fractional CMO, marketing advisor, or growth strategist.",
+          "referralMoment": "Immediately after channel priorities are set and before budgets are assigned to vendors or internal hires.",
+          "partnerValue": "The CMO can move from strategy to implementation quickly with a specialist team they can coordinate."
+        },
+        {
+          "event": "Client has poor lead quality or inconsistent inbound pipeline",
+          "whyNeed": "SEO and paid search can target higher-intent service, practice-area, and local queries that better match the client’s profitable work.",
+          "whoRecognizes": "Fractional CMO reviewing CRM, call, form, and campaign performance data.",
+          "referralMoment": "When diagnosing acquisition gaps and before launching disconnected campaigns.",
+          "partnerValue": "The CMO gains a credible execution path for improving pipeline quality rather than only recommending strategy changes."
+        },
+        {
+          "event": "Client’s existing agency or internal marketer cannot handle technical SEO or reporting depth",
+          "whyNeed": "Complex audits, migrations, structured local content, analytics setup, and paid search optimization may exceed the current team’s capabilities.",
+          "whoRecognizes": "Fractional CMO, marketing operations lead, or consultant managing vendors.",
+          "referralMoment": "During vendor evaluation, quarterly planning, or performance review.",
+          "partnerValue": "The CMO can solve a capability gap while retaining strategic oversight of the client relationship."
+        }
+      ],
+      "mutualValue": "Fractional CMOs get a responsive execution partner who helps them deliver on growth plans, simplify vendor management, and preserve their strategic credibility. The SEO agency gets earlier involvement in budgeted marketing plans and access to clients that value strategic, higher-quality growth work.",
+      "approach": "Create a concise partner briefing that shows how the agency supports a CMO-led engagement, including onboarding inputs, reporting cadence, channel responsibilities, and examples of when to involve SEO before decisions are finalized.",
+      "decisionMaker": "Fractional CMO or Managing Partner",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Private partner briefing on SEO and paid search execution for CMO-led clients",
+        "Quarterly planning workshop for shared clients",
+        "Co-created channel prioritization checklist",
+        "Guest session for the CMO’s client education program"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on when growing service firms should invest in local SEO versus paid search",
+        "Joint webinar on building a measurable demand-generation plan for service businesses"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Fractional CMOs encounter the need while defining strategy, budgets, and vendor requirements.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The agency’s services map directly to the execution gaps fractional CMOs commonly need to fill.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "A fractional CMO may manage several clients at once and revisit channel needs during planning cycles.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "CMO-led clients are more likely to have budget, strategic intent, and appetite for higher-value implementation.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Independent CMOs and boutique advisory groups are generally approachable through professional communities and targeted outreach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "A strong CMO relationship can generate repeated referrals across multiple client portfolios over time.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The CMO gains execution capacity while the agency gains strategically qualified opportunities.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Many fractional CMOs work remotely or nationally, which fits a Canadian client scope, though local market familiarity may vary.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The partnership is straightforward if roles, client ownership, and reporting expectations are clearly defined.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "fractional CMO",
+        "outsourced CMO",
+        "marketing leadership consultant"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "business-growth-consultants",
+      "name": "Business growth consultants",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Business growth consultants work with owners when revenue is stalled, margins are under pressure, lead quality is weak, or growth depends too heavily on referrals and word of mouth. They can identify the need for a measurable acquisition system before the client spends on isolated marketing tactics, making them a useful upstream referral source for SEO, local search, content, and paid search.",
+      "rationale": "This relationship makes commercial sense because growth consultants diagnose commercial bottlenecks but may not implement digital demand-generation programs themselves. An SEO and digital marketing partner gives them a practical lever to support the growth plan, while the agency gains access to business owners who already recognize a strategic problem.",
+      "triggers": [
+        {
+          "event": "Owner reports stalled growth despite strong operations or reputation",
+          "whyNeed": "The business may have demand-generation weakness, low search visibility, underdeveloped service pages, or insufficient paid search coverage for high-intent queries.",
+          "whoRecognizes": "Business growth consultant, business coach, or strategic advisor.",
+          "referralMoment": "During growth diagnosis, before the owner commits to sales hires, rebranding, or disconnected marketing spend.",
+          "partnerValue": "The consultant can connect strategic advice to a practical acquisition channel that supports the growth plan."
+        },
+        {
+          "event": "Expansion into a new service area, city, or practice niche",
+          "whyNeed": "Local SEO, Google Business Profile optimization, location/service pages, content, and paid search can help establish visibility in the new market.",
+          "whoRecognizes": "Growth consultant, expansion advisor, or operations consultant.",
+          "referralMoment": "When the expansion plan and budget are being built, before launch timelines and marketing spend are finalized.",
+          "partnerValue": "The consultant improves the client’s odds of entering the market with a credible lead-generation plan."
+        },
+        {
+          "event": "Client is overreliant on referrals, repeat work, or a small number of accounts",
+          "whyNeed": "The business needs diversified inbound acquisition and better visibility for high-value services rather than relying solely on personal networks.",
+          "whoRecognizes": "Business growth consultant reviewing revenue mix, pipeline sources, and customer concentration.",
+          "referralMoment": "When risk in the revenue model is identified and before the client chooses tactical vendors.",
+          "partnerValue": "The consultant can address a strategic risk with a measurable marketing channel partner."
+        }
+      ],
+      "mutualValue": "Growth consultants can offer clients a credible execution resource for demand generation, making their advice more actionable and measurable. The agency gets introductions to owners who are already discussing growth, budget allocation, positioning, and lead quality rather than just shopping for low-cost marketing tasks.",
+      "approach": "Invite a small group of consultants to a practical roundtable on diagnosing whether a service business has a marketing-channel problem, a positioning problem, or a sales-conversion problem, then follow up with a referral framework.",
+      "decisionMaker": "Principal Consultant or Managing Partner",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Diagnostic workshop on revenue growth and digital demand generation",
+        "Co-authored growth audit checklist",
+        "Client education webinar on reducing overreliance on referrals",
+        "Joint planning session for expansion or new-market launches"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on diagnosing lead-generation bottlenecks in service businesses",
+        "Newsletter feature explaining when SEO is a growth lever versus when the issue is sales or positioning"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Growth consultants often uncover demand-generation gaps early, though they may not always inspect marketing channels in detail.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "SEO, content, local visibility, and paid search are relevant when the diagnosed growth constraint is acquisition or lead quality.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Consultants regularly encounter owners with pipeline and expansion challenges across engagements.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Clients working with growth advisors often have meaningful commercial intent, though marketing budgets may vary.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Independent consultants and small advisory firms are usually reachable through business networks, events, and direct outreach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "A consultant with multiple active clients can create recurring introductions when marketing execution gaps appear.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The consultant gains an implementation path, and the agency gains strategically framed opportunities.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Ontario and Canada-wide consultants serving local businesses align well with the agency’s target market.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "It requires education because some consultants may be wary of introducing marketing vendors without a clear diagnostic fit.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "business growth consultant",
+        "business coach for service businesses",
+        "revenue growth consultant"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "accountants-and-cfos",
+      "name": "Accountants and CFOs",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Accountants, fractional CFOs, and finance advisors see budget cycles, margin pressure, expansion plans, and cash-flow capacity before many marketing vendors are considered. They may recognize that a law firm, contractor, or local service business can afford higher-value marketing but lacks measurable acquisition channels, making the referral opportunity strongest before annual budgets, new-location investments, or major growth spending are approved.",
+      "rationale": "This relationship makes commercial sense when financial advisors are helping clients allocate capital toward growth and want marketing spend tied to measurement, margin, and accountability. The agency benefits from financially qualified introductions, while the advisor helps clients avoid underplanned or poorly measured acquisition investments.",
+      "triggers": [
+        {
+          "event": "Annual budgeting or forecasting shows capacity for growth investment",
+          "whyNeed": "The business may be ready to invest in SEO, content, local visibility, or paid search but needs a measurable channel plan before funds are committed.",
+          "whoRecognizes": "Accountant, fractional CFO, controller, or finance advisor.",
+          "referralMoment": "Before the marketing budget is finalized or allocated to disconnected vendors.",
+          "partnerValue": "The advisor helps the client make a more disciplined growth investment with clearer measurement expectations."
+        },
+        {
+          "event": "New location, new market, or acquisition planning",
+          "whyNeed": "Expansion increases the need for location pages, Google Business Profile setup, local search visibility, technical site structure, tracking, and paid search testing.",
+          "whoRecognizes": "Fractional CFO, accountant, or finance lead reviewing capital requirements and projected revenue.",
+          "referralMoment": "During expansion planning, before lease, staffing, launch, or advertising commitments are locked.",
+          "partnerValue": "The advisor supports a more complete expansion plan by including customer acquisition alongside financial planning."
+        },
+        {
+          "event": "Marketing spend is rising but revenue attribution or lead quality is unclear",
+          "whyNeed": "The client needs better tracking, channel prioritization, paid search discipline, and SEO reporting to evaluate whether marketing spend supports profitable growth.",
+          "whoRecognizes": "Fractional CFO, accountant, controller, or bookkeeper reviewing expenses and performance trends.",
+          "referralMoment": "During budget review, monthly reporting, or margin analysis before cutting spend or increasing it blindly.",
+          "partnerValue": "The advisor can help the client improve decision quality rather than simply flagging marketing as a cost problem."
+        }
+      ],
+      "mutualValue": "Finance professionals can help clients make better-informed marketing investments, protect cash flow, and evaluate spend through a measurement lens. The agency gains introductions to businesses with budget capacity and a need for accountable acquisition channels, while respecting the advisor’s professional obligations and independence.",
+      "approach": "Develop a non-promotional briefing for accountants and fractional CFOs on what financially disciplined SEO and paid search planning should include, with a checklist they can use when clients ask about marketing budgets.",
+      "decisionMaker": "Fractional CFO, Partner, or Client Advisory Services Director",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Budget-planning checklist for SEO and paid search investment",
+        "Educational session on marketing metrics finance teams should request",
+        "Joint client planning meeting focused on expansion-readiness",
+        "Advisor briefing on evaluating marketing spend without choosing tactics prematurely"
+      ],
+      "digitalAuthority": [
+        "Educational article on what finance teams should ask before approving SEO or paid search budgets",
+        "Co-authored resource on planning customer-acquisition spend for a new service area or location"
+      ],
+      "regulatoryNote": "Accountants, CFOs, and other financial professionals may be subject to independence, conflict-of-interest, disclosure, client-confidentiality, and professional conduct rules; avoid assuming referral fees, commissions, endorsements, or exclusive arrangements are permitted.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Finance advisors see budget and expansion triggers early, though they may not always identify the specific marketing solution.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "SEO and paid search are relevant when the client has growth budget and needs measurable acquisition channels.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "The need tends to appear around budgeting, expansion, or spend reviews rather than continuously.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referrals can be high-value because the client has financial capacity and is considering growth investment.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable, but professional caution and client confidentiality can make partnership discussions slower.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Opportunities can recur across a client portfolio but are more episodic than with marketing or web partners.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The advisor gains a responsible resource for clients’ growth planning, and the agency gains financially qualified prospects.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Ontario and Canada-wide finance advisors often serve the same local service-business and professional-services market.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship requires careful positioning around education and client value rather than referral compensation.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "fractional CFO",
+        "accounting advisory services",
+        "client advisory services accountant"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "commercial-real-estate-advisors",
+      "name": "Commercial real estate advisors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Commercial real estate advisors encounter local businesses when they lease, buy, relocate, expand, or open a second location. These moments often create local-search risk and opportunity: Google Business Profile changes, address consistency, local landing pages, service-area visibility, and launch advertising should be planned before the move is public or the new location opens.",
+      "rationale": "Relocation and expansion are commercially meaningful events for local service businesses, law firms, and contractors, and search visibility can directly affect whether the new location generates enquiries. The advisor benefits when tenants or buyers have a smoother market entry and can begin attracting customers quickly after occupancy.",
+      "triggers": [
+        {
+          "event": "New lease or office relocation is signed",
+          "whyNeed": "The business must update address signals, Google Business Profile information, local citations, website location pages, tracking, and paid search targeting without losing existing rankings or confusing customers.",
+          "whoRecognizes": "Leasing advisor, tenant representation advisor, commercial real estate broker, or client services lead.",
+          "referralMoment": "After the lease is conditionally agreed or signed, but before the move is announced and before online profiles are updated.",
+          "partnerValue": "The advisor helps the client avoid visibility disruption and reinforces their role as a strategic expansion partner rather than only a transaction facilitator."
+        },
+        {
+          "event": "Second location or new service-area expansion is being planned",
+          "whyNeed": "The client needs local SEO planning, new landing pages, launch campaigns, GBP setup or optimization, and location-specific tracking to generate demand in the new market.",
+          "whoRecognizes": "Commercial real estate advisor or expansion consultant working with the business owner or managing partner.",
+          "referralMoment": "During site selection or build-out planning, before signage, announcements, and advertising go live.",
+          "partnerValue": "A stronger launch outcome makes the location decision look more successful and can improve client satisfaction with the advisor’s guidance."
+        },
+        {
+          "event": "Business moves into a higher-profile retail, office, or industrial location",
+          "whyNeed": "The business may need to realign digital messaging, map visibility, conversion tracking, local landing pages, and paid search campaigns to capture demand from the new catchment area.",
+          "whoRecognizes": "Commercial real estate advisor, landlord representative, or occupancy coordinator.",
+          "referralMoment": "When possession dates and launch timelines are known.",
+          "partnerValue": "The advisor can provide practical post-transaction support that helps the client activate the value of the new premises."
+        }
+      ],
+      "mutualValue": "The agency helps the advisor’s clients make relocations and expansions commercially successful, while the advisor introduces the agency at a moment when the client has an urgent, concrete marketing need. The relationship can also produce practical educational material that helps business owners avoid relocation-related search mistakes.",
+      "approach": "Create a short “digital checklist for business relocations and new locations” and offer it as a value-add resource for advisors to share with clients during lease or purchase milestones.",
+      "decisionMaker": "Managing Broker or Principal Advisor",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Relocation SEO checklist for tenants and buyers",
+        "Short briefing session for advisor teams on digital risks during moves",
+        "Co-authored guide on opening a new local business location",
+        "Private consultation hours for clients approaching occupancy"
+      ],
+      "digitalAuthority": [
+        "Co-authored educational article on digital due diligence before relocating a business",
+        "Webinar on how businesses can protect local visibility during a move"
+      ],
+      "regulatoryNote": "Real estate referrals and inducements may be regulated; avoid assuming referral fees, exclusivity, or endorsements, and structure any collaboration as compliant education or client support.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Advisors encounter businesses before a move or expansion creates public-facing digital changes.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Relocation, new locations, and address changes map directly to local SEO, Google Business Profile, citations, content, and paid search needs.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Major commercial real estate events are occasional rather than constant for any one advisor.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Clients expanding or relocating often have meaningful budgets and a strong need to protect lead flow.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable through professional networks, but trust usually needs to be built before referrals occur.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "Individual clients may not relocate often, though advisors may see a steady flow across their client base.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The advisor improves client outcomes while the agency receives introductions at a high-intent planning stage.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "The category is highly relevant to Ontario and Canadian local businesses with physical or service-area presence.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The concept is easy to explain, but compliance and relationship trust require a careful, non-transactional approach.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "commercial real estate advisor",
+        "tenant representation advisor",
+        "commercial leasing broker"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "trademark-lawyers",
+      "name": "Trademark lawyers",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Trademark lawyers encounter businesses before naming decisions, rebrands, domain changes, and brand disputes become public. These events can unintentionally damage organic visibility if redirects, content migration, search demand, local profiles, and paid search messaging are not planned alongside the legal brand work.",
+      "rationale": "A name change or forced rebrand can carry significant commercial risk, especially for firms and contractors that rely on search visibility and brand recognition. The relationship makes sense because legal clearance and digital transition planning are complementary safeguards around the same business event.",
+      "triggers": [
+        {
+          "event": "Client is clearing a new business or service brand name",
+          "whyNeed": "The business may need SEO input on search demand, domain selection, URL structure, content implications, and local profile naming before committing to the brand.",
+          "whoRecognizes": "Trademark lawyer, intellectual property lawyer, or brand protection counsel.",
+          "referralMoment": "Before the client finalizes the new name, buys domains, launches the website, or updates public profiles.",
+          "partnerValue": "The lawyer helps the client avoid a legally sound but commercially weak or disruptive brand transition."
+        },
+        {
+          "event": "Client must rebrand because of a trademark conflict or cease-and-desist issue",
+          "whyNeed": "A forced name or domain change can cause ranking loss, broken redirects, duplicate listings, customer confusion, and paid search inefficiency if not managed carefully.",
+          "whoRecognizes": "Trademark lawyer or litigation counsel handling the dispute or settlement.",
+          "referralMoment": "As soon as a rebrand timeline is being negotiated or planned, before any site or profile changes occur.",
+          "partnerValue": "The lawyer can reduce downstream business harm and demonstrate practical concern for the client’s revenue continuity."
+        },
+        {
+          "event": "Client changes domain, entity name, or trade name after trademark advice",
+          "whyNeed": "The website, Google Business Profile, citations, analytics, Search Console, content, and ads need to be updated in a coordinated way to preserve visibility and attribution.",
+          "whoRecognizes": "Trademark lawyer, corporate lawyer, or paralegal coordinating brand filings and client communications.",
+          "referralMoment": "Before the new domain or business name goes live publicly.",
+          "partnerValue": "The legal team avoids being blamed for avoidable digital fallout after a necessary legal change."
+        }
+      ],
+      "mutualValue": "The agency helps clients implement legally driven brand changes without unnecessary visibility loss, while the lawyer offers more complete risk management around naming decisions. Joint education can help business owners understand that legal clearance and digital migration planning should happen together.",
+      "approach": "Offer a concise briefing for trademark lawyers on “SEO risks during rebrands and domain changes,” including a checklist they can share when clients are considering or forced into a name change.",
+      "decisionMaker": "Trademark Lawyer or Intellectual Property Partner",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Rebrand risk checklist for trademark clients",
+        "Lunch-and-learn for IP and trademark teams",
+        "Co-authored client guide on legal and SEO considerations before changing a business name",
+        "Webinar on protecting brand equity during a forced rebrand"
+      ],
+      "digitalAuthority": [
+        "Co-authored educational article on trademark-driven rebrands and search visibility",
+        "Joint webinar on domain changes, trademarks, and preserving online demand"
+      ],
+      "regulatoryNote": "Legal referrals are regulated; avoid referral fees, exclusivity, client steering, or any arrangement that could compromise professional independence or client choice.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Trademark lawyers often know about rebrands and naming problems before the public or marketing vendors do.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Domain changes, rebrands, and name conflicts are directly relevant to technical SEO, content migration, local SEO, and paid search.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Rebrands and trademark conflicts are occasional compared with routine marketing needs.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "The stakes can be high because poor migration planning can affect leads, rankings, and brand demand.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Specialist lawyers can be reached through professional education and niche networking, but referral trust is built slowly.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "A single client may only need this once, but a trademark practice may see repeated naming and rebrand matters over time.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The lawyer reduces client business risk while the agency is introduced before critical digital decisions are made.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Relevant nationally across Canada, especially for law firms, contractors, and service businesses protecting trade names.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 2,
+          "rationale": "The opportunity is strong but requires careful positioning to respect legal ethics and avoid appearing to solicit referrals improperly.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "trademark lawyer",
+        "intellectual property law firm",
+        "brand protection lawyer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "m-a-advisors",
+      "name": "M&A advisors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "M&A advisors encounter companies during acquisitions, succession sales, roll-ups, and integrations, often before the public sees ownership, brand, or website changes. These transactions can create urgent SEO and digital marketing needs such as site consolidation, tracking cleanup, location-page rationalization, brand transition planning, and lead-source due diligence.",
+      "rationale": "Search visibility, lead generation, and attribution can affect the perceived performance of an acquired business, especially local service companies and home-service contractors. The agency can help protect post-transaction lead flow and support integration work that preserves enterprise value.",
+      "triggers": [
+        {
+          "event": "Acquirer is consolidating multiple local businesses or contractor brands",
+          "whyNeed": "Multiple websites, domains, Google Business Profiles, local citations, and location pages may need to be merged, retained, or redirected without destroying local visibility.",
+          "whoRecognizes": "M&A advisor, integration lead, transaction advisor, or operating partner.",
+          "referralMoment": "During integration planning, before brand architecture and website consolidation decisions are finalized.",
+          "partnerValue": "The advisor helps the buyer avoid value leakage caused by poorly managed digital consolidation."
+        },
+        {
+          "event": "Succession sale of a local service business is underway",
+          "whyNeed": "The buyer may need to understand how leads are generated, whether rankings and tracking are durable, and what digital risks exist after ownership changes.",
+          "whoRecognizes": "M&A advisor, business broker, corporate finance advisor, or due diligence coordinator.",
+          "referralMoment": "During due diligence or early post-close planning, before marketing systems are changed.",
+          "partnerValue": "The advisor can surface operational risks and support a smoother transition for buyer and seller."
+        },
+        {
+          "event": "Acquired company is changing name, website, or domain post-close",
+          "whyNeed": "The business needs migration planning, redirect mapping, content strategy, GBP updates, paid search continuity, and analytics continuity to avoid lead disruption.",
+          "whoRecognizes": "M&A advisor, integration consultant, private company advisor, or portfolio operations lead.",
+          "referralMoment": "As soon as the post-close integration roadmap is being created.",
+          "partnerValue": "The advisor strengthens post-close execution and reduces avoidable performance surprises."
+        }
+      ],
+      "mutualValue": "The agency gives advisors a specialist resource for digital due diligence and post-close integration risk, while the agency receives introductions to larger, higher-value clients at a strategically important moment. Advisors can use the relationship to improve deal readiness and integration quality without positioning themselves as marketing technicians.",
+      "approach": "Develop a digital visibility due diligence checklist for acquisitions and offer a short briefing to M&A advisory teams on common SEO risks in roll-ups and post-close integrations.",
+      "decisionMaker": "Managing Director or Partner",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Digital due diligence checklist for acquisitions",
+        "Private briefing for transaction and integration teams",
+        "Co-authored guide on protecting search visibility during acquisitions",
+        "Post-close integration workshop for acquired local brands"
+      ],
+      "digitalAuthority": [
+        "Educational article on SEO due diligence before acquiring a local service business",
+        "Webinar on digital integration risks in multi-location acquisitions"
+      ],
+      "regulatoryNote": "M&A, corporate finance, and investment advisory activity may be regulated; avoid referral compensation assumptions, deal-specific endorsements, or conduct that could create conflicts with advisory duties.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "M&A advisors see ownership, brand, and integration changes before they become public.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Acquisitions and roll-ups often require technical SEO, migration planning, content consolidation, local SEO, and tracking work.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Relevant transactions are occasional and concentrated among advisors serving growth, succession, or consolidation scenarios.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Acquisition and integration projects can involve complex, high-value work with significant lead-flow implications.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 2,
+          "rationale": "Senior M&A decision-makers are selective and typically require credibility before introducing outside specialists.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Individual clients may transact infrequently, but advisors and acquirers may handle multiple deals over time.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The advisor protects deal value and integration outcomes while the agency gains access to higher-value strategic projects.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "The opportunity applies across Ontario and Canada, especially in fragmented local-service and contractor markets.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 2,
+          "rationale": "The fit is compelling but relationship development is slower due to confidentiality, trust, and regulated-advisory considerations.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "M&A advisor",
+        "business broker",
+        "corporate finance advisor"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "it-providers-and-hosts",
+      "name": "IT providers and hosts",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "IT providers and hosting teams encounter clients when websites are moved, CMSs are updated, DNS records are changed, security incidents occur, speed issues arise, or tracking scripts break. These technical moments can directly affect organic visibility, local conversions, paid search performance, and analytics accuracy, making referral or collaboration valuable before changes are deployed.",
+      "rationale": "IT and SEO frequently intersect, but problems often occur when technical work is done without search or tracking context. A partnership reduces emergency fixes, improves client outcomes, and creates reciprocal value because the agency also needs reliable IT support for hosting, security, DNS, and implementation issues.",
+      "triggers": [
+        {
+          "event": "Website is being migrated to a new host, CMS, theme, or platform",
+          "whyNeed": "The client needs redirect planning, crawl checks, indexation safeguards, analytics continuity, page-speed review, and staging-site controls to avoid traffic loss.",
+          "whoRecognizes": "IT account manager, web operations lead, hosting support manager, or solutions consultant.",
+          "referralMoment": "Before migration scope is finalized and before development or DNS changes go live.",
+          "partnerValue": "The IT provider reduces post-launch complaints and avoids being blamed for visibility drops caused by missing SEO requirements."
+        },
+        {
+          "event": "DNS, domain, SSL, or server configuration changes are planned",
+          "whyNeed": "Incorrect configuration can cause downtime, crawl errors, canonicalization issues, tracking disruption, or paid search landing-page problems.",
+          "whoRecognizes": "Managed service provider, hosting provider, systems administrator, or technical account manager.",
+          "referralMoment": "When the change ticket or implementation plan is created, before deployment.",
+          "partnerValue": "The provider gains a specialist to review marketing-side risk and helps the client avoid business disruption."
+        },
+        {
+          "event": "Security incident, malware cleanup, or site performance issue affects the website",
+          "whyNeed": "Search visibility, user trust, paid traffic, conversion tracking, and Google warnings may be affected and require coordinated remediation.",
+          "whoRecognizes": "IT security lead, hosting support team, managed services account manager, or web maintenance provider.",
+          "referralMoment": "As soon as the incident is stabilized and before the site is relaunched or major fixes are finalized.",
+          "partnerValue": "The IT provider can offer a more complete recovery path and reduce repeat escalations from marketing stakeholders."
+        }
+      ],
+      "mutualValue": "IT providers gain a trusted SEO partner who can prevent marketing fallout from technical changes, while the agency gains a technical ally for implementation, hosting, DNS, speed, and security issues. The relationship is genuinely reciprocal because both sides can improve delivery quality for shared clients without pretending to do each other’s work.",
+      "approach": "Run a joint technical handoff meeting with one friendly provider and create a simple pre-launch checklist covering redirects, analytics, indexing, DNS, speed, and staging controls.",
+      "decisionMaker": "Technical Account Manager or Director of Managed Services",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Pre-migration SEO and IT checklist",
+        "Joint website migration planning call",
+        "Technical SEO lunch-and-learn for support teams",
+        "Shared incident-response workflow for traffic or tracking disruptions"
+      ],
+      "digitalAuthority": [
+        "Co-authored technical guide on website migrations without losing search visibility",
+        "Educational webinar on how IT changes affect SEO and analytics"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "IT providers regularly see technical changes before they affect website performance or search visibility.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Hosting, CMS, DNS, speed, security, and tracking issues are directly tied to technical SEO and paid search performance.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Technical changes and support issues occur more frequently than major legal, real estate, or transaction events.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Migration and technical SEO projects can be substantial, especially when visibility or tracking is at risk.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Account managers and technical leads are usually accessible through operational networking and shared client work.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Ongoing website maintenance, hosting changes, security updates, and tracking issues create repeated collaboration opportunities.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both parties reduce implementation risk and can refer complementary needs without overlapping as direct competitors.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "The partnership works across Ontario and Canada because technical website risks are not limited by local geography.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The value proposition is practical and easy to pilot through checklists, handoffs, and shared troubleshooting.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "managed IT provider",
+        "website hosting provider",
+        "technical account manager web services"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "crm-implementation-consultants",
+      "name": "CRM implementation consultants",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "CRM implementation consultants encounter local service businesses, contractors, and professional firms when they are formalizing lead intake, booking, call tracking, pipeline stages, and reporting. During implementation, clients often discover that their website, landing pages, Google Business Profile, UTM structure, and paid search campaigns are not producing clean attribution or enough qualified demand, creating a timely referral opportunity to an SEO and digital marketing agency.",
+      "rationale": "This relationship makes commercial sense because CRM projects expose marketing-data problems at the exact moment the client is willing to invest in systems and growth. The agency can improve the quality and traceability of leads entering the CRM, while the consultant’s implementation becomes more valuable because the system receives cleaner source data and better-qualified inquiries.",
+      "triggers": [
+        {
+          "event": "A contractor or law firm is mapping lead sources, call tracking, and intake workflows during a CRM implementation.",
+          "whyNeed": "They need website forms, phone numbers, GBP actions, paid search campaigns, and organic traffic sources to be captured accurately so marketing performance can be evaluated.",
+          "whoRecognizes": "CRM implementation lead, solutions consultant, or revenue operations consultant.",
+          "referralMoment": "When fields, forms, tracking numbers, integrations, and reporting dashboards are being designed.",
+          "partnerValue": "The implementer gets cleaner attribution data, fewer reporting complaints, and a stronger business case for the CRM."
+        },
+        {
+          "event": "The client asks why the CRM shows many leads but sales teams say lead quality is poor.",
+          "whyNeed": "This suggests a mismatch between search intent, landing page messaging, local SEO visibility, or paid search targeting and the client’s actual ideal jobs or matters.",
+          "whoRecognizes": "CRM consultant, sales operations advisor, or implementation project manager.",
+          "referralMoment": "Before pipeline stages and lead-scoring rules are finalized, so marketing and CRM definitions align.",
+          "partnerValue": "The consultant can solve the client’s operational concern without overextending into SEO or advertising strategy."
+        },
+        {
+          "event": "A business is replacing spreadsheets, inboxes, or disconnected booking tools with a centralized CRM.",
+          "whyNeed": "The migration creates an opportunity to standardize conversion tracking, form routing, call attribution, GBP links, and campaign naming before bad data becomes embedded.",
+          "whoRecognizes": "CRM implementation consultant or onboarding specialist.",
+          "referralMoment": "During discovery and data-migration planning, before forms, automations, and dashboards go live.",
+          "partnerValue": "The consultant reduces future rework and can point to a more complete revenue-operations outcome."
+        }
+      ],
+      "mutualValue": "The consultant benefits because the agency helps ensure that the CRM receives measurable, well-labeled, higher-quality demand; the agency benefits because CRM projects reveal higher-intent clients already investing in growth infrastructure. Both can also refer in the opposite direction when SEO or paid search work exposes weak intake, attribution, or follow-up processes.",
+      "approach": "Offer a short joint audit template covering lead-source tracking, GBP conversion paths, forms, call tracking, and CRM field mapping, then invite a CRM consultant to test it on one non-sensitive client scenario or internal demo workflow.",
+      "decisionMaker": "Founder, Managing Consultant, or Head of Implementation",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Joint lead-attribution audit checklist",
+        "Workshop on connecting SEO, paid search, call tracking, and CRM reporting",
+        "CRM migration readiness session for contractors and professional firms",
+        "Shared implementation handoff template for forms, UTMs, and conversion events"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on preparing marketing attribution before a CRM implementation",
+        "Webinar on why local SEO, paid search, and CRM reporting often disagree"
+      ],
+      "regulatoryNote": "If the end client is a law firm, avoid compensation structures or claims that could conflict with professional conduct, advertising, or solicitation rules; referrals should be transparent and based on client need rather than exclusivity or paid endorsement.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "CRM implementation directly surfaces attribution, lead-source, intake, and conversion-quality issues that point to SEO and paid search needs.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Local SEO, technical SEO, GBP, migrations, paid search, and tracking alignment are highly relevant to the systems being implemented.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Implementation consultants repeatedly encounter growing businesses modernizing sales and intake systems, though not every project requires external marketing support.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Clients investing in CRM infrastructure are often higher-value prospects because they are already allocating budget to growth and measurement.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Founders and implementation leads at consultancies are usually reachable through professional networks and practical co-delivery conversations.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "CRM consultants have ongoing project pipelines and post-launch optimization work that can repeatedly reveal marketing-performance gaps.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The agency improves demand quality and attribution while the consultant improves implementation outcomes and client satisfaction.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "CRM implementation is relevant across Ontario and Canada, and remote delivery aligns well with the agency’s national client scope.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The partnership is straightforward to start with a shared audit or handoff framework, provided boundaries between marketing and CRM consulting are clear.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "CRM implementation consultants",
+        "CRM consultants for contractors",
+        "revenue operations consultants"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "pr-and-content-studios",
+      "name": "PR and content studios",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "PR and content studios encounter businesses when they are investing in announcements, thought leadership, reputation campaigns, awards, media outreach, or brand storytelling. If those efforts are not supported by search strategy, technical SEO, local visibility, or conversion-focused landing pages, the client may generate attention without capturing durable demand.",
+      "rationale": "The relationship makes commercial sense when the studio is focused on PR, editorial, brand, or creative content rather than competing SEO execution. Search strategy can extend the shelf life of PR and thought-leadership work, while the studio can provide stronger stories, assets, and authority signals that support the agency’s content and local SEO campaigns.",
+      "triggers": [
+        {
+          "event": "A law firm, contractor, or local service business is launching a PR campaign, major announcement, or new service line.",
+          "whyNeed": "Search demand may increase after media exposure, but the client may lack optimized service pages, local pages, GBP updates, or paid search coverage to capture that interest.",
+          "whoRecognizes": "PR account director, content strategist, or studio lead.",
+          "referralMoment": "During campaign planning, before announcements, landing pages, and supporting content are finalized.",
+          "partnerValue": "The studio can show that its campaign drives not only visibility but also discoverable, measurable demand."
+        },
+        {
+          "event": "The studio is producing thought leadership or educational content without a keyword, search-intent, or internal-linking plan.",
+          "whyNeed": "High-quality content may underperform if it is not structured around topics clients actually search for or connected to conversion paths.",
+          "whoRecognizes": "Content strategist, editorial director, or managing editor.",
+          "referralMoment": "When the editorial calendar, content briefs, or distribution plan is being built.",
+          "partnerValue": "The studio receives sharper briefs and can demonstrate longer-term value from its content work."
+        },
+        {
+          "event": "A client receives press coverage, awards, or online mentions but sees little change in qualified inquiries.",
+          "whyNeed": "The issue may be weak local SEO, poor conversion pages, technical problems, missing schema, or lack of retargeting and paid search support.",
+          "whoRecognizes": "PR account manager or client strategy lead.",
+          "referralMoment": "During post-campaign reporting or planning for the next campaign phase.",
+          "partnerValue": "The studio can help the client close the gap between visibility and business outcomes without needing to deliver SEO itself."
+        }
+      ],
+      "mutualValue": "The studio benefits because SEO and paid search make campaigns more measurable and durable, while the agency benefits from stronger editorial assets, authority-building opportunities, and brand narratives. Both audiences gain when creative content is paired with search visibility, rather than treating PR and SEO as separate silos.",
+      "approach": "Propose a joint campaign-planning session where the agency reviews search demand, landing-page needs, and GBP implications for a sample announcement or thought-leadership theme while the studio contributes messaging and editorial positioning.",
+      "decisionMaker": "Managing Director, Account Director, or Head of Content Strategy",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Joint campaign planning workshop",
+        "Co-authored content brief template combining editorial angle and search intent",
+        "Webinar on turning PR visibility into search demand",
+        "Newsletter feature on launch planning for local service businesses"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on aligning thought leadership, local SEO, and conversion pages",
+        "Editorial interview series about reputation, search visibility, and trust signals"
+      ],
+      "regulatoryNote": "If campaigns involve law firms, ensure content and advertising claims comply with applicable professional conduct and marketing rules; avoid paid endorsements, misleading testimonials, or referral compensation arrangements that may be restricted.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "PR and content studios often see visibility campaigns before the client realizes search capture and conversion paths are missing.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "SEO, content strategy, GBP, technical SEO, and paid search can directly strengthen the commercial impact of PR and editorial work.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Studios regularly plan campaigns and content calendars, though not every engagement will expose an urgent SEO need.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Clients investing in PR and reputation work often have meaningful budgets, but some may prioritize awareness over lead generation.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Studio principals and account leads are generally approachable through portfolio-based conversations and shared client-planning topics.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Campaign planning, content calendars, launches, and reputation initiatives create repeat opportunities for collaboration.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The studio gains better measurable outcomes while the agency gains stronger content inputs and authority-building context.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "PR, content, and search collaboration can serve Ontario and Canadian clients remotely across many local-service and professional niches.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The partnership is promising but requires careful positioning to avoid overlap where the studio also sells SEO content or digital strategy.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "PR content studios",
+        "thought leadership content agency",
+        "public relations studio"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "recruiters-for-marketers",
+      "name": "Recruiters for marketers",
+      "relationshipType": "downstream",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Recruiters for marketers encounter businesses after leadership has decided marketing capacity is needed, often because growth targets, lead quality, or campaign execution are underperforming. During the search, the recruiter may realize the company needs immediate specialist help, an interim agency partner, or strategic diagnosis before hiring a full-time marketer.",
+      "rationale": "This relationship makes commercial sense because recruitment timelines and role design often expose mismatches between what a business wants and what one hire can realistically deliver. The agency can stabilize SEO, paid search, website migration, or local visibility needs while the recruiter continues the search, and the recruiter protects the client relationship by offering a practical bridge rather than saying the role is impossible to fill.",
+      "triggers": [
+        {
+          "event": "A contractor, law firm, or local service company opens a marketing manager role that includes SEO, paid search, content, analytics, website management, and CRM coordination.",
+          "whyNeed": "The role may be too broad for one employee, especially if urgent technical SEO, GBP, paid search, or migration issues need specialist execution.",
+          "whoRecognizes": "Marketing recruiter, recruitment consultant, or account manager.",
+          "referralMoment": "During role intake or after the recruiter reviews the job description and timeline.",
+          "partnerValue": "The recruiter can help the client refine the role and keep momentum while the hiring process continues."
+        },
+        {
+          "event": "The client needs leads now but the expected hiring timeline is several months.",
+          "whyNeed": "SEO audits, paid search stabilization, GBP improvements, and landing-page fixes can begin before a permanent hire is in place.",
+          "whoRecognizes": "Recruiter or client success manager at the recruitment firm.",
+          "referralMoment": "When the search is launched and the client mentions immediate pipeline pressure.",
+          "partnerValue": "The recruiter remains helpful beyond candidate sourcing and reduces pressure to find an unrealistic perfect candidate."
+        },
+        {
+          "event": "A newly hired marketer inherits a technically weak website, messy tracking, or underperforming local SEO program.",
+          "whyNeed": "The new hire may need a specialist agency to diagnose issues, execute technical fixes, or provide channel expertise while they build internal processes.",
+          "whoRecognizes": "Recruiter conducting post-placement check-ins or the hiring manager.",
+          "referralMoment": "During onboarding follow-up or early performance support conversations after placement.",
+          "partnerValue": "The recruiter supports placement success and reduces the risk that the hire is blamed for inherited channel problems."
+        }
+      ],
+      "mutualValue": "Recruiters benefit by helping clients solve urgent marketing capacity gaps and define more realistic roles, while the agency benefits from introductions to businesses that have already acknowledged a marketing need. The relationship can also work in reverse when agency clients need to hire an internal marketer to manage ongoing strategy, content coordination, or vendor relationships.",
+      "approach": "Create a one-page role-scope diagnostic that helps recruiters distinguish between work suited to an in-house marketer and work better handled by a specialist SEO or paid search partner, then offer to review anonymized job descriptions.",
+      "decisionMaker": "Recruitment Practice Lead, Managing Partner, or Account Director",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Role-scope diagnostic for marketing hires",
+        "Roundtable on agency-versus-in-house marketing responsibilities",
+        "Guest briefing for recruiters on SEO and paid search skill requirements",
+        "Post-placement support checklist for new marketing hires"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on when to hire in-house versus use a specialist marketing agency",
+        "Interview-style article on defining realistic digital marketing roles"
+      ],
+      "regulatoryNote": "Recruitment and professional-services referrals should be transparent and avoid undisclosed compensation or claims of guaranteed outcomes; if the end client is a law firm, marketing recommendations should respect applicable professional advertising and solicitation rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Recruiters encounter the need after the business has already decided marketing help is required, so they are less upstream than implementation or advisory partners.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Recruiting discussions often reveal needs for SEO, paid search, analytics, content, and technical support that may exceed an internal hire’s scope.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Recruiters for marketers see relevant cases periodically, but only a subset involve urgent agency-suitable digital marketing needs.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Companies hiring marketers often have budget and leadership attention, making them potentially valuable prospects if agency support is positioned as complementary.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Recruitment decision-makers are accessible, but they may be cautious about introducing vendors during active searches.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "The opportunity recurs with open roles and post-placement support, but it is more occasional than implementation-driven partnerships.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The recruiter can improve client support and role clarity while the agency can later refer clients needing internal hires.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Marketing recruitment and agency support can both be delivered across Ontario and Canada without heavy location constraints.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship requires trust and clear boundaries so the agency is seen as supporting, not replacing, the recruiter’s mandate.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "marketing recruitment firm",
+        "digital marketing recruiters",
+        "marketing talent recruiters"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "photographers-and-videographers",
+      "name": "Photographers and videographers",
+      "relationshipType": "downstream",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Photographers and videographers encounter local businesses when they are refreshing websites, building portfolios, documenting completed projects, updating attorney or team profiles, or producing promotional assets. These projects often reveal that the business also needs better local visibility, optimized service pages, GBP content, or paid search landing pages to turn strong visuals into inquiries.",
+      "rationale": "The relationship makes commercial sense because visual assets and search visibility reinforce each other: SEO campaigns convert better with credible photos and videos, while media projects perform better when connected to optimized pages and local profiles. The referral opportunity is occasional but practical, especially for home-service contractors, law firms, and local service brands where trust and proof matter.",
+      "triggers": [
+        {
+          "event": "A contractor commissions project photography or video for completed jobs, case studies, or service pages.",
+          "whyNeed": "Those assets need optimized placement on service pages, location pages, GBP posts, and paid search landing pages to support rankings and conversions.",
+          "whoRecognizes": "Commercial photographer, videographer, producer, or studio owner.",
+          "referralMoment": "When the client explains the photos are for a website refresh, portfolio, or advertising campaign.",
+          "partnerValue": "The visual partner can help the client get more commercial value from the shoot and justify future asset creation."
+        },
+        {
+          "event": "A law firm updates attorney headshots, team photos, office imagery, or practice-area videos.",
+          "whyNeed": "Professional imagery improves trust, but the firm may also need optimized attorney profiles, practice pages, local SEO, schema, and conversion paths.",
+          "whoRecognizes": "Photographer, videographer, creative producer, or account manager.",
+          "referralMoment": "During pre-production planning when usage, website placement, and profile updates are discussed.",
+          "partnerValue": "The media provider becomes a strategic contributor to the firm’s online presence rather than a one-time vendor."
+        },
+        {
+          "event": "An SEO or paid search audit finds that landing pages lack credible visuals, project proof, before-and-after examples, or localized media.",
+          "whyNeed": "Weak assets can depress conversion even when rankings or traffic improve, creating a need for professional photography or video.",
+          "whoRecognizes": "SEO strategist, paid search manager, or conversion strategist at the agency.",
+          "referralMoment": "After the audit or during landing-page planning, before redesign or campaign launch.",
+          "partnerValue": "The photographer or videographer receives qualified referrals where the client already understands why new assets are needed."
+        }
+      ],
+      "mutualValue": "Photographers and videographers benefit because the agency can create demand for professional assets during SEO, local landing-page, GBP, and paid search projects. The agency benefits because strong imagery and video improve trust, conversion, and content quality, helping campaigns perform beyond traffic generation alone.",
+      "approach": "Start with a shared visual-content checklist for local service pages, GBP profiles, attorney bios, contractor project pages, and paid search landing pages, then invite a photographer or videographer to contribute best practices on shot planning and usage rights.",
+      "decisionMaker": "Studio Owner, Creative Director, or Commercial Producer",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Visual-content checklist for local SEO and landing pages",
+        "Website refresh planning workshop",
+        "Before-and-after project storytelling guide for contractors",
+        "Attorney profile and practice-page asset planning session"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on photography and video assets that improve local service websites",
+        "Portfolio-style educational article showing how visual proof supports conversion paths"
+      ],
+      "regulatoryNote": "For law firm clients, ensure imagery, testimonials, case references, and advertising content comply with professional conduct and marketing rules; obtain appropriate permissions and avoid misleading results-based claims.",
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Photographers and videographers see website and campaign needs, but usually after broader marketing decisions have already begun.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Their assets strongly support local SEO, content, GBP, and landing-page conversion, even though they do not usually identify technical SEO needs.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Relevant referral moments arise around shoots, refreshes, and campaigns, but not every media client needs an SEO agency.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Some clients commissioning professional media are high-value prospects, but shoot budgets vary widely and may not always indicate readiness for SEO or paid search.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Studio owners and producers are often directly reachable and open to practical collaborations that help clients use assets effectively.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "The relationship can recur through website refreshes, seasonal campaigns, and new project documentation, but it is less continuous than CRM or PR partnerships.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Each side can improve the other’s outcomes: better visuals help campaigns convert, and better campaigns increase the value of visual assets.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Media production is often local or regional, but the agency can work with partners across Ontario and Canada where client shoots occur.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "It is easy to begin with checklists, asset planning, and reciprocal introductions, provided expectations about creative scope and usage rights are clear.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "commercial photographers",
+        "corporate videographers",
+        "brand photography studio"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "trade-associations",
+      "name": "Trade associations",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Trade associations encounter contractors, local service firms, and legal practices when members are trying to win more work, open new locations, improve recruiting visibility, or respond to declining lead quality. The referral opportunity is strongest through education-first channels such as member webinars, vetted resource directories, conference sessions, or office-hours clinics where members can self-identify marketing problems before choosing an agency.",
+      "rationale": "Associations aggregate many ideal-fit businesses and regularly hear operational growth questions that connect directly to local SEO, Google Business Profile, website performance, content, and paid search. For a higher-value growth priority, association relationships can create credibility with established firms that are more likely to need strategic, multi-service support rather than one-off tactical help.",
+      "triggers": [
+        {
+          "event": "A member reports fewer qualified inquiries despite steady demand in their market.",
+          "whyNeed": "Declining lead quality often points to weak local visibility, poor conversion paths, thin service-area content, or inefficient paid search.",
+          "whoRecognizes": "Member services manager, chapter director, or business development committee chair.",
+          "referralMoment": "When the member asks for marketing resources, joins a growth session, or requests help finding vetted service providers.",
+          "partnerValue": "The association helps members solve a revenue problem with practical guidance, increasing perceived member value."
+        },
+        {
+          "event": "Members are expanding into new service areas, opening additional offices, or adding practice/service lines.",
+          "whyNeed": "Expansion creates a need for local landing pages, GBP optimization, technical site structure, content planning, and paid search launch support.",
+          "whoRecognizes": "Education program manager, membership director, or regional chapter lead.",
+          "referralMoment": "During expansion-focused programming, new-member onboarding, or peer roundtables about growth.",
+          "partnerValue": "The association can offer members a clear playbook for expansion without having to provide marketing expertise internally."
+        },
+        {
+          "event": "A regulatory, platform, or search visibility change causes members to worry about online presence.",
+          "whyNeed": "Members may need help interpreting changes, fixing technical issues, updating content, or protecting local search visibility.",
+          "whoRecognizes": "Communications director or professional development manager.",
+          "referralMoment": "When the association is planning a timely member alert, webinar, or checklist.",
+          "partnerValue": "The association gains timely, useful programming that helps members avoid costly mistakes."
+        }
+      ],
+      "mutualValue": "The association receives credible, non-sales educational content that helps members improve client acquisition, while the agency gains trust-based access to businesses already motivated to solve marketing and visibility problems.",
+      "approach": "Offer a short, practical member education session such as a local SEO or website migration risk checklist, with no obligation for attendees, and provide the association with a sample outline and member-facing takeaway resource.",
+      "decisionMaker": "Director of Member Services",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Member webinar or lunch-and-learn",
+        "Conference breakout session",
+        "Office-hours clinic for members",
+        "Vetted resource guide contribution"
+      ],
+      "digitalAuthority": [
+        "Co-authored member checklist on local SEO readiness or website migration risks",
+        "Educational article for the association’s member resource library"
+      ],
+      "regulatoryNote": "If the association serves legal, financial, real estate, or healthcare members, avoid referral fees, exclusivity claims, or implied professional endorsement unless permitted by applicable rules; ensure any member communications comply with Canadian privacy and anti-spam requirements.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Associations regularly hear members raise lead generation, expansion, and online visibility concerns before they choose a marketing provider.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Local SEO, GBP, technical SEO, content, migrations, and paid search directly address common member growth and visibility problems.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Member needs recur through events, renewal conversations, committees, and education programming, though not every member will be in-market at once.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Established association members can be higher-value clients, especially multi-location contractors, professional firms, and growth-oriented local service businesses.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Association staff are identifiable but may require committee approval, programming fit, or sponsor/vendor review before collaboration.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Associations need ongoing educational programming and can repeatedly surface new member needs over time.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The relationship improves member education while giving the agency credibility and access to qualified, problem-aware businesses.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Provincial and national associations align well with an Ontario-based agency serving clients across Canada.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "A first webinar or resource is practical to propose, but building trust and avoiding sponsor-only positioning may take time.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "contractor trade association",
+        "professional services association",
+        "law firm association"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "franchisors-and-operators",
+      "name": "Franchisors and operators",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Franchisors and multi-location operators encounter the agency’s ideal customers when locations launch, change ownership, miss performance targets, or need brand-compliant local marketing execution. The referral opportunity is through approved vendor lists, franchisee onboarding, regional performance reviews, and centralized marketing support where individual operators need reliable local SEO, GBP, landing page, and paid search help.",
+      "rationale": "Franchise and multi-location environments produce repeated local visibility needs with higher commercial potential because the same playbook can apply across multiple territories. This relationship fits the agency’s higher-value priority by emphasizing systems, governance, technical consistency, and scalable local execution rather than isolated small-business projects.",
+      "triggers": [
+        {
+          "event": "A new franchise territory or location is preparing to launch.",
+          "whyNeed": "The location needs GBP setup or optimization, location pages, technical tracking, launch content, and paid search campaigns to generate early demand.",
+          "whoRecognizes": "Franchise development manager, franchise marketing manager, or onboarding lead.",
+          "referralMoment": "During new franchisee onboarding, pre-opening checklists, or launch marketing planning.",
+          "partnerValue": "The franchisor improves launch consistency and reduces the burden on internal marketing support teams."
+        },
+        {
+          "event": "A location is underperforming against local lead or booking expectations.",
+          "whyNeed": "Poor results may stem from weak map visibility, inconsistent listings, slow pages, poor local content, or inefficient paid search structure.",
+          "whoRecognizes": "Regional operations manager or field business coach.",
+          "referralMoment": "After a performance review identifies marketing visibility as a constraint rather than operations alone.",
+          "partnerValue": "Operators get a practical path to diagnose performance gaps without the franchisor building specialist SEO capacity internally."
+        },
+        {
+          "event": "A brand refresh, website migration, or platform rollout affects many locations.",
+          "whyNeed": "Migrations and template changes can create technical SEO risk, local page indexing issues, tracking gaps, and lost organic visibility.",
+          "whoRecognizes": "Director of Marketing, digital marketing manager, or IT project owner.",
+          "referralMoment": "Before the rollout begins, during vendor planning, or when franchisees ask how local traffic will be protected.",
+          "partnerValue": "The franchisor reduces rollout risk and provides franchisees with a consistent expert resource."
+        }
+      ],
+      "mutualValue": "The franchisor or operator gains a dependable specialist who can help standardize local marketing execution and reduce location-level confusion, while the agency gains access to repeated, higher-value needs across a portfolio of locations or territories.",
+      "approach": "Create a concise franchise-ready capability brief covering launch support, local SEO governance, GBP workflows, migration risk controls, and reporting standards, then request a conversation with the marketing or franchise operations lead about gaps in current location support.",
+      "decisionMaker": "Director of Franchise Marketing",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Approved vendor program",
+        "Franchisee onboarding session",
+        "Regional operator workshop",
+        "Multi-location SEO audit framework"
+      ],
+      "digitalAuthority": [
+        "Co-authored local launch checklist for new franchisees",
+        "Educational webinar on protecting local visibility during brand or website rollouts"
+      ],
+      "regulatoryNote": "Avoid implying guaranteed performance or exclusive endorsement in franchisee-facing materials; if serving regulated franchise categories such as legal, healthcare, financial, or real estate, ensure marketing claims and referral practices comply with applicable professional rules and Canadian privacy and anti-spam requirements.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Franchisors and operators see location-level marketing needs at launch, during performance reviews, and throughout brand rollouts.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Local SEO, GBP, technical SEO, migration support, content, and paid search are directly relevant to multi-location growth.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 5,
+          "rationale": "New locations, ownership changes, underperforming territories, and platform updates create repeated demand.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Multi-location and franchise systems can produce higher-value engagements because needs often extend across multiple territories and services.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Relevant decision-makers are clear but may be protected by vendor approval processes and existing agency relationships.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Franchise systems create ongoing needs for launches, audits, updates, reporting, and local optimization.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The partner gains consistency and operational support while the agency gains scalable, repeatable client opportunities.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Franchise and multi-location networks often operate provincially or nationally, matching Ontario and Canada-wide service coverage.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The business case is strong, but procurement, brand standards, and incumbent vendors can slow initial adoption.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "franchise marketing association",
+        "multi location operators",
+        "franchise development network"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "industry-newsletters",
+      "name": "Industry newsletters",
+      "relationshipType": "shared_audience",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Industry newsletters encounter owners and managers while they are actively learning about growth, hiring, operations, service expansion, and technology decisions. The referral opportunity is indirect but valuable: practical editorial content can help readers recognize SEO, migration, local visibility, or paid search risks and then seek expert help when the issue becomes urgent.",
+      "rationale": "Newsletters can reach niche audiences with trust and regularity, especially contractors, professional firms, and local service owners who may not attend events. Commercially, this is best treated as authority-building and demand creation rather than a direct referral channel, supporting higher-value prospects who educate themselves before engaging an agency.",
+      "triggers": [
+        {
+          "event": "Readers are planning a website redesign, rebrand, or platform change.",
+          "whyNeed": "A redesign or migration can damage rankings, local visibility, tracking, and conversion performance if SEO is not planned early.",
+          "whoRecognizes": "Newsletter editor, content partnerships manager, or publisher.",
+          "referralMoment": "When the newsletter is preparing an issue about technology, branding, operations, or growth planning.",
+          "partnerValue": "The publisher gives readers a timely risk-prevention guide that can save them from avoidable business disruption."
+        },
+        {
+          "event": "Readers are expanding into new service areas, hiring sales staff, or adding new services.",
+          "whyNeed": "Expansion requires local content, service-area strategy, paid search testing, and GBP/location visibility planning.",
+          "whoRecognizes": "Editor or audience development manager monitoring reader questions and content themes.",
+          "referralMoment": "When producing a feature on growth planning, market expansion, or lead generation.",
+          "partnerValue": "The newsletter provides actionable growth education rather than generic marketing advice."
+        },
+        {
+          "event": "Readers complain about rising ad costs or inconsistent lead quality.",
+          "whyNeed": "This can indicate poor landing pages, weak SEO foundations, poor keyword targeting, or missing local conversion tracking.",
+          "whoRecognizes": "Newsletter editor, community manager, or advertising/content lead.",
+          "referralMoment": "When reader polls, Q&A submissions, or community discussions surface marketing performance frustration.",
+          "partnerValue": "The publisher can respond to a common audience pain point with practical diagnostic content."
+        }
+      ],
+      "mutualValue": "The newsletter gains useful, non-promotional educational material that improves reader trust and engagement, while the agency gains visibility with business owners who may later need strategic SEO, local visibility, migration, content, or paid search support.",
+      "approach": "Pitch one specific, editorially useful article or checklist tied to a common reader trigger, such as a website migration risk checklist for local service businesses, and make it clear the piece is educational rather than a sales offer.",
+      "decisionMaker": "Editor",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Guest educational article",
+        "Co-authored checklist",
+        "Reader Q&A feature",
+        "Newsletter webinar or live briefing"
+      ],
+      "digitalAuthority": [
+        "Editorially reviewed checklist on local search or migration readiness",
+        "Expert Q&A article answering reader-submitted digital marketing questions"
+      ],
+      "regulatoryNote": "Do not use paid links, link exchanges, undisclosed advertorials, or misleading endorsements; if the audience includes regulated professions, ensure content avoids improper solicitation claims and complies with applicable professional advertising rules as well as Canadian privacy and anti-spam requirements.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Newsletters surface audience needs through editorial themes, reader questions, and growth-related content moments, though they may not know each reader’s buying intent.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "The agency’s services map well to common newsletter topics such as growth, redesigns, local visibility, and lead generation.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Recurring publication schedules create repeated opportunities for relevant educational placements.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "The channel can influence higher-value prospects, but intent is usually less immediate than association or franchisor referrals.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Editors and content leads are usually easier to approach with a strong educational pitch than formal procurement teams.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "If content performs well, newsletters can support recurring columns, Q&As, or periodic issue contributions.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The publisher receives practical content for readers, while the agency earns trust and authority without relying on direct promotion.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Industry newsletters can be national or niche-specific, which fits Canada-wide service delivery if the readership matches target sectors.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A focused, non-promotional pitch with a useful takeaway is relatively easy to test compared with formal referral partnerships.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "contractor industry newsletter",
+        "law practice management newsletter",
+        "home services newsletter"
+      ],
+      "existingRelationship": false
+    }
+  ],
+  "assumptions": [
+    "Customer journey used for the analysis: Trigger: owner launches, relocates, acquires, rebrands, or needs more qualified leads. → Diagnosis: current website, rankings, Google Business Profile, tracking, and paid search performance are reviewed. → Planning: buyer sets budget, selects internal versus agency support, and prioritizes SEO, content, migration, or ads. → Implementation: site changes, technical fixes, local listings, content, tracking, and campaigns go live. → Proof and optimisation: calls, forms, rankings, conversion quality, and lead sources are reviewed. → Scale: buyer adds locations, service lines, staff, or franchise-style systems..",
+    "Agencies win clients primarily through referrals from other advisors and past clients. Partner channels that meet businesses at growth or change moments matter most.",
+    "No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing."
+  ],
+  "guardrails": [
+    {
+      "title": "Links are a by-product of genuine collaboration",
+      "body": "Shared-audience partnerships can produce earned, editorial links, but exchanging links for payment or as a condition of partnership violates search engine spam policies. Focus on resources and content that are useful to both audiences."
+    },
+    {
+      "title": "Partnerships are not paid-referral arrangements",
+      "body": "This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals."
+    },
+    {
+      "title": "Outreach in Canada: CASL applies",
+      "body": "Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA)."
+    },
+    {
+      "title": "No automated outreach",
+      "body": "This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline."
+    }
+  ]
+}

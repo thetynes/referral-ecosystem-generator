@@ -1,0 +1,1563 @@
+[
+  {
+    "slug": "excavation-waterproofing-sarnia",
+    "curatedProfile": "Excavation & site construction + Basement waterproofing & foundation repair",
+    "aiMode": "ai",
+    "aiModel": "gpt-5.5",
+    "aiNotes": [],
+    "seconds": 101,
+    "costUsd": 0.558285,
+    "curatedCount": 22,
+    "aiCount": 15,
+    "overlapApprox": 10,
+    "aiOnly": [
+      "Asphalt Interlock Contractors",
+      "Secondary Suite Designers",
+      "Land Surveyors",
+      "Arborists Tree Removal",
+      "Construction Associations"
+    ],
+    "curatedOnly": [
+      "Builders' warranty & customer-care departments",
+      "Basement finishing & renovation contractors",
+      "Realtors managing inspection conditions",
+      "Inground pool installers",
+      "Municipal basement-flooding protection programs",
+      "Structural engineers & foundation assessors",
+      "Eavestrough, grading & landscaping contractors",
+      "Radon mitigation professionals",
+      "Landlords & investors converting basements to rental units"
+    ],
+    "curated": [
+      {
+        "name": "Basement finishing & renovation contractors",
+        "type": "upstream",
+        "priority": "High",
+        "score": 85,
+        "overlooked": false,
+        "decisionMaker": "Renovation company owner or estimator"
+      },
+      {
+        "name": "Water-damage restoration & mould remediation firms",
+        "type": "upstream",
+        "priority": "High",
+        "score": 85,
+        "overlooked": true,
+        "decisionMaker": "Restoration project manager or estimator"
+      },
+      {
+        "name": "Builders' warranty & customer-care departments",
+        "type": "distribution",
+        "priority": "High",
+        "score": 83,
+        "overlooked": true,
+        "decisionMaker": "Builder's warranty / customer-care manager"
+      },
+      {
+        "name": "Custom & infill home builders",
+        "type": "distribution",
+        "priority": "High",
+        "score": 83,
+        "overlooked": false,
+        "decisionMaker": "Site superintendent (owner on smaller builders)"
+      },
+      {
+        "name": "Landscape & hardscape contractors",
+        "type": "complementary",
+        "priority": "High",
+        "score": 83,
+        "overlooked": false,
+        "decisionMaker": "Landscape designer or owner"
+      },
+      {
+        "name": "Property management companies",
+        "type": "distribution",
+        "priority": "High",
+        "score": 81,
+        "overlooked": false,
+        "decisionMaker": "Property manager / maintenance coordinator"
+      },
+      {
+        "name": "Concrete & foundation forming contractors",
+        "type": "complementary",
+        "priority": "High",
+        "score": 76,
+        "overlooked": false,
+        "decisionMaker": "Forming-crew owner"
+      },
+      {
+        "name": "Landlords & investors converting basements to rental units",
+        "type": "shared_audience",
+        "priority": "High",
+        "score": 76,
+        "overlooked": true,
+        "decisionMaker": "Small-portfolio investor or their project manager"
+      },
+      {
+        "name": "Commercial general contractors",
+        "type": "distribution",
+        "priority": "High",
+        "score": 75,
+        "overlooked": false,
+        "decisionMaker": "Estimator / project manager"
+      },
+      {
+        "name": "Plumbers & drain inspection specialists",
+        "type": "upstream",
+        "priority": "High",
+        "score": 74,
+        "overlooked": false,
+        "decisionMaker": "Plumbing owner or drain-camera technician"
+      },
+      {
+        "name": "Realtors managing inspection conditions",
+        "type": "upstream",
+        "priority": "High",
+        "score": 74,
+        "overlooked": false,
+        "decisionMaker": "Buyer's or listing agent"
+      },
+      {
+        "name": "Civil & geotechnical engineers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 71,
+        "overlooked": false,
+        "decisionMaker": "Project engineer (P.Eng.)"
+      },
+      {
+        "name": "Inground pool installers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 71,
+        "overlooked": false,
+        "decisionMaker": "Pool company owner or installation scheduler"
+      },
+      {
+        "name": "Eavestrough, grading & landscaping contractors",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 67,
+        "overlooked": true,
+        "decisionMaker": "Owner of the eavestrough or landscaping company"
+      },
+      {
+        "name": "Home inspectors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 67,
+        "overlooked": false,
+        "decisionMaker": "Independent home inspector"
+      },
+      {
+        "name": "Septic system designers & installers",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 65,
+        "overlooked": false,
+        "decisionMaker": "Septic designer (qualified designer) or installer"
+      },
+      {
+        "name": "Aggregate, topsoil & landscape supply yards",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 64,
+        "overlooked": true,
+        "decisionMaker": "Yard manager / counter staff"
+      },
+      {
+        "name": "Home insurance brokers",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 64,
+        "overlooked": true,
+        "decisionMaker": "Personal-lines insurance broker"
+      },
+      {
+        "name": "Restoration contractors & insurance adjusters",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 64,
+        "overlooked": false,
+        "decisionMaker": "Restoration project manager or insurance adjuster"
+      },
+      {
+        "name": "Structural engineers & foundation assessors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 63,
+        "overlooked": false,
+        "decisionMaker": "Professional engineer (P.Eng.)"
+      },
+      {
+        "name": "Municipal basement-flooding protection programs",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 61,
+        "overlooked": true,
+        "decisionMaker": "Municipal program coordinator (water or engineering department)"
+      },
+      {
+        "name": "Radon mitigation professionals",
+        "type": "complementary",
+        "priority": "Low",
+        "score": 51,
+        "overlooked": true,
+        "decisionMaker": "Certified radon mitigation professional"
+      }
+    ],
+    "ai": [
+      {
+        "name": "Custom Home Builders",
+        "type": "distribution",
+        "priority": "High",
+        "score": 93,
+        "overlooked": false,
+        "decisionMaker": "Construction Manager"
+      },
+      {
+        "name": "Commercial Property Managers",
+        "type": "distribution",
+        "priority": "High",
+        "score": 92,
+        "overlooked": false,
+        "decisionMaker": "Property Manager"
+      },
+      {
+        "name": "Drain Camera Plumbers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 90,
+        "overlooked": false,
+        "decisionMaker": "Owner, Service Manager, or Drain Division Manager"
+      },
+      {
+        "name": "General Contractors",
+        "type": "distribution",
+        "priority": "High",
+        "score": 90,
+        "overlooked": false,
+        "decisionMaker": "Project Manager"
+      },
+      {
+        "name": "Landscape Hardscape Contractors",
+        "type": "complementary",
+        "priority": "High",
+        "score": 90,
+        "overlooked": false,
+        "decisionMaker": "Owner or Operations Manager"
+      },
+      {
+        "name": "Restoration Contractors",
+        "type": "upstream",
+        "priority": "High",
+        "score": 89,
+        "overlooked": false,
+        "decisionMaker": "Operations Manager, Restoration Project Manager, or Estimating Manager"
+      },
+      {
+        "name": "Concrete Forming Contractors",
+        "type": "complementary",
+        "priority": "High",
+        "score": 88,
+        "overlooked": true,
+        "decisionMaker": "Owner"
+      },
+      {
+        "name": "Home Inspectors",
+        "type": "upstream",
+        "priority": "High",
+        "score": 85,
+        "overlooked": false,
+        "decisionMaker": "Owner-Operator or Lead Home Inspector"
+      },
+      {
+        "name": "Asphalt Interlock Contractors",
+        "type": "downstream",
+        "priority": "High",
+        "score": 82,
+        "overlooked": false,
+        "decisionMaker": "Owner or Estimating Manager"
+      },
+      {
+        "name": "Construction Associations",
+        "type": "shared_audience",
+        "priority": "High",
+        "score": 79,
+        "overlooked": false,
+        "decisionMaker": "Executive Director or Education Committee Chair"
+      },
+      {
+        "name": "Septic System Contractors",
+        "type": "complementary",
+        "priority": "High",
+        "score": 71,
+        "overlooked": true,
+        "decisionMaker": "Owner or Operations Manager"
+      },
+      {
+        "name": "Secondary Suite Designers",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 69,
+        "overlooked": true,
+        "decisionMaker": "Principal Designer or Design Studio Owner"
+      },
+      {
+        "name": "Civil Geotechnical Engineers",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 67,
+        "overlooked": true,
+        "decisionMaker": "Principal Engineer, Civil Project Manager, or Geotechnical Project Manager"
+      },
+      {
+        "name": "Arborists Tree Removal",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 57,
+        "overlooked": true,
+        "decisionMaker": "Owner or Lead Arborist"
+      },
+      {
+        "name": "Land Surveyors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 53,
+        "overlooked": true,
+        "decisionMaker": "Survey Firm Principal or Survey Project Manager"
+      }
+    ]
+  },
+  {
+    "slug": "immigration-law-toronto",
+    "curatedProfile": "Immigration law",
+    "aiMode": "ai",
+    "aiModel": "gpt-5.5",
+    "aiNotes": [],
+    "seconds": 130,
+    "costUsd": 0.61239,
+    "curatedCount": 16,
+    "aiCount": 15,
+    "overlapApprox": 13,
+    "aiOnly": [
+      "Immigration medical clinics",
+      "Language test centres"
+    ],
+    "curatedOnly": [
+      "Licensed immigration consultants (RCICs)",
+      "Corporate relocation & global mobility firms",
+      "Faith communities & religious institutions"
+    ],
+    "curated": [
+      {
+        "name": "Employers & HR departments hiring foreign talent",
+        "type": "distribution",
+        "priority": "High",
+        "score": 85,
+        "overlooked": false,
+        "decisionMaker": "HR manager / talent-acquisition lead"
+      },
+      {
+        "name": "International recruitment & staffing agencies",
+        "type": "upstream",
+        "priority": "High",
+        "score": 83,
+        "overlooked": false,
+        "decisionMaker": "Recruitment agency owner or account manager"
+      },
+      {
+        "name": "Licensed immigration consultants (RCICs)",
+        "type": "complementary",
+        "priority": "High",
+        "score": 82,
+        "overlooked": false,
+        "decisionMaker": "Licensed immigration consultant (RCIC)"
+      },
+      {
+        "name": "Hospitals, long-term care & home-care employers recruiting internationally",
+        "type": "distribution",
+        "priority": "High",
+        "score": 81,
+        "overlooked": true,
+        "decisionMaker": "Director of talent acquisition / international recruitment lead"
+      },
+      {
+        "name": "Criminal defence lawyers",
+        "type": "complementary",
+        "priority": "High",
+        "score": 79,
+        "overlooked": true,
+        "decisionMaker": "Criminal defence lawyer"
+      },
+      {
+        "name": "Agriculture, trucking & food-processing employers",
+        "type": "distribution",
+        "priority": "High",
+        "score": 78,
+        "overlooked": true,
+        "decisionMaker": "Operations manager or HR lead responsible for foreign workers"
+      },
+      {
+        "name": "Certified translators",
+        "type": "upstream",
+        "priority": "High",
+        "score": 76,
+        "overlooked": true,
+        "decisionMaker": "Certified translator"
+      },
+      {
+        "name": "Corporate relocation & global mobility firms",
+        "type": "distribution",
+        "priority": "High",
+        "score": 76,
+        "overlooked": false,
+        "decisionMaker": "Relocation / global mobility consultant"
+      },
+      {
+        "name": "Corporate & commercial lawyers (cross-border deals and transfers)",
+        "type": "complementary",
+        "priority": "High",
+        "score": 72,
+        "overlooked": false,
+        "decisionMaker": "Corporate lawyer"
+      },
+      {
+        "name": "Family lawyers",
+        "type": "complementary",
+        "priority": "High",
+        "score": 72,
+        "overlooked": false,
+        "decisionMaker": "Family lawyer"
+      },
+      {
+        "name": "Accountants & cross-border tax advisors",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 68,
+        "overlooked": false,
+        "decisionMaker": "Cross-border tax accountant"
+      },
+      {
+        "name": "University & college international offices",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 63,
+        "overlooked": false,
+        "decisionMaker": "International student advisor / career services lead"
+      },
+      {
+        "name": "Cultural associations, diaspora chambers & ethnic media",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 61,
+        "overlooked": false,
+        "decisionMaker": "Association leader or community-media editor"
+      },
+      {
+        "name": "Faith communities & religious institutions",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 61,
+        "overlooked": true,
+        "decisionMaker": "Clergy or administrative leadership"
+      },
+      {
+        "name": "Realtors & mortgage brokers serving newcomers",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 60,
+        "overlooked": true,
+        "decisionMaker": "Mortgage broker or realtor serving newcomers"
+      },
+      {
+        "name": "Settlement agencies & newcomer non-profits",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 58,
+        "overlooked": false,
+        "decisionMaker": "Settlement program manager"
+      }
+    ],
+    "ai": [
+      {
+        "name": "Employers and HR teams",
+        "type": "upstream",
+        "priority": "High",
+        "score": 93,
+        "overlooked": false,
+        "decisionMaker": "Director of Human Resources"
+      },
+      {
+        "name": "Cultural associations",
+        "type": "shared_audience",
+        "priority": "High",
+        "score": 90,
+        "overlooked": false,
+        "decisionMaker": "Executive Director or Community Program Manager"
+      },
+      {
+        "name": "Settlement agencies",
+        "type": "distribution",
+        "priority": "High",
+        "score": 90,
+        "overlooked": false,
+        "decisionMaker": "Settlement Services Manager"
+      },
+      {
+        "name": "College international offices",
+        "type": "distribution",
+        "priority": "High",
+        "score": 89,
+        "overlooked": false,
+        "decisionMaker": "Director of International Student Services"
+      },
+      {
+        "name": "International recruiters",
+        "type": "upstream",
+        "priority": "High",
+        "score": 86,
+        "overlooked": false,
+        "decisionMaker": "Managing Director of Recruitment"
+      },
+      {
+        "name": "Certified translators",
+        "type": "complementary",
+        "priority": "High",
+        "score": 85,
+        "overlooked": false,
+        "decisionMaker": "Managing Translator"
+      },
+      {
+        "name": "Employment lawyers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 85,
+        "overlooked": false,
+        "decisionMaker": "Managing Partner or Senior Employment Lawyer"
+      },
+      {
+        "name": "Co-op placement offices",
+        "type": "upstream",
+        "priority": "High",
+        "score": 82,
+        "overlooked": true,
+        "decisionMaker": "Director of Work-Integrated Learning"
+      },
+      {
+        "name": "Language test centres",
+        "type": "distribution",
+        "priority": "High",
+        "score": 82,
+        "overlooked": true,
+        "decisionMaker": "Test Centre Manager or Candidate Services Manager"
+      },
+      {
+        "name": "Criminal defence lawyers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 81,
+        "overlooked": false,
+        "decisionMaker": "Managing Partner or Senior Criminal Defence Lawyer"
+      },
+      {
+        "name": "Family lawyers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 74,
+        "overlooked": false,
+        "decisionMaker": "Managing Partner or Senior Family Lawyer"
+      },
+      {
+        "name": "Corporate transaction lawyers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 72,
+        "overlooked": true,
+        "decisionMaker": "Corporate Practice Group Leader or Managing Partner"
+      },
+      {
+        "name": "Immigration medical clinics",
+        "type": "complementary",
+        "priority": "High",
+        "score": 72,
+        "overlooked": true,
+        "decisionMaker": "Clinic Manager"
+      },
+      {
+        "name": "Cross-border accountants",
+        "type": "complementary",
+        "priority": "High",
+        "score": 71,
+        "overlooked": true,
+        "decisionMaker": "Cross-Border Tax Partner"
+      },
+      {
+        "name": "Realtors and mortgage brokers",
+        "type": "downstream",
+        "priority": "Medium",
+        "score": 63,
+        "overlooked": false,
+        "decisionMaker": "Broker of Record or Managing Mortgage Broker"
+      }
+    ]
+  },
+  {
+    "slug": "property-management-swo",
+    "curatedProfile": "Property management",
+    "aiMode": "ai",
+    "aiModel": "gpt-5.5",
+    "aiNotes": [],
+    "seconds": 116,
+    "costUsd": 0.559765,
+    "curatedCount": 12,
+    "aiCount": 15,
+    "overlapApprox": 11,
+    "aiOnly": [
+      "Additional Suite Designers",
+      "Turnover Cleaners",
+      "Investor Education Groups",
+      "Bylaw Compliance Consultants"
+    ],
+    "curatedOnly": [],
+    "curated": [
+      {
+        "name": "Realtors with investor buyers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 90,
+        "overlooked": false,
+        "decisionMaker": "Buyer's agent who works with investors"
+      },
+      {
+        "name": "Landlord-tenant paralegals",
+        "type": "upstream",
+        "priority": "High",
+        "score": 83,
+        "overlooked": true,
+        "decisionMaker": "Paralegal who represents landlords at the tribunal"
+      },
+      {
+        "name": "Maintenance contractors & trades",
+        "type": "complementary",
+        "priority": "High",
+        "score": 83,
+        "overlooked": true,
+        "decisionMaker": "Owner of the plumbing, HVAC, or handyman company"
+      },
+      {
+        "name": "Accountants for real-estate investors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 69,
+        "overlooked": true,
+        "decisionMaker": "Accountant with a real-estate investor practice"
+      },
+      {
+        "name": "Builders of small rental projects & additional units",
+        "type": "distribution",
+        "priority": "Medium",
+        "score": 69,
+        "overlooked": true,
+        "decisionMaker": "Builder or developer of small multiplexes and secondary suites"
+      },
+      {
+        "name": "University & college off-campus housing offices",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 67,
+        "overlooked": false,
+        "decisionMaker": "Off-campus housing coordinator"
+      },
+      {
+        "name": "Real-estate investor networks & meetups",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 65,
+        "overlooked": false,
+        "decisionMaker": "Meetup organiser"
+      },
+      {
+        "name": "Estate lawyers & executors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 64,
+        "overlooked": true,
+        "decisionMaker": "Executor (often advised by the estate lawyer)"
+      },
+      {
+        "name": "Mortgage brokers for investors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 64,
+        "overlooked": false,
+        "decisionMaker": "Mortgage broker"
+      },
+      {
+        "name": "Relocation firms & employers moving staff",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 63,
+        "overlooked": true,
+        "decisionMaker": "Relocation consultant or HR mobility coordinator"
+      },
+      {
+        "name": "Receivers, insolvency trustees & private lenders",
+        "type": "distribution",
+        "priority": "Medium",
+        "score": 57,
+        "overlooked": true,
+        "decisionMaker": "Insolvency professional or private-lending asset manager"
+      },
+      {
+        "name": "Landlord insurance brokers",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 56,
+        "overlooked": false,
+        "decisionMaker": "Commercial or landlord insurance broker"
+      }
+    ],
+    "ai": [
+      {
+        "name": "Investor Realtors",
+        "type": "upstream",
+        "priority": "High",
+        "score": 93,
+        "overlooked": false,
+        "decisionMaker": "Broker of Record or Realtor Team Lead"
+      },
+      {
+        "name": "Investor Accountants",
+        "type": "upstream",
+        "priority": "High",
+        "score": 90,
+        "overlooked": false,
+        "decisionMaker": "Partner or Tax Manager"
+      },
+      {
+        "name": "Investor Education Groups",
+        "type": "shared_audience",
+        "priority": "High",
+        "score": 89,
+        "overlooked": false,
+        "decisionMaker": "Group Organizer or Education Program Director"
+      },
+      {
+        "name": "Small Rental Builders",
+        "type": "upstream",
+        "priority": "High",
+        "score": 88,
+        "overlooked": true,
+        "decisionMaker": "Builder Owner or Director of Client Care"
+      },
+      {
+        "name": "Maintenance Trades",
+        "type": "downstream",
+        "priority": "High",
+        "score": 86,
+        "overlooked": false,
+        "decisionMaker": "Owner, General Manager, or Service Manager"
+      },
+      {
+        "name": "Landlord Paralegals",
+        "type": "complementary",
+        "priority": "High",
+        "score": 82,
+        "overlooked": false,
+        "decisionMaker": "Principal Paralegal"
+      },
+      {
+        "name": "Additional Suite Designers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 81,
+        "overlooked": true,
+        "decisionMaker": "Design Principal or Studio Owner"
+      },
+      {
+        "name": "Turnover Cleaners",
+        "type": "downstream",
+        "priority": "High",
+        "score": 81,
+        "overlooked": false,
+        "decisionMaker": "Owner, Operations Manager, or Scheduling Manager"
+      },
+      {
+        "name": "Mortgage Brokers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 78,
+        "overlooked": false,
+        "decisionMaker": "Principal Broker or Mortgage Brokerage Owner"
+      },
+      {
+        "name": "Insurance Brokers",
+        "type": "complementary",
+        "priority": "High",
+        "score": 76,
+        "overlooked": false,
+        "decisionMaker": "Broker Principal or Account Executive"
+      },
+      {
+        "name": "Estate Lawyers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 72,
+        "overlooked": true,
+        "decisionMaker": "Estate Practice Group Lead"
+      },
+      {
+        "name": "Bylaw Compliance Consultants",
+        "type": "upstream",
+        "priority": "High",
+        "score": 71,
+        "overlooked": true,
+        "decisionMaker": "Principal Consultant or Compliance Practice Manager"
+      },
+      {
+        "name": "Private Lenders",
+        "type": "upstream",
+        "priority": "High",
+        "score": 71,
+        "overlooked": true,
+        "decisionMaker": "Principal Broker, Lending Manager, Portfolio Manager, or Underwriting Manager"
+      },
+      {
+        "name": "Relocation Coordinators",
+        "type": "distribution",
+        "priority": "High",
+        "score": 71,
+        "overlooked": true,
+        "decisionMaker": "Relocation Services Manager or Destination Services Manager"
+      },
+      {
+        "name": "Student Housing Offices",
+        "type": "distribution",
+        "priority": "High",
+        "score": 71,
+        "overlooked": true,
+        "decisionMaker": "Off-Campus Housing Manager, Housing Services Director, or Student Affairs Director"
+      }
+    ]
+  },
+  {
+    "slug": "seo-agency-ontario",
+    "curatedProfile": "Marketing, SEO & creative agency",
+    "aiMode": "ai",
+    "aiModel": "gpt-5.5",
+    "aiNotes": [],
+    "seconds": 124,
+    "costUsd": 0.59371,
+    "curatedCount": 14,
+    "aiCount": 15,
+    "overlapApprox": 13,
+    "aiOnly": [
+      "M&A advisors",
+      "Industry newsletters"
+    ],
+    "curatedOnly": [
+      "Marketing platform partner programmes",
+      "Commercial printers & sign shops"
+    ],
+    "curated": [
+      {
+        "name": "Web developers & software agencies",
+        "type": "complementary",
+        "priority": "High",
+        "score": 76,
+        "overlooked": false,
+        "decisionMaker": "Agency owner or project lead"
+      },
+      {
+        "name": "Fractional CMOs & marketing strategists",
+        "type": "upstream",
+        "priority": "High",
+        "score": 75,
+        "overlooked": false,
+        "decisionMaker": "Fractional CMO"
+      },
+      {
+        "name": "Trademark lawyers (forced rebrands & domain changes)",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 69,
+        "overlooked": true,
+        "decisionMaker": "Trademark lawyer or agent"
+      },
+      {
+        "name": "Business coaches & consultants",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 68,
+        "overlooked": false,
+        "decisionMaker": "Business coach / consultant"
+      },
+      {
+        "name": "Recruiters filling marketing roles",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 67,
+        "overlooked": true,
+        "decisionMaker": "Recruiter specialising in marketing and creative roles"
+      },
+      {
+        "name": "IT providers & web hosts during platform migrations",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 65,
+        "overlooked": true,
+        "decisionMaker": "MSP account manager or hosting provider's solutions lead"
+      },
+      {
+        "name": "Franchisors & multi-location operators",
+        "type": "distribution",
+        "priority": "Medium",
+        "score": 64,
+        "overlooked": true,
+        "decisionMaker": "Franchise marketing director"
+      },
+      {
+        "name": "PR firms, copywriters & content studios",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 64,
+        "overlooked": false,
+        "decisionMaker": "PR firm principal"
+      },
+      {
+        "name": "Marketing platform partner programmes",
+        "type": "distribution",
+        "priority": "Medium",
+        "score": 61,
+        "overlooked": false,
+        "decisionMaker": "Platform partner-program manager"
+      },
+      {
+        "name": "Commercial printers & sign shops",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 60,
+        "overlooked": true,
+        "decisionMaker": "Sign-shop owner"
+      },
+      {
+        "name": "Photographers & videographers",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 60,
+        "overlooked": false,
+        "decisionMaker": "Photographer or production lead"
+      },
+      {
+        "name": "Commercial real-estate brokers & landlords",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 58,
+        "overlooked": true,
+        "decisionMaker": "Commercial leasing agent or landlord's tenant-relations manager"
+      },
+      {
+        "name": "Accountants & fractional CFOs",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 57,
+        "overlooked": false,
+        "decisionMaker": "Accountant or fractional CFO"
+      },
+      {
+        "name": "Associations in your client niche",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 54,
+        "overlooked": false,
+        "decisionMaker": "Association programme committee"
+      }
+    ],
+    "ai": [
+      {
+        "name": "CRM implementation consultants",
+        "type": "complementary",
+        "priority": "High",
+        "score": 93,
+        "overlooked": false,
+        "decisionMaker": "Founder, Managing Consultant, or Head of Implementation"
+      },
+      {
+        "name": "Fractional CMOs",
+        "type": "distribution",
+        "priority": "High",
+        "score": 92,
+        "overlooked": false,
+        "decisionMaker": "Fractional CMO or Managing Partner"
+      },
+      {
+        "name": "Franchisors and operators",
+        "type": "distribution",
+        "priority": "High",
+        "score": 92,
+        "overlooked": false,
+        "decisionMaker": "Director of Franchise Marketing"
+      },
+      {
+        "name": "IT providers and hosts",
+        "type": "complementary",
+        "priority": "High",
+        "score": 90,
+        "overlooked": false,
+        "decisionMaker": "Technical Account Manager or Director of Managed Services"
+      },
+      {
+        "name": "Web development agencies",
+        "type": "upstream",
+        "priority": "High",
+        "score": 90,
+        "overlooked": false,
+        "decisionMaker": "Agency Principal or Director of Client Services"
+      },
+      {
+        "name": "Trade associations",
+        "type": "distribution",
+        "priority": "High",
+        "score": 86,
+        "overlooked": false,
+        "decisionMaker": "Director of Member Services"
+      },
+      {
+        "name": "PR and content studios",
+        "type": "complementary",
+        "priority": "High",
+        "score": 78,
+        "overlooked": false,
+        "decisionMaker": "Managing Director, Account Director, or Head of Content Strategy"
+      },
+      {
+        "name": "Business growth consultants",
+        "type": "upstream",
+        "priority": "High",
+        "score": 75,
+        "overlooked": true,
+        "decisionMaker": "Principal Consultant or Managing Partner"
+      },
+      {
+        "name": "Industry newsletters",
+        "type": "shared_audience",
+        "priority": "High",
+        "score": 72,
+        "overlooked": true,
+        "decisionMaker": "Editor"
+      },
+      {
+        "name": "Accountants and CFOs",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 69,
+        "overlooked": true,
+        "decisionMaker": "Fractional CFO, Partner, or Client Advisory Services Director"
+      },
+      {
+        "name": "M&A advisors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 68,
+        "overlooked": true,
+        "decisionMaker": "Managing Director or Partner"
+      },
+      {
+        "name": "Commercial real estate advisors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 65,
+        "overlooked": true,
+        "decisionMaker": "Managing Broker or Principal Advisor"
+      },
+      {
+        "name": "Photographers and videographers",
+        "type": "downstream",
+        "priority": "Medium",
+        "score": 63,
+        "overlooked": true,
+        "decisionMaker": "Studio Owner, Creative Director, or Commercial Producer"
+      },
+      {
+        "name": "Recruiters for marketers",
+        "type": "downstream",
+        "priority": "Medium",
+        "score": 63,
+        "overlooked": true,
+        "decisionMaker": "Recruitment Practice Lead, Managing Partner, or Account Director"
+      },
+      {
+        "name": "Trademark lawyers",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 63,
+        "overlooked": true,
+        "decisionMaker": "Trademark Lawyer or Intellectual Property Partner"
+      }
+    ]
+  },
+  {
+    "slug": "custom-builder-lambton",
+    "curatedProfile": "Custom home builder",
+    "aiMode": "ai",
+    "aiModel": "gpt-5.5",
+    "aiNotes": [],
+    "seconds": 95,
+    "costUsd": 0.545065,
+    "curatedCount": 11,
+    "aiCount": 15,
+    "overlapApprox": 11,
+    "aiOnly": [
+      "Septic well specialists",
+      "Demolition contractors",
+      "Home show organizers",
+      "Building supply showrooms"
+    ],
+    "curatedOnly": [
+      "Your trade partners",
+      "Home builders' associations & awards programs"
+    ],
+    "curated": [
+      {
+        "name": "Realtors specialising in lots, acreage & teardowns",
+        "type": "upstream",
+        "priority": "High",
+        "score": 88,
+        "overlooked": true,
+        "decisionMaker": "Agent who lists or sells land and teardown properties"
+      },
+      {
+        "name": "Construction-mortgage lenders & brokers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 83,
+        "overlooked": true,
+        "decisionMaker": "Mortgage broker or construction-lending specialist"
+      },
+      {
+        "name": "Architects & residential designers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 81,
+        "overlooked": false,
+        "decisionMaker": "Architect or designer"
+      },
+      {
+        "name": "Your trade partners",
+        "type": "complementary",
+        "priority": "High",
+        "score": 79,
+        "overlooked": true,
+        "decisionMaker": "Owners of your excavation, framing, HVAC, and electrical subcontractors"
+      },
+      {
+        "name": "Interior designers",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 67,
+        "overlooked": false,
+        "decisionMaker": "Interior designer"
+      },
+      {
+        "name": "Land-use planners & surveyors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 60,
+        "overlooked": true,
+        "decisionMaker": "Land-use planner or Ontario Land Surveyor"
+      },
+      {
+        "name": "Home technology integrators (AV, automation, security)",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 56,
+        "overlooked": true,
+        "decisionMaker": "Integrator's sales lead"
+      },
+      {
+        "name": "Wealth advisors & private bankers",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 56,
+        "overlooked": true,
+        "decisionMaker": "Wealth advisor"
+      },
+      {
+        "name": "Estate lawyers & executors (teardown properties)",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 53,
+        "overlooked": true,
+        "decisionMaker": "Executor or heir"
+      },
+      {
+        "name": "Home builders' associations & awards programs",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 53,
+        "overlooked": false,
+        "decisionMaker": "Association executive officer and committees"
+      },
+      {
+        "name": "Multigenerational & aging-in-place advisors",
+        "type": "shared_audience",
+        "priority": "Low",
+        "score": 50,
+        "overlooked": true,
+        "decisionMaker": "Occupational therapist, financial planner, or seniors' advisor"
+      }
+    ],
+    "ai": [
+      {
+        "name": "Lot teardown realtors",
+        "type": "upstream",
+        "priority": "High",
+        "score": 93,
+        "overlooked": false,
+        "decisionMaker": "Broker of Record or Sales Representative leading land and residential redevelopment transactions"
+      },
+      {
+        "name": "Residential designers",
+        "type": "complementary",
+        "priority": "High",
+        "score": 93,
+        "overlooked": false,
+        "decisionMaker": "Principal Residential Designer or Design Director"
+      },
+      {
+        "name": "Building supply showrooms",
+        "type": "distribution",
+        "priority": "High",
+        "score": 88,
+        "overlooked": false,
+        "decisionMaker": "Showroom Manager or Trade Sales Manager"
+      },
+      {
+        "name": "Construction mortgage brokers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 88,
+        "overlooked": false,
+        "decisionMaker": "Mortgage Broker Owner or Principal Broker"
+      },
+      {
+        "name": "Interior designers",
+        "type": "complementary",
+        "priority": "High",
+        "score": 85,
+        "overlooked": false,
+        "decisionMaker": "Principal Interior Designer or Studio Director"
+      },
+      {
+        "name": "Demolition contractors",
+        "type": "upstream",
+        "priority": "High",
+        "score": 82,
+        "overlooked": false,
+        "decisionMaker": "Owner or Estimating Manager"
+      },
+      {
+        "name": "Landscape designers",
+        "type": "downstream",
+        "priority": "High",
+        "score": 75,
+        "overlooked": false,
+        "decisionMaker": "Principal Landscape Designer or Design Sales Manager"
+      },
+      {
+        "name": "Septic well specialists",
+        "type": "upstream",
+        "priority": "High",
+        "score": 75,
+        "overlooked": true,
+        "decisionMaker": "Owner-Operator or Operations Manager"
+      },
+      {
+        "name": "Home show organizers",
+        "type": "distribution",
+        "priority": "High",
+        "score": 74,
+        "overlooked": false,
+        "decisionMaker": "Show Manager or Exhibitor Relations Manager"
+      },
+      {
+        "name": "Home technology integrators",
+        "type": "downstream",
+        "priority": "High",
+        "score": 74,
+        "overlooked": false,
+        "decisionMaker": "Owner or Systems Design Manager"
+      },
+      {
+        "name": "Land use planners",
+        "type": "upstream",
+        "priority": "High",
+        "score": 74,
+        "overlooked": true,
+        "decisionMaker": "Principal Planner or Planning Consultant"
+      },
+      {
+        "name": "Aging-in-place consultants",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 68,
+        "overlooked": true,
+        "decisionMaker": "Principal Consultant or Accessibility Services Director"
+      },
+      {
+        "name": "Energy advisors",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 68,
+        "overlooked": true,
+        "decisionMaker": "Principal Energy Advisor"
+      },
+      {
+        "name": "Surveyors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 67,
+        "overlooked": true,
+        "decisionMaker": "Survey Firm Principal or Survey Project Manager"
+      },
+      {
+        "name": "Estate lawyers",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 61,
+        "overlooked": true,
+        "decisionMaker": "Estate Lawyer or Managing Partner"
+      }
+    ]
+  },
+  {
+    "slug": "family-law-hamilton",
+    "curatedProfile": "Family law",
+    "aiMode": "ai",
+    "aiModel": "gpt-5.5",
+    "aiNotes": [],
+    "seconds": 99,
+    "costUsd": 0.547135,
+    "curatedCount": 11,
+    "aiCount": 15,
+    "overlapApprox": 13,
+    "aiOnly": [
+      "Newcomer Support Centres",
+      "Insolvency Trustees"
+    ],
+    "curatedOnly": [],
+    "curated": [
+      {
+        "name": "Mortgage brokers (spousal buyouts & refinancing)",
+        "type": "upstream",
+        "priority": "High",
+        "score": 83,
+        "overlooked": true,
+        "decisionMaker": "Mortgage broker"
+      },
+      {
+        "name": "Family mediators",
+        "type": "complementary",
+        "priority": "High",
+        "score": 81,
+        "overlooked": false,
+        "decisionMaker": "Family mediator"
+      },
+      {
+        "name": "Business valuators & forensic accountants",
+        "type": "complementary",
+        "priority": "High",
+        "score": 78,
+        "overlooked": false,
+        "decisionMaker": "Chartered business valuator or forensic accountant"
+      },
+      {
+        "name": "Employee Assistance Program (EAP) legal-advice services",
+        "type": "distribution",
+        "priority": "High",
+        "score": 75,
+        "overlooked": true,
+        "decisionMaker": "EAP provider's legal-network manager"
+      },
+      {
+        "name": "Criminal defence lawyers",
+        "type": "complementary",
+        "priority": "High",
+        "score": 72,
+        "overlooked": false,
+        "decisionMaker": "Criminal defence lawyer"
+      },
+      {
+        "name": "Estate-planning lawyers & insurance advisors",
+        "type": "downstream",
+        "priority": "Medium",
+        "score": 69,
+        "overlooked": true,
+        "decisionMaker": "Estate-planning lawyer or life-insurance advisor"
+      },
+      {
+        "name": "Immigration lawyers & licensed consultants",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 68,
+        "overlooked": false,
+        "decisionMaker": "Immigration lawyer"
+      },
+      {
+        "name": "Financial planners & divorce financial specialists",
+        "type": "complementary",
+        "priority": "Medium",
+        "score": 67,
+        "overlooked": false,
+        "decisionMaker": "Financial planner (some hold divorce-specific designations)"
+      },
+      {
+        "name": "Family therapists & individual counsellors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 65,
+        "overlooked": false,
+        "decisionMaker": "Registered psychotherapist or social worker"
+      },
+      {
+        "name": "Realtors handling separation sales",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 60,
+        "overlooked": false,
+        "decisionMaker": "Realtor experienced with separation sales"
+      },
+      {
+        "name": "Community agencies & family-violence services",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 58,
+        "overlooked": false,
+        "decisionMaker": "Agency program coordinator"
+      }
+    ],
+    "ai": [
+      {
+        "name": "Family Mediators",
+        "type": "complementary",
+        "priority": "High",
+        "score": 93,
+        "overlooked": false,
+        "decisionMaker": "Lead Family Mediator or Mediation Practice Director"
+      },
+      {
+        "name": "Newcomer Support Centres",
+        "type": "distribution",
+        "priority": "High",
+        "score": 88,
+        "overlooked": false,
+        "decisionMaker": "Program Manager or Settlement Services Manager"
+      },
+      {
+        "name": "Family Violence Agencies",
+        "type": "upstream",
+        "priority": "High",
+        "score": 79,
+        "overlooked": false,
+        "decisionMaker": "Program Manager"
+      },
+      {
+        "name": "Forensic Accountants",
+        "type": "complementary",
+        "priority": "High",
+        "score": 79,
+        "overlooked": false,
+        "decisionMaker": "Forensic Accounting Partner"
+      },
+      {
+        "name": "Accountants And Bookkeepers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 78,
+        "overlooked": false,
+        "decisionMaker": "Managing Partner, Principal CPA, or Bookkeeping Practice Owner"
+      },
+      {
+        "name": "Criminal Defence Lawyers",
+        "type": "complementary",
+        "priority": "High",
+        "score": 78,
+        "overlooked": false,
+        "decisionMaker": "Principal Lawyer"
+      },
+      {
+        "name": "EAP Legal Programs",
+        "type": "distribution",
+        "priority": "High",
+        "score": 78,
+        "overlooked": true,
+        "decisionMaker": "Legal Network Manager or Provider Relations Manager"
+      },
+      {
+        "name": "Realtors Handling Separations",
+        "type": "upstream",
+        "priority": "High",
+        "score": 78,
+        "overlooked": false,
+        "decisionMaker": "Broker of Record"
+      },
+      {
+        "name": "Insolvency Trustees",
+        "type": "shared_audience",
+        "priority": "High",
+        "score": 76,
+        "overlooked": true,
+        "decisionMaker": "Licensed Insolvency Trustee or Managing Trustee"
+      },
+      {
+        "name": "Estate Planning Lawyers",
+        "type": "downstream",
+        "priority": "High",
+        "score": 75,
+        "overlooked": false,
+        "decisionMaker": "Estate Planning Lawyer"
+      },
+      {
+        "name": "Family Therapists",
+        "type": "upstream",
+        "priority": "High",
+        "score": 75,
+        "overlooked": false,
+        "decisionMaker": "Clinical Director"
+      },
+      {
+        "name": "Mortgage Brokers",
+        "type": "upstream",
+        "priority": "High",
+        "score": 74,
+        "overlooked": true,
+        "decisionMaker": "Principal Mortgage Broker"
+      },
+      {
+        "name": "Divorce Financial Specialists",
+        "type": "complementary",
+        "priority": "High",
+        "score": 72,
+        "overlooked": true,
+        "decisionMaker": "Principal Financial Planner or Divorce Financial Specialist Practice Lead"
+      },
+      {
+        "name": "School Counsellors",
+        "type": "shared_audience",
+        "priority": "Medium",
+        "score": 69,
+        "overlooked": true,
+        "decisionMaker": "Principal or Manager of Student Services"
+      },
+      {
+        "name": "Immigration Advisors",
+        "type": "upstream",
+        "priority": "Medium",
+        "score": 58,
+        "overlooked": true,
+        "decisionMaker": "Managing Immigration Lawyer or Regulated Immigration Consultant"
+      }
+    ]
+  }
+]

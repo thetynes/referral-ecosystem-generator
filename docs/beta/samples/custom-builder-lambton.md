@@ -250,3 +250,21 @@ Upstream partners (realtors specialising in lots, acreage & teardowns, construct
 - **Partnerships are not paid-referral arrangements.** This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals.
 - **Outreach in Canada: CASL applies.** Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA).
 - **No automated outreach.** This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline.
+
+## AI comparison (gpt-5.5)
+
+- Lot teardown realtors (Upstream, High 93). Decides: Broker of Record or Sales Representative leading land and residential redevelopment transactions
+- Residential designers (Complementary, High 93). Decides: Principal Residential Designer or Design Director
+- Building supply showrooms (Distribution, High 88). Decides: Showroom Manager or Trade Sales Manager
+- Construction mortgage brokers (Upstream, High 88). Decides: Mortgage Broker Owner or Principal Broker
+- Interior designers (Complementary, High 85). Decides: Principal Interior Designer or Studio Director
+- Demolition contractors (Upstream, High 82). Decides: Owner or Estimating Manager
+- Landscape designers (Downstream, High 75). Decides: Principal Landscape Designer or Design Sales Manager
+- Septic well specialists (Upstream, High 75) · flagged overlooked. Decides: Owner-Operator or Operations Manager
+- Home show organizers (Distribution, High 74). Decides: Show Manager or Exhibitor Relations Manager
+- Home technology integrators (Downstream, High 74). Decides: Owner or Systems Design Manager
+- Land use planners (Upstream, High 74) · flagged overlooked. Decides: Principal Planner or Planning Consultant
+- Aging-in-place consultants (Shared audience, Medium 68) · flagged overlooked. Decides: Principal Consultant or Accessibility Services Director
+- Energy advisors (Complementary, Medium 68) · flagged overlooked. Decides: Principal Energy Advisor
+- Surveyors (Upstream, Medium 67) · flagged overlooked. Decides: Survey Firm Principal or Survey Project Manager
+- Estate lawyers (Upstream, Medium 61) · flagged overlooked. Decides: Estate Lawyer or Managing Partner

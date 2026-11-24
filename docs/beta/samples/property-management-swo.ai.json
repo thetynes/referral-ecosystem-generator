@@ -1,0 +1,1572 @@
+{
+  "id": "397a2c2d-779d-43f0-b79c-40bea2ba4972",
+  "createdAt": "2026-11-23T23:24:09.522Z",
+  "isDemo": false,
+  "profile": {
+    "displayName": "Sample Property Management (illustrative)",
+    "website": null,
+    "industry": "Residential property management company",
+    "services": [
+      "Tenant placement",
+      "rent collection",
+      "maintenance coordination",
+      "Landlord",
+      "Tenant Board filings",
+      "owner reporting"
+    ],
+    "serviceArea": "London, Kitchener-Waterloo and Southwestern Ontario",
+    "geography": {
+      "country": "CA",
+      "region": "Ontario",
+      "scope": "regional"
+    },
+    "idealCustomer": "Owners of single-family rentals, small multiplexes, student rentals and secondary suites",
+    "customerSegments": [
+      "Owners of single-family rentals",
+      "small multiplexes",
+      "student rentals",
+      "secondary suites"
+    ],
+    "projectValue": null,
+    "targetIndustries": [],
+    "growthPriority": "recurring",
+    "existingReferrals": [],
+    "expansionMarkets": []
+  },
+  "engine": {
+    "mode": "ai",
+    "provider": "openai",
+    "model": "gpt-5.5",
+    "archetypeId": "property-management",
+    "archetypeLabel": "Property management",
+    "matchConfidence": "high",
+    "notes": [],
+    "version": "1.0.0",
+    "costUsd": 0.559765
+  },
+  "categories": [
+    {
+      "id": "investor-realtors",
+      "name": "Investor Realtors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Investor-focused realtors encounter rental owners at the point they are evaluating, offering on, or closing investment properties. The referral opportunity is strongest before closing, when the buyer is forming assumptions about leasing timelines, rent collection, maintenance responsibility, and Landlord and Tenant Board risk.",
+      "rationale": "This relationship makes commercial sense because a smooth transition from purchase to rental operations protects the realtor’s client experience and gives the property management company access to owners before they self-manage or choose another provider.",
+      "triggers": [
+        {
+          "event": "Investor buyer has a firm agreement of purchase and sale on a single-family rental or small multiplex.",
+          "whyNeed": "The owner will soon need tenant placement, rent collection setup, maintenance processes, and reporting once the property closes.",
+          "whoRecognizes": "Investor realtor or buyer agent.",
+          "referralMoment": "After conditions are waived and before closing, while the buyer is planning possession, leasing, and cash flow.",
+          "partnerValue": "The realtor reduces post-closing confusion and helps the client feel supported beyond the transaction."
+        },
+        {
+          "event": "Buyer is purchasing a vacant or partially vacant rental property.",
+          "whyNeed": "Vacancy creates immediate lease-up, rent-setting, showing, screening, and move-in coordination needs.",
+          "whoRecognizes": "Investor realtor.",
+          "referralMoment": "During offer strategy or due diligence, before the buyer finalizes rent assumptions.",
+          "partnerValue": "The realtor can help the buyer validate an operating plan and avoid disappointment after closing."
+        },
+        {
+          "event": "Existing investor client asks the realtor whether to keep, sell, or buy another rental.",
+          "whyNeed": "The client may need better management support to make the property less burdensome and preserve the investment.",
+          "whoRecognizes": "Investor realtor or realtor team lead.",
+          "referralMoment": "During portfolio review or pre-listing consultation, before the owner decides to exit ownership.",
+          "partnerValue": "The realtor retains a long-term investor relationship and may support future acquisition or disposition decisions."
+        }
+      ],
+      "mutualValue": "The property manager gives the realtor a reliable post-closing operations resource, while the realtor introduces owners at a high-intent moment when professional management can prevent avoidable service issues.",
+      "approach": "Offer a short investor-owner handoff checklist that realtors can share during closing, then invite a small group of investor-focused agents to discuss common post-closing management problems in Southwestern Ontario.",
+      "decisionMaker": "Broker of Record or Realtor Team Lead",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Investor buyer closing checklist",
+        "Small-group lunch-and-learn for investor agents",
+        "Co-hosted rental operations planning webinar",
+        "New landlord onboarding guide for realtor clients"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on preparing a newly purchased rental for lease-up",
+        "Educational webinar on operating assumptions investors should verify before closing"
+      ],
+      "regulatoryNote": "Real estate is regulated in Ontario; avoid assuming referral fees, exclusivity, client steering, or endorsements are permitted, and ensure any referral practices comply with applicable real estate rules and brokerage policies.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Investor realtors see the need very early, often before the owner has chosen a leasing or management solution.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Tenant placement, rent collection, maintenance coordination, and owner reporting directly solve post-acquisition rental operation needs.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Investor-focused agents regularly encounter rental buyers, though volume varies by market cycle and agent niche.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "A new rental acquisition can become a recurring management account rather than a one-time tenant placement.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Team leads and investor agents are relatively reachable through local real estate networks, though brokerage compliance may add steps.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Investor clients may own multiple properties and require ongoing management after each purchase.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The realtor improves client continuity while the property manager gains timely introductions to owners with imminent operational needs.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Investor realtors are highly relevant across London, Kitchener-Waterloo, and Southwestern Ontario rental markets.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship is straightforward to start with education and handoff tools, provided regulatory boundaries are respected.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "investor realtor",
+        "investment property real estate agent",
+        "rental property realtor"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "mortgage-brokers",
+      "name": "Mortgage Brokers",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Mortgage brokers encounter owners when they are financing a rental purchase, refinancing an existing rental, or funding a secondary suite. The referral opportunity arises when the borrower’s financing plan depends on realistic rent, stable operations, and the owner’s ability to manage the property responsibly.",
+      "rationale": "This relationship makes commercial sense because management planning can support a more credible ownership conversation, while the property manager is introduced before the owner’s operational gaps become urgent.",
+      "triggers": [
+        {
+          "event": "Borrower applies for financing to purchase a rental property.",
+          "whyNeed": "The borrower must plan for rent collection, vacancy risk, maintenance, tenant screening, and documentation after closing.",
+          "whoRecognizes": "Mortgage broker or mortgage agent.",
+          "referralMoment": "During pre-approval, approval conditions, or closing preparation when the borrower is assessing affordability and operations.",
+          "partnerValue": "The broker helps the client think beyond financing and reduces surprises that could undermine the ownership plan."
+        },
+        {
+          "event": "Owner refinances an existing rental to access equity or improve cash flow.",
+          "whyNeed": "Refinancing may expose weak rent collection, poor records, deferred maintenance, or tenant issues that professional management can address.",
+          "whoRecognizes": "Mortgage broker reviewing the file with the client.",
+          "referralMoment": "During refinance discovery or renewal discussions, before the owner commits to a long-term plan.",
+          "partnerValue": "The broker can support a more organized client file and strengthen the client’s confidence in keeping the property."
+        },
+        {
+          "event": "Homeowner seeks financing for a basement apartment, garden suite, or other additional residential unit.",
+          "whyNeed": "The owner is becoming a landlord and may not understand leasing, maintenance access, documentation, and compliance workflows.",
+          "whoRecognizes": "Mortgage broker or mortgage agent.",
+          "referralMoment": "When financing is being structured and projected rent is being discussed.",
+          "partnerValue": "The broker adds practical value by connecting the homeowner to rental operations expertise without trying to provide that advice themselves."
+        }
+      ],
+      "mutualValue": "The broker gains an operations resource that helps clients plan responsibly for rental ownership, while the property manager gains early access to owners whose financing decisions are tied to future rental performance.",
+      "approach": "Create a neutral one-page rental operations planning checklist for broker clients and offer to run a short educational session on what new rental owners should budget and prepare for after financing is arranged.",
+      "decisionMaker": "Principal Broker or Mortgage Brokerage Owner",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Broker education session on rental ownership readiness",
+        "Client-facing rental operations checklist",
+        "Newsletter feature on preparing for first-time landlord responsibilities",
+        "Joint webinar on financing and operating a secondary suite"
+      ],
+      "digitalAuthority": [
+        "Educational article on operational questions rental borrowers should ask before closing",
+        "Co-hosted webinar on planning a rental property after financing approval"
+      ],
+      "regulatoryNote": "Mortgage and financial services are regulated; avoid assuming referral compensation, exclusivity, client steering, or financial advice, and ensure communications comply with brokerage policies and applicable mortgage conduct rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Mortgage brokers often see rental ownership plans early, though they may not always be involved in day-to-day operational detail.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Property management supports the borrower’s practical ownership plan, especially where rent collection and maintenance affect long-term viability.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Brokers regularly handle purchases, refinances, renewals, and secondary-suite financing involving rental income.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Introductions can lead to recurring management accounts, although some borrowers may initially be focused only on financing.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Brokerage owners and principal brokers are generally accessible through professional networking and local business channels.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "A financed rental or suite may require ongoing management for years after the loan is arranged.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The broker can offer a practical client resource while staying within their financing role, and the manager receives early-stage leads.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Rental financing and secondary-suite financing are relevant across the stated Ontario service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is viable but requires careful compliance boundaries and non-promotional educational positioning.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "mortgage broker rental property",
+        "mortgage agent investment property",
+        "mortgage broker secondary suite financing"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "additional-suite-designers",
+      "name": "Additional Suite Designers",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Additional suite designers encounter homeowners while they are planning basement apartments, garden suites, duplex conversions, or other small rental additions. The referral opportunity is during design and permit planning, before the owner has finalized layout, maintenance access, tenant experience, and operating budget assumptions.",
+      "rationale": "This relationship makes commercial sense because the designer influences decisions that affect future rental operations, and the property manager can help owners plan for leasing, access, maintenance, and compliance workflows before costly design choices are locked in.",
+      "triggers": [
+        {
+          "event": "Homeowner begins design for a basement apartment or secondary suite.",
+          "whyNeed": "The homeowner is becoming a landlord and must plan tenant placement, rent collection, maintenance access, inspections, and ongoing communication.",
+          "whoRecognizes": "Additional suite designer or architectural designer.",
+          "referralMoment": "During early design consultation or feasibility review, before permit drawings are finalized.",
+          "partnerValue": "The designer helps the client think through operational realities that affect satisfaction after construction."
+        },
+        {
+          "event": "Design includes shared mechanical systems, laundry, parking, storage, or access routes.",
+          "whyNeed": "These features can create future tenant disputes, maintenance coordination issues, and unclear responsibilities if not planned early.",
+          "whoRecognizes": "Designer, project coordinator, or permit consultant.",
+          "referralMoment": "When layout and access decisions are being discussed.",
+          "partnerValue": "The designer can improve project outcomes by flagging practical landlord-tenant considerations outside pure design scope."
+        },
+        {
+          "event": "Homeowner asks about expected rent, tenant type, or whether the suite will be worth the investment.",
+          "whyNeed": "The owner needs practical input on leasing readiness, turnover preparation, marketability, and management obligations.",
+          "whoRecognizes": "Designer or client intake lead.",
+          "referralMoment": "During feasibility, budgeting, or scope-setting conversations.",
+          "partnerValue": "The designer can keep the project moving while referring operational questions to a specialist."
+        }
+      ],
+      "mutualValue": "The designer gains a trusted resource for landlord-readiness questions that fall outside design scope, while the property manager meets future landlords before the unit is built and can help shape smoother long-term operations.",
+      "approach": "Develop a brief “designing for future rental management” checklist covering access, maintenance, storage, parking, and onboarding, then offer it as a resource for designers to share during feasibility consultations.",
+      "decisionMaker": "Design Principal or Studio Owner",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Rental-ready suite design checklist",
+        "Feasibility-stage workshop for homeowners",
+        "Designer lunch-and-learn on landlord operations considerations",
+        "Homeowner guide on preparing a new suite for tenancy"
+      ],
+      "digitalAuthority": [
+        "Co-authored guide on designing secondary suites with future maintenance and tenancy in mind",
+        "Educational webinar on operational planning before building an additional residential unit"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Designers meet homeowners before the rental unit exists, which is one of the earliest points in the customer journey.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Property management is highly relevant once the suite is built, and early input can improve leasing and maintenance readiness.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Designers may see a steady but narrower stream of suite projects compared with realtors or brokers.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Each completed suite can become an ongoing management account, especially for first-time landlords who prefer support.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Small design studios and permit-focused firms often have reachable principals or owners.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "The end service is recurring, although an individual homeowner may only build one suite.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The designer improves client planning while the property manager gains early-stage future landlord relationships.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Additional suites are directly relevant across Ontario municipalities in the service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A practical checklist and educational approach can establish the relationship without complex integration.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "secondary suite designer",
+        "additional residential unit designer",
+        "basement apartment design consultant"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "small-rental-builders",
+      "name": "Small Rental Builders",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Small rental builders encounter owners as a rental unit, infill property, small multiplex, or additional unit approaches completion. The referral opportunity is before handover, when the owner is shifting from construction decisions to lease-up, tenant onboarding, maintenance response, and ongoing reporting.",
+      "rationale": "This relationship makes commercial sense because the builder wants a clean project closeout with fewer post-completion operational questions, while the property manager can take over the owner’s next phase and convert a completed build into recurring management work.",
+      "triggers": [
+        {
+          "event": "Builder is nearing handover on a new small multiplex, infill rental, or additional unit.",
+          "whyNeed": "The owner needs lease-up planning, showings, tenant screening, rent collection setup, and maintenance coordination immediately after completion.",
+          "whoRecognizes": "Builder owner, project manager, or client care manager.",
+          "referralMoment": "Sixty to ninety days before occupancy or handover, depending on readiness and local requirements.",
+          "partnerValue": "The builder reduces owner uncertainty and helps the project feel move-in and income ready."
+        },
+        {
+          "event": "Owner asks the builder what to do next to find tenants or manage the property.",
+          "whyNeed": "Construction completion does not solve leasing, documentation, communication, or ongoing maintenance responsibilities.",
+          "whoRecognizes": "Project manager or sales manager.",
+          "referralMoment": "At pre-handover meetings, deficiency walkthroughs, or final invoicing discussions.",
+          "partnerValue": "The builder can answer confidently without taking on property management duties."
+        },
+        {
+          "event": "Post-completion service requests are actually tenant or owner operations issues rather than construction defects.",
+          "whyNeed": "Without a management process, owners may direct routine maintenance coordination and tenant issues back to the builder.",
+          "whoRecognizes": "Warranty or client care manager.",
+          "referralMoment": "As soon as operational questions start appearing during closeout or warranty follow-up.",
+          "partnerValue": "The builder protects its team from scope creep and keeps client care focused on legitimate construction issues."
+        }
+      ],
+      "mutualValue": "The builder gains a professional handoff partner that reduces scope creep and improves client experience after completion, while the property manager gains access to owners just as their rental asset becomes operational.",
+      "approach": "Offer a builder handoff package that includes a lease-up timeline, owner onboarding checklist, and maintenance responsibility map, then pilot it with one builder’s next small rental completion.",
+      "decisionMaker": "Builder Owner or Director of Client Care",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Pre-handover rental operations checklist",
+        "Owner orientation session before occupancy",
+        "Builder client-care handoff guide",
+        "Lease-up planning workshop for new rental owners"
+      ],
+      "digitalAuthority": [
+        "Co-authored homeowner guide on moving from construction completion to rental operations",
+        "Educational article on preparing a newly built rental unit for tenant occupancy"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Builders see the owner immediately before the property becomes rentable and operational needs become urgent.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Tenant placement, maintenance coordination, reporting, and rent collection are directly relevant after construction handover.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Project flow depends on the builder’s niche and pipeline, so opportunities may be less frequent but well-timed.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Completed rental builds can become recurring management accounts with strong lifetime value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Small builders often have identifiable owners, project managers, or client care leads who can approve a handoff process.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Once leased, the property can require ongoing management for the duration of ownership.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The builder reduces post-completion operational burden while the property manager gains well-timed introductions.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Small rental construction, infill projects, and additional units align closely with the regional Ontario service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A simple handoff workflow is easy to test, though timing must align with construction completion schedules.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "small multiplex builder",
+        "infill rental builder",
+        "additional dwelling unit builder"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "estate-lawyers",
+      "name": "Estate Lawyers",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Estate lawyers encounter heirs, executors, and attorneys for property when ownership of a home or rental property changes after death or incapacity. If the estate contains a rental, vacant house, secondary suite, or inherited property that the beneficiaries are not ready to sell, the referral opportunity is to introduce professional management before vacancy, tenant issues, or maintenance neglect erode value.",
+      "rationale": "This relationship makes commercial sense because estate matters often create a sudden management gap, and even occasional referrals can produce long-term recurring management accounts when heirs keep the property as an income asset.",
+      "triggers": [
+        {
+          "event": "Estate includes an occupied rental property.",
+          "whyNeed": "Rent collection, tenant communication, repairs, inspections, and owner reporting still need to continue while beneficiaries decide what to do with the asset.",
+          "whoRecognizes": "Estate lawyer, estate clerk, executor, or trustee.",
+          "referralMoment": "When the executor is reviewing estate assets and deciding whether to hold, sell, or transfer the property.",
+          "partnerValue": "The lawyer helps the executor preserve estate value and reduce day-to-day administrative burden without stepping into property operations."
+        },
+        {
+          "event": "Vacant inherited home may be rented instead of sold immediately.",
+          "whyNeed": "The heirs may need leasing advice, tenant placement, insurance-ready maintenance coordination, and ongoing oversight before the home becomes an income property.",
+          "whoRecognizes": "Estate lawyer or executor during estate planning or administration discussions.",
+          "referralMoment": "Before beneficiaries authorize repairs, listing for rent, or a hold-versus-sell strategy.",
+          "partnerValue": "The lawyer can present a practical option for preserving the asset while legal and family decisions are completed."
+        },
+        {
+          "event": "Executor lives outside the service area or lacks landlord experience.",
+          "whyNeed": "Distance and inexperience make self-management difficult, especially for maintenance access, tenant notices, inspections, and reliable owner reporting.",
+          "whoRecognizes": "Estate lawyer or estate administration staff when gathering executor instructions.",
+          "referralMoment": "When the executor expresses concern about managing the property or coordinating local vendors.",
+          "partnerValue": "The lawyer reduces friction in estate administration by connecting the executor with an operational resource."
+        }
+      ],
+      "mutualValue": "The lawyer gains a trusted operational resource for clients who need practical help managing estate property, while the property manager gains access to owners at the point where a long-term rental decision is being made. The relationship can also reduce urgent calls to the lawyer about non-legal property operations.",
+      "approach": "Prepare a short estate-property checklist for executors covering rental status, vacancy, insurance, maintenance, tenant communication, and records, then offer a brief educational meeting with estate lawyers and estate clerks to explain where property management fits and where legal advice remains with counsel.",
+      "decisionMaker": "Estate Practice Group Lead",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Executor checklist for inherited rental property",
+        "Lunch-and-learn for estate lawyers and clerks",
+        "Co-authored guide on holding inherited property as a rental",
+        "Referral workflow for non-legal property management inquiries"
+      ],
+      "digitalAuthority": [
+        "Educational article on managing an inherited rental property during estate administration",
+        "Webinar for executors on operational issues when an estate owns a rental"
+      ],
+      "regulatoryNote": "Legal services are regulated; any referral process should avoid compromising lawyer independence, confidentiality, or client choice, and referral compensation or solicitation must only occur if permitted by applicable professional conduct rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Estate lawyers see the ownership change and management gap early, although only a subset of estates include rental or rentable property.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Tenant placement, maintenance coordination, rent collection, and reporting directly address the operational needs created by estate-owned property.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "The trigger is occasional because estate files with suitable rental assets are not everyday occurrences for every lawyer.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "When converted, the account can be valuable because the property may remain under management for years while heirs hold it.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Estate lawyers are reachable through professional education and local networking, but they are cautious about referral relationships.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "A single successful referral can become a recurring management contract if the estate or beneficiaries retain the rental.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The lawyer benefits by reducing executor burden and non-legal operational questions, while the property manager gains a qualified ownership-transition lead.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Estate-owned properties and executors commonly need local coordination across the regional Ontario service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is practical to start with education, but trust and compliance concerns mean referrals may take time.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "estate lawyers",
+        "estate administration lawyers",
+        "wills and estates law firms"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "investor-accountants",
+      "name": "Investor Accountants",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Investor accountants encounter rental owners when reviewing rental income, deductions, bookkeeping, capital expenses, and year-end records. Disorganized ledgers, missing receipts, inconsistent rent collection, or unclear maintenance documentation reveal owners who may benefit from professional management and structured monthly reporting.",
+      "rationale": "This relationship makes commercial sense because accountants repeatedly see the financial symptoms of poor self-management, while property managers can provide cleaner owner statements, expense documentation, and rent records that make accounting work easier.",
+      "triggers": [
+        {
+          "event": "Rental owner arrives at tax time with incomplete rent and expense records.",
+          "whyNeed": "Poor records make tax preparation harder and often indicate weak operational systems for rent collection, maintenance tracking, and owner reporting.",
+          "whoRecognizes": "Investor accountant, tax manager, or bookkeeper.",
+          "referralMoment": "During year-end cleanup or after the accountant identifies repeated documentation gaps.",
+          "partnerValue": "The accountant receives cleaner statements and fewer back-and-forth requests in future periods."
+        },
+        {
+          "event": "Owner is expanding from one rental to multiple units or a small multiplex.",
+          "whyNeed": "More units create more transactions, tenant communications, repairs, and compliance tasks than the owner may be prepared to handle alone.",
+          "whoRecognizes": "Accountant during planning, incorporation, financing, or cash-flow discussions.",
+          "referralMoment": "When the owner is modelling profitability or preparing for acquisition and needs an operating plan.",
+          "partnerValue": "The accountant can help the client make better financial decisions using more realistic management and maintenance assumptions."
+        },
+        {
+          "event": "Rental cash flow is being hurt by arrears, vacancies, or uncontrolled maintenance spending.",
+          "whyNeed": "Operational issues are affecting the financial performance of the investment and may require better tenant placement, collections, maintenance coordination, and reporting.",
+          "whoRecognizes": "Accountant reviewing profit-and-loss statements or owner-prepared spreadsheets.",
+          "referralMoment": "During advisory meetings when the accountant explains why net income is lower than expected.",
+          "partnerValue": "The accountant can point to a practical operations remedy rather than only documenting the financial problem."
+        }
+      ],
+      "mutualValue": "The accountant gains better-organized records, more informed clients, and fewer avoidable bookkeeping issues; the property manager gains access to landlords who already value professional advice about rental profitability. The property manager can also refer owners back for tax planning and bookkeeping needs without giving tax advice.",
+      "approach": "Create a sample monthly owner statement and year-end rental records package, then ask investor-focused accountants for feedback on what would make their rental clients easier to serve.",
+      "decisionMaker": "Partner or Tax Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Year-end rental records checklist",
+        "Joint landlord tax-season preparation webinar",
+        "Newsletter feature on clean rental bookkeeping habits",
+        "Sample owner reporting package review session"
+      ],
+      "digitalAuthority": [
+        "Co-authored educational guide on rental recordkeeping for landlords",
+        "Webinar on operational records landlords should keep for tax time"
+      ],
+      "regulatoryNote": "Accounting and tax advice may be regulated; referrals should preserve client choice and professional independence, and no party should provide tax advice unless properly qualified.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Accountants regularly see rental owners’ income, expenses, records, and operational pain points before the owner seeks management help.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Professional rent collection, maintenance documentation, and owner reporting directly solve many recordkeeping and operational problems accountants observe.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Tax season and planning meetings create recurring opportunities to identify landlords who are struggling with rental administration.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Investor clients often hold properties long term, making successful referrals commercially attractive for recurring management.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Accountants and tax managers are generally approachable through educational collaboration, especially with a practical records-improvement angle.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "The partnership itself can produce recurring touchpoints every tax season and planning cycle, while referred clients may become ongoing management accounts.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both sides gain operationally cleaner landlord clients and a credible professional counterpart for non-overlapping needs.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Rental owners in the regional service area commonly use local or regional accountants familiar with Ontario rental property issues.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A low-risk conversation around better landlord records is easy to initiate and does not require complex integration.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "rental property accountants",
+        "real estate investor accountants",
+        "landlord tax accountants"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "landlord-paralegals",
+      "name": "Landlord Paralegals",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Landlord paralegals encounter rental owners when arrears, notices, tenant disputes, and Landlord and Tenant Board matters have already surfaced. These situations often reveal self-managed owners who need ongoing operational support after the legal issue is scoped, while the property manager can refer clients back for regulated representation when legal filings or advocacy are required.",
+      "rationale": "The relationship makes commercial sense because legal problems often expose deeper management weaknesses, and both parties serve landlords at different points in the same risk cycle without being direct substitutes.",
+      "triggers": [
+        {
+          "event": "Owner seeks help with arrears or repeated late rent.",
+          "whyNeed": "The immediate issue may require legal advice or filings, but the underlying management need may include consistent collection processes, documentation, tenant communication, and owner reporting.",
+          "whoRecognizes": "Licensed paralegal, intake coordinator, or landlord-tenant file manager.",
+          "referralMoment": "After the legal scope is clarified and the owner needs non-legal operational support going forward.",
+          "partnerValue": "The paralegal can help reduce repeat disputes by connecting the owner with a manager who maintains better records and processes."
+        },
+        {
+          "event": "Owner mishandled notices, documentation, or tenant communication before seeking help.",
+          "whyNeed": "Procedural mistakes can indicate the owner is overwhelmed by landlord administration and needs professional systems to avoid future errors.",
+          "whoRecognizes": "Paralegal during document review or intake.",
+          "referralMoment": "Once urgent legal deadlines are addressed and the paralegal identifies operational gaps outside the legal retainer.",
+          "partnerValue": "The paralegal can keep the legal engagement focused while offering the client a path to better day-to-day administration."
+        },
+        {
+          "event": "A landlord has repeated tenant disputes across one or more properties.",
+          "whyNeed": "Multiple disputes may point to poor tenant screening, unclear maintenance workflows, weak communication, or inconsistent recordkeeping.",
+          "whoRecognizes": "Paralegal handling repeat matters or advising on LTB applications.",
+          "referralMoment": "After the current matter is stabilized and before another tenancy issue escalates.",
+          "partnerValue": "The paralegal may receive better-prepared files in the future and can avoid being treated as the client’s general property administrator."
+        }
+      ],
+      "mutualValue": "The paralegal gains a reliable destination for non-legal management needs and may receive better-documented landlord files when legal representation is needed. The property manager gains a regulated legal partner for matters that should not be handled as management advice.",
+      "approach": "Set up a compliance-conscious handoff discussion that clearly separates property management from legal representation, including examples of when a landlord should be referred to a paralegal versus when management can handle operational tasks.",
+      "decisionMaker": "Principal Paralegal",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Landlord documentation checklist",
+        "Referral protocol for legal versus management issues",
+        "Educational session on avoiding common operational mistakes before LTB matters",
+        "Client handout on what records to keep during a tenancy"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on operational records landlords should maintain before disputes arise",
+        "Webinar on the boundary between property management tasks and regulated landlord-tenant representation"
+      ],
+      "regulatoryNote": "Legal services are regulated in Ontario; referral arrangements must respect professional conduct rules, confidentiality, client choice, and the boundary between property management services and legal advice or representation.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Paralegals see landlords at the exact moment operational failures have become legal or procedural problems.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Property management can address many underlying administrative issues, although legal representation remains outside the manager’s role.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Arrears, notices, and tenant disputes are recurring issues in the rental market, creating repeated referral occasions.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Owners dealing with disputes may be motivated to outsource management to prevent future problems, supporting recurring revenue.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Principal paralegals and small landlord-tenant practices are often reachable through direct professional outreach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "The partnership can become reciprocal because managers periodically need legal representation for landlord clients and paralegals see self-managed owners.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Each party benefits from a clear division of labour: legal advocacy stays with the paralegal and operational management stays with the property manager.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Landlord and Tenant Board issues are Ontario-specific and highly relevant across the service region.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The relationship is valuable but requires careful boundaries to avoid unauthorized legal advice or improper referral practices.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "landlord tenant paralegals",
+        "LTB paralegals",
+        "landlord paralegal services"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "insurance-brokers",
+      "name": "Insurance Brokers",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Insurance brokers encounter rental property owners when coverage is placed, renewed, changed, or reviewed after a claim. Changes in occupancy, vacancy, student rentals, secondary suites, maintenance conditions, and documentation gaps can create a clear need for professional management support that improves operating records and risk controls.",
+      "rationale": "This relationship makes commercial sense because brokers care about insurable risk, accurate property information, and claims documentation, while property managers benefit from owners who are already thinking about protecting the asset.",
+      "triggers": [
+        {
+          "event": "Owner converts a home, basement suite, or inherited property into a rental.",
+          "whyNeed": "The change in use may require updated coverage and creates a need for tenant placement, lease coordination, inspections, maintenance tracking, and vacancy management.",
+          "whoRecognizes": "Insurance broker, account manager, or personal lines producer.",
+          "referralMoment": "When the client discloses the rental use change or asks for landlord coverage.",
+          "partnerValue": "The broker can support better underwriting information and help the client reduce avoidable operational risk."
+        },
+        {
+          "event": "Policy renewal reveals vacancy, deferred maintenance, or unclear occupancy details.",
+          "whyNeed": "Vacancy and maintenance issues can increase risk and indicate the owner may not have local oversight or reliable property records.",
+          "whoRecognizes": "Insurance broker or account manager during renewal review.",
+          "referralMoment": "Before renewal terms are finalized or when the broker asks the client to address risk-control concerns.",
+          "partnerValue": "The broker may receive clearer documentation and a client who is more proactive about maintenance and occupancy updates."
+        },
+        {
+          "event": "A claim exposes weak documentation or poor maintenance records.",
+          "whyNeed": "The owner may need better repair coordination, inspection records, tenant communications, and reporting to manage the property after the claim and reduce future issues.",
+          "whoRecognizes": "Insurance broker, claims liaison, or account manager.",
+          "referralMoment": "After immediate claim reporting is underway and the owner needs help coordinating ongoing property operations.",
+          "partnerValue": "The broker helps the client recover operationally and may see better information if future underwriting or claims questions arise."
+        }
+      ],
+      "mutualValue": "The broker gains a property management contact who can help clients maintain better documentation, occupancy awareness, and maintenance coordination, while the property manager gains referrals from owners who are actively protecting rental assets. The property manager can also refer owners to brokers when rental use, vacancy, or additional units require insurance review.",
+      "approach": "Offer brokers a one-page landlord risk documentation checklist showing the records a property manager can provide, such as rent status, maintenance logs, inspection notes, and owner statements, and ask where those records would help at renewal or claim time.",
+      "decisionMaker": "Broker Principal or Account Executive",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Landlord risk documentation checklist",
+        "Broker education session on property management records",
+        "Client handout on rental-use changes and management readiness",
+        "Renewal-season landlord maintenance reminder campaign"
+      ],
+      "digitalAuthority": [
+        "Educational article on operational records that support rental property insurance reviews",
+        "Joint webinar on rental property risk controls and documentation"
+      ],
+      "regulatoryNote": "Insurance is regulated; referral activity should not imply coverage advice by the property manager, should preserve client choice, and any compensation or inducement must comply with applicable insurance and professional rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Brokers encounter owners at important coverage and risk moments, though not every insurance interaction reveals a management need.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Management services support documentation, maintenance coordination, tenant placement, and vacancy oversight that relate closely to insurable risk.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Renewals, coverage changes, claims, and occupancy updates create recurring touchpoints with landlord clients.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Owners investing in proper insurance are often serious about preserving the asset and may be receptive to recurring management.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Broker principals and account executives are generally accessible through local professional networking and educational outreach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Annual renewals and periodic coverage changes create repeated opportunities for collaboration, while management contracts can recur monthly.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The broker gains better-informed and better-documented clients, while the property manager gains introductions to risk-aware landlords.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Rental insurance needs and property risk controls are directly relevant to landlords across the Southwestern Ontario service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A practical documentation and risk-control conversation is easy to start without needing a formal referral program.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "rental property insurance brokers",
+        "landlord insurance brokers",
+        "investment property insurance brokers"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "maintenance-trades",
+      "name": "Maintenance Trades",
+      "relationshipType": "downstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Maintenance trades encounter rental owners when something has already broken, tenants are upset, or repeat repairs are being handled without a clear approval process. They can identify self-managing landlords who are struggling with triage, tenant communication, access coordination, after-hours issues, and payment approvals, then introduce property management as a way to stabilize the operating process.",
+      "rationale": "This relationship makes commercial sense because trades benefit from organized work orders, clearer scopes, faster approvals, better tenant access coordination, and more predictable payment processes. The property manager also needs reliable trade capacity across Southwestern Ontario, making this a practical reciprocal operations relationship rather than a one-way referral ask.",
+      "triggers": [
+        {
+          "event": "A landlord repeatedly calls the trade directly for urgent tenant repairs without clear scope or approval authority.",
+          "whyNeed": "The owner is still self-managing but lacks the systems to triage issues, communicate with tenants, and approve work efficiently.",
+          "whoRecognizes": "Service manager, dispatcher, owner-operator, or lead technician.",
+          "referralMoment": "After the second or third chaotic repair interaction, especially if the tenant is frustrated or access is difficult.",
+          "partnerValue": "The trade can route future work through a more organized manager with clearer approvals, scheduling, and payment expectations."
+        },
+        {
+          "event": "A tenant contacts the trade directly because the landlord is slow to respond or hard to reach.",
+          "whyNeed": "Direct tenant-to-trade contact signals weak maintenance coordination and potential landlord-tenant relationship risk.",
+          "whoRecognizes": "Dispatcher, customer service coordinator, or technician.",
+          "referralMoment": "After resolving the immediate repair, when the trade speaks with the owner about communication breakdowns.",
+          "partnerValue": "The trade reduces repeat calls, miscommunication, and disputes over who authorized the work."
+        },
+        {
+          "event": "A small landlord delays approving preventative work until it becomes an emergency.",
+          "whyNeed": "The owner may not have a maintenance planning process or reserve approach, creating higher-cost emergency repairs.",
+          "whoRecognizes": "Estimator, service manager, or technician preparing recommendations.",
+          "referralMoment": "When presenting the repair estimate or post-service report and noting the recurring pattern.",
+          "partnerValue": "The trade gains a better maintenance planning partner and may receive more properly scoped work over time."
+        }
+      ],
+      "mutualValue": "Trades gain a professional point of contact, better scheduling, clearer work orders, and reduced payment friction; the property manager gains dependable service partners and introductions to owners whose maintenance problems are revealing a deeper management need.",
+      "approach": "Start with a short operations-focused meeting with local trade owners or service managers to explain work-order standards, approval processes, tenant access protocols, and the type of landlord situations where a non-exclusive introduction may be appropriate.",
+      "decisionMaker": "Owner, General Manager, or Service Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Preferred service-process briefing for dispatchers and technicians",
+        "Joint landlord maintenance checklist",
+        "Seasonal maintenance webinar for small rental owners",
+        "Post-repair handoff template for landlords showing when management support may help"
+      ],
+      "digitalAuthority": [
+        "Co-authored seasonal rental maintenance guide",
+        "Educational article on preventing emergency repairs in small rental properties"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Trades directly see maintenance coordination failures, tenant frustration, and owner disorganization during active tenancies.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Maintenance coordination is a core property management function, so the observed problem maps strongly to the service.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Trades repeatedly interact with rental properties, especially during repairs, turnovers, and seasonal maintenance periods.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Owners with recurring maintenance pain are likely to value ongoing management if they are tired of tenant calls and contractor coordination.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Owners and service managers of small-to-mid-sized trades are usually reachable through local business outreach and operational networking.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Maintenance needs continue throughout the tenancy, creating ongoing reasons for collaboration.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Both sides benefit operationally through clearer scopes, scheduling, approvals, and continuity of work.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Local and regional trades align closely with a regional Southwestern Ontario property portfolio.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "The relationship is straightforward to start if framed around better job execution rather than referral compensation.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "rental property maintenance contractors",
+        "residential plumbing electrical HVAC contractors",
+        "property maintenance trades"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "turnover-cleaners",
+      "name": "Turnover Cleaners",
+      "relationshipType": "downstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Turnover cleaners encounter rental owners at a high-stress point: after move-out, before re-leasing, or when a unit is left in poor condition. They see owners who are overwhelmed by timelines, tenant damage, abandoned belongings, and vacancy pressure, making this a timely moment to introduce property management support for leasing, inspections, maintenance coordination, and ongoing rent collection.",
+      "rationale": "Turnover is a visible symptom of weak tenancy management and poor pre-move-out planning. Cleaners benefit when properties are better prepared, access is coordinated, and repeat turnover schedules are predictable, while the property manager can help owners avoid future disorganized vacancies.",
+      "triggers": [
+        {
+          "event": "A cleaner arrives to find excessive mess, abandoned items, or unclear instructions after a tenant move-out.",
+          "whyNeed": "The landlord may lack a structured move-out inspection, tenant communication process, and turnover plan.",
+          "whoRecognizes": "Cleaning company owner, operations coordinator, or crew lead.",
+          "referralMoment": "Immediately after documenting the condition and before the owner begins re-leasing the unit.",
+          "partnerValue": "The cleaner can help the owner solve the broader turnover problem while increasing the chance of better-prepared future jobs."
+        },
+        {
+          "event": "An owner requests last-minute cleaning because a showing or new tenancy is imminent.",
+          "whyNeed": "The owner is reacting under vacancy pressure and may be struggling with leasing timelines and contractor coordination.",
+          "whoRecognizes": "Scheduler, customer service representative, or operations manager.",
+          "referralMoment": "When confirming the rush job and identifying that the owner is managing the vacancy alone.",
+          "partnerValue": "The cleaner reduces chaotic scheduling and may gain recurring planned turnover work through a more organized process."
+        },
+        {
+          "event": "A cleaner is asked to coordinate with tenants, trades, or prospective renters beyond the cleaning scope.",
+          "whyNeed": "The landlord is pushing coordination tasks onto vendors because there is no central property manager.",
+          "whoRecognizes": "Crew lead, dispatcher, or business owner.",
+          "referralMoment": "After completing the job, when clarifying that future turnovers would benefit from a single management contact.",
+          "partnerValue": "The cleaner avoids scope creep and communicates through a professional manager in future assignments."
+        }
+      ],
+      "mutualValue": "Cleaners gain better access coordination, clearer scopes, fewer last-minute surprises, and potential repeat turnover scheduling; the property manager gains visibility into owners experiencing vacancy and re-leasing stress at the moment they may be most open to recurring management help.",
+      "approach": "Offer a simple move-out readiness checklist and meet with cleaning company owners or operations managers to define referral-worthy situations, photo documentation standards, and a clean handoff process that does not interrupt their workflow.",
+      "decisionMaker": "Owner, Operations Manager, or Scheduling Manager",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Move-out readiness checklist for landlords",
+        "Turnover timeline template",
+        "Joint landlord webinar on reducing vacancy delays",
+        "Cleaner-to-manager handoff guide for difficult turnovers"
+      ],
+      "digitalAuthority": [
+        "Co-authored article on preparing a rental unit for re-leasing",
+        "Downloadable turnover checklist for small landlords"
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Cleaners often see turnover failures, abandonment, poor preparation, and owner stress at a decision-rich moment.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Tenant placement, maintenance coordination, inspections, and leasing preparation directly address the issues cleaners observe.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Turnovers recur across rental portfolios, though each individual owner may only need them periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Owners under vacancy pressure may see high value in preventing future turnover chaos through ongoing management.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Cleaning company owners and operations leads are generally accessible through local outreach and vendor networking.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "The partner has recurring need across many rental units and can maintain an ongoing relationship with the manager.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Both parties benefit from planned access, clearer expectations, and better-prepared units.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Turnover cleaning is highly local and fits a regional property management footprint.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A practical checklist-based relationship is easy to establish without complex commercial structure.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "rental turnover cleaning services",
+        "move out cleaning companies",
+        "property cleaning services"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "private-lenders",
+      "name": "Private Lenders",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Private lenders encounter rental owners before a property management need becomes visible to vendors, often during refinancing, bridge financing, arrears pressure, vacancy-related cash-flow strain, or workout discussions. If weak rent collection, poor documentation, high vacancy, or unresolved tenant issues are affecting the asset, the lender can suggest professional management as a risk-reduction resource without implying a required provider choice.",
+      "rationale": "This relationship makes commercial sense because improved rent collection, owner reporting, maintenance coordination, and tenancy documentation can help stabilize the income-producing property that supports the loan. For the property manager, these owners often have urgent operational problems and may value recurring support if it helps protect the rental asset.",
+      "triggers": [
+        {
+          "event": "A rental owner seeks short-term financing due to vacancy, arrears, or cash-flow strain.",
+          "whyNeed": "The financial stress may stem from inconsistent rent collection, poor tenant screening, delayed turnover, or weak operating controls.",
+          "whoRecognizes": "Mortgage broker, private lending underwriter, loan officer, or portfolio manager.",
+          "referralMoment": "During intake or due diligence, after identifying that the income issue is operational rather than purely financial.",
+          "partnerValue": "The lender can point the borrower toward operational stabilization that may reduce repayment risk and protect collateral."
+        },
+        {
+          "event": "Due diligence reveals missing leases, inconsistent rent deposits, weak expense records, or unclear tenant status.",
+          "whyNeed": "The owner lacks reliable rental administration and reporting, which are core property management functions.",
+          "whoRecognizes": "Underwriter, credit analyst, or loan administrator.",
+          "referralMoment": "Before funding conditions are finalized or during document remediation discussions.",
+          "partnerValue": "The lender may receive better owner reporting and clearer evidence of rental income management over time."
+        },
+        {
+          "event": "A borrower enters a workout discussion because the rental property is underperforming.",
+          "whyNeed": "Persistent underperformance may require rent collection discipline, maintenance triage, vacancy reduction, and landlord-tenant process support.",
+          "whoRecognizes": "Collections manager, portfolio manager, or servicing specialist.",
+          "referralMoment": "When discussing corrective steps short of enforcement or sale.",
+          "partnerValue": "The lender can support a constructive path to asset stabilization without taking on property operations itself."
+        }
+      ],
+      "mutualValue": "Private lenders gain a non-exclusive resource that may help borrowers stabilize rental income, documentation, and property condition; the property manager gains introductions to owners whose financing stress reveals a need for recurring professional management.",
+      "approach": "Create a lender-facing one-page overview explaining how professional property management supports rent collection, reporting, maintenance coordination, and tenancy documentation, then request a compliance-aware meeting with lending principals or broker managers.",
+      "decisionMaker": "Principal Broker, Lending Manager, Portfolio Manager, or Underwriting Manager",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Borrower resource sheet on rental income stabilization",
+        "Educational session for lending teams on property management red flags",
+        "Non-exclusive landlord operations checklist for financing files",
+        "Webinar on rental cash-flow controls for small landlords"
+      ],
+      "digitalAuthority": [
+        "Educational guide on rental documentation lenders often request",
+        "Co-authored article on operational red flags in small rental portfolios"
+      ],
+      "regulatoryNote": "Lending and mortgage activities are regulated; avoid referral fees, tied selling, exclusivity, pressure on borrowers, or any implication that financing approval depends on choosing a particular property manager unless reviewed for compliance.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Private lenders see financial and documentation stress that often exposes underlying rental management problems.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Rent collection, reporting, maintenance coordination, and tenant administration directly support asset stability.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Each lender may see these situations periodically rather than daily, depending on their rental-property borrower mix.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Owners facing financing stress may have a strong incentive to stabilize the property through recurring management.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable but may be cautious due to compliance, reputation, and borrower-solicitation concerns.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Once converted, the owner’s need is likely ongoing because management supports the asset after financing closes.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The lender benefits from better borrower organization and collateral stability, while the manager gains high-need prospects.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Many private lenders operate regionally or provincially and can align with an Ontario service area if their borrowers own local rentals.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 2,
+          "rationale": "The relationship requires careful compliance positioning and trust-building before referrals are likely.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "private mortgage lenders",
+        "alternative lending brokers",
+        "real estate investment lenders"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "student-housing-offices",
+      "name": "Student Housing Offices",
+      "relationshipType": "distribution",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Student housing offices encounter student-rental owners when landlords ask about off-campus listing practices, student leasing cycles, complaints, housing expectations, or seasonal vacancy timing. They are unlikely to make exclusive recommendations, but they can include the property manager in non-exclusive landlord education resources that help owners improve student housing operations before peak leasing periods.",
+      "rationale": "Student rentals are operationally intensive because of synchronized leasing cycles, roommate turnover, maintenance expectations, complaint management, and parent/student communication. A property manager that can professionalize leasing, maintenance coordination, rent collection, and owner reporting is relevant to landlords who repeatedly struggle with student-tenancy administration.",
+      "triggers": [
+        {
+          "event": "A student-rental owner contacts the office about off-campus leasing timelines or listing expectations before the academic year.",
+          "whyNeed": "The owner may need help with tenant placement, lease administration, and synchronized turnover planning.",
+          "whoRecognizes": "Off-campus housing coordinator, housing services manager, or student affairs staff member.",
+          "referralMoment": "Before peak leasing season, when the owner is preparing to advertise or renew tenancies.",
+          "partnerValue": "The office can direct the owner to neutral resources that may improve housing quality and reduce avoidable student issues."
+        },
+        {
+          "event": "Students complain to the office about slow repairs, poor communication, or unclear landlord responsibilities.",
+          "whyNeed": "Maintenance coordination and tenant communication failures indicate a landlord may need professional management support.",
+          "whoRecognizes": "Student housing advisor, residence life staff, or student support coordinator.",
+          "referralMoment": "After advising the student on appropriate channels and when providing general landlord resources or education materials.",
+          "partnerValue": "The office supports better student outcomes without becoming the landlord’s property manager or dispute handler."
+        },
+        {
+          "event": "A landlord asks how to handle roommate turnover, sublets, lease renewals, or move-in/move-out timing.",
+          "whyNeed": "Student rentals involve recurring administrative complexity that can exceed a small landlord’s systems.",
+          "whoRecognizes": "Off-campus housing coordinator or housing services administrator.",
+          "referralMoment": "When sharing standard landlord guidance ahead of renewal, move-in, or move-out periods.",
+          "partnerValue": "The office can reduce repeated landlord questions and promote more orderly off-campus housing practices."
+        }
+      ],
+      "mutualValue": "The student housing office gains credible, non-exclusive educational resources that may reduce complaints and improve landlord professionalism; the property manager gains visibility with owners of student rentals who face recurring seasonal management pressure.",
+      "approach": "Propose a neutral landlord education resource or workshop that focuses on compliance-aware best practices for student rentals, making clear that participation is non-exclusive and not an institutional endorsement.",
+      "decisionMaker": "Off-Campus Housing Manager, Housing Services Director, or Student Affairs Director",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Non-exclusive landlord education workshop before leasing season",
+        "Student-rental turnover planning checklist",
+        "Q&A webinar on student rental operations",
+        "Newsletter resource feature for off-campus landlords"
+      ],
+      "digitalAuthority": [
+        "Educational article on preparing student rentals for move-in and move-out cycles",
+        "Co-authored landlord checklist for student housing operations"
+      ],
+      "regulatoryNote": "Post-secondary institutions may have strict policies on endorsements, vendor promotion, student data, sponsorships, and advertising; keep materials educational, non-exclusive, and subject to institutional approval.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Student housing offices regularly hear from landlords and students when leasing cycles, complaints, and off-campus expectations create friction.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Tenant placement, maintenance coordination, rent collection, and reporting are highly relevant to student-rental operating challenges.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "The need recurs predictably around leasing, move-in, move-out, and academic-year cycles.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Student-rental owners with recurring seasonal complexity may value ongoing management if it reduces workload and tenant issues.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 2,
+          "rationale": "Institutional staff can be difficult to access and may have formal approval processes for outside resources.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "Student housing follows a recurring annual cycle with repeated leasing, turnover, and communication needs.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "The office benefits from better-informed landlords and fewer preventable student housing issues, while the manager gains educational visibility.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Student rentals are concentrated around local campuses within the regional service area, making the fit strong.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 2,
+          "rationale": "The partnership is valuable but slower to establish because institutions avoid endorsements and may require approvals.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "off campus housing office",
+        "student housing services landlord resources",
+        "university housing landlord program"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "investor-education-groups",
+      "name": "Investor Education Groups",
+      "relationshipType": "shared_audience",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Investor education groups encounter rental owners at moments of acquisition, portfolio expansion, and operational frustration. The referral opportunity is to position professional management as the next operating system when an owner realizes that tenant placement, rent collection, maintenance coordination, reporting, or Landlord and Tenant Board processes are becoming too complex to handle casually.",
+      "rationale": "This relationship makes commercial sense because members are already learning how to own rental property and many will eventually need repeatable management processes as their portfolios or risk exposure grow. The group benefits from practical, non-sales education that helps members avoid common landlord mistakes, while the property manager gains access to owners with active or emerging management needs.",
+      "triggers": [
+        {
+          "event": "A member buys or is about to close on a first rental property.",
+          "whyNeed": "The owner needs leasing readiness, rent collection setup, maintenance workflows, documentation, and guidance on landlord obligations before the first tenant issue arises.",
+          "whoRecognizes": "Investor group organizer, workshop facilitator, or mentor.",
+          "referralMoment": "During a first-rental checklist session, acquisition debrief, or pre-closing planning discussion.",
+          "partnerValue": "The group helps the member move from theory to execution and improves the perceived usefulness of its education."
+        },
+        {
+          "event": "A member adds a second unit, small multiplex, student rental, or secondary suite.",
+          "whyNeed": "More units increase tenant communication, turnover coordination, inspections, compliance details, and reporting demands.",
+          "whoRecognizes": "Group leader, peer mentor, or portfolio-building coach.",
+          "referralMoment": "When the member asks how to scale operations or complains about time spent managing tenants and vendors.",
+          "partnerValue": "The group can provide a credible operational pathway for scaling without having to become a property management advisor itself."
+        },
+        {
+          "event": "A member raises recurring problems with late rent, difficult tenants, maintenance delays, or LTB paperwork.",
+          "whyNeed": "The problem indicates that informal self-management systems are breaking down and may require professional processes and documentation.",
+          "whoRecognizes": "Organizer, moderator, or presenter during Q&A or peer discussion.",
+          "referralMoment": "Immediately after identifying that the issue is operational rather than purely educational, with a suggestion to speak with a manager about systems and options.",
+          "partnerValue": "The group protects its educational environment by directing detailed operational problems to an appropriate service provider."
+        }
+      ],
+      "mutualValue": "The partner receives useful workshops, checklists, and case-based learning that supports member outcomes, while the property manager earns trust with rental owners before they start actively comparing management providers. The relationship should be framed as education and optional problem-solving rather than a blanket endorsement.",
+      "approach": "Offer a practical, non-promotional session such as “First 90 Days After Buying a Rental: Leasing, Documentation, Maintenance and Reporting Checklist” and provide a co-branded owner readiness checklist for members.",
+      "decisionMaker": "Group Organizer or Education Program Director",
+      "overlooked": false,
+      "collaborationFormats": [
+        "Practical workshops for new and growing landlords",
+        "Co-authored rental operations checklists",
+        "Member Q&A webinars on tenant placement and management systems",
+        "Newsletter feature on common owner mistakes and prevention steps"
+      ],
+      "digitalAuthority": [
+        "Co-authored educational article on rental owner operating systems",
+        "Recorded webinar library contribution with clear educational disclaimers"
+      ],
+      "regulatoryNote": "Real estate leasing and landlord-tenant matters can be regulated or legal-adjacent in Ontario; avoid implying legal advice, guaranteed outcomes, or paid endorsements unless compliant with applicable real estate, legal, privacy, and advertising rules.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "These groups hear about acquisitions, scaling plans, and landlord problems very early in the owner journey.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "Tenant placement, rent collection, maintenance coordination, reporting, and LTB process support directly match the issues members discuss.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Educational groups generate repeated touchpoints through meetings, workshops, forums, and member questions, though not every member is ready to outsource.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "A single satisfied owner may bring recurring management revenue and may add more units over time.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Organizers and education leads are usually identifiable and receptive to useful content that benefits members.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 5,
+          "rationale": "The partner relationship can repeatedly surface new owners, expanding owners, and owners experiencing operational pain.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "The group receives practical education and member support while the manager builds trusted relationships with qualified owners.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "Regional investor communities often include owners with properties across Southwestern Ontario, aligning well with the service area.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "A workshop or checklist is a low-friction first collaboration if the content is educational rather than sales-heavy.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "real estate investor education group",
+        "landlord education group",
+        "rental property investor meetup"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "bylaw-compliance-consultants",
+      "name": "Bylaw Compliance Consultants",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Bylaw compliance consultants encounter rental owners when a property standards, fire safety, licensing, zoning, or illegal-suite issue has already exposed operational risk. The referral opportunity arises after the physical or administrative compliance gap is identified, because the owner may also need better tenant communication, maintenance coordination, documentation, and ongoing management practices to stay compliant.",
+      "rationale": "This relationship makes commercial sense because compliance remediation often reveals weak management systems that created or worsened the problem. The consultant can help the owner correct the immediate issue, while the property manager can help maintain better ongoing processes after remediation.",
+      "triggers": [
+        {
+          "event": "An owner receives a property standards order or complaint related to exterior condition, repairs, waste, occupancy, or maintenance.",
+          "whyNeed": "The owner may need a reliable system for repair coordination, tenant notices, vendor follow-up, and documentation to prevent repeat issues.",
+          "whoRecognizes": "Bylaw compliance consultant, property standards advisor, or inspection coordinator.",
+          "referralMoment": "After the consultant identifies required corrective actions and sees that ongoing maintenance coordination is likely to be a recurring problem.",
+          "partnerValue": "The consultant improves the likelihood that the owner remains compliant after the immediate file is resolved."
+        },
+        {
+          "event": "A secondary suite, student rental, or small multiplex faces licensing, fire safety, or illegal-suite concerns.",
+          "whyNeed": "The owner may need structured management, tenant documentation, inspection readiness, and coordination of required work across occupied units.",
+          "whoRecognizes": "Compliance consultant or fire/code remediation advisor.",
+          "referralMoment": "Once the remediation plan is outlined and the owner asks how to manage the property going forward.",
+          "partnerValue": "The consultant can hand off ongoing operational support without expanding beyond their compliance scope."
+        },
+        {
+          "event": "A landlord has repeated complaints from tenants, neighbours, or municipal officers.",
+          "whyNeed": "Repeat complaints suggest the issue is not only technical compliance but also tenant management, maintenance response, and communication process.",
+          "whoRecognizes": "Compliance consultant, permit/licensing advisor, or municipal-process specialist.",
+          "referralMoment": "When the consultant sees that recurring complaints are likely unless day-to-day management changes.",
+          "partnerValue": "The partner can reduce repeat engagement caused by poor owner follow-through and protect their reputation for durable solutions."
+        }
+      ],
+      "mutualValue": "The consultant gains a trusted operational partner who can help owners maintain compliance after remediation, reducing repeat problems and client frustration. The property manager gains access to owners who have a clear, urgent reason to professionalize management, while also being able to refer owners back when code, licensing, or standards expertise is needed.",
+      "approach": "Create a simple “post-compliance remediation management checklist” and ask consultants what recurring owner behaviours lead to repeat bylaw problems before proposing a referral workflow.",
+      "decisionMaker": "Principal Consultant or Compliance Practice Manager",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Post-remediation owner checklist",
+        "Joint educational webinar on preventing repeat property standards issues",
+        "Referral handoff guide for owners after compliance work is scoped",
+        "Maintenance documentation template review session"
+      ],
+      "digitalAuthority": [
+        "Co-authored educational guide on operational practices after a bylaw or licensing issue"
+      ],
+      "regulatoryNote": "Compliance, fire safety, zoning, and landlord-tenant matters may involve regulated professional, municipal, or legal advice; referrals should avoid compensation structures or claims that conflict with professional obligations, and each party should stay within its licensed scope.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Consultants encounter owners at a high-urgency moment when poor management or documentation may already be visible.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Property management can address ongoing maintenance coordination, communication, records, and tenancy operations, though it does not replace specialist compliance advice.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Compliance triggers are episodic rather than constant, but each file may be highly relevant.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Owners facing compliance risk may be more motivated to pay for recurring management to avoid repeat problems.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are often principals or senior consultants, but they may be cautious about referrals due to liability and scope concerns.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "The partner may see repeat files over time, but individual compliance matters are occasional rather than a steady monthly referral stream.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Both sides can improve client outcomes by separating remediation expertise from ongoing management operations.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Bylaw, licensing, and property standards issues are strongly local and relevant across London, Kitchener-Waterloo, and Southwestern Ontario municipalities.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "The concept is strong but requires trust, clear boundaries, and careful handling of regulated or liability-sensitive issues.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "bylaw compliance consultant",
+        "property standards compliance consultant",
+        "secondary suite compliance consultant"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "relocation-coordinators",
+      "name": "Relocation Coordinators",
+      "relationshipType": "distribution",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Relocation coordinators encounter employers, incoming employees, and relocating households that need reliable rental options and smooth housing transitions. They may also encounter landlords who want stable tenants from relocating households but do not want to manage showings, screening, lease administration, maintenance, and ongoing tenant relations themselves.",
+      "rationale": "This relationship makes commercial sense because relocation demand can create both tenant-placement opportunities and a reason for rental owners to professionalize management. Coordinators benefit from access to well-managed rental inventory and clearer landlord communication, while the property manager may gain owners seeking low-friction leasing and recurring management support.",
+      "triggers": [
+        {
+          "event": "An employer is relocating staff who need rental housing within a defined move-in window.",
+          "whyNeed": "Relocating tenants value responsive leasing, reliable property condition, and clear communication, which professionally managed rentals are better positioned to provide.",
+          "whoRecognizes": "Relocation coordinator, mobility consultant, or housing assistance manager.",
+          "referralMoment": "During housing intake when the coordinator is identifying rental needs, timelines, and acceptable property types.",
+          "partnerValue": "The coordinator can present more dependable rental options and reduce friction in the employee move process."
+        },
+        {
+          "event": "A rental owner wants to attract stable professional or relocating tenants but does not want to handle the process directly.",
+          "whyNeed": "The owner may need tenant placement, screening coordination, lease preparation support, rent collection, and ongoing management after move-in.",
+          "whoRecognizes": "Relocation coordinator or rental housing liaison speaking with property owners or housing contacts.",
+          "referralMoment": "When the owner asks about placing a property into the relocation housing pipeline or expresses concern about managing tenants remotely.",
+          "partnerValue": "The coordinator can maintain a higher-quality housing supply without becoming the owner’s property manager."
+        },
+        {
+          "event": "A relocating household needs temporary-to-longer-term housing and has questions about maintenance responsiveness or landlord reliability.",
+          "whyNeed": "The household’s expectations place pressure on the landlord to provide organized communication, maintenance coordination, and reporting.",
+          "whoRecognizes": "Relocation consultant or destination services coordinator.",
+          "referralMoment": "When matching the household to suitable rental options and assessing whether the landlord can meet service expectations.",
+          "partnerValue": "The coordinator reduces failed placements and improves the relocating household’s experience."
+        }
+      ],
+      "mutualValue": "The coordinator gains a responsive source of professionally managed rentals and a way to help owners become easier to work with. The property manager gains exposure to rental owners and tenant-placement situations that can convert into recurring management relationships without requiring the coordinator to act as an endorser or sales agent.",
+      "approach": "Propose a housing-readiness conversation with the relocation team and share a concise profile of managed rental types, service area, intake process, and owner onboarding criteria.",
+      "decisionMaker": "Relocation Services Manager or Destination Services Manager",
+      "overlooked": true,
+      "collaborationFormats": [
+        "Rental housing availability briefing",
+        "Owner readiness checklist for relocation-friendly rentals",
+        "Webinar for employers on preparing rental housing for incoming staff",
+        "Structured intake handoff process for suitable owners"
+      ],
+      "digitalAuthority": [
+        "Educational article on what makes a rental relocation-ready",
+        "Co-authored moving-to-rental checklist for incoming employees or households"
+      ],
+      "regulatoryNote": "Relocation work can involve real estate, privacy, employment, and housing-related rules; avoid undisclosed referral compensation, protect personal information, and ensure any leasing activity or advice complies with applicable Ontario requirements.",
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Relocation coordinators encounter housing needs early, though their primary relationship may be with the tenant or employer rather than the owner.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Tenant placement and professional management are relevant to reliable rental supply and smooth move-ins.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 4,
+          "rationale": "Coordinators handle recurring moves, but owner-side referral opportunities depend on whether they interact with rental suppliers.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "A successful owner relationship can lead to recurring management, especially for owners who value stable tenants and low-friction leasing.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are identifiable but may be embedded in corporate mobility processes with formal vendor requirements.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Relocation activity can recur through employer moves, seasonal hiring, and ongoing destination services.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Both parties benefit from smoother placements, clearer communication, and better-maintained rental housing options.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 4,
+          "rationale": "The service area includes regional employment and university markets where relocation and rental demand can be meaningful.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "A relationship is feasible but may require process alignment, privacy safeguards, and clarity on leasing roles.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "relocation coordinator",
+        "corporate relocation services",
+        "destination services consultant"
+      ],
+      "existingRelationship": false
+    }
+  ],
+  "assumptions": [
+    "Customer journey used for the analysis: Acquire or create a rental through purchase, inheritance, conversion, small build, or adding a secondary suite. → Validate the numbers and compliance: financing, insurance, tax treatment, licensing, fire safety, and landlord obligations. → Prepare the unit for market: repairs, cleaning, pricing, advertising, showings, screening, and lease paperwork. → Operate the tenancy: rent collection, owner reporting, maintenance coordination, inspections, and tenant communication. → Handle friction points: arrears, vacancies, turnovers, complaints, insurance claims, compliance orders, or Landlord and Tenant Board filings. → Review the asset: improve cash flow, add units, refinance, hold long term, or sell..",
+    "Property-management contracts usually change hands at a moment of pain or transition: a purchase, a bad tenant, an inheritance, a move, or a lender stepping in. The professionals present at those moments are the strongest sources.",
+    "Your vendor network is both a cost centre and a referral network. Trades see self-managing owners struggle long before those owners call a manager.",
+    "No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing."
+  ],
+  "guardrails": [
+    {
+      "title": "Licensing and conflicts of interest",
+      "body": "In Ontario, leasing on behalf of owners for compensation is generally regulated real estate activity, and condominium management requires a separate licence. Real estate registrants may not pay referral fees to non-registrants. As an agent of owners, disclose any vendor rebates or referral arrangements to your clients. Confirm your obligations with the relevant regulators."
+    },
+    {
+      "title": "Partnerships are not paid-referral arrangements",
+      "body": "This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals."
+    },
+    {
+      "title": "Outreach in Canada: CASL applies",
+      "body": "Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA)."
+    },
+    {
+      "title": "No automated outreach",
+      "body": "This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline."
+    }
+  ]
+}

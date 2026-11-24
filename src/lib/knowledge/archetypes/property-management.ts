@@ -43,6 +43,28 @@ export const propertyManagement: Archetype = {
       queries: ["landlord paralegal"],
     },
     {
+      id: "rental-licensing-compliance",
+      name: "Rental-licensing & property-standards compliance consultants",
+      type: "upstream",
+      direction: "inbound",
+      channel: "recurring",
+      overlooked: true,
+      decisionMaker: "Compliance consultant or licensing inspector retained by owners",
+      opportunity:
+        "Some municipalities, including several student-rental markets in Southwestern Ontario, require residential rental licences with inspections and ongoing obligations. Owners who receive a property-standards order or face a licensing deadline often realise they need professional management.",
+      rationale:
+        "A compliance order or licensing deadline is a hard trigger with consequences, and the consultant helping the owner comply is the person they ask, 'Who can keep this compliant for me?'",
+      triggers: [
+        ["An owner receives a property-standards order or a rental-licence deficiency notice", "Repairs and ongoing compliance must be organised under a deadline", "Compliance consultant", "When the remediation plan is agreed", "The order is closed and the client stays compliant"],
+        ["A municipality introduces or expands rental licensing", "Self-managing owners must license and maintain units to the standard", "Consultant or local landlord association", "When the bylaw takes effect", "More owners get compliant smoothly"],
+      ],
+      mutualValue: "Consultants get clients who stay compliant after the order is closed; you get owners ready to delegate. You can refer licensing work to them.",
+      approach: "Learn the licensing requirements in each municipality you serve and offer consultants a 'licensed and maintained' management package for their clients.",
+      regulatory: "Licensing rules differ by municipality. Confirm the current bylaw requirements in each market.",
+      scores: [4, 5, 3, 3, 4, 4, 4, 5, 4],
+      queries: ["rental licensing consultant", "property standards compliance"],
+    },
+    {
       id: "investor-realtors",
       name: "Realtors with investor buyers",
       type: "upstream",

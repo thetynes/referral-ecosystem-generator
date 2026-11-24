@@ -1,0 +1,903 @@
+{
+  "id": "279f1ec8-6fd0-4027-9608-5a7e47bc0f68",
+  "createdAt": "2026-11-23T23:26:13.818Z",
+  "isDemo": false,
+  "profile": {
+    "displayName": "Sample Custom Homes (illustrative)",
+    "website": null,
+    "industry": "Custom home builder",
+    "services": [
+      "Custom homes",
+      "design-build",
+      "infill rebuilds"
+    ],
+    "serviceArea": "Lambton County, Ontario",
+    "geography": {
+      "country": "CA",
+      "region": "Ontario",
+      "scope": "regional"
+    },
+    "idealCustomer": "Families building on their own lot, teardown-rebuild buyers",
+    "customerSegments": [
+      "Families building on their own lot",
+      "teardown-rebuild buyers"
+    ],
+    "projectValue": null,
+    "targetIndustries": [],
+    "growthPriority": null,
+    "existingReferrals": [],
+    "expansionMarkets": []
+  },
+  "engine": {
+    "mode": "knowledge_base",
+    "provider": null,
+    "model": null,
+    "archetypeId": "custom-builder",
+    "archetypeLabel": "Custom home builder",
+    "matchConfidence": "high",
+    "notes": [],
+    "version": "1.0.0",
+    "costUsd": null
+  },
+  "categories": [
+    {
+      "id": "land-realtors",
+      "name": "Realtors specialising in lots, acreage & teardowns",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Buyers of lots and teardown properties need to know what they can build and for how much before they firm up. Agents who can bring a builder for a quick feasibility check close more land deals.",
+      "rationale": "A builder who helps a land buyer decide becomes the obvious choice to build, months before the project is tendered.",
+      "triggers": [
+        {
+          "event": "A buyer makes a conditional offer on a lot or teardown",
+          "whyNeed": "They need a budget and feasibility assessment",
+          "whoRecognizes": "Buyer's agent",
+          "referralMoment": "During the condition period",
+          "partnerValue": "The land deal firms up"
+        }
+      ],
+      "mutualValue": "Agents close land sales; you meet clients at the start of their project.",
+      "approach": "Offer agents a 48-hour feasibility and budget-range review for their land buyers.",
+      "decisionMaker": "Agent who lists or sells land and teardown properties",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Real estate registrants' referral-fee rules generally prohibit paying non-registrants.",
+      "criteria": {
+        "needEncounter": {
+          "score": 5,
+          "rationale": "Encounters customers who need you routinely; it is built into their workflow.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "real estate agent land",
+        "vacant land listings"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "construction-lenders",
+      "name": "Construction-mortgage lenders & brokers",
+      "relationshipType": "upstream",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Construction mortgages advance in draws against completed stages, so lenders vet the builder, the budget, and the schedule. Brokers are asked which builders produce cost breakdowns lenders accept.",
+      "rationale": "Financing is a gate every custom build passes through, and builders who make draws smooth become the broker's default recommendation.",
+      "triggers": [
+        {
+          "event": "A client applies for a construction mortgage",
+          "whyNeed": "The lender requires a builder's contract, budget, and draw schedule",
+          "whoRecognizes": "Mortgage broker",
+          "referralMoment": "During pre-approval",
+          "partnerValue": "The financing closes"
+        }
+      ],
+      "mutualValue": "Brokers close construction files; you get financed clients. You can refer clients needing financing back.",
+      "approach": "Prepare a lender-ready budget and draw-schedule template, and meet brokers who handle construction financing.",
+      "decisionMaker": "Mortgage broker or construction-lending specialist",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "construction mortgage broker"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "planners-surveyors",
+      "name": "Land-use planners & surveyors",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Owners pursuing severances, minor variances, or rezoning to create a buildable lot work with planners and surveyors long before choosing a builder.",
+      "rationale": "These professionals see future building projects at the approval stage.",
+      "triggers": [
+        {
+          "event": "A severance or variance is approved",
+          "whyNeed": "The new lot can now be built on",
+          "whoRecognizes": "Planner",
+          "referralMoment": "At approval",
+          "partnerValue": "Their client's project moves forward"
+        }
+      ],
+      "mutualValue": "Planners gain a builder who can advise clients on buildability; you get early access to projects.",
+      "approach": "Offer planners a builder's perspective on constructability and cost during approvals.",
+      "decisionMaker": "Land-use planner or Ontario Land Surveyor",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Opportunities are likely to be infrequent.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "land use planner",
+        "land surveyor"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "architects-builder",
+      "name": "Architects & residential designers",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "recurring",
+      "opportunity": "Designers deliver plans and help clients choose a builder, often through a short tender.",
+      "rationale": "Designer recommendations carry weight with clients investing heavily.",
+      "triggers": [
+        {
+          "event": "Design development is complete",
+          "whyNeed": "The client needs builder pricing",
+          "whoRecognizes": "Architect",
+          "referralMoment": "Before tender",
+          "partnerValue": "Their design is built as intended"
+        }
+      ],
+      "mutualValue": "Designers get faithful execution and cost input; you get invited to tenders.",
+      "approach": "Offer pre-construction cost reviews to designers and invite them to tour completed homes.",
+      "decisionMaker": "Architect or designer",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 4,
+          "rationale": "Frequently encounters relevant needs in the normal course of their work.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 5,
+          "rationale": "The needs they see are exactly what you deliver.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "architect residential"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "estate-teardown",
+      "name": "Estate lawyers & executors (teardown properties)",
+      "relationshipType": "upstream",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Estates holding older homes on valuable lots must decide whether to sell as-is or build. Heirs sometimes keep the land and build.",
+      "rationale": "Few builders reach this audience, and the decision involves large sums.",
+      "triggers": [
+        {
+          "event": "An estate holds an older home on a valuable lot",
+          "whyNeed": "Heirs consider rebuilding versus selling",
+          "whoRecognizes": "Executor",
+          "referralMoment": "During estate administration",
+          "partnerValue": "Better value for the estate"
+        }
+      ],
+      "mutualValue": "Executors and heirs get a clear rebuild-versus-sell comparison.",
+      "approach": "Offer a rebuild-versus-sell cost comparison for estate properties.",
+      "decisionMaker": "Executor or heir",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 2,
+          "rationale": "Occasionally encounters relevant customer needs.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Opportunities are likely to be infrequent.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "Limited repeat potential.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "estate lawyer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "trade-network-builder",
+      "name": "Your trade partners",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "recurring",
+      "opportunity": "Your subcontractors are asked by homeowners on other jobs who they would trust to build a house.",
+      "rationale": "Trades recommend builders who pay promptly and run organised sites.",
+      "triggers": [
+        {
+          "event": "A trade's client mentions plans to build",
+          "whyNeed": "They need a builder",
+          "whoRecognizes": "Tradesperson",
+          "referralMoment": "On site",
+          "partnerValue": "More work for the trade"
+        }
+      ],
+      "mutualValue": "Reliable work for them; referrals for you.",
+      "approach": "Pay on time, run predictable schedules, and tell trades you welcome referrals.",
+      "decisionMaker": "Owners of your excavation, framing, HVAC, and electrical subcontractors",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 5,
+          "rationale": "Decision-makers are easy to meet and talk to.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 4,
+          "rationale": "Good potential to become an ongoing channel.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 5,
+          "rationale": "Strong mutual benefit; both sides solve a real problem.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 5,
+          "rationale": "Easy to start with a single conversation.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "excavation contractor",
+        "framing contractor"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "wealth-advisors-builder",
+      "name": "Wealth advisors & private bankers",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Clients with liquidity events, such as a business sale, inheritance, or retirement, often plan a custom home. Advisors host client events and value expert speakers.",
+      "rationale": "This is the right audience at the right moment, and educational events build trust without a sales pitch.",
+      "triggers": [
+        {
+          "event": "A client sells a business or retires",
+          "whyNeed": "They plan a custom home and a budget",
+          "whoRecognizes": "Wealth advisor",
+          "referralMoment": "During financial planning",
+          "partnerValue": "Better-informed client decisions"
+        }
+      ],
+      "mutualValue": "Advisors offer clients valuable events; you meet qualified buyers.",
+      "approach": "Offer a seminar on budgeting and risk in custom builds for an advisor's client event.",
+      "decisionMaker": "Wealth advisor",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": "Financial advisors are subject to rules on referral arrangements and disclosure. Keep this educational.",
+      "criteria": {
+        "needEncounter": {
+          "score": 2,
+          "rationale": "Occasionally encounters relevant customer needs.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Opportunities are likely to be infrequent.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 5,
+          "rationale": "Referred work tends to be among the most valuable you do.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "wealth management firm"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "interior-designers-builder",
+      "name": "Interior designers",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Interior designers are often engaged early on luxury builds and recommend builders who collaborate well.",
+      "rationale": "Shared clients and reciprocal recommendations.",
+      "triggers": [
+        {
+          "event": "A client hires a designer before choosing a builder",
+          "whyNeed": "They need a builder",
+          "whoRecognizes": "Interior designer",
+          "referralMoment": "Early design phase",
+          "partnerValue": "Smoother collaboration"
+        }
+      ],
+      "mutualValue": "Reciprocal referrals and better-run projects.",
+      "approach": "Invite designers to walk completed homes and discuss collaboration.",
+      "decisionMaker": "Interior designer",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 3,
+          "rationale": "Encounters relevant needs some of the time.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "interior designer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "home-tech-integrators",
+      "name": "Home technology integrators (AV, automation, security)",
+      "relationshipType": "complementary",
+      "direction": "reciprocal",
+      "channelType": "occasional",
+      "opportunity": "Integrators are involved early in luxury builds for pre-wiring and meet owners planning custom homes.",
+      "rationale": "Early involvement makes them a source of builder recommendations.",
+      "triggers": [
+        {
+          "event": "An owner consults on home automation before building",
+          "whyNeed": "They need a builder",
+          "whoRecognizes": "Integrator",
+          "referralMoment": "Pre-construction",
+          "partnerValue": "Integration planned properly from the start"
+        }
+      ],
+      "mutualValue": "Reciprocal referrals.",
+      "approach": "Coordinate on pre-wiring standards and refer each other.",
+      "decisionMaker": "Integrator's sales lead",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 2,
+          "rationale": "Occasionally encounters relevant customer needs.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 3,
+          "rationale": "Moderate overlap with your core services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Opportunities are likely to be infrequent.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 4,
+          "rationale": "Clear reciprocal value for the partner.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "home automation installer"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "multigenerational-planners",
+      "name": "Multigenerational & aging-in-place advisors",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Families planning multigenerational homes or garden suites for aging parents seek builders who understand accessibility and separate-suite rules.",
+      "rationale": "A growing niche with clear needs.",
+      "triggers": [
+        {
+          "event": "A family decides to house an aging parent",
+          "whyNeed": "They need an accessible suite or home",
+          "whoRecognizes": "Advisor",
+          "referralMoment": "During planning",
+          "partnerValue": "Better outcomes for the family"
+        }
+      ],
+      "mutualValue": "Advisors gain a knowledgeable builder to recommend.",
+      "approach": "Publish a guide to multigenerational and garden-suite options in your municipality.",
+      "decisionMaker": "Occupational therapist, financial planner, or seniors' advisor",
+      "overlooked": true,
+      "collaborationFormats": [],
+      "digitalAuthority": [],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 2,
+          "rationale": "Occasionally encounters relevant customer needs.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 4,
+          "rationale": "Needs they encounter map closely to your services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 2,
+          "rationale": "Opportunities are likely to be infrequent.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 4,
+          "rationale": "Referred work tends to be above-average in value.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 3,
+          "rationale": "Decision-makers are reachable with some effort.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 2,
+          "rationale": "Limited repeat potential.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 3,
+          "rationale": "Moderate effort to establish.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "seniors housing advisor"
+      ],
+      "existingRelationship": false
+    },
+    {
+      "id": "builders-associations-builder",
+      "name": "Home builders' associations & awards programs",
+      "relationshipType": "shared_audience",
+      "direction": "inbound",
+      "channelType": "occasional",
+      "opportunity": "Associations connect builders with designers, suppliers, and trades, and awards programs create credibility with buyers.",
+      "rationale": "A single venue for several partner types.",
+      "triggers": [
+        {
+          "event": "Awards submissions and member events",
+          "whyNeed": "Recognition and networking",
+          "whoRecognizes": "Association",
+          "referralMoment": "Annually",
+          "partnerValue": "Engaged members"
+        }
+      ],
+      "mutualValue": "Associations need engaged members; you gain visibility.",
+      "approach": "Join, volunteer on a committee, and enter awards with documented projects.",
+      "decisionMaker": "Association executive officer and committees",
+      "overlooked": false,
+      "collaborationFormats": [],
+      "digitalAuthority": [
+        "Member directory and awards pages linking to project case studies."
+      ],
+      "regulatoryNote": null,
+      "criteria": {
+        "needEncounter": {
+          "score": 2,
+          "rationale": "Occasionally encounters relevant customer needs.",
+          "basis": "inferred"
+        },
+        "serviceRelevance": {
+          "score": 3,
+          "rationale": "Moderate overlap with your core services.",
+          "basis": "inferred"
+        },
+        "frequency": {
+          "score": 3,
+          "rationale": "Opportunities could arise periodically.",
+          "basis": "inferred"
+        },
+        "commercialValue": {
+          "score": 3,
+          "rationale": "Referred work is typically in line with average engagements.",
+          "basis": "inferred"
+        },
+        "accessibility": {
+          "score": 4,
+          "rationale": "Decision-makers are fairly easy to reach.",
+          "basis": "inferred"
+        },
+        "recurring": {
+          "score": 3,
+          "rationale": "Some potential for repeat referrals.",
+          "basis": "inferred"
+        },
+        "mutualBenefit": {
+          "score": 3,
+          "rationale": "Some reciprocal value.",
+          "basis": "inferred"
+        },
+        "geographicRelevance": {
+          "score": 5,
+          "rationale": "Strong fit; this partner type operates where you do.",
+          "basis": "inferred"
+        },
+        "ease": {
+          "score": 4,
+          "rationale": "Fairly easy to start.",
+          "basis": "inferred"
+        }
+      },
+      "searchQueries": [
+        "home builders association"
+      ],
+      "existingRelationship": false
+    }
+  ],
+  "assumptions": [
+    "Custom builds start long before construction: with a land purchase, a severance, financing, or a design. Builders who are present at those decisions win projects without competing on price alone.",
+    "No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing."
+  ],
+  "guardrails": [
+    {
+      "title": "Partnerships are not paid-referral arrangements",
+      "body": "This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals."
+    },
+    {
+      "title": "Outreach in Canada: CASL applies",
+      "body": "Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA)."
+    },
+    {
+      "title": "No automated outreach",
+      "body": "This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline."
+    }
+  ]
+}

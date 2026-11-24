@@ -267,18 +267,18 @@ Upstream partners (mortgage brokers (spousal buyouts & refinancing) and family t
 
 ## AI comparison (gpt-5.5)
 
-- Family mediators (Complementary, High 93). Decides: Lead mediator or mediation practice director
-- Couples counsellors (Upstream, High 90). Decides: Clinical Director
-- Realtors and appraisers (Downstream, High 88). Decides: Broker of record, team lead, or appraisal practice owner
-- Tax accountants (Complementary, High 88). Decides: Tax Partner
-- EAP providers (Distribution, High 85). Decides: EAP Provider Network Manager
-- Estate planning lawyers (Complementary, High 83). Decides: Managing Partner or Estates Practice Group Leader
-- Family violence agencies (Upstream, High 83). Decides: Program Manager
-- Mortgage brokers (Upstream, High 83). Decides: Principal Broker
-- Financial planners (Upstream, High 78). Decides: Branch Manager
-- Business valuators (Complementary, High 72) · flagged overlooked. Decides: Valuation Practice Leader
-- Co-parenting professionals (Downstream, High 72). Decides: Practice director or senior co-parenting professional
-- Criminal defence lawyers (Complementary, Medium 68) · flagged overlooked. Decides: Principal lawyer or managing partner
-- Payroll benefits administrators (Distribution, Medium 64) · flagged overlooked. Decides: Director of Payroll and Benefits
-- School social workers (Shared audience, Medium 63) · flagged overlooked. Decides: Manager of Social Work Services
-- Immigration counsel (Complementary, Medium 56) · flagged overlooked. Decides: Managing lawyer or principal counsel
+- Family Mediators (Complementary, High 93). Decides: Lead Family Mediator or Mediation Practice Director
+- Newcomer Support Centres (Distribution, High 88). Decides: Program Manager or Settlement Services Manager
+- Family Violence Agencies (Upstream, High 79). Decides: Program Manager
+- Forensic Accountants (Complementary, High 79). Decides: Forensic Accounting Partner
+- Accountants And Bookkeepers (Upstream, High 78). Decides: Managing Partner, Principal CPA, or Bookkeeping Practice Owner
+- Criminal Defence Lawyers (Complementary, High 78). Decides: Principal Lawyer
+- EAP Legal Programs (Distribution, High 78) · flagged overlooked. Decides: Legal Network Manager or Provider Relations Manager
+- Realtors Handling Separations (Upstream, High 78). Decides: Broker of Record
+- Insolvency Trustees (Shared audience, High 76) · flagged overlooked. Decides: Licensed Insolvency Trustee or Managing Trustee
+- Estate Planning Lawyers (Downstream, High 75). Decides: Estate Planning Lawyer
+- Family Therapists (Upstream, High 75). Decides: Clinical Director
+- Mortgage Brokers (Upstream, High 74) · flagged overlooked. Decides: Principal Mortgage Broker
+- Divorce Financial Specialists (Complementary, High 72) · flagged overlooked. Decides: Principal Financial Planner or Divorce Financial Specialist Practice Lead
+- School Counsellors (Shared audience, Medium 69) · flagged overlooked. Decides: Principal or Manager of Student Services
+- Immigration Advisors (Upstream, Medium 58) · flagged overlooked. Decides: Managing Immigration Lawyer or Regulated Immigration Consultant

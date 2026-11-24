@@ -304,3 +304,21 @@ Upstream partners (fractional CMOs & marketing strategists, trademark lawyers (f
 - **Partnerships are not paid-referral arrangements.** This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals.
 - **Outreach in Canada: CASL applies.** Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA).
 - **No automated outreach.** This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline.
+
+## AI comparison (gpt-5.5)
+
+- CRM implementation consultants (Complementary, High 95). Decides: Founder, Managing Consultant, or Head of Implementation
+- Fractional CMOs (Distribution, High 94). Decides: Fractional CMO or Managing Partner
+- Franchisors and operators (Distribution, High 94). Decides: Director of Franchise Marketing
+- Web development agencies (Upstream, High 92). Decides: Agency Principal or Director of Client Services
+- IT providers and hosts (Complementary, High 91). Decides: Technical Account Manager or Director of Managed Services
+- Trade associations (Distribution, High 88). Decides: Director of Member Services
+- PR and content studios (Complementary, High 78). Decides: Managing Director, Account Director, or Head of Content Strategy
+- Business growth consultants (Upstream, High 75) · flagged overlooked. Decides: Principal Consultant or Managing Partner
+- M&A advisors (Upstream, High 75) · flagged overlooked. Decides: Managing Director or Partner
+- Accountants and CFOs (Upstream, High 73) · flagged overlooked. Decides: Fractional CFO, Partner, or Client Advisory Services Director
+- Industry newsletters (Shared audience, High 70) · flagged overlooked. Decides: Editor
+- Commercial real estate advisors (Upstream, Medium 69) · flagged overlooked. Decides: Managing Broker or Principal Advisor
+- Recruiters for marketers (Downstream, Medium 66) · flagged overlooked. Decides: Recruitment Practice Lead, Managing Partner, or Account Director
+- Trademark lawyers (Upstream, Medium 66) · flagged overlooked. Decides: Trademark Lawyer or Intellectual Property Partner
+- Photographers and videographers (Downstream, Medium 63) · flagged overlooked. Decides: Studio Owner, Creative Director, or Commercial Producer

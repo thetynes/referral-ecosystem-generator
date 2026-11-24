@@ -10,7 +10,7 @@ Sample Excavation & Waterproofing (illustrative) (excavation and basement waterp
 
 The highest-priority partner categories under the current weighting are basement finishing & renovation contractors, builders' warranty & customer-care departments, and custom & infill home builders. All of the top five could become recurring channels rather than occasional referral sources.
 
-Upstream partners (basement finishing & renovation contractors, water-damage restoration & mould remediation firms, and realtors managing inspection conditions) encounter your customers before they need you. They are often the people who diagnose the problem or plan the work, so they can influence who gets hired before competitors are even considered.
+Upstream partners (basement finishing & renovation contractors, water-damage restoration & mould remediation firms, and secondary-suite designers (walk-outs, separate entrances, basement lowering)) encounter your customers before they need you. They are often the people who diagnose the problem or plan the work, so they can influence who gets hired before competitors are even considered.
 
 ## Ranked relationships
 
@@ -20,24 +20,24 @@ Upstream partners (basement finishing & renovation contractors, water-damage res
 | 2 | Builders' warranty & customer-care departments | Distribution | They refer to you | recurring | High (82) | Builder's warranty / customer-care manager | yes |
 | 3 | Custom & infill home builders | Distribution | They refer to you | recurring | High (82) | Site superintendent (owner on smaller builders) |  |
 | 4 | Water-damage restoration & mould remediation firms | Upstream | They refer to you | recurring | High (82) | Restoration project manager or estimator | yes |
-| 5 | Property management companies | Distribution | They refer to you | recurring | High (79) | Property manager / maintenance coordinator |  |
-| 6 | Landlords & investors converting basements to rental units | Shared audience | They refer to you | recurring | High (78) | Small-portfolio investor or their project manager | yes |
-| 7 | Landscape & hardscape contractors | Complementary | Two-way referrals | occasional | High (78) | Landscape designer or owner |  |
-| 8 | Concrete & foundation forming contractors | Complementary | Two-way referrals | recurring | High (76) | Forming-crew owner |  |
-| 9 | Realtors managing inspection conditions | Upstream | They refer to you | recurring | High (74) | Buyer's or listing agent |  |
-| 10 | Plumbers & drain inspection specialists | Upstream | They refer to you | occasional | High (72) | Plumbing owner or drain-camera technician |  |
-| 11 | Commercial general contractors | Distribution | They refer to you | recurring | High (71) | Estimator / project manager |  |
-| 12 | Inground pool installers | Upstream | They refer to you | recurring | Medium (69) | Pool company owner or installation scheduler |  |
-| 13 | Eavestrough, grading & landscaping contractors | Complementary | Two-way referrals | occasional | Medium (68) | Owner of the eavestrough or landscaping company | yes |
-| 14 | Aggregate, topsoil & landscape supply yards | Shared audience | They refer to you | occasional | Medium (65) | Yard manager / counter staff | yes |
-| 15 | Civil & geotechnical engineers | Upstream | They refer to you | occasional | Medium (65) | Project engineer (P.Eng.) |  |
-| 16 | Septic system designers & installers | Complementary | Two-way referrals | occasional | Medium (64) | Septic designer (qualified designer) or installer |  |
-| 17 | Home insurance brokers | Shared audience | They refer to you | occasional | Medium (63) | Personal-lines insurance broker | yes |
-| 18 | Home inspectors | Upstream | They refer to you | occasional | Medium (61) | Independent home inspector |  |
-| 19 | Municipal basement-flooding protection programs | Shared audience | They refer to you | recurring | Medium (58) | Municipal program coordinator (water or engineering department) | yes |
-| 20 | Restoration contractors & insurance adjusters | Upstream | They refer to you | occasional | Medium (58) | Restoration project manager or insurance adjuster |  |
-| 21 | Structural engineers & foundation assessors | Upstream | They refer to you | occasional | Medium (58) | Professional engineer (P.Eng.) |  |
-| 22 | Radon mitigation professionals | Complementary | Two-way referrals | occasional | Low (49) | Certified radon mitigation professional | yes |
+| 5 | Electricians, HVAC & geothermal installers needing trenching | Complementary | Two-way referrals | recurring | High (81) | Electrical or HVAC contractor's project lead | yes |
+| 6 | Property management companies | Distribution | They refer to you | recurring | High (79) | Property manager / maintenance coordinator |  |
+| 7 | Secondary-suite designers (walk-outs, separate entrances, basement lowering) | Upstream | They refer to you | recurring | High (79) | Building designer or permit consultant preparing suite drawings | yes |
+| 8 | Landlords & investors converting basements to rental units | Shared audience | They refer to you | recurring | High (78) | Small-portfolio investor or their project manager | yes |
+| 9 | Landscape & hardscape contractors | Complementary | Two-way referrals | occasional | High (78) | Landscape designer or owner |  |
+| 10 | Concrete & foundation forming contractors | Complementary | Two-way referrals | recurring | High (76) | Forming-crew owner |  |
+| 11 | Realtors managing inspection conditions | Upstream | They refer to you | recurring | High (74) | Buyer's or listing agent |  |
+| 12 | Land surveyors (stake-outs & grading certification) | Upstream | They refer to you | recurring | High (72) | Ontario Land Surveyor or survey party chief | yes |
+| 13 | Plumbers & drain inspection specialists | Upstream | They refer to you | occasional | High (72) | Plumbing owner or drain-camera technician |  |
+| 14 | Commercial general contractors | Distribution | They refer to you | recurring | High (71) | Estimator / project manager |  |
+| 15 | Inground pool installers | Upstream | They refer to you | recurring | Medium (69) | Pool company owner or installation scheduler |  |
+| 16 | Eavestrough, grading & landscaping contractors | Complementary | Two-way referrals | occasional | Medium (68) | Owner of the eavestrough or landscaping company | yes |
+| 17 | Aggregate, topsoil & landscape supply yards | Shared audience | They refer to you | occasional | Medium (65) | Yard manager / counter staff | yes |
+| 18 | Civil & geotechnical engineers | Upstream | They refer to you | occasional | Medium (65) | Project engineer (P.Eng.) |  |
+| 19 | Septic system designers & installers | Complementary | Two-way referrals | occasional | Medium (64) | Septic designer (qualified designer) or installer |  |
+| 20 | Asphalt paving & interlock contractors | Downstream | Two-way referrals | occasional | Medium (63) | Paving estimator |  |
+| 21 | Home insurance brokers | Shared audience | They refer to you | occasional | Medium (63) | Personal-lines insurance broker | yes |
+| 22 | Home inspectors | Upstream | They refer to you | occasional | Medium (61) | Independent home inspector |  |
 
 ## How each relationship works
 
@@ -117,6 +117,25 @@ Upstream partners (basement finishing & renovation contractors, water-damage res
 
 **First step.** Offer a quick-turnaround site assessment for their files and a short written explanation of seepage versus covered water damage that they can give homeowners.
 
+### Electricians, HVAC & geothermal installers needing trenching
+
+*Complementary providers · Two-way referrals · recurring · High (81) · often overlooked*
+
+**Opportunity.** Power to detached garages, generator gas lines, EV chargers in outbuildings, and geothermal ground loops all need trenching or excavation that these trades do not do themselves.
+
+**Why it makes commercial sense.** Electrification and backup-power projects are increasing, and these trades need a dependable digging partner.
+
+**Who decides.** Electrical or HVAC contractor's project lead
+
+**Trigger events**
+
+- **An electrician quotes a service to a detached garage or shop.** A trench to code depth is required. *Who notices:* Electrician. *Refer when:* When quoting. *Their gain:* They can say yes to the job.
+- **A geothermal system is sold.** Horizontal loops require major excavation. *Who notices:* HVAC/geothermal installer. *Refer when:* At contract. *Their gain:* Installation proceeds on schedule.
+
+**Mutual value.** Trades complete more jobs; you gain steady small and mid-size work.
+
+**First step.** Offer per-metre trenching pricing and scheduling windows to a few electrical and HVAC firms.
+
 ### Property management companies
 
 *Commercial distribution channels · They refer to you · recurring · High (79)*
@@ -135,6 +154,25 @@ Upstream partners (basement finishing & renovation contractors, water-damage res
 **Mutual value.** A reliable contractor helps property managers resolve issues efficiently and report clearly to owners. You may gain recurring project opportunities.
 
 **First step.** Establish a vendor relationship: provide service capabilities, geographic coverage, response expectations, insurance, and relevant project examples. Ask what their vendor onboarding requires.
+
+### Secondary-suite designers (walk-outs, separate entrances, basement lowering)
+
+*Upstream referral sources · They refer to you · recurring · High (79) · often overlooked*
+
+**Opportunity.** Basement apartments and garden suites often require below-grade entrances, window wells for egress, basement lowering, or new service trenches. The designer specifies this work and is asked who can dig it.
+
+**Why it makes commercial sense.** Many municipalities now permit additional units on residential lots, so this project type is growing and repeats with investor clients. Designers see each project months before excavation.
+
+**Who decides.** Building designer or permit consultant preparing suite drawings
+
+**Trigger events**
+
+- **Permit drawings show a new side entrance or egress window wells.** Excavation, shoring, and waterproofing are needed. *Who notices:* Designer. *Refer when:* When drawings are submitted for permit. *Their gain:* Their design is buildable and on schedule.
+- **A garden suite requires new water, sewer, or electrical trenching.** Service trenches must be dug to code. *Who notices:* Designer or builder. *Refer when:* During permit review. *Their gain:* Avoids costly redesign.
+
+**Mutual value.** Designers gain a contractor who understands suite requirements; you gain repeat investor projects.
+
+**First step.** Show designers suite-entrance and window-well projects you have completed, with photos of shoring and drainage details.
 
 ### Landlords & investors converting basements to rental units
 
@@ -211,6 +249,24 @@ Upstream partners (basement finishing & renovation contractors, water-damage res
 **First step.** Promote a 'deal-saver' quote service with a fixed turnaround to a few active brokerages.
 
 **Regulatory.** Real estate registrants' referral-fee rules generally prohibit paying non-registrants for referrals. Keep this relationship non-compensated.
+
+### Land surveyors (stake-outs & grading certification)
+
+*Upstream referral sources · They refer to you · recurring · High (72) · often overlooked*
+
+**Opportunity.** Surveyors stake out new foundations and certify final lot grading for municipalities and builders. When final grades do not match the approved plan, regrading is needed before securities are released.
+
+**Why it makes commercial sense.** Grading certification failures create urgent, defined regrading work, and surveyors are on every new-build site.
+
+**Who decides.** Ontario Land Surveyor or survey party chief
+
+**Trigger events**
+
+- **A final grading inspection fails.** Regrading must be done before the municipality releases the lot-grading deposit. *Who notices:* Surveyor. *Refer when:* When the certificate is refused. *Their gain:* Their certification closes.
+
+**Mutual value.** Surveyors close files faster; you gain urgent regrading work. You can refer stake-out work back.
+
+**First step.** Ask local survey firms which builders struggle with grading certification and offer a quick-turnaround regrading service.
 
 ### Plumbers & drain inspection specialists
 
@@ -344,6 +400,24 @@ Upstream partners (basement finishing & renovation contractors, water-damage res
 
 **First step.** If you are not licensed to install septic systems, partner with a licensed installer for the excavation portion.
 
+### Asphalt paving & interlock contractors
+
+*Downstream relationships · Two-way referrals · occasional · Medium (63)*
+
+**Opportunity.** Driveways and parking areas need base preparation and grading before paving. Paving contractors also encounter drainage problems they cannot fix.
+
+**Why it makes commercial sense.** Paving follows excavation in sequence, so referrals flow both ways.
+
+**Who decides.** Paving estimator
+
+**Trigger events**
+
+- **A customer wants a new or widened driveway.** Base excavation and compaction are required first. *Who notices:* Paving estimator. *Refer when:* When quoting. *Their gain:* A properly prepared base reduces warranty callbacks.
+
+**Mutual value.** Better base work protects their warranty; you gain prep work.
+
+**First step.** Offer base-prep pricing and a coordinated schedule. Propose a reciprocal recommendation arrangement.
+
 ### Home insurance brokers
 
 *Shared-audience partners · They refer to you · occasional · Medium (63) · often overlooked*
@@ -385,95 +459,18 @@ Upstream partners (basement finishing & renovation contractors, water-damage res
 
 **Regulatory.** Many home-inspector associations' codes of ethics restrict compensation for contractor referrals.
 
-### Municipal basement-flooding protection programs
-
-*Shared-audience partners · They refer to you · recurring · Medium (58) · often overlooked*
-
-**Opportunity.** Many municipalities offer subsidies for backwater valves, sump pumps, or downspout disconnection, especially after major storms. Homeowners look for contractors who can complete the work and the paperwork correctly.
-
-**Why it makes commercial sense.** Subsidies lower the homeowner's cost and create a burst of demand after each storm or program announcement. Contractors who get the forms right become the names residents share.
-
-**Who decides.** Municipal program coordinator (water or engineering department)
-
-**Trigger events**
-
-- **A storm floods basements across a neighbourhood.** Residents apply for subsidies and need eligible work done. *Who notices:* Program coordinator and ward councillor offices. *Refer when:* In the weeks after the storm. *Their gain:* Programs succeed when work is completed and documented properly.
-
-**Mutual value.** Programs need compliant installations; you gain subsidy-backed customers.
-
-**First step.** Learn each local program's eligibility and documentation rules and produce subsidy-ready invoices. Ask whether the municipality publishes contractor information, but expect it not to endorse anyone.
-
-**Regulatory.** Municipal programs typically do not endorse contractors. Never imply municipal approval.
-
-### Restoration contractors & insurance adjusters
-
-*Upstream referral sources · They refer to you · occasional · Medium (58)*
-
-**Opportunity.** After fires, floods, or structural damage, restoration companies handle interior work while demolition, foundation exposure, and site cleanup often need an excavation contractor.
-
-**Why it makes commercial sense.** Claims-driven work is urgent and has an approved budget behind it, but volume is irregular.
-
-**Who decides.** Restoration project manager or insurance adjuster
-
-**Trigger events**
-
-- **A total-loss fire or structural failure.** Demolition and debris removal are required before rebuilding. *Who notices:* Insurance adjuster or restoration project manager. *Refer when:* Once the claim scope is approved. *Their gain:* A contractor who documents work properly speeds claim closure.
-- **Flooding caused by exterior drainage failure.** Excavation and drainage correction are needed to prevent recurrence. *Who notices:* Restoration company. *Refer when:* After mitigation, during repair planning. *Their gain:* Prevents repeat claims.
-
-**Mutual value.** Adjusters and restorers need documentation and fast mobilisation; you gain urgent, budgeted work.
-
-**First step.** Show claim-ready documentation habits: photos, itemised invoices, and timelines. Ask restoration firms which subcontractors they lack.
-
-### Structural engineers & foundation assessors
-
-*Upstream referral sources · They refer to you · occasional · Medium (58)*
-
-**Opportunity.** When cracks, bowing walls, or settlement appear, owners hire an engineer to determine whether the problem is structural. The engineer's report specifies the repair and the owner then needs a qualified contractor.
-
-**Why it makes commercial sense.** Engineers define the scope and influence the contractor choice for the highest-value foundation repairs.
-
-**Who decides.** Professional engineer (P.Eng.)
-
-**Trigger events**
-
-- **An engineer confirms structural cracking or wall movement.** Repairs must follow the engineer's specification. *Who notices:* Engineer. *Refer when:* When the report is delivered. *Their gain:* Their specification is executed correctly.
-
-**Mutual value.** Engineers want their designs built correctly; you get well-defined, higher-value projects.
-
-**First step.** Show engineers examples of specified repairs you have completed and offer to coordinate inspections.
-
-**Regulatory.** Engineers' codes of ethics generally prohibit accepting benefits for recommending contractors.
-
-### Radon mitigation professionals
-
-*Complementary providers · Two-way referrals · occasional · Low (49) · often overlooked*
-
-**Opportunity.** Radon mitigation often involves sealing foundation cracks, sump openings, and floor joints. Homeowners testing for radon are already thinking about their foundation.
-
-**Why it makes commercial sense.** Shared work areas and a health-driven trigger make this an overlooked handoff, especially during radon-awareness campaigns.
-
-**Who decides.** Certified radon mitigation professional
-
-**Trigger events**
-
-- **A radon test exceeds the guideline.** Mitigation may require sealing the foundation. *Who notices:* Radon professional. *Refer when:* When designing the mitigation system. *Their gain:* A more complete, effective installation.
-
-**Mutual value.** Coordinated sealing improves both outcomes; reciprocal referrals.
-
-**First step.** Offer coordinated sealing for mitigation installs and ask certified professionals to share your contact for foundation issues they find.
-
 ## First 10 actions
 
 1. **Basement finishing & renovation contractors**: Offer renovators a 48-hour assessment for jobs in progress and a written moisture report they can attach to their contract file. *Watch for:* Demolition exposes cracks, damp insulation, or efflorescence
 2. **Builders' warranty & customer-care departments**: Ask for the warranty or customer-care manager, not the sales office. *Watch for:* A new-home owner submits a warranty claim for a basement leak
 3. **Custom & infill home builders**: Request a meeting with the site superintendent rather than the owner alone. *Watch for:* A builder purchases a lot or secures a building permit
 4. **Water-damage restoration & mould remediation firms**: Offer a quick-turnaround site assessment for their files and a short written explanation of seepage versus covered water damage that they can give homeowners. *Watch for:* Mitigation is complete but moisture readings point to foundation seepage
-5. **Property management companies**: Establish a vendor relationship: provide service capabilities, geographic coverage, response expectations, insurance, and relevant project examples. *Watch for:* Water infiltration or pooling around a managed building
-6. **Landlords & investors converting basements to rental units**: Present at local real-estate investor meetups about the true cost of moisture in rental basements, and offer portfolio pricing. *Watch for:* An investor buys a property to add a basement unit
-7. **Landscape & hardscape contractors**: Offer to price the heavy portion of their larger quotes. *Watch for:* A backyard design includes regrading, retaining walls, or a pool
-8. **Concrete & foundation forming contractors**: Coordinate on a shared job first, then propose a standing arrangement to recommend each other to builders without exclusivity. *Watch for:* A forming crew is booked for a new foundation
-9. **Realtors managing inspection conditions**: Promote a 'deal-saver' quote service with a fixed turnaround to a few active brokerages. *Watch for:* A buyer's inspection reports basement moisture
-10. **Plumbers & drain inspection specialists**: Target plumbing companies that advertise camera inspections but not excavation. *Watch for:* A sewer backup or recurring blockage
+5. **Electricians, HVAC & geothermal installers needing trenching**: Offer per-metre trenching pricing and scheduling windows to a few electrical and HVAC firms. *Watch for:* An electrician quotes a service to a detached garage or shop
+6. **Property management companies**: Establish a vendor relationship: provide service capabilities, geographic coverage, response expectations, insurance, and relevant project examples. *Watch for:* Water infiltration or pooling around a managed building
+7. **Secondary-suite designers (walk-outs, separate entrances, basement lowering)**: Show designers suite-entrance and window-well projects you have completed, with photos of shoring and drainage details. *Watch for:* Permit drawings show a new side entrance or egress window wells
+8. **Landlords & investors converting basements to rental units**: Present at local real-estate investor meetups about the true cost of moisture in rental basements, and offer portfolio pricing. *Watch for:* An investor buys a property to add a basement unit
+9. **Landscape & hardscape contractors**: Offer to price the heavy portion of their larger quotes. *Watch for:* A backyard design includes regrading, retaining walls, or a pool
+10. **Concrete & foundation forming contractors**: Coordinate on a shared job first, then propose a standing arrangement to recommend each other to builders without exclusivity. *Watch for:* A forming crew is booked for a new foundation
 
 ## Guardrails
 
