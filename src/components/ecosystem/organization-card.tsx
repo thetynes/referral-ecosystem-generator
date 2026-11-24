@@ -4,14 +4,14 @@ import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
 const STATUS: Record<FieldStatus, { label: string; cls: string }> = {
-  verified: { label: "Verified", cls: "text-high" },
+  verified: { label: "Confirmed by source", cls: "text-high" },
   inferred: { label: "Inferred", cls: "text-medium" },
   user_provided: { label: "From your list", cls: "text-ink-3" },
-  unknown: { label: "Unknown", cls: "text-ink-4" },
+  unknown: { label: "Not found", cls: "text-ink-4" },
 };
 
 const ORIGIN: Record<Organization["origin"], string> = {
-  google_places: "Google Places listing",
+  google_places: "Google Maps listing",
   brave_search: "Web search result",
   csv_import: "Imported from your CSV",
 };
@@ -42,7 +42,7 @@ function FieldRow({ label, field, link }: { label: string; field: ProvenancedFie
             <span className="break-words">{field.value}</span>
           )
         ) : (
-          <span className="text-ink-4">Not established</span>
+          <span className="text-ink-4">Not found</span>
         )}
         <span className={cn("ml-1.5 text-[10.5px] font-medium", s.cls)}>{field.value ? s.label : ""}</span>
       </dd>
@@ -53,10 +53,10 @@ function FieldRow({ label, field, link }: { label: string; field: ProvenancedFie
 export function OrganizationCard({ org, compact }: { org: Organization; compact?: boolean }) {
   const status =
     org.verificationStatus === "verified_listing"
-      ? { v: "high" as const, l: "Verified listing" }
+      ? { v: "high" as const, l: "Listing confirmed" }
       : org.verificationStatus === "partially_verified"
-        ? { v: "medium" as const, l: "Partially verified" }
-        : { v: "low" as const, l: "Unverified" };
+        ? { v: "medium" as const, l: "Partly confirmed" }
+        : { v: "low" as const, l: "Not confirmed" };
   return (
     <div className="rounded-lg border border-line bg-panel p-3 text-[12.5px]">
       <div className="flex items-start justify-between gap-2">
@@ -66,7 +66,7 @@ export function OrganizationCard({ org, compact }: { org: Organization; compact?
         </div>
         <div className="flex shrink-0 items-center gap-1">
           <Badge variant={status.v}>{status.l}</Badge>
-          <Badge variant="outline" title="Share of key fields established, weighted by evidence strength">{org.completeness}%</Badge>
+          <Badge variant="outline" title="How complete this company's details are, weighted by how well each is confirmed">{org.completeness}% complete</Badge>
         </div>
       </div>
       <dl className="mt-2 grid grid-cols-[84px_1fr] gap-x-3 gap-y-1">
@@ -79,7 +79,7 @@ export function OrganizationCard({ org, compact }: { org: Organization; compact?
       {!compact && (
         <div className="mt-2 space-y-1 border-t border-line pt-2 text-ink-2">
           <p><span className="text-ink-3">Why included: </span>{org.inclusionReason}</p>
-          <p><span className="text-ink-3">Partnership idea (inferred from category): </span>{org.partnershipOpportunity}</p>
+          <p><span className="text-ink-3">Suggested approach (based on the partner type, not this company): </span>{org.partnershipOpportunity}</p>
         </div>
       )}
       {org.sourceUrls.length > 0 && (
@@ -88,13 +88,13 @@ export function OrganizationCard({ org, compact }: { org: Organization; compact?
             const href = safeHref(u);
             return href ? (
               <a key={u} href={href} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-1 text-[11px] text-ink-3 hover:text-accent">
-                <ExternalLink className="size-3" /> Source
+                <ExternalLink className="size-3" /> {org.origin === "google_places" && u.includes("google") ? "View on Google Maps" : "Source"}
               </a>
             ) : null;
           })}
         </div>
       )}
-      <p className="mt-2 text-[10.5px] text-ink-4">A verified business is not a verified or willing referral partner.</p>
+      <p className="mt-2 text-[10.5px] text-ink-4">A confirmed listing doesn't mean the company is interested in a partnership.</p>
     </div>
   );
 }

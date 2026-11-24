@@ -47,6 +47,7 @@ export async function generateAnalysis(input: BusinessInput, opts: GenerateOptio
   const profile = normalizeInput(input);
   const kb = runKnowledgeBase(profile, opts.archetypeId);
   const notes: string[] = [];
+  const diagnostics: string[] = [];
   let provider = opts.forceKnowledgeBase || !opts.ai?.requested ? null : getLLMProvider();
   const tester = opts.ai?.tester ?? null;
   const fallbackMode = config().llm.fallback;
@@ -57,7 +58,7 @@ export async function generateAnalysis(input: BusinessInput, opts: GenerateOptio
       provider = null;
       if (!allowance.silent) {
         if (fallbackMode === "error") throw new AiUnavailableError(allowance.reason);
-        notes.push(`${allowance.reason} Showing the curated analysis instead.`);
+        diagnostics.push(`AI skipped: ${allowance.reason}`);
       }
     }
   }
@@ -94,7 +95,7 @@ export async function generateAnalysis(input: BusinessInput, opts: GenerateOptio
         }
         await store.set("ai_cache", cacheKey, result, AI_CACHE_TTL);
       } else {
-        notes.push("Served from cache: an identical business description was analysed recently.");
+        diagnostics.push("AI result served from cache.");
       }
       // Re-evaluate existing-relationship flags against this user's own list.
       categories = result.categories.map((c) => ({
@@ -110,18 +111,18 @@ export async function generateAnalysis(input: BusinessInput, opts: GenerateOptio
       console.error("AI pipeline failed; falling back to knowledge base:", err instanceof Error ? err.message : err);
       const reason = err instanceof LLMError ? err.message : "The AI analysis could not be completed.";
       if (fallbackMode === "error") throw new AiUnavailableError(reason);
-      notes.push(`${reason} Showing the curated knowledge-base analysis instead.`);
+      diagnostics.push(`AI failed, curated profile used: ${reason}`);
     }
   }
 
   if (mode === "knowledge_base") {
     if (kb.match.confidence === "low") {
       notes.push(
-        "Your industry did not closely match a curated industry profile. The ecosystem below uses universal partner roles. Add more detail about your services, choose the closest profile, or configure an AI provider for an industry-specific analysis.",
+        "We don't have a dedicated playbook for your industry yet, so this map uses partner roles that apply to most businesses. Add more detail about your services and customers, or choose the closest industry below, for more specific recommendations.",
       );
     } else if (kb.match.alternatives.length > 0 && kb.match.confidence !== "high") {
       notes.push(
-        `Your description also resembles: ${kb.match.alternatives.map((a) => a.label).join(", ")}. You can switch the industry profile if this one is not right.`,
+        `Your description also fits ${kb.match.alternatives.map((a) => a.label.toLowerCase()).join(" and ")}. If that describes you better, change the industry focus below.`,
       );
     }
   }
@@ -140,6 +141,7 @@ export async function generateAnalysis(input: BusinessInput, opts: GenerateOptio
       archetypeLabel: kb.match.secondary ? `${kb.match.archetype.label} + ${kb.match.secondary.label}` : kb.match.archetype.label,
       matchConfidence: mode === "ai" ? "high" : kb.match.confidence,
       notes,
+      diagnostics,
       version: ENGINE_VERSION,
       costUsd,
     },

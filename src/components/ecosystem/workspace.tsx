@@ -4,8 +4,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
-  AlertCircle, FileImage, FileJson, FileSpreadsheet, FileText, FlaskConical, Info, Map as MapIcon,
-  List, Zap, Building2, SlidersHorizontal, Sparkles, BookOpen,
+  AlertCircle, FileImage, FileSpreadsheet, FileText, Info, Map as MapIcon,
+  List, Zap, Building2, SlidersHorizontal, BookOpen,
 } from "lucide-react";
 import type { AnalysisView, BusinessInput, Organization, RelationshipType } from "@/lib/schema";
 import type { Capabilities } from "@/lib/config";
@@ -111,6 +111,18 @@ export function Workspace({ id }: { id: string }) {
   }, [id]);
 
   useEffect(() => {
+    // Demo access links issued from the admin area carry a signed token once; store it and clean the URL.
+    try {
+      const url = new URL(window.location.href);
+      const granted = url.searchParams.get("access");
+      if (granted) {
+        clientStore.setEntitlement(id, granted);
+        url.searchParams.delete("access");
+        window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+      }
+    } catch {
+      /* ignore */
+    }
     const tok = clientStore.getEntitlement(id);
     setToken(tok);
     setImported(clientStore.getImportedOrgs(id));
@@ -158,6 +170,13 @@ export function Workspace({ id }: { id: string }) {
     if (view && view.access.tier === "free" && !view.isDemo) trackClient("upgrade_viewed", { analysisId: view.id, once: `${view.id}:upgrade` });
   }, [view]);
   const filtered = useMemo(() => ranked.filter((c) => visibleTypes.has(c.relationshipType)), [ranked, visibleTypes]);
+  // Large ecosystems are unreadable when fitted to one screen: show the strongest 12 first.
+  const [showAllOnMap, setShowAllOnMap] = useState(false);
+  const MAP_DEFAULT = 12;
+  const mapCategories = useMemo(
+    () => (showAllOnMap || filtered.length <= MAP_DEFAULT + 2 ? filtered : filtered.slice(0, MAP_DEFAULT)),
+    [filtered, showAllOnMap],
+  );
   const presentTypes = useMemo(() => TYPE_ORDER.filter((t) => ranked.some((c) => c.relationshipType === t)), [ranked]);
   const selected = ranked.find((c) => c.id === selectedId) ?? null;
   const allOrgs = useMemo(() => [...(discovery?.organizations ?? []), ...imported], [discovery, imported]);
@@ -186,11 +205,6 @@ export function Workspace({ id }: { id: string }) {
     });
   }, []);
 
-  async function onUnlocked(tok: string) {
-    clientStore.setEntitlement(id, tok);
-    setToken(tok);
-    await load(tok);
-  }
 
   async function switchProfile(archetypeId: string) {
     if (!view) return;
@@ -243,11 +257,11 @@ export function Workspace({ id }: { id: string }) {
 
   const engineBadge =
     view.engine.mode === "demo" ? (
-      <Badge variant="warn"><Info className="size-3" /> Illustrative example: not live research</Badge>
-    ) : view.engine.mode === "ai" ? (
-      <Badge variant="accent"><Sparkles className="size-3" /> AI analysis · {view.engine.model}</Badge>
+      <Badge variant="warn"><Info className="size-3" /> Example: a hypothetical business, not research</Badge>
+    ) : view.engine.archetypeId === "generic" ? (
+      <Badge variant="neutral"><BookOpen className="size-3" /> General referral framework</Badge>
     ) : (
-      <Badge variant="neutral"><BookOpen className="size-3" /> Curated profile: {view.engine.archetypeLabel} · {view.engine.matchConfidence} match</Badge>
+      <Badge variant="neutral" className="whitespace-normal text-left"><BookOpen className="size-3 shrink-0" /> Industry focus: {view.engine.archetypeLabel}</Badge>
     );
 
   const flow = ecosystemFlow(filtered);
@@ -255,7 +269,7 @@ export function Workspace({ id }: { id: string }) {
   const sidebar = (
     <div className="space-y-4">
       {view.access.tier === "free" && !view.isDemo && (
-        <UpgradeCard analysisId={view.id} lockedCount={view.access.lockedCategoryCount} caps={caps} onUnlocked={onUnlocked} />
+        <UpgradeCard analysisId={view.id} lockedCount={view.access.lockedCategoryCount} caps={caps} />
       )}
       <div className="rounded-xl border border-line bg-panel p-4">
         <h2 className="text-[13px] font-semibold text-ink">How this ecosystem works</h2>
@@ -276,20 +290,15 @@ export function Workspace({ id }: { id: string }) {
 
   return (
     <div className="mx-auto max-w-[1440px] px-4 pb-16 sm:px-6">
-      {caps.devMode && (
-        <div className="mt-3 flex items-center gap-2 rounded-md border border-dashed border-[#e3b65b] bg-[#fffaf0] px-3 py-1.5 text-[12px] text-[#7a4a00]">
-          <FlaskConical className="size-3.5 shrink-0" /> Development mode is on: paid features can be unlocked without payment for testing.
-        </div>
-      )}
 
       <header className="flex flex-col gap-3 pt-6 lg:flex-row lg:items-end lg:justify-between">
         <div className="min-w-0 space-y-1.5">
           <div className="flex flex-wrap items-center gap-2">{engineBadge}
-            {view.access.tier !== "free" && !view.isDemo && <Badge variant="high">{view.access.tier === "basic" ? "Basic report" : "Comprehensive report"}{view.access.devUnlocked ? " (dev unlock)" : ""}</Badge>}
+            {view.access.tier !== "free" && !view.isDemo && <Badge variant="high">{view.access.devUnlocked ? "Demo access" : view.access.tier === "basic" ? "Basic report" : "Comprehensive report"}</Badge>}
           </div>
           <h1 className="truncate text-[24px] font-semibold tracking-tight text-ink sm:text-[28px]">{view.profile.displayName}</h1>
           <p className="text-[13.5px] text-ink-3">
-            {view.profile.industry} · {view.profile.serviceArea} · {view.categories.length} partner categories
+            {view.profile.industry} · {view.profile.serviceArea} · {view.categories.length} partner types
             {view.access.lockedCategoryCount > 0 && ` shown (${view.access.lockedCategoryCount} more in the full report)`}
           </p>
         </div>
@@ -298,10 +307,7 @@ export function Workspace({ id }: { id: string }) {
           <Button variant="outline" size="sm" onClick={() => { trackClient("export_downloaded", { analysisId: view.id, props: { kind: "csv" } }); downloadText(`${slugify(view.profile.displayName)}-opportunities.csv`, opportunitiesCsv(ranked)); }} data-testid="export-csv">
             <FileSpreadsheet /> CSV
           </Button>
-          <Button variant="outline" size="sm" onClick={() => downloadText(`${slugify(view.profile.displayName)}-ecosystem.json`, JSON.stringify({ ...view, weights, organizations: allOrgs }, null, 2), "application/json")}>
-            <FileJson /> JSON
-          </Button>
-          <Button size="sm" asChild><Link href={`/report/${view.id}`} data-testid="open-report"><FileText /> Report / PDF</Link></Button>
+          <Button size="sm" asChild><Link href={`/report/${view.id}`} data-testid="open-report"><FileText /> View report</Link></Button>
         </div>
       </header>
 
@@ -312,7 +318,7 @@ export function Workspace({ id }: { id: string }) {
           {localOnly && (
             <div className="flex gap-2 rounded-lg border border-line bg-panel px-3 py-2 text-[12.5px] text-ink-2">
               <Info className="mt-0.5 size-3.5 shrink-0 text-ink-3" />
-              Loaded from this browser. The server copy has expired, so upgrades and research need a fresh analysis.
+              This is a copy saved in your browser. Generate the ecosystem again to upgrade or research companies.
             </div>
           )}
           {view.engine.notes.map((n) => (
@@ -323,17 +329,17 @@ export function Workspace({ id }: { id: string }) {
           ))}
           {view.engine.mode === "knowledge_base" && view.engine.matchConfidence !== "high" && !localOnly && (
             <div className="flex flex-wrap items-center gap-2 text-[12.5px] text-ink-2">
-              <span>Industry profile:</span>
+              <span>Industry focus:</span>
               <Select
                 className="h-8 w-auto text-[12.5px]"
                 value={view.engine.archetypeId ?? "generic"}
                 disabled={switching}
                 onChange={(e) => switchProfile(e.target.value)}
-                aria-label="Switch industry profile"
+                aria-label="Change industry focus"
               >
                 {PROFILE_CATALOG.map((p) => <option key={p.id} value={p.id}>{p.label}</option>)}
               </Select>
-              {switching && <span className="text-ink-3">Regenerating…</span>}
+              {switching && <span className="text-ink-3">Updating your map…</span>}
             </div>
           )}
         </div>
@@ -342,10 +348,10 @@ export function Workspace({ id }: { id: string }) {
       <Tabs value={tab} onValueChange={setTab} className="mt-5">
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <TabsList className="w-full overflow-x-auto md:w-auto">
-            <TabsTrigger value="map"><MapIcon /> Map</TabsTrigger>
-            <TabsTrigger value="list"><List /> Opportunities</TabsTrigger>
-            <TabsTrigger value="triggers"><Zap /> Triggers</TabsTrigger>
-            <TabsTrigger value="orgs"><Building2 /> Organisations</TabsTrigger>
+            <TabsTrigger value="map"><MapIcon className="max-sm:hidden" /> Map</TabsTrigger>
+            <TabsTrigger value="list"><List className="max-sm:hidden" /> Opportunities</TabsTrigger>
+            <TabsTrigger value="triggers"><Zap className="max-sm:hidden" /> Triggers</TabsTrigger>
+            <TabsTrigger value="orgs"><Building2 className="max-sm:hidden" /> Companies</TabsTrigger>
           </TabsList>
           <div className="flex flex-wrap items-center gap-1.5">
             {presentTypes.map((t) => (
@@ -375,7 +381,7 @@ export function Workspace({ id }: { id: string }) {
                   <EcosystemMap
                     ref={mapRef}
                     profile={view.profile}
-                    categories={filtered}
+                    categories={mapCategories}
                     visibleTypes={visibleTypes}
                     collapsed={collapsed}
                     onToggleCollapse={toggleCollapse}
@@ -385,6 +391,15 @@ export function Workspace({ id }: { id: string }) {
                 </div>
                 <div className="border-t border-line px-3 py-2"><MapLegend types={presentTypes} /></div>
               </div>
+              {filtered.length > MAP_DEFAULT + 2 && (
+                <div className="mt-2 flex flex-wrap items-center gap-2 text-[12.5px] text-ink-2">
+                  <span>{showAllOnMap ? `Showing all ${filtered.length} partner types.` : `Showing your top ${MAP_DEFAULT} of ${filtered.length} partner types.`}</span>
+                  <button type="button" onClick={() => setShowAllOnMap((v) => !v)} className="font-medium text-accent hover:underline" data-testid="map-show-all">
+                    {showAllOnMap ? `Show top ${MAP_DEFAULT}` : "Show all"}
+                  </button>
+                  <span className="text-ink-4">The full list is under Opportunities.</span>
+                </div>
+              )}
               <p className="mt-2 text-[12px] text-ink-3">Click a partner for details. Click a group label to collapse or expand it. Scroll or pinch to zoom.</p>
             </TabsContent>
             <TabsContent value="list">

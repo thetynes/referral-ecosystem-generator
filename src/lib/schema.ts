@@ -160,7 +160,10 @@ export const EngineInfoSchema = z.object({
   archetypeId: z.string().nullable(),
   archetypeLabel: z.string().nullable(),
   matchConfidence: z.enum(["high", "medium", "low"]),
+  /** Customer-facing notes about this analysis (plain language, shown in the app). */
   notes: z.array(z.string()),
+  /** Internal diagnostics (AI fallbacks, budgets, cache). Never sent to customers. */
+  diagnostics: z.array(z.string()).optional(),
   version: z.string(),
   /** Estimated AI cost for this analysis (null when no AI call was made). Server-side only. */
   costUsd: z.number().nullable().optional(),

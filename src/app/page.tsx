@@ -34,7 +34,7 @@ const FAQ: { q: string; a: string }[] = [
   },
   {
     q: "Where do the recommendations come from?",
-    a: "Either a configured AI model, run through a staged and schema-validated pipeline, or curated industry profiles written for common business types. The analysis tells you which one produced your results. Named organisations only come from official business-data APIs or your own CSV. The tool never invents companies, contacts, or sources.",
+    a: "From referral playbooks built for each industry: who meets your customers before they need you, the moments that create demand, and what each partner gains. Your answers tailor the map to your services, customers, and area. Company information comes only from cited business listings or lists you add. We never invent companies, contacts, or sources.",
   },
   {
     q: "Are the priority scores predictions?",
@@ -62,7 +62,7 @@ const FAQ: { q: string; a: string }[] = [
   },
   {
     q: "What happens to my information?",
-    a: "Your analysis is saved in your browser and stored on the server so it can be unlocked later. If an AI provider is used, it receives only a business-level description (industry, services, area, customer type). Your business name, website, and named existing partners are never sent.",
+    a: "Your ecosystem is saved in your browser and on our servers so you can come back to it and unlock the full report. Where we use third-party processing to tailor the analysis, we share only a business-level description (industry, services, area, customer type), never your business name, website, or the names of your existing partners. We never contact anyone on your behalf.",
   },
 ];
 
@@ -121,7 +121,9 @@ export default function Home() {
             {[
               ["01", "Describe your business", "Enter your industry, service area, and ideal customer, or let us read your website and suggest them."],
               ["02", "Explore the ecosystem", "Upstream sources, complementary providers, downstream relationships, shared-audience partners, and distribution channels, all mapped with the reasoning behind each."],
-              ["03", "Research and act", "Prioritise with transparent criteria, then research real organisations in your market and work through a ranked action plan."],
+              ["03", "Prioritise and act", caps.researchAvailable
+                ? "Rank opportunities with transparent criteria, find real companies in your area, and work through a ranked action plan."
+                : "Rank opportunities with transparent criteria, then work through a ranked action plan with a first step for each partner."],
             ].map(([n, t, d]) => (
               <div key={n}>
                 <div className="font-mono text-[12px] text-ink-4">{n}</div>
@@ -172,8 +174,8 @@ export default function Home() {
           </div>
           <p className="mt-4 text-[12.5px] text-ink-4">
             {caps.paidReportsAvailable
-              ? `Paid reports are purchased from inside your ecosystem workspace.${caps.paymentsMode === "test" ? " This preview uses Stripe test mode, so no real charges are made." : ""}`
-              : "Paid reports are not yet available on this deployment."}
+              ? `Full reports are purchased from your ecosystem page.${caps.paymentsMode === "test" ? " During the preview, checkout runs in test mode and no charge is made." : ""}`
+              : "Full reports will be available to purchase soon."}
           </p>
         </section>
 

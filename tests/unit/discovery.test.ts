@@ -38,7 +38,7 @@ describe("Google Places provider", () => {
     expect(org.verificationStatus).toBe("verified_listing");
     expect(org.services.status).toBe("unknown");
     expect(org.sourceUrls).toContain("https://maps.google.com/?cid=1");
-    expect(org.inclusionReason).toMatch(/Google Places/);
+    expect(org.inclusionReason).toMatch(/Google Maps/);
   });
 
   it("reports provider errors per category instead of inventing results", async () => {

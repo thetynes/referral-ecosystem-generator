@@ -34,17 +34,19 @@ export function ReportView({ id }: { id: string }) {
   const [orgs, setOrgs] = useState<Organization[]>([]);
   const [weights, setWeights] = useState<Weights | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [caps, setCaps] = useState<{ researchAvailable: boolean; listingExportsAllowed: boolean } | null>(null);
 
   useEffect(() => {
     const tok = clientStore.getEntitlement(id);
     const headers: Record<string, string> = tok ? { "x-entitlement": tok } : {};
+    fetch("/api/capabilities").then((r) => r.json()).then(setCaps).catch(() => undefined);
     (async () => {
       let v: AnalysisView | null = null;
       const res = await fetch(`/api/analysis/${id}`, { headers }).catch(() => null);
       if (res?.ok) v = await res.json();
       else v = clientStore.getAnalysis(id);
       if (!v) {
-        setError("This analysis could not be found.");
+        setError("We couldn't find this report. It may have expired. Generate your ecosystem again to create a new one.");
         return;
       }
       setView(v);
@@ -67,6 +69,7 @@ export function ReportView({ id }: { id: string }) {
   if (!view || !weights) return <p className="py-24 text-center text-sm text-ink-3">Preparing report…</p>;
 
   const plan = actionPlan(ranked, 10);
+  const exportableOrgs = caps?.listingExportsAllowed ? orgs : orgs.filter((o) => o.origin !== "google_places");
   const overview = executiveOverview(view, ranked);
   const shared = ranked.filter((c) => c.collaborationFormats.length > 0);
   const seo = ranked.filter((c) => c.digitalAuthority.length > 0);
@@ -77,10 +80,10 @@ export function ReportView({ id }: { id: string }) {
   return (
     <div className="mx-auto max-w-[860px] px-4 pb-20 sm:px-8">
       <div className="no-print sticky top-0 z-10 -mx-4 mb-6 flex flex-wrap items-center justify-between gap-2 border-b border-line bg-canvas/90 px-4 py-3 backdrop-blur sm:-mx-8 sm:px-8">
-        <Button variant="ghost" size="sm" asChild><Link href={`/ecosystem/${id}`}><ArrowLeft /> Back to workspace</Link></Button>
+        <Button variant="ghost" size="sm" asChild><Link href={`/ecosystem/${id}`}><ArrowLeft /> Back to your ecosystem</Link></Button>
         <div className="flex gap-2">
-          <Button variant="outline" size="sm" onClick={() => downloadText(`${slugify(view.profile.displayName)}-opportunities.csv`, opportunitiesCsv(ranked))}><FileSpreadsheet /> Opportunities CSV</Button>
-          {orgs.length > 0 && <Button variant="outline" size="sm" onClick={() => downloadText(`${slugify(view.profile.displayName)}-organisations.csv`, organizationsCsv(orgs, nameOf))}><FileSpreadsheet /> Organisations CSV</Button>}
+          <Button variant="outline" size="sm" onClick={() => downloadText(`${slugify(view.profile.displayName)}-opportunities.csv`, opportunitiesCsv(ranked))}><FileSpreadsheet /> Partner types CSV</Button>
+          {exportableOrgs.length > 0 && <Button variant="outline" size="sm" onClick={() => downloadText(`${slugify(view.profile.displayName)}-companies.csv`, organizationsCsv(exportableOrgs, nameOf))}><FileSpreadsheet /> Companies CSV</Button>}
           <Button size="sm" onClick={() => { trackClient("report_printed", { analysisId: id }); window.print(); }} data-testid="print-report"><Printer /> Save as PDF</Button>
         </div>
       </div>
@@ -95,7 +98,7 @@ export function ReportView({ id }: { id: string }) {
             <span>{view.profile.serviceArea}</span>
             <span>{date}</span>
             <span>
-              {view.engine.mode === "ai" ? `AI analysis (${view.engine.model})` : view.engine.mode === "demo" ? "Illustrative dataset" : `Curated profile: ${view.engine.archetypeLabel}`}
+              {view.engine.mode === "demo" ? "Example business" : view.engine.archetypeId === "generic" ? "General referral framework" : `Industry focus: ${view.engine.archetypeLabel}`}
             </span>
           </div>
           {view.isDemo && (
@@ -104,7 +107,7 @@ export function ReportView({ id }: { id: string }) {
             </p>
           )}
           <div className="grid gap-2 pt-2 text-[12px] sm:grid-cols-3">
-            <div className="rounded-md bg-subtle p-2.5"><span className="font-semibold text-ink">Evidence-backed</span>: facts tied to a cited source (researched organisations only).</div>
+            <div className="rounded-md bg-subtle p-2.5"><span className="font-semibold text-ink">Evidence-backed</span>: facts tied to a cited source (the companies section only).</div>
             <div className="rounded-md bg-subtle p-2.5"><span className="font-semibold text-ink">Strategic recommendation</span>: reasoned guidance, not verified fact.</div>
             <div className="rounded-md bg-subtle p-2.5"><span className="font-semibold text-ink">Requires validation</span>: assumptions to test in real conversations.</div>
           </div>
@@ -169,12 +172,13 @@ export function ReportView({ id }: { id: string }) {
         </section>
 
         <section className="print-break">
-          <H2 n={5} kind="evidence">Researched organisations</H2>
+          <H2 n={5} kind="evidence">Companies in your area</H2>
           {orgs.length > 0 ? (
             <>
               <p className="mb-3 text-[12.5px] text-ink-3">
-                Each organisation records its source and which fields are verified, inferred, or unknown. A verified business is not a
-                verified or willing referral partner. Each one is a candidate to research further before contact.
+                Each company shows where it came from and which details that source confirms. A confirmed listing doesn't mean the company is
+                interested in a partnership; treat each one as a lead to look into before you get in touch.
+                {orgs.some((o) => o.origin === "google_places") ? " Details marked “Google Maps listing” come from Google Maps." : ""}
               </p>
               <div className="space-y-4">
                 {ranked.map((c) => {
@@ -191,8 +195,10 @@ export function ReportView({ id }: { id: string }) {
             </>
           ) : (
             <p className="text-ink-3">
-              No organisations have been researched or imported for this analysis. Named-organisation research is part of the paid report and
-              requires a configured business-data provider. You can also import your own CSV list from the workspace.
+              No companies have been added yet.{" "}
+              {caps?.researchAvailable
+                ? "Use “Find companies” on your ecosystem page to search for companies in your area, or upload a list you already have."
+                : "You can upload a list of companies you already know from your ecosystem page."}
             </p>
           )}
         </section>
@@ -258,6 +264,10 @@ export function ReportView({ id }: { id: string }) {
           <p>
             Priority scores are weighted averages of nine 1–5 ratings, normalised to 0–100 (High ≥ 70, Medium ≥ 52). Weights used:{" "}
             {CRITERIA.map((k) => `${CRITERION_META[k].label} ${weights[k]}`).join(", ")}.
+          </p>
+          <p className="mt-2">
+            Recommendations come from industry referral playbooks and automated analysis of the answers you gave. They are a starting point
+            for your own judgement, not legal, financial, or professional advice.
           </p>
         </section>
       </article>

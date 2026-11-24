@@ -75,7 +75,7 @@ export function config() {
       anthropicBaseUrl: env("ANTHROPIC_API_BASE_URL") ?? "https://api.anthropic.com",
       openaiBaseUrl: env("OPENAI_API_BASE_URL") ?? "https://api.openai.com/v1",
       /** Who may trigger AI analysis: invited testers only (default), everyone, or nobody. */
-      access: (env("AI_ACCESS") as "testers" | "all" | "none" | undefined) ?? "testers",
+      access: (env("AI_ACCESS") as "testers" | "all" | "none" | undefined) ?? "none",
       maxOutputTokens: int("AI_MAX_OUTPUT_TOKENS", 12000),
       batchSize: int("AI_BATCH_SIZE", 4),
       dailyBudgetUsd: num("AI_DAILY_BUDGET_USD", 5),
@@ -87,12 +87,16 @@ export function config() {
       priceOutputPerMTok: num("AI_PRICE_OUTPUT_PER_MTOK", DEFAULT_PRICES[provider]?.output ?? 30),
     },
     discovery: {
-      /** Paid company research stays off until data licensing is resolved (docs/beta/data-licensing.md). */
+      /** Paid company research stays off until data licensing is resolved (docs/internal/data-licensing.md). */
       researchEnabled: env("COMPANY_RESEARCH_ENABLED") === "true",
       provider: discoveryProvider,
       googleKey,
       braveKey,
       maxResultsPerQuery: int("DISCOVERY_MAX_RESULTS", 8),
+      /** How long discovery results are kept (days). */
+      retentionDays: int("DISCOVERY_RETENTION_DAYS", 30),
+      /** Whether Google Maps listing content may appear in CSV downloads. See docs/internal/discovery-providers.md. */
+      googleInExports: env("GOOGLE_PLACES_IN_EXPORTS") === "true",
     },
     payments: {
       stripeSecret,
@@ -141,6 +145,7 @@ export function capabilities() {
     discoveryProvider: researchReady ? c.discovery.provider : null,
     /** Company research is a separate, licence-gated feature; paid reports never promise it unless enabled. */
     researchAvailable: researchReady,
+    listingExportsAllowed: c.discovery.googleInExports,
     paymentsEnabled: c.payments.enabled,
     paymentsMode: c.payments.enabled ? c.payments.mode : null,
     paidReportsAvailable: c.payments.enabled && Boolean(c.entitlementSecret),

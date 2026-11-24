@@ -30,6 +30,9 @@ export const SERVER_EVENTS = [
   "purchase_completed",
   "dev_unlock",
   "csv_imported",
+  "server_error",
+  "discovery_run",
+  "admin_grant",
 ] as const;
 
 export type EventName = (typeof CLIENT_EVENTS)[number] | (typeof SERVER_EVENTS)[number];
@@ -180,4 +183,14 @@ export async function summarize(sinceDays = 30): Promise<AnalyticsSummary> {
 
 export function _resetMemoryAnalyticsForTesting() {
   memory.length = 0;
+}
+
+/** Most recent events of the given types, newest first (for the admin diagnostics view). */
+export async function recentEvents(names: EventName[], limit = 25, sinceDays = 30): Promise<AnalyticsEvent[]> {
+  const since = new Date(Date.now() - sinceDays * 86400_000).toISOString();
+  const events = await loadEvents(since);
+  return events
+    .filter((e) => names.includes(e.name))
+    .sort((a, b) => (a.ts < b.ts ? 1 : -1))
+    .slice(0, limit);
 }

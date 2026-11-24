@@ -59,7 +59,7 @@ export function ecosystemFlow(ranked: ScoredCategory[]): { type: RelationshipTyp
     const trigger = lead.triggers[0];
     out.push({
       type,
-      text: `${TYPE_META[type].short}: ${list(cats.slice(0, 3).map((c) => lc(c.name)))}${cats.length > 3 ? ` and ${cats.length - 3} more` : ""}. For example, ${lc(trigger.event.replace(/\.$/, ""))}, and ${lc(trigger.whoRecognizes)} is usually the first to see it.`,
+      text: `${TYPE_META[type].short}: ${list(cats.slice(0, 3).map((c) => lc(c.name)))}${cats.length > 3 ? ` and ${cats.length - 3} more` : ""}. A typical moment: ${lc(trigger.event.replace(/\.$/, ""))}. Usually spotted first by: ${lc(trigger.whoRecognizes)}.`,
     });
   }
   return out;

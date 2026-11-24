@@ -59,13 +59,17 @@ export async function POST(req: Request) {
     });
     if (analysis.engine.mode === "ai") {
       await track("ai_run", { tester, session, analysisId: analysis.id, props: { model: analysis.engine.model, costUsd: Number((analysis.engine.costUsd ?? 0).toFixed(4)) } });
-    } else if (analysis.engine.notes.some((n) => /curated|knowledge-base/.test(n))) {
-      await track("ai_fallback", { tester, session, analysisId: analysis.id, props: { reason: analysis.engine.notes[0]?.slice(0, 110) ?? null } });
+    }
+    for (const d of analysis.engine.diagnostics ?? []) {
+      if (d.startsWith("AI failed") || /budget|limit/.test(d)) {
+        await track("ai_fallback", { tester, session, analysisId: analysis.id, props: { reason: d.slice(0, 120) } });
+      }
     }
     return NextResponse.json(toView(analysis, null, config().freeCategoryLimit));
   } catch (err) {
-    if (err instanceof AiUnavailableError) return jsonError(err.message, 503, { code: "ai_unavailable" });
-    console.error("analyze failed", err);
-    return jsonError("We couldn't generate the ecosystem. Please try again.", 500);
+    const message = err instanceof Error ? err.message : String(err);
+    console.error("analyze failed", message);
+    await track("server_error", { tester, session, props: { route: "analyze", message: message.slice(0, 120), aiUnavailable: err instanceof AiUnavailableError } });
+    return jsonError("We couldn't build your ecosystem just now. Please try again in a few minutes.", err instanceof AiUnavailableError ? 503 : 500);
   }
 }

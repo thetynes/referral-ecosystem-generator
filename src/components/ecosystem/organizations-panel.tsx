@@ -14,6 +14,7 @@ export interface DiscoveryState {
   errors: { categoryId: string; message: string }[];
   provider: string;
   researchedAt: string;
+  categoriesSearched?: number;
 }
 
 export function OrganizationsPanel({
@@ -54,14 +55,14 @@ export function OrganizationsPanel({
       const res = await fetch("/api/discover", {
         method: "POST",
         headers: { "Content-Type": "application/json", ...(token ? { "x-entitlement": token } : {}) },
-        body: JSON.stringify({ analysisId }),
+        body: JSON.stringify({ analysisId, refresh: Boolean(discovery?.errors?.length) }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error ?? "Research failed.");
+      if (!res.ok) throw new Error(data.error ?? "Company research couldn't be completed. Please try again.");
       onDiscovery(data);
-      if (data.organizations.length === 0) setMessage("The search provider returned no matching organisations for your service area.");
+      if (data.organizations.length === 0) setMessage("We didn't find matching companies in your area for these partner types.");
     } catch (e) {
-      setMessage(e instanceof Error ? e.message : "Research failed.");
+      setMessage(e instanceof Error ? e.message : "Company research couldn't be completed. Please try again.");
     } finally {
       setBusy(false);
     }
@@ -76,16 +77,20 @@ export function OrganizationsPanel({
     const text = await file.text();
     const result = importOrganizationsCsv(text, categories, categories[0]?.id);
     if (result.organizations.length === 0) {
-      setMessage(result.errors[0] ?? "No organisations were found in that file.");
+      setMessage(result.errors[0] ?? "We didn't find any companies in that file. Check that it has a 'name' column.");
       return;
     }
     const merged = [...imported, ...result.organizations];
     onImported(merged);
     setMessage(
-      `Imported ${result.organizations.length} organisation${result.organizations.length === 1 ? "" : "s"}.` +
-        (result.errors.length ? ` ${result.errors.length} issue(s): ${result.errors[0]}` : ""),
+      `Added ${result.organizations.length} compan${result.organizations.length === 1 ? "y" : "ies"} from your file.` +
+        (result.errors.length ? ` Some rows couldn't be read: ${result.errors[0]}` : ""),
     );
   }
+
+  // Some listing providers don't allow their content in downloads; those results stay viewable in the app.
+  const exportable = caps.listingExportsAllowed ? all : all.filter((o) => o.origin !== "google_places");
+  const hasGoogle = all.some((o) => o.origin === "google_places");
 
   const grouped = categories
     .map((c) => ({ c, orgs: all.filter((o) => o.categoryId === c.id) }))
@@ -96,50 +101,49 @@ export function OrganizationsPanel({
       <div className="grid gap-3 lg:grid-cols-2">
         <div className="rounded-xl border border-line bg-panel p-4">
           <div className="flex items-center gap-2 text-[14px] font-semibold text-ink">
-            <Search className="size-4" /> Named-organisation research
+            <Search className="size-4" /> Find companies in your area
           </div>
           <p className="mt-1 text-[12.5px] leading-relaxed text-ink-3">
-            Searches official business-data APIs for organisations in your service area that match your top partner categories. Each result
-            records its source and which fields are verified, inferred, or unknown.
+            We search business listings for companies in your service area that match your top partner types. Each result shows where it
+            came from and which details are confirmed by that source.
           </p>
           <div className="mt-3">
             {isDemo ? (
-              <p className="text-[12px] text-ink-3">Not available for the illustrative example. Generate your own ecosystem first.</p>
+              <p className="text-[12px] text-ink-3">Generate your own ecosystem to find companies in your area.</p>
             ) : !caps.researchAvailable ? (
               <p className="flex gap-2 rounded-md bg-subtle px-3 py-2 text-[12px] text-ink-3" data-testid="research-unavailable">
                 <Info className="mt-0.5 size-3.5 shrink-0" />
-                Not available yet. We are confirming data-licensing permissions before researching and storing company information. Use
-                CSV import to add organisations you already know.
+                Company research is coming soon. In the meantime, you can add companies you already know from a spreadsheet.
               </p>
             ) : !entitled ? (
               <p className="flex items-center gap-2 text-[12px] text-ink-3">
-                <Lock className="size-3.5" /> Included in the paid report.
+                <Lock className="size-3.5" /> Included with the full report.
               </p>
             ) : (
               <Button onClick={runDiscovery} disabled={busy} size="sm" data-testid="run-discovery">
-                {busy ? "Researching…" : discovery ? "Research complete" : "Research organisations"}
+                {busy ? "Searching… this can take a minute" : discovery ? "Search again" : "Find companies"}
               </Button>
             )}
           </div>
         </div>
         <div className="rounded-xl border border-line bg-panel p-4">
           <div className="flex items-center gap-2 text-[14px] font-semibold text-ink">
-            <FileUp className="size-4" /> Import your own list (CSV)
+            <FileUp className="size-4" /> Add companies you already know
           </div>
           <p className="mt-1 text-[12.5px] leading-relaxed text-ink-3">
-            Add organisations you already know, such as association member lists or contacts. Imported details are marked “from your list”
-            and are not independently verified. Files stay in your browser.
+            Upload a spreadsheet (CSV) of companies, such as an association member list or your own contacts. They are marked “from your
+            list” and stay in your browser.
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
             <input ref={fileRef} type="file" accept=".csv,text/csv" className="hidden" onChange={(e) => e.target.files?.[0] && onFile(e.target.files[0])} data-testid="csv-input" />
-            <Button size="sm" variant="outline" onClick={() => fileRef.current?.click()} disabled={isDemo}>Choose CSV file</Button>
+            <Button size="sm" variant="outline" onClick={() => fileRef.current?.click()} disabled={isDemo}>Upload CSV</Button>
             <Button
               size="sm"
               variant="ghost"
               onClick={() =>
                 downloadText(
                   "partner-list-template.csv",
-                  `${CSV_TEMPLATE_HEADERS.join(",")}\n"Example Org (replace me)",https://example.com,"City, Region","Category","Services","info@example.com",https://example.com/source,"${categories[0]?.name ?? ""}"\n`,
+                  `${CSV_TEMPLATE_HEADERS.join(",")}\n"Example Company (replace me)",https://example.com,"City, Region","Category","Services","info@example.com",https://example.com/source,"${categories[0]?.name ?? ""}"\n`,
                 )
               }
             >
@@ -152,20 +156,34 @@ export function OrganizationsPanel({
       {message && <p className="rounded-md bg-subtle px-3 py-2 text-[12.5px] text-ink-2" role="status">{message}</p>}
 
       {discovery?.errors?.length ? (
-        <p className="text-[12px] text-ink-3">Some searches failed: {discovery.errors.map((e) => nameOf(e.categoryId)).join(", ")}.</p>
+        <p className="rounded-md bg-[#fff4e5] px-3 py-2 text-[12.5px] text-[#7a4a00]" role="status">
+          We couldn't search for {discovery.errors.map((e) => nameOf(e.categoryId).toLowerCase()).join(", ")}. Results for these partner types are
+          missing; try searching again later.
+        </p>
       ) : null}
 
       {grouped.length > 0 ? (
         <div className="space-y-5">
           <div className="flex items-center justify-between">
             <p className="text-[12.5px] text-ink-3">
-              {all.length} organisation{all.length === 1 ? "" : "s"}
-              {discovery ? ` · researched via ${discovery.provider} on ${discovery.researchedAt.slice(0, 10)}` : ""}
+              {all.length} compan{all.length === 1 ? "y" : "ies"}
+              {discovery ? ` · searched ${discovery.researchedAt.slice(0, 10)}` : ""}
             </p>
-            <Button size="sm" variant="outline" onClick={() => downloadText(`${slugify(businessName)}-organisations.csv`, organizationsCsv(all, nameOf))}>
-              <Download /> Export CSV
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={() => downloadText(`${slugify(businessName)}-companies.csv`, organizationsCsv(exportable, nameOf))}
+              disabled={exportable.length === 0}
+            >
+              <Download /> Download CSV
             </Button>
           </div>
+          {hasGoogle && (
+            <p className="text-[12px] text-ink-3">
+              Business details marked “Google Maps listing” come from Google Maps.
+              {!caps.listingExportsAllowed && " They can be viewed here but aren't included in downloads."}
+            </p>
+          )}
           {grouped.map(({ c, orgs }) => (
             <section key={c.id} className="space-y-2">
               <h3 className="text-[13px] font-semibold text-ink">{c.name}</h3>
@@ -177,7 +195,7 @@ export function OrganizationsPanel({
         </div>
       ) : (
         <p className="rounded-xl border border-dashed border-line-2 p-6 text-center text-[13px] text-ink-3">
-          No organisations yet. Research or import a list to see named partners here.
+          No companies yet. Find companies in your area or upload a list to see them here.
         </p>
       )}
     </div>

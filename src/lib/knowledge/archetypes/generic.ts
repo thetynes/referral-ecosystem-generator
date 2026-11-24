@@ -10,7 +10,7 @@ export const genericFramework: Archetype = {
   label: "General referral framework",
   keywords: [],
   assumptions: [
-    "Your industry did not match a curated profile, so this ecosystem uses universal partner roles. Configure an AI provider, or add more detail about your services and customers, for an industry-specific analysis.",
+    "These partner roles apply to most businesses. They are a starting point rather than an industry-specific playbook.",
   ],
   categories: [
     {

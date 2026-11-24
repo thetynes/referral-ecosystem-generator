@@ -12,6 +12,8 @@ export interface Entitlement {
   tier: Tier;
   exp: number; // epoch seconds
   dev?: boolean;
+  /** Issued by an administrator for demonstrations. Counted as simulated activity. */
+  demo?: boolean;
 }
 
 const b64 = (s: string | Buffer) => Buffer.from(s).toString("base64url");

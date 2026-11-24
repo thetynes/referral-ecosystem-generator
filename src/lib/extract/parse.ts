@@ -88,12 +88,12 @@ export function suggestFromFacts(f: PageFacts): IntakeSuggestion {
   const textForMatch = [f.title, f.description, ...f.headings].filter(Boolean).join(" ");
   const match = matchArchetype({ industry: textForMatch, other: f.text.slice(0, 3000) });
   const industry = match.confidence !== "low" ? match.archetype.label : null;
-  if (!industry) notes.push("We couldn't confidently identify your industry from the website. Please describe it.");
+  if (!industry) notes.push("We couldn't tell your industry from the website. Please describe it below.");
   const services = match.confidence !== "low" && match.matchedTerms.length
     ? Array.from(new Set(match.matchedTerms.map((t) => t.replace(/\b\w/g, (c) => c.toUpperCase())))).slice(0, 8).join(", ")
     : null;
   const areaParts = [f.jsonLd.locality, f.jsonLd.region].filter(Boolean);
   const serviceArea = f.jsonLd.areaServed || (areaParts.length ? areaParts.join(", ") : null);
-  if (!serviceArea) notes.push("No service area was found in the site's structured data.");
+  if (!serviceArea) notes.push("We couldn't find your service area on the website.");
   return { businessName: name ? name.slice(0, 120) : null, industry, services, serviceArea, notes };
 }

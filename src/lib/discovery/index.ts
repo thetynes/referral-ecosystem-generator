@@ -34,6 +34,7 @@ export interface DiscoveryRun {
   errors: { categoryId: string; message: string }[];
   provider: string;
   researchedAt: string;
+  categoriesSearched: number;
 }
 
 export async function discoverOrganizations(
@@ -69,5 +70,5 @@ export async function discoverOrganizations(
     counts.set(o.categoryId, n + 1);
     return true;
   });
-  return { organizations: limited, errors, provider: provider.label, researchedAt };
+  return { organizations: limited, errors, provider: provider.label, researchedAt, categoriesSearched: categories.length };
 }

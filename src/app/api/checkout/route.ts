@@ -18,7 +18,7 @@ export async function POST(req: Request) {
   const caps = capabilities();
   const stripe = getStripe();
   if (!caps.paidReportsAvailable || !stripe) {
-    return jsonError("Paid reports are not available on this deployment yet.", 503, { code: "payments_unavailable" });
+    return jsonError("Full reports aren't available to purchase yet.", 503, { code: "payments_unavailable" });
   }
   let body: unknown;
   try {
@@ -29,7 +29,7 @@ export async function POST(req: Request) {
   const parsed = BodySchema.safeParse(body);
   if (!parsed.success) return jsonError("Invalid checkout request.", 400);
   const analysis = await (await getStore()).get<Analysis>("analyses", parsed.data.analysisId);
-  if (!analysis) return jsonError("Analysis not found. Generate it again before purchasing.", 404);
+  if (!analysis) return jsonError("We couldn't find this ecosystem. Generate it again before purchasing.", 404);
   try {
     const url = await createCheckoutSession(stripe, analysis.id, parsed.data.tier);
     await track("checkout_started", {

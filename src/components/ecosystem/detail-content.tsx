@@ -156,7 +156,7 @@ export function DetailContent({
       </Section>
 
       {organizations.length > 0 && (
-        <Section title={`Researched organisations (${organizations.length})`}>
+        <Section title={`Companies for this partner type (${organizations.length})`}>
           <div className="space-y-2">
             {organizations.map((o) => (
               <OrganizationCard key={o.id} org={o} compact />

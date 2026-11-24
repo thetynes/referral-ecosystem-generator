@@ -5,7 +5,7 @@
  *   (or ANTHROPIC_API_KEY=... LLM_PROVIDER=anthropic)
  *
  * Spend is capped by AI_DAILY_BUDGET_USD / AI_MONTHLY_BUDGET_USD exactly like the app.
- * Writes docs/beta/samples/<slug>.{curated,ai}.json and docs/beta/samples/comparison.json.
+ * Writes docs/internal/samples/<slug>.{curated,ai}.json and docs/internal/samples/comparison.json.
  * Pass a slug as the first argument to run a single sample.
  */
 import { mkdirSync, writeFileSync } from "node:fs";
@@ -19,7 +19,7 @@ import { SAMPLES } from "./samples";
 
 setStoreForTesting(new MemoryStore());
 
-const outDir = path.resolve("docs/beta/samples");
+const outDir = path.resolve("docs/internal/samples");
 mkdirSync(outDir, { recursive: true });
 
 const STOP = new Set(["and", "with", "that", "your", "firms", "companies", "services", "providers", "contractors", "their"]);

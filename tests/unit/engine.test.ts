@@ -91,7 +91,7 @@ describe("acceptance examples (knowledge-base mode)", () => {
     const u = await generateAnalysis(UNKNOWN);
     expect(u.engine.archetypeId).toBe("generic");
     expect(u.engine.matchConfidence).toBe("low");
-    expect(u.engine.notes.join(" ")).toMatch(/did not closely match/);
+    expect(u.engine.notes.join(" ")).toMatch(/dedicated playbook/);
     expect(u.categories.length).toBeGreaterThan(4);
   });
 

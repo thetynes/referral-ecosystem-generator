@@ -49,7 +49,7 @@ async function aiSuggest(facts: PageFacts, tester: string | null): Promise<(Inta
       services: r.services.length ? r.services.slice(0, 8).join(", ").slice(0, 600) : null,
       serviceArea: s(r.serviceArea),
       idealCustomer: s(r.idealCustomer),
-      notes: ["Extracted with AI from your public website. Please review every field."],
+      notes: ["Suggested from your public website. Please check each field."],
     };
   } catch {
     return null;

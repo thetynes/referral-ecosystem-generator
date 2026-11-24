@@ -35,11 +35,11 @@ export function selectFreeCategories(ranked: ScoredCategory[], limit: number): S
  */
 export function toView(full: Analysis, entitlement: Entitlement | null, freeLimit: number): AnalysisView {
   // Internal cost accounting never leaves the server.
-  const analysis: Analysis = { ...full, engine: { ...full.engine, costUsd: undefined } };
+  const analysis: Analysis = { ...full, engine: { ...full.engine, costUsd: undefined, diagnostics: undefined } };
   if (entitlement || analysis.isDemo) {
     return {
       ...analysis,
-      access: { tier: entitlement?.tier ?? "comprehensive", lockedCategoryCount: 0, devUnlocked: Boolean(entitlement?.dev) },
+      access: { tier: entitlement?.tier ?? "comprehensive", lockedCategoryCount: 0, devUnlocked: Boolean(entitlement?.dev || entitlement?.demo) },
     };
   }
   const weights = WEIGHT_PRESETS[presetForGrowthPriority(analysis.profile.growthPriority)].weights;

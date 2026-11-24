@@ -22,7 +22,7 @@ export async function GET(req: Request) {
   let paid = await store.get<PaidSession>("checkout", sessionId);
   if (!paid) {
     const stripe = getStripe();
-    if (!stripe) return jsonError("Payments are not configured.", 503);
+    if (!stripe) return jsonError("We couldn't confirm this payment.", 503);
     try {
       const session = await stripe.checkout.sessions.retrieve(sessionId);
       paid = paidSessionFrom(session);

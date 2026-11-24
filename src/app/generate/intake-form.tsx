@@ -43,11 +43,11 @@ const EXAMPLES: { label: string; input: Partial<BusinessInput> }[] = [
 ];
 
 const STAGES = [
-  "Normalising your business details",
-  "Identifying candidate partner categories",
-  "Analysing referral triggers and mutual value",
-  "Scoring and prioritising opportunities",
-  "Assembling your ecosystem map",
+  "Reading your business details",
+  "Finding who meets your customers first",
+  "Working out when referrals happen",
+  "Ranking where to start",
+  "Drawing your ecosystem map",
 ];
 
 type Suggestion = { businessName: string | null; industry: string | null; services: string | null; serviceArea: string | null; idealCustomer: string | null; notes: string[] };
@@ -63,12 +63,12 @@ export function IntakeForm() {
   const [extractMsg, setExtractMsg] = useState<string | null>(null);
   const [suggestion, setSuggestion] = useState<Suggestion | null>(null);
 
-  const [ai, setAi] = useState<{ available: boolean; reason: string | null; model: string | null } | null>(null);
-  const [useAi, setUseAi] = useState(true);
+  // Only used to set expectations about how long generation takes; never shown to the customer.
+  const [detailed, setDetailed] = useState(false);
   useEffect(() => {
     fetch("/api/capabilities")
       .then((r) => r.json())
-      .then((c) => setAi({ available: Boolean(c.aiForYou?.available), reason: c.aiForYou?.reason ?? null, model: c.aiModel ?? null }))
+      .then((c) => setDetailed(Boolean(c.aiForYou?.available)))
       .catch(() => undefined);
   }, []);
 
@@ -125,7 +125,7 @@ export function IntakeForm() {
     }
     setSubmitting(true);
     try {
-      const res = await fetch("/api/analyze", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ input: parsed.data, useAi: ai?.available ? useAi : false }) });
+      const res = await fetch("/api/analyze", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ input: parsed.data }) });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Something went wrong.");
       clientStore.saveAnalysis(data);
@@ -140,7 +140,7 @@ export function IntakeForm() {
     return (
       <div className="mx-auto max-w-md rounded-xl border border-line bg-panel p-6" role="status" aria-live="polite">
         <div className="flex items-center gap-2 text-[15px] font-semibold"><Loader2 className="size-4 animate-spin" /> Building your referral ecosystem</div>
-        <p className="mt-1 text-[12.5px] text-ink-3">AI analysis can take up to a minute. The curated profile analysis is near-instant.</p>
+        <p className="mt-1 text-[12.5px] text-ink-3">{detailed ? "This can take up to two minutes. Please keep this page open." : "This takes a few seconds."}</p>
         <ol className="mt-4 space-y-2 text-[13px] text-ink-2">
           {STAGES.map((s) => (
             <li key={s} className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-ink-4" />{s}</li>
@@ -220,11 +220,11 @@ export function IntakeForm() {
         {showOptional && (
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="sm:col-span-2">{field("services", "Services or specialisations", "Comma-separated.", <Textarea id="services" value={form.services} onChange={set("services")} placeholder="Excavation, grading, drainage, demolition" />)}</div>
-            {field("projectValue", "Typical project or customer value", "Used only to describe commercial value. It is never presented as a forecast.", <Input id="projectValue" value={form.projectValue} onChange={set("projectValue")} placeholder="e.g. $8k–$40k per project" />)}
+            {field("projectValue", "Typical project or customer value", "Helps us judge which partners bring the right size of work.", <Input id="projectValue" value={form.projectValue} onChange={set("projectValue")} placeholder="e.g. $8k–$40k per project" />)}
             {field(
               "growthPriority",
               "Main growth priority",
-              "Sets the starting prioritisation preset.",
+              "Shapes how your opportunities are ranked.",
               <Select id="growthPriority" value={form.growthPriority} onChange={set("growthPriority")}>
                 <option value="">No preference</option>
                 <option value="more_leads">More leads, quickly</option>
@@ -236,7 +236,7 @@ export function IntakeForm() {
             )}
             {field("targetIndustries", "Target customer industries", "For B2B: the industries your customers are in.", <Input id="targetIndustries" value={form.targetIndustries} onChange={set("targetIndustries")} placeholder="e.g. healthcare, logistics" />)}
             {field("expansionMarkets", "Markets you want to expand into", null, <Input id="expansionMarkets" value={form.expansionMarkets} onChange={set("expansionMarkets")} placeholder="e.g. London, Ontario" />)}
-            <div className="sm:col-span-2">{field("existingReferrals", "Existing referral relationships", "Partner types only, such as “two home builders, a plumber”. These are flagged on your map and are not sent to AI providers.", <Textarea id="existingReferrals" value={form.existingReferrals} onChange={set("existingReferrals")} placeholder="e.g. two local home builders, one plumbing company" />)}</div>
+            <div className="sm:col-span-2">{field("existingReferrals", "Existing referral relationships", "Partner types only, such as “two home builders, a plumber”. We'll mark them on your map so you can see where you already have a foothold.", <Textarea id="existingReferrals" value={form.existingReferrals} onChange={set("existingReferrals")} placeholder="e.g. two local home builders, one plumbing company" />)}</div>
           </div>
         )}
       </section>
@@ -244,16 +244,7 @@ export function IntakeForm() {
       {submitError && <p className="rounded-md bg-[#fdecec] px-3 py-2 text-[13px] text-[#8a1c1c]" role="alert">{submitError}</p>}
 
       <div className="flex flex-col gap-3 border-t border-line pt-6 sm:flex-row sm:items-center sm:justify-between">
-        <div className="space-y-1.5">
-          {ai?.available && (
-            <label className="flex items-center gap-2 text-[12.5px] text-ink-2">
-              <input type="checkbox" checked={useAi} onChange={(e) => setUseAi(e.target.checked)} className="size-3.5 accent-[#0e1116]" data-testid="use-ai" />
-              Use AI analysis (beta{ai.model ? ` · ${ai.model}` : ""}). Uncheck to see the curated industry profile.
-            </label>
-          )}
-          {ai && !ai.available && ai.reason && <p className="text-[12px] text-ink-4">{ai.reason} You'll get the curated analysis.</p>}
-          <p className="text-[12px] text-ink-4">The free analysis includes the interactive map and your top five partner categories.</p>
-        </div>
+        <p className="text-[12px] text-ink-4">Free: your interactive map and your top five partner types.</p>
         <Button type="submit" size="lg" data-testid="generate-submit">Generate my referral ecosystem <ArrowRight /></Button>
       </div>
     </form>

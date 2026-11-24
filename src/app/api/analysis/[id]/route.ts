@@ -16,7 +16,7 @@ export async function GET(req: Request, { params }: { params: Promise<{ id: stri
   if (id === DEMO_ID) return NextResponse.json(toView(getDemoAnalysis(), null, 99));
   if (!/^[0-9a-f-]{36}$/i.test(id)) return jsonError("Not found.", 404);
   const analysis = await (await getStore()).get<Analysis>("analyses", id);
-  if (!analysis) return jsonError("This analysis was not found on the server. It may have expired.", 404);
+  if (!analysis) return jsonError("We couldn't find this ecosystem. It may have expired.", 404);
   const ent = verifyEntitlement(req.headers.get("x-entitlement"), id);
   return NextResponse.json(toView(analysis, ent, config().freeCategoryLimit));
 }

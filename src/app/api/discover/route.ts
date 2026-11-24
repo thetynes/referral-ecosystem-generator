@@ -7,11 +7,13 @@ import { discoverOrganizations, getDiscoveryProvider } from "@/lib/discovery";
 import { rankCategories, WEIGHT_PRESETS, presetForGrowthPriority } from "@/lib/scoring";
 import { jsonError, limitOrNull, readJson } from "@/lib/http";
 import { config } from "@/lib/config";
+import { track } from "@/lib/analytics";
+import { testerFromRequest } from "@/lib/beta";
 
 export const runtime = "nodejs";
 export const maxDuration = 120;
 
-const BodySchema = z.object({ analysisId: z.string().uuid() });
+const BodySchema = z.object({ analysisId: z.string().uuid(), refresh: z.boolean().optional() });
 
 interface StoredDiscovery {
   organizations: Organization[];
@@ -20,14 +22,13 @@ interface StoredDiscovery {
   researchedAt: string;
 }
 
-// Places content may not be cached long-term; keep results for 7 days at most.
-const DISCOVERY_TTL = 60 * 60 * 24 * 7;
+const discoveryTtl = () => 60 * 60 * 24 * config().discovery.retentionDays;
 
 type Loaded = { error: Response } | { error?: undefined; ent: NonNullable<ReturnType<typeof verifyEntitlement>>; analysis: Analysis };
 
 async function load(req: Request, analysisId: string): Promise<Loaded> {
   const ent = verifyEntitlement(req.headers.get("x-entitlement"), analysisId);
-  if (!ent) return { error: jsonError("A paid report (or development unlock) is required for named-organisation research.", 402) };
+  if (!ent) return { error: jsonError("Company research is included with the full report.", 402) };
   const analysis = await (await getStore()).get<Analysis>("analyses", analysisId);
   if (!analysis) return { error: jsonError("Analysis not found.", 404) };
   return { ent, analysis };
@@ -58,15 +59,15 @@ export async function POST(req: Request) {
 
   if (!config().discovery.researchEnabled) {
     return jsonError(
-      "Company research is not available yet while data-licensing permissions are being confirmed. You can import your own CSV list instead.",
+      "Company research isn't available yet. You can add companies you know from a spreadsheet instead.",
       503,
-      { code: "research_not_licensed" },
+      { code: "research_disabled" },
     );
   }
   const provider = getDiscoveryProvider();
   if (!provider) {
     return jsonError(
-      "Named-organisation research requires a configured search provider (Google Places or Brave Search). You can import your own CSV list instead.",
+      "Company research isn't available yet. You can add companies you know from a spreadsheet instead.",
       503,
       { code: "discovery_not_configured" },
     );
@@ -74,12 +75,20 @@ export async function POST(req: Request) {
 
   const store = await getStore();
   const existing = await store.get<StoredDiscovery>("discovery", r.analysis.id);
-  if (existing) return NextResponse.json(existing);
+  // Re-run only when asked to and the previous search was incomplete; otherwise reuse the stored results.
+  if (existing && !(parsed.data.refresh && existing.errors.length > 0)) return NextResponse.json(existing);
 
   const weights = WEIGHT_PRESETS[presetForGrowthPriority(r.analysis.profile.growthPriority)].weights;
   const ranked = rankCategories(r.analysis.categories, weights);
   const targets = r.ent.tier === "comprehensive" ? ranked.slice(0, 15) : ranked.slice(0, 5);
   const run = await discoverOrganizations(provider, r.analysis.profile, targets, r.ent.tier === "comprehensive" ? 6 : 5);
-  await store.set("discovery", r.analysis.id, run, DISCOVERY_TTL);
+  await store.set("discovery", r.analysis.id, run, discoveryTtl());
+  await track("discovery_run", {
+    tester: await testerFromRequest(req),
+    analysisId: r.analysis.id,
+    simulated: Boolean(r.ent.dev || r.ent.demo),
+    props: { provider: run.provider, companies: run.organizations.length, failedCategories: run.errors.length, categories: targets.length },
+  });
+  if (run.errors.length) console.error("discovery partial failure", run.errors.map((e) => e.message).slice(0, 3));
   return NextResponse.json(run);
 }

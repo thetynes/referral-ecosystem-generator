@@ -50,7 +50,8 @@ const AI = { ai: { requested: true, tester: "tester-a" } };
 
 beforeEach(() => {
   setStoreForTesting(new MemoryStore());
-  for (const k of ["AI_ACCESS", "AI_DAILY_BUDGET_USD", "AI_MONTHLY_BUDGET_USD", "AI_PER_TESTER_DAILY_RUNS", "AI_FALLBACK", "AI_ESTIMATED_RUN_COST_USD"]) delete process.env[k];
+  for (const k of ["AI_DAILY_BUDGET_USD", "AI_MONTHLY_BUDGET_USD", "AI_PER_TESTER_DAILY_RUNS", "AI_FALLBACK", "AI_ESTIMATED_RUN_COST_USD"]) delete process.env[k];
+  process.env.AI_ACCESS = "testers";
 });
 
 describe("AI pipeline", () => {
@@ -90,18 +91,20 @@ describe("AI pipeline", () => {
     const before = p.calls;
     const second = await generateAnalysis({ ...APP_AGENCY, businessName: "Other name" }, AI);
     expect(p.calls).toBe(before);
-    expect(second.engine.notes.join(" ")).toMatch(/cache/i);
+    expect(second.engine.diagnostics?.join(" ")).toMatch(/cache/i);
+    expect(second.engine.notes).toEqual([]);
   });
 
   it("falls back to the knowledge base, with a visible note, when the AI fails", async () => {
     setLLMProviderForTesting(new MockProvider(true));
     const a = await generateAnalysis(APP_AGENCY, AI);
     expect(a.engine.mode).toBe("knowledge_base");
-    expect(a.engine.notes.join(" ")).toMatch(/knowledge-base analysis instead/);
+    expect(a.engine.diagnostics?.join(" ")).toMatch(/AI failed/);
+    expect(a.engine.notes.join(" ")).not.toMatch(/AI/);
     expect(a.categories.length).toBeGreaterThan(5);
   });
 
-  it("never uses AI for anonymous visitors by default", async () => {
+  it("never uses AI for anonymous visitors when access is limited to testers", async () => {
     const p = new MockProvider();
     setLLMProviderForTesting(p);
     const a = await generateAnalysis(APP_AGENCY, { ai: { requested: true, tester: null } });
@@ -136,7 +139,7 @@ describe("AI pipeline", () => {
     expect(spend.today.outputTokens).toBe(6000);
     const second = await generateAnalysis({ ...APP_AGENCY, industry: "Different agency" }, AI);
     expect(second.engine.mode).toBe("knowledge_base");
-    expect(second.engine.notes.join(" ")).toMatch(/today's AI analysis limit/);
+    expect(second.engine.diagnostics?.join(" ")).toMatch(/today's AI analysis limit/);
   });
 
   it("stops at the daily budget and can be configured to error instead of falling back", async () => {
@@ -145,7 +148,7 @@ describe("AI pipeline", () => {
     setLLMProviderForTesting(new MockProvider());
     const a = await generateAnalysis(APP_AGENCY, AI);
     expect(a.engine.mode).toBe("knowledge_base");
-    expect(a.engine.notes.join(" ")).toMatch(/budget/);
+    expect(a.engine.diagnostics?.join(" ")).toMatch(/budget/);
     process.env.AI_FALLBACK = "error";
     await expect(generateAnalysis(APP_AGENCY, AI)).rejects.toBeInstanceOf(AiUnavailableError);
   });
@@ -157,5 +160,16 @@ describe("AI pipeline", () => {
     expect((await generateAnalysis(APP_AGENCY, AI)).engine.mode).toBe("knowledge_base");
     process.env.AI_ACCESS = "all";
     expect((await generateAnalysis(APP_AGENCY, { ai: { requested: true, tester: null } })).engine.mode).toBe("ai");
+  });
+});
+
+describe("AI default", () => {
+  it("is off unless AI_ACCESS is set", async () => {
+    delete process.env.AI_ACCESS;
+    const p = new MockProvider();
+    setLLMProviderForTesting(p);
+    const a = await generateAnalysis(APP_AGENCY, AI);
+    expect(a.engine.mode).toBe("knowledge_base");
+    expect(p.calls).toBe(0);
   });
 });

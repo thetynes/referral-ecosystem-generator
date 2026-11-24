@@ -41,6 +41,19 @@ describe("beta access", () => {
     expect(ok.status).toBe(200);
     expect(ok.headers.get("x-robots-tag")).toContain("noindex");
   });
+  it("protects the admin area separately from the invite gate", async () => {
+    process.env.BETA_MODE = "true";
+    // Admin page is reachable without an invite (it shows its own sign-in), admin APIs are not.
+    expect((await proxy(new NextRequest("https://x.test/admin"))).status).toBe(200);
+    expect((await proxy(new NextRequest("https://x.test/api/admin/grant", { method: "POST" }))).status).toBe(404);
+    expect((await proxy(new NextRequest("https://x.test/api/admin/login", { method: "POST" }))).status).toBe(200);
+    const cookie = `reg_admin=${await adminCookieValue()}`;
+    expect((await proxy(new NextRequest("https://x.test/api/admin/grant", { method: "POST", headers: { cookie } }))).status).toBe(200);
+    // Without ADMIN_KEY the whole admin area does not exist.
+    delete process.env.ADMIN_KEY;
+    expect((await proxy(new NextRequest("https://x.test/admin"))).status).toBe(404);
+  });
+
   it("admin cookie is derived from ADMIN_KEY", async () => {
     expect(await isAdmin(await adminCookieValue())).toBe(true);
     expect(await isAdmin("forged")).toBe(false);

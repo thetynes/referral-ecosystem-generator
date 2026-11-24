@@ -1,4 +1,4 @@
-# Controlled beta — implementation report
+# Controlled beta — implementation report (internal)
 
 _Status as of 23 November 2026. Branch `claude/peaceful-keller-4dsnhg`._
 
@@ -9,7 +9,7 @@ _Status as of 23 November 2026. Branch `claude/peaceful-keller-4dsnhg`._
 | **Industry depth** | 7 new curated profiles: basement waterproofing, concrete, renovation, custom home builders, family law, criminal defence, and property management. Excavation, immigration law, and marketing/SEO were deepened. Every relationship in these 10 profiles names **who decides** at the partner, and **often-overlooked** relationships are flagged (at least 2 per profile, tested). Businesses spanning two related trades are blended, e.g. *excavation + waterproofing*, with the business's own trades removed and near-duplicates merged. |
 | **AI integration** | Anthropic and OpenAI providers. Model, reasoning effort, max output tokens, batch size, daily and monthly USD caps, per-tester daily runs, per-token prices, and fallback behaviour (`knowledge_base` or `error`) are all configurable. AI runs **only for invited testers** by default. Anonymous visitors always get the curated analysis at zero AI cost. Spend is recorded from actual token usage, including partial runs. |
 | **Private beta** | Invite-code gate (`BETA_MODE`, revocable `label:code` invites), `noindex` everywhere, and `robots.txt` blocks crawling on preview and beta deployments. |
-| **Analytics** | First-party events for intake started/submitted, maps generated, relationships explored (with type and overlooked flag), views, exports, reports opened/printed, upgrade seen, checkout started, purchase completed, AI runs and fallbacks. Each event carries the environment and a **`simulated`** flag that marks dev mode, demo, dev unlocks, and Stripe test-mode payments. The `/beta/admin` dashboard shows real versus simulated counts, per-tester activity, and AI spend. |
+| **Analytics** | First-party events for intake started/submitted, maps generated, relationships explored (with type and overlooked flag), views, exports, reports opened/printed, upgrade seen, checkout started, purchase completed, AI runs and fallbacks. Each event carries the environment and a **`simulated`** flag that marks dev mode, demo, dev unlocks, and Stripe test-mode payments. The `/admin` dashboard shows real versus simulated counts, per-tester activity, and AI spend. |
 | **Payments** | Stripe Checkout, webhook verification, and an idempotent purchase record. **Live keys are refused** unless `STRIPE_ALLOW_LIVE=true`. Test-mode purchases are labelled in the UI and counted as simulated. Paid tiers no longer depend on or promise company research. |
 | **Licensing** | Paid company research is **hard-disabled** (`COMPANY_RESEARCH_ENABLED=false`, enforced by the API and the UI). The research and recommended workflow are in [`data-licensing.md`](data-licensing.md). |
 | **Persistence** | Postgres store with TLS options for the Supabase pooler; analytics table; migration in `supabase/migrations/0001_init.sql` (RLS on, no public grants). |
@@ -44,6 +44,13 @@ _Status as of 23 November 2026. Branch `claude/peaceful-keller-4dsnhg`._
 4. An AI key: `OPENAI_API_KEY` (tested) or `ANTHROPIC_API_KEY`, plus a **hard monthly limit in the provider dashboard**.
 5. Invite codes, `BETA_SECRET`, `ADMIN_KEY`, and `ENTITLEMENT_SECRET`.
 6. Decisions on the licensing items in `data-licensing.md` §5.
+
+## 5b. Update (24 November 2026): customer, app, and admin separation
+- Customer-facing screens no longer show developer, AI-provider, model, configuration or infrastructure wording. Internal diagnostics go to `/admin` and server logs. See `customer-experience-review.md`.
+- Private administration has moved to `/admin`: setup checklist, configuration, demo-access links, funnel, testers, AI spend, and diagnostics. It is protected by `ADMIN_KEY`; the admin APIs return 404 without an admin session.
+- AI is now **off by default** (`AI_ACCESS=none`); everyone gets the industry playbooks. Set `AI_ACCESS=testers` to re-enable it for invited testers.
+- Company discovery with Google Places is a configurable, working integration (`COMPANY_RESEARCH_ENABLED`, `GOOGLE_PLACES_API_KEY`, `GOOGLE_PLACES_IN_EXPORTS`, `DISCOVERY_RETENTION_DAYS`). Unresolved provider restrictions are tracked in `discovery-providers.md`.
+- Deployment steps: `deployment.md`.
 
 ## 6. Recommendations before inviting testers
 See the closing section of `sample-ecosystems.md`. In short: keep the curated engine as the default free experience, treat AI as a tester-only comparison, and measure whether testers open relationship details and reports before testing price.

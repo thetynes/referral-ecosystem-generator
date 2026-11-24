@@ -61,7 +61,7 @@ export function listingToOrganization(listing: RawListing, category: PartnerCate
     id,
     categoryId: category.id,
     ...base,
-    inclusionReason: `Returned by ${isPlaces ? "Google Places" : "Brave Search"} for “${listing.query}”. Included as a candidate for the “${category.name}” partner category${listing.snippet ? `. Source snippet: “${listing.snippet}”` : ""}.`,
+    inclusionReason: `Found in ${isPlaces ? "Google Maps listings" : "web search results"} for “${listing.query}” as a possible “${category.name}” partner${listing.snippet ? `. From the listing: “${listing.snippet}”` : ""}.`,
     referralRelationship: `${relationshipLabel(category)}: ${firstSentence(category.opportunity)}`,
     partnershipOpportunity: category.approach,
     sourceUrls: Array.from(new Set([src, listing.website].filter((u): u is string => Boolean(u)))),

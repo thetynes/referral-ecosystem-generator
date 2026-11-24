@@ -42,7 +42,7 @@ export function getDemoAnalysis(): Analysis {
       archetypeId: kb.match.archetype.id,
       archetypeLabel: kb.match.archetype.label,
       matchConfidence: kb.match.confidence,
-      notes: ["Illustrative example for a hypothetical business. It is not live research and names no real organisations."],
+      notes: [],
       version: "demo",
     },
     categories: kb.categories,

@@ -7,6 +7,7 @@ import { POST as checkout } from "@/app/api/checkout/route";
 import { POST as devUnlock } from "@/app/api/dev/unlock/route";
 import { POST as webhook } from "@/app/api/stripe/webhook/route";
 import { GET as verify } from "@/app/api/checkout/verify/route";
+import { POST as grant } from "@/app/api/admin/grant/route";
 import { setLLMProviderForTesting } from "@/lib/llm";
 import { setDiscoveryProviderForTesting } from "@/lib/discovery";
 import { MemoryStore, setStoreForTesting } from "@/lib/store";
@@ -91,7 +92,7 @@ describe("API", () => {
     // Licensing gate comes first: research is off by default.
     const gated = await discover(req("/api/discover", { json: { analysisId: v.id }, headers: { "x-entitlement": token } }));
     expect(gated.status).toBe(503);
-    expect((await gated.json()).code).toBe("research_not_licensed");
+    expect((await gated.json()).code).toBe("research_disabled");
     process.env.COMPANY_RESEARCH_ENABLED = "true";
     const res = await discover(req("/api/discover", { json: { analysisId: v.id }, headers: { "x-entitlement": token } }));
     expect(res.status).toBe(503);
@@ -167,6 +168,32 @@ describe("API", () => {
       expect(row("intake_completed").real).toBe(1);
       expect(row("map_generated").real).toBe(1);
       expect(row("purchase_completed")).toEqual({ name: "purchase_completed", real: 0, simulated: 1 });
+    } finally {
+      delete process.env.APP_ENV;
+    }
+  });
+
+  it("never sends internal diagnostics or costs to customers", async () => {
+    const v = await create();
+    expect(v.engine.diagnostics).toBeUndefined();
+    expect(v.engine.costUsd).toBeUndefined();
+    for (const n of v.engine.notes) expect(n).not.toMatch(/AI|provider|curated|knowledge/i);
+  });
+
+  it("admin demo links unlock the full report and are counted as simulated", async () => {
+    process.env.APP_ENV = "preview";
+    try {
+      const v = await create();
+      const res = await grant(req("/api/admin/grant", { json: { ecosystem: `https://app.test/ecosystem/${v.id}`, tier: "comprehensive", days: 7 } }));
+      expect(res.status).toBe(200);
+      const { link } = await res.json();
+      const token = decodeURIComponent(new URL(link).searchParams.get("access")!);
+      const full = await (await getAnalysis(req(`/api/analysis/${v.id}`, { headers: { "x-entitlement": token } }), params(v.id))).json();
+      expect(full.access.lockedCategoryCount).toBe(0);
+      expect(full.access.devUnlocked).toBe(true);
+      const row = (await summarize(1)).counts.find((c) => c.name === "admin_grant");
+      expect(row).toMatchObject({ real: 0, simulated: 1 });
+      expect((await grant(req("/api/admin/grant", { json: { ecosystem: "no id here at all", tier: "basic" } }))).status).toBe(400);
     } finally {
       delete process.env.APP_ENV;
     }

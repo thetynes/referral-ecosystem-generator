@@ -21,7 +21,10 @@ export async function POST(req: Request) {
   const label = findInvite(parsed.data.code);
   if (!label) return jsonError("That invite code isn't valid.", 403);
   const token = await signTester(label);
-  if (!token) return jsonError("The preview is not fully configured (missing secret).", 503);
+  if (!token) {
+    console.error("beta join: BETA_SECRET/ENTITLEMENT_SECRET is not configured");
+    return jsonError("Access isn't available right now. Please contact the person who invited you.", 503);
+  }
   const res = NextResponse.json({ ok: true, tester: label });
   res.cookies.set(BETA_COOKIE, token, {
     httpOnly: true,

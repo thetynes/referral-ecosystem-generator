@@ -57,7 +57,7 @@ describe("website extraction", () => {
   it("does not guess an industry for unrelated pages", () => {
     const s = suggestFromFacts(extractPageFacts("<title>Hello</title><body>Welcome to my blog</body>"));
     expect(s.industry).toBeNull();
-    expect(s.notes.join(" ")).toMatch(/couldn't confidently/);
+    expect(s.notes.join(" ")).toMatch(/couldn't tell your industry/);
   });
 });
 

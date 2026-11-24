@@ -1,0 +1,979 @@
+=== http://localhost:3200/
+Referral Ecosystem
+Example
+Pricing
+Saved
+Generate
+Referral ecosystem mapping for any industry
+Discover who could be sending you customers
+
+Map your industry's referral ecosystem, uncover overlooked partnership opportunities, and identify businesses worth building relationships with.
+
+Generate My Referral Ecosystem
+Explore an example
+
+Free. No account required. About two minutes.
+
+Illustrative example: a hypothetical excavation contractor in Sarnia, Ontario. Not live research. Showing 10 of 20 categories.
+Open full example
+They refer to you
+YOUR BUSINESS
+Example Excavation Co. (illustrative)
+Excavation contractor · Sarnia, Ontario and Lambton County
+Upstream
+3
+Secondary-suite designers (walk-outs, separate entrances, basement lowering)
+High 79
+recurring
+Land surveyors (stake-outs & grading certification)
+High 72
+recurring
+Plumbers & drain inspection specialists
+High 72
+Distribution
+3
+Custom & infill home builders
+High 82
+recurring
+Property management companies
+High 79
+recurring
+Commercial general contractors
+High 71
+recurring
+Complementary
+4
+Waterproofing & foundation repair companies
+High 82
+recurring
+Electricians, HVAC & geothermal installers needing trenching
+High 81
+recurring
+Landscape & hardscape contractors
+High 78
+Concrete & foundation forming contractors
+High 76
+recurring
+Commercial distribution channels
+Property management companies
+High
+79
+They refer to you · potential recurring channel
+
+Property managers encounter excavation, drainage, grading, demolition, and other property-maintenance needs across every property they manage.
+
+TRIGGER EVENTS
+Water infiltration or pooling around a managed building
+Planned capital improvements such as parking expansion or utility upgrades
+MUTUAL VALUE
+
+A reliable contractor helps property managers resolve issues efficiently and report clearly to owners. You may gain recurring project opportunities.
+
+Upstream
+Distribution
+Complementary
+recurring channel
+occasional
+Arrows show referral direction · line weight shows priority
+Your next customer is probably already talking to someone else first.
+
+Most businesses chase customers directly. The organisations that advise, inspect, supply, and serve those customers already have their trust. This tool finds them systematically.
+
+See who meets your customer first
+
+Upstream partners such as inspectors, engineers, advisors, and plumbers diagnose the problem before anyone gets hired. The map shows who they are and where they sit in the buying journey.
+
+Know the moment a referral happens
+
+Every relationship is explained through trigger events: what happens to the customer, who notices, when to refer, and what the referrer gains.
+
+Lead with value, not a favour
+
+Each partner type comes with a mutual-value case and a practical first step, so your outreach is about solving their problem, not asking for leads.
+
+Prioritise transparently
+
+Opportunities are ranked on nine explicit criteria you can reweight. You see why each one scores the way it does. Nothing is a made-up probability.
+
+01
+Describe your business
+
+Enter your industry, service area, and ideal customer, or let us read your website and suggest them.
+
+02
+Explore the ecosystem
+
+Upstream sources, complementary providers, downstream relationships, shared-audience partners, and distribution channels, all mapped with the reasoning behind each.
+
+03
+Prioritise and act
+
+Rank opportunities with transparent criteria, then work through a ranked action plan with a first step for each partner.
+
+Start free. Go deeper when it's worth it.
+Free
+CA$0
+Interactive referral ecosystem map
+Top five partner categories
+Referral mechanisms and trigger events
+Opportunity list with exports
+Import your own partner list (CSV)
+Basic Opportunity Report
+CA$149 one-time
+Every partner category identified
+Who decides at each partner, and the trigger to watch for
+Often-overlooked relationships flagged
+Ranked top-10 action plan
+PDF and CSV report exports
+Comprehensive Partnership Report
+CA$299 one-time
+Everything in Basic
+Shared-audience and digital-authority opportunities
+Engagement strategy for every partner type
+
+Need research and outreach support? Advanced Research & Execution is available on request.
+
+Full reports are purchased from your ecosystem page. During the preview, checkout runs in test mode and no charge is made.
+
+Questions worth asking
+How is this different from joining a networking group?
++
+Where do the recommendations come from?
++
+Are the priority scores predictions?
++
+Should I start with the highest-scoring partner type?
++
+What can I offer a partner who doesn't need referrals back?
++
+Can I pay partners for referrals?
++
+Is a backlink a partnership?
++
+Can I email the organisations in my report?
++
+What happens to my information?
++
+Generate My Referral Ecosystem
+Referral Ecosystem Generator. Strategic analysis, not legal or financial advice.
+Never sends outreach on your behalf. Never invents businesses.
+
+=== http://localhost:3200/generate
+Referral Ecosystem
+Example
+Pricing
+Saved
+Generate
+Map your referral ecosystem
+
+Four required answers. Everything else is optional and only sharpens the analysis. No account is needed. Your analysis is saved in this browser.
+
+Try an example:
+Excavation contractor · Sarnia
+Immigration law firm · Toronto
+App development agency · Fort Lauderdale
+01
+Who are you?
+Business name
+
+Or just enter your website.
+
+Website (optional)
+Read site
+
+We read your public homepage to suggest details. You review everything.
+
+02
+What do you do, where, and for whom?
+Primary industry or service
+
+Be specific: “residential excavation contractor” works better than “construction”.
+
+Geographic market or service area
+Ideal customer or customer type
+03
+Sharpen the analysis
+(optional)
+
+Free: your interactive map and your top five partner types.
+
+Generate my referral ecosystem
+Referral Ecosystem Generator. Strategic analysis, not legal or financial advice.
+Never sends outreach on your behalf. Never invents businesses.
+
+=== http://localhost:3200/ecosystem/9cc3db11-5225-498f-bac2-549f57f94bbd
+Referral Ecosystem
+Example
+Pricing
+Saved
+Generate
+Industry focus: Basement waterproofing & foundation repair + Excavation & site construction
+Demo access
+Northshore Excavating
+
+Excavation and basement waterproofing contractor · Sarnia, Ontario and Lambton County · 22 partner types
+
+Image
+CSV
+View report
+Map
+Opportunities
+Triggers
+Companies
+Upstream
+Distribution
+Complementary
+Downstream
+Shared audience
+YOUR BUSINESS
+Northshore Excavating
+Excavation and basement waterproofing contractor · Sarnia, Ontario and Lambton County
+Upstream
+4
+Basement finishing & renovation contractors
+High 85
+recurring
+Water-damage restoration & mould remediation firms
+High 85
+recurring
+Secondary-suite designers (walk-outs, separate entrances, basement lowering)
+High 81
+recurring
+Land surveyors (stake-outs & grading certification)
+High 75
+recurring
+Distribution
+4
+Builders' warranty & customer-care departments
+High 83
+recurring
+Custom & infill home builders
+High 83
+recurring
+Property management companies
+High 81
+recurring
+Commercial general contractors
+High 75
+recurring
+Complementary
+3
+Electricians, HVAC & geothermal installers needing trenching
+High 81
+recurring
+Concrete & foundation forming contractors
+High 76
+recurring
+Landscape & hardscape contractors
+High 75
+Shared audience
+1
+Landlords & investors converting basements to rental units
+High 76
+recurring
+Upstream
+Distribution
+Complementary
+Downstream
+Shared audience
+recurring channel
+occasional
+Arrows show referral direction · line weight shows priority
+Showing your top 12 of 22 partner types.
+Show all
+The full list is under Opportunities.
+
+Click a partner for details. Click a group label to collapse or expand it. Scroll or pinch to zoom.
+
+How this ecosystem works
+Upstream: basement finishing & renovation contractors, water-damage restoration & mould remediation firms, and secondary-suite designers (walk-outs, separate entrances, basement lowering) and 6 more. A typical moment: demolition exposes cracks, damp insulation, or efflorescence. Usually spotted first by: renovation site lead.
+Distribution: builders' warranty & customer-care departments, custom & infill home builders, and property management companies and 1 more. A typical moment: a new-home owner submits a warranty claim for a basement leak. Usually spotted first by: builder's customer-care coordinator.
+Complementary: electricians, HVAC & geothermal installers needing trenching, concrete & foundation forming contractors, and landscape & hardscape contractors and 2 more. A typical moment: an electrician quotes a service to a detached garage or shop. Usually spotted first by: electrician.
+Downstream: asphalt paving & interlock contractors. A typical moment: a customer wants a new or widened driveway. Usually spotted first by: paving estimator.
+Shared audience: landlords & investors converting basements to rental units, aggregate, topsoil & landscape supply yards, and home insurance brokers. A typical moment: an investor buys a property to add a basement unit. Usually spotted first by: investor or their designer.
+PRIORITISATION PRESET
+Balanced
+Even emphasis on volume, value, and feasibility.
+Quick wins
+Favour partners who are easy to reach and refer often.
+High-value projects
+Favour channels that surface larger engagements.
+Recurring channels
+Favour partners who could send work repeatedly.
+CRITERIA WEIGHTS
+Reset
+Need encounter
+3
+Service relevance
+3
+Referral frequency
+2
+Commercial value
+2
+Decision-maker access
+2
+Recurring potential
+2
+Mutual benefit
+2
+Geographic fit
+1
+Ease of establishing
+1
+
+Scores are a weighted average of 1–5 strategic ratings. They rank where to start. They do not estimate referral volume, conversion rates, or revenue.
+
+Assumptions to validate
+Most waterproofing jobs begin as someone else's problem: a failed inspection, a denied insurance claim, a warranty call, or a renovation that uncovered moisture. The professionals present at those moments matter more than homeowners searching online.
+Trust is fragile in this category because homeowners fear being oversold. Partners who see you recommend the cheaper fix first are more likely to keep referring.
+Site work is largely won through relationships with whoever controls the project before excavation starts (builders, engineers, GCs, property owners' advisors).
+Seasonality matters: most residential site work is scheduled before and during the main build season, so relationship-building is most effective in the off-season.
+No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing.
+All priority ratings are strategic inferences. Validate them in conversations with real partners before committing significant time.
+Guardrails
+Diagnose before you sell. Many wet basements are caused by grading, downspouts, or plumbing rather than the foundation. Referral partners, especially inspectors, insurers, and engineers, will stop referring if their clients feel oversold. Documented diagnosis protects the relationship.
+Prequalification is the real gatekeeper for commercial work. General contractors and property managers typically require proof of insurance, workplace-safety clearance (e.g. WSIB clearance in Ontario), and sometimes a recognised safety certification before you can be referred or invited to bid. Having these ready often matters more than the introduction itself.
+Partnerships are not paid-referral arrangements. This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals.
+Outreach in Canada: CASL applies. Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA).
+No automated outreach. This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline.
+
+=== http://localhost:3200/report/9cc3db11-5225-498f-bac2-549f57f94bbd
+Back to your ecosystem
+Partner types CSV
+Save as PDF
+COMPREHENSIVE PARTNERSHIP REPORT
+Partnership Opportunity Report
+Northshore Excavating
+Excavation and basement waterproofing contractor
+Sarnia, Ontario and Lambton County
+November 24, 2026
+Industry focus: Basement waterproofing & foundation repair + Excavation & site construction
+Evidence-backed: facts tied to a cited source (the companies section only).
+Strategic recommendation: reasoned guidance, not verified fact.
+Requires validation: assumptions to test in real conversations.
+01Executive overview
+STRATEGIC RECOMMENDATION
+
+Northshore Excavating (excavation and basement waterproofing contractor) serves homeowners with wet basements, custom home builders, property managers in Sarnia, Ontario and Lambton County.
+
+The highest-priority partner categories under the current weighting are basement finishing & renovation contractors, water-damage restoration & mould remediation firms, and builders' warranty & customer-care departments. All of the top five could become recurring channels rather than occasional referral sources.
+
+Upstream partners (basement finishing & renovation contractors, water-damage restoration & mould remediation firms, and secondary-suite designers (walk-outs, separate entrances, basement lowering)) encounter your customers before they need you. They are often the people who diagnose the problem or plan the work, so they can influence who gets hired before competitors are even considered.
+
+02Referral ecosystem map
+STRATEGIC RECOMMENDATION
+Northshore Excavating
+Excavation and basement waterpr…
+Upstream (9)
+Basement finishing &
+renovation contractors
+High priority · 85
+Water-damage restoration &
+mould remediation firms
+High priority · 85
+Secondary-suite designers
+(walk-outs, separate…
+High priority · 81
+Land surveyors (stake-outs &
+grading certification)
+High priority · 75
+Plumbers & drain inspection
+specialists
+High priority · 74
+Realtors managing inspection
+conditions
+High priority · 74
+Inground pool installers
+High priority · 71
+Civil & geotechnical engineers
+Medium priority · 67
+Home inspectors
+Medium priority · 67
+Distribution (4)
+Builders' warranty &
+customer-care departments
+High priority · 83
+Custom & infill home builders
+High priority · 83
+Property management companies
+High priority · 81
+Commercial general contractors
+High priority · 75
+Complementary (5)
+Electricians, HVAC &
+geothermal installers needing…
+High priority · 81
+Concrete & foundation forming
+contractors
+High priority · 76
+Landscape & hardscape
+contractors
+High priority · 75
+Eavestrough, grading &
+landscaping contractors
+Medium priority · 67
+Septic system designers &
+installers
+Medium priority · 65
+Downstream (1)
+Asphalt paving & interlock
+contractors
+Medium priority · 64
+Shared audience (3)
+Landlords & investors
+converting basements to rent…
+High priority · 76
+Aggregate, topsoil & landscape
+supply yards
+Medium priority · 64
+Home insurance brokers
+Medium priority · 64
+
+Solid lines mark potential recurring channels and dashed lines mark occasional referrals. Heavier lines indicate higher priority.
+
+03Priority partner categories
+STRATEGIC RECOMMENDATION
+1Basement finishing & renovation contractors
+High
+85
+Upstream referral sources · They refer to you · potential recurring channel
+Who decides: Renovation company owner or estimator
+
+Before a basement can be finished, moisture must be addressed. Renovators find damp walls, efflorescence, and cracks during demolition, and they do not want to warranty a finished basement built over a leaking foundation.
+
+Why: Every basement renovation passes through this checkpoint, and the renovator decides who the homeowner calls.
+
+2Water-damage restoration & mould remediation firms
+High
+85
+Upstream referral sources · They refer to you · potential recurring channel · often overlooked
+Who decides: Restoration project manager or estimator
+
+Restoration companies dry out flooded basements and remove mould, but they rarely fix the cause. When the water came through the foundation, the homeowner needs a waterproofing repair or the restoration work will fail again.
+
+Why: Groundwater seepage is commonly excluded from standard home insurance, so the homeowner often pays for the cause themselves right after an insured clean-up. The restorer is the trusted person in the house at that moment, and a repeat flood is a callback they want to avoid.
+
+3Builders' warranty & customer-care departments
+High
+83
+Commercial distribution channels · They refer to you · potential recurring channel · often overlooked
+Who decides: Builder's warranty / customer-care manager
+
+New homes come with statutory warranty coverage that, in Ontario, includes water penetration through the basement or foundation walls in the early years. When an owner reports a leak, the builder's service department must investigate and repair within set timelines, and many subcontract the repair.
+
+Why: Builders already have a legal obligation and a budget to fix the problem; what they lack is a crew that responds quickly and documents the work well enough to close the warranty file. A single production or semi-custom builder can generate a steady stream of these calls.
+
+4Custom & infill home builders
+High
+83
+Commercial distribution channels · They refer to you · potential recurring channel
+Who decides: Site superintendent (owner on smaller builders)
+
+Every new build or teardown-rebuild needs excavation, foundation digging, backfill, and final grading. Builders choose a site contractor and tend to reuse one who performs reliably.
+
+Why: Builders control supplier selection before the homeowner is involved, and a single builder can generate multiple projects per season. This is a repeatable channel, not an occasional referral.
+
+5Electricians, HVAC & geothermal installers needing trenching
+High
+81
+Complementary providers · Two-way referrals · potential recurring channel · often overlooked
+Who decides: Electrical or HVAC contractor's project lead
+
+Power to detached garages, generator gas lines, EV chargers in outbuildings, and geothermal ground loops all need trenching or excavation that these trades do not do themselves.
+
+Why: Electrification and backup-power projects are increasing, and these trades need a dependable digging partner.
+
+6Property management companies
+High
+81
+Commercial distribution channels · They refer to you · potential recurring channel
+Who decides: Property manager / maintenance coordinator
+
+Property managers encounter excavation, drainage, grading, demolition, and other property-maintenance needs across every property they manage.
+
+Why: One relationship can cover many properties. They value reliability and documentation over the lowest price, and they keep approved vendor lists.
+
+7Secondary-suite designers (walk-outs, separate entrances, basement lowering)
+High
+81
+Upstream referral sources · They refer to you · potential recurring channel · often overlooked
+Who decides: Building designer or permit consultant preparing suite drawings
+
+Basement apartments and garden suites often require below-grade entrances, window wells for egress, basement lowering, or new service trenches. The designer specifies this work and is asked who can dig it.
+
+Why: Many municipalities now permit additional units on residential lots, so this project type is growing and repeats with investor clients. Designers see each project months before excavation.
+
+8Concrete & foundation forming contractors
+High
+76
+Complementary providers · Two-way referrals · potential recurring channel
+Who decides: Forming-crew owner
+
+Foundation crews depend on accurate excavation before forming and timely backfill after. They are on the same projects and often asked to recommend the dig crew.
+
+Why: Adjacent sequence trades refer each other because a bad handoff costs both of them time.
+
+9Landlords & investors converting basements to rental units
+High
+76
+Shared-audience partners · They refer to you · potential recurring channel · often overlooked
+Who decides: Small-portfolio investor or their project manager
+
+Adding a basement apartment requires a dry basement, and investors who do this repeatedly need a dependable waterproofing contractor for each property. Investor clubs and secondary-suite designers concentrate this audience.
+
+Why: Provincial and municipal rules increasingly allow additional units, so investors are converting more basements. Each investor can bring several properties.
+
+10Commercial general contractors
+High
+75
+Commercial distribution channels · They refer to you · potential recurring channel
+Who decides: Estimator / project manager
+
+GCs subcontract site preparation, excavation, and grading on commercial, institutional, and multi-residential projects, usually through invited bids or prequalified subcontractor lists.
+
+Why: Project values are higher and a GC that trusts you will invite you to bid repeatedly. Access is gated by prequalification and estimating relationships rather than casual referrals.
+
+11Land surveyors (stake-outs & grading certification)
+High
+75
+Upstream referral sources · They refer to you · potential recurring channel · often overlooked
+Who decides: Ontario Land Surveyor or survey party chief
+
+Surveyors stake out new foundations and certify final lot grading for municipalities and builders. When final grades do not match the approved plan, regrading is needed before securities are released.
+
+Why: Grading certification failures create urgent, defined regrading work, and surveyors are on every new-build site.
+
+12Landscape & hardscape contractors
+High
+75
+Complementary providers · Two-way referrals · occasional referrals
+Who decides: Landscape designer or owner
+
+Landscapers sell grading, drainage, retaining walls, and outdoor projects but often lack equipment for larger digs, rock removal, or regrading.
+
+Why: Landscapers meet the homeowner first for outdoor work, and larger scopes regularly exceed their equipment.
+
+13Plumbers & drain inspection specialists
+High
+74
+Upstream referral sources · They refer to you · occasional referrals
+Who decides: Plumbing owner or drain-camera technician
+
+Camera inspections reveal collapsed sewer laterals, root intrusion, and failed drain lines that can only be fixed by digging. Many plumbing companies do not own excavation equipment.
+
+Why: Plumbers diagnose the problem first. When the fix requires excavation, the plumber is the person the property owner asks for a contractor.
+
+14Realtors managing inspection conditions
+High
+74
+Upstream referral sources · They refer to you · potential recurring channel
+Who decides: Buyer's or listing agent
+
+When inspections reveal water issues, deals hinge on a written quote within days, whether for a price reduction, a holdback, or a seller repair. Listing agents also want leaks fixed before listing to avoid disclosure problems.
+
+Why: Agents have many transactions a year and need contractors who respond inside a conditional period. Speed is the differentiator.
+
+Regulatory: Real estate registrants' referral-fee rules generally prohibit paying non-registrants for referrals. Keep this relationship non-compensated.
+
+15Inground pool installers
+High
+71
+Upstream referral sources · They refer to you · potential recurring channel
+Who decides: Pool company owner or installation scheduler
+
+Inground pool installation starts with excavation, and many pool companies subcontract the dig and haul-away.
+
+Why: Pool companies sell many similar jobs each season, so one relationship can produce repeat volume.
+
+16Civil & geotechnical engineers
+Medium
+67
+Upstream referral sources · They refer to you · occasional referrals
+Who decides: Project engineer (P.Eng.)
+
+Engineers prepare grading, drainage, and stormwater plans and soil reports long before a contractor is chosen. Owners frequently ask them who can build what they designed.
+
+Why: This is the earliest professional touchpoint in many projects. Engineers do not usually sell referrals, but a contractor known for building to spec is a natural recommendation.
+
+Regulatory: Professional engineers are bound by codes of ethics that typically prohibit accepting benefits for recommending contractors. Build the relationship on competence, not compensation.
+
+17Eavestrough, grading & landscaping contractors
+Medium
+67
+Complementary providers · Two-way referrals · occasional referrals · often overlooked
+Who decides: Owner of the eavestrough or landscaping company
+
+Many damp basements are caused by short downspouts, clogged eavestroughs, or soil sloping toward the house. Recommending these cheaper fixes first builds trust, and these contractors see foundation problems they cannot fix.
+
+Why: Honest diagnosis creates referral partners. A contractor known for saying 'fix the downspout first' gets the foundation work when it is truly needed.
+
+18Home inspectors
+Medium
+67
+Upstream referral sources · They refer to you · occasional referrals
+Who decides: Independent home inspector
+
+Inspection reports flag efflorescence, high moisture readings, stained finishes, and cracks during a purchase, which is exactly when buyers need a credible repair estimate.
+
+Why: Inspectors identify the need at a high-stakes moment. Their reputation depends on giving clients a trustworthy next step, not on selling repairs.
+
+Regulatory: Many home-inspector associations' codes of ethics restrict compensation for contractor referrals.
+
+19Septic system designers & installers
+Medium
+65
+Complementary providers · Two-way referrals · occasional referrals
+Who decides: Septic designer (qualified designer) or installer
+
+Septic replacement and new rural builds require significant excavation. Designers specify systems, and some installers sub out the excavation.
+
+Why: In rural service areas, septic work is a steady source of excavation demand linked to property sales and failures.
+
+20Aggregate, topsoil & landscape supply yards
+Medium
+64
+Shared-audience partners · They refer to you · occasional referrals · often overlooked
+Who decides: Yard manager / counter staff
+
+Homeowners and small contractors buy gravel, fill, and topsoil and often ask the yard who can spread, grade, or install it.
+
+Why: Counter staff are asked for recommendations daily; this is an overlooked, low-cost channel.
+
+21Asphalt paving & interlock contractors
+Medium
+64
+Downstream relationships · Two-way referrals · occasional referrals
+Who decides: Paving estimator
+
+Driveways and parking areas need base preparation and grading before paving. Paving contractors also encounter drainage problems they cannot fix.
+
+Why: Paving follows excavation in sequence, so referrals flow both ways.
+
+22Home insurance brokers
+Medium
+64
+Shared-audience partners · They refer to you · occasional referrals · often overlooked
+Who decides: Personal-lines insurance broker
+
+Brokers field calls when seepage claims are declined and when insurers require flood-mitigation devices, such as backwater valves or sump pumps, for sewer-backup coverage or better pricing.
+
+Why: The broker is the advisor clients call when coverage disappoints them, and mitigation requirements are increasingly common in flood-prone areas.
+
+Regulatory: Brokers are regulated and may not be able to recommend specific contractors. Position this as client education.
+
+04Referral trigger analysis
+STRATEGIC RECOMMENDATION
+EVENT	WHY IT CREATES NEED	WHO NOTICES	REFER WHEN
+
+Demolition exposes cracks, damp insulation, or efflorescence
+Basement finishing & renovation contractors
+	Waterproofing must happen before framing and drywall	Renovation site lead	Immediately, before the schedule slips
+
+A homeowner plans a basement apartment or rec room
+Basement finishing & renovation contractors
+	Lenders, insurers, and buyers expect a dry basement	Renovation estimator	During pre-construction review
+
+Mitigation is complete but moisture readings point to foundation seepage
+Water-damage restoration & mould remediation firms
+	The source must be repaired before drywall goes back	Restoration estimator	Before reconstruction is scheduled
+
+An insurer declines the seepage portion of a claim
+Water-damage restoration & mould remediation firms
+	The homeowner must fund the foundation repair separately	Restoration project manager	When the claim decision is explained to the homeowner
+
+A new-home owner submits a warranty claim for a basement leak
+Builders' warranty & customer-care departments
+	The builder must investigate and repair within warranty timelines	Builder's customer-care coordinator	As soon as the claim is logged, before the warranty inspection date
+
+Spring thaw or heavy rain produces a cluster of claims in one subdivision
+Builders' warranty & customer-care departments
+	Several homes need the same repair at once	Warranty manager	During the seasonal claim spike
+
+A builder purchases a lot or secures a building permit
+Custom & infill home builders
+	The schedule now depends on site work starting on time	Builder or site superintendent	When the build schedule is being set, before the foundation crew is booked
+
+A teardown is approved for an infill rebuild
+Custom & infill home builders
+	Demolition, removal, and new excavation are needed in sequence	Builder or project manager	During pre-construction planning
+
+An electrician quotes a service to a detached garage or shop
+Electricians, HVAC & geothermal installers needing trenching
+	A trench to code depth is required	Electrician	When quoting
+
+A geothermal system is sold
+Electricians, HVAC & geothermal installers needing trenching
+	Horizontal loops require major excavation	HVAC/geothermal installer	At contract
+
+Water infiltration or pooling around a managed building
+Property management companies
+	Drainage correction or regrading is needed	Property manager or maintenance coordinator	When repeat complaints or insurance concerns arise
+
+Planned capital improvements such as parking expansion or utility upgrades
+Property management companies
+	Site preparation is required	Asset or property manager	During annual capital planning
+
+Permit drawings show a new side entrance or egress window wells
+Secondary-suite designers (walk-outs, separate entrances, basement lowering)
+	Excavation, shoring, and waterproofing are needed	Designer	When drawings are submitted for permit
+
+A garden suite requires new water, sewer, or electrical trenching
+Secondary-suite designers (walk-outs, separate entrances, basement lowering)
+	Service trenches must be dug to code	Designer or builder	During permit review
+
+A forming crew is booked for a new foundation
+Concrete & foundation forming contractors
+	The excavation must be ready to elevation and schedule	Forming contractor	When the builder asks who should dig
+05Companies in your area
+EVIDENCE-BACKED
+
+No companies have been added yet. You can upload a list of companies you already know from your ecosystem page.
+
+06Mutual value propositions
+STRATEGIC RECOMMENDATION
+Basement finishing & renovation contractors: Renovators avoid callbacks and keep their schedule; you get a steady flow of pre-qualified work. You can refer finishing projects back after repairs.
+Water-damage restoration & mould remediation firms: Restorers protect their workmanship and reputation; you receive motivated homeowners at the moment of need. You can refer flood and mould clean-up back.
+Builders' warranty & customer-care departments: Builders gain fast, well-documented repairs that protect their warranty record. You gain recurring, pre-approved work with a reliable payer.
+Custom & infill home builders: Builders gain schedule reliability, fewer delays between trades, and a contractor who understands their inspection sequence. You gain recurring, predictable volume.
+Electricians, HVAC & geothermal installers needing trenching: Trades complete more jobs; you gain steady small and mid-size work.
+Property management companies: A reliable contractor helps property managers resolve issues efficiently and report clearly to owners. You may gain recurring project opportunities.
+Secondary-suite designers (walk-outs, separate entrances, basement lowering): Designers gain a contractor who understands suite requirements; you gain repeat investor projects.
+Concrete & foundation forming contractors: Each side protects the other's schedule; both become a stronger package to builders.
+Landlords & investors converting basements to rental units: Investors get predictable repairs across properties; you gain repeat clients.
+Commercial general contractors: GCs need reliable subcontractors who price accurately and show up. You gain access to larger, recurring projects.
+07Recommended engagement strategies
+STRATEGIC RECOMMENDATION
+Basement finishing & renovation contractors: Offer renovators a 48-hour assessment for jobs in progress and a written moisture report they can attach to their contract file.
+Water-damage restoration & mould remediation firms: Offer a quick-turnaround site assessment for their files and a short written explanation of seepage versus covered water damage that they can give homeowners.
+Builders' warranty & customer-care departments: Ask for the warranty or customer-care manager, not the sales office. Offer a standard repair scope, a turnaround commitment, and photo documentation formatted for warranty files. Offer to handle the first claim and share your report.
+Custom & infill home builders: Request a meeting with the site superintendent rather than the owner alone. Bring examples of similar lots (tight infill, poor soils), your typical lead time, and how you handle surprises such as high water tables or buried debris. Offer a first project at standard rates with a debrief afterward.
+Electricians, HVAC & geothermal installers needing trenching: Offer per-metre trenching pricing and scheduling windows to a few electrical and HVAC firms.
+Property management companies: Establish a vendor relationship: provide service capabilities, geographic coverage, response expectations, insurance, and relevant project examples. Ask what their vendor onboarding requires.
+Secondary-suite designers (walk-outs, separate entrances, basement lowering): Show designers suite-entrance and window-well projects you have completed, with photos of shoring and drainage details.
+Concrete & foundation forming contractors: Coordinate on a shared job first, then propose a standing arrangement to recommend each other to builders without exclusivity.
+Landlords & investors converting basements to rental units: Present at local real-estate investor meetups about the true cost of moisture in rental basements, and offer portfolio pricing.
+Commercial general contractors: Ask to be added to the GC's bidders list and complete their prequalification package (insurance certificates, safety records, equipment list, references). Respond to every invitation, even with a no-bid, to stay on the list.
+08Shared-audience opportunities
+STRATEGIC RECOMMENDATION
+Builders' warranty & customer-care departments: Standing service agreement · Warranty-ready repair reports
+Custom & infill home builders: Pre-season scheduling call · Joint site-planning review on a difficult lot
+Property management companies: Vendor onboarding · Annual site-drainage walk-through offer
+Concrete & foundation forming contractors: Joint bid package to builders
+Landlords & investors converting basements to rental units: Investor meetup talk · Pre-purchase basement checklist
+Commercial general contractors: Prequalification submission · Lunch-and-learn for estimators on soil risk
+Landscape & hardscape contractors: Subcontract pricing · Seasonal referral exchange
+Plumbers & drain inspection specialists: Joint quoting process · Emergency call-out agreement
+Civil & geotechnical engineers: Constructability review · Joint presentation to local builders on lot-grading approvals
+Aggregate, topsoil & landscape supply yards: Installer list at the counter · Co-branded 'how much gravel do I need' guide
+Home insurance brokers: Client explainer · Broker lunch-and-learn
+09SEO & digital authority
+STRATEGIC RECOMMENDATION
+
+Links and mentions should come from genuinely useful collaboration, such as co-authored resources, expert contributions, and directory or member listings you qualify for. Paid links and link exchanges violate search engine policies and are not recommended. No ranking outcome is implied.
+
+Publish case studies of difficult lots completed with the builder's permission and a link to their project page. (Custom & infill home builders)
+A useful material-calculator page that the yard links to from its product pages. (Aggregate, topsoil & landscape supply yards)
+10Initial action plan: top 10 opportunities to investigate
+STRATEGIC RECOMMENDATION
+1.
+Basement finishing & renovation contractors · High (85) · recurring potential
+First step: Offer renovators a 48-hour assessment for jobs in progress and a written moisture report they can attach to their contract file.
+Watch for: Demolition exposes cracks, damp insulation, or efflorescence
+2.
+Water-damage restoration & mould remediation firms · High (85) · recurring potential
+First step: Offer a quick-turnaround site assessment for their files and a short written explanation of seepage versus covered water damage that they can give homeowners.
+Watch for: Mitigation is complete but moisture readings point to foundation seepage
+3.
+Builders' warranty & customer-care departments · High (83) · recurring potential
+First step: Ask for the warranty or customer-care manager, not the sales office.
+Watch for: A new-home owner submits a warranty claim for a basement leak
+4.
+Custom & infill home builders · High (83) · recurring potential
+First step: Request a meeting with the site superintendent rather than the owner alone.
+Watch for: A builder purchases a lot or secures a building permit
+5.
+Electricians, HVAC & geothermal installers needing trenching · High (81) · recurring potential
+First step: Offer per-metre trenching pricing and scheduling windows to a few electrical and HVAC firms.
+Watch for: An electrician quotes a service to a detached garage or shop
+6.
+Property management companies · High (81) · recurring potential
+First step: Establish a vendor relationship: provide service capabilities, geographic coverage, response expectations, insurance, and relevant project examples.
+Watch for: Water infiltration or pooling around a managed building
+7.
+Secondary-suite designers (walk-outs, separate entrances, basement lowering) · High (81) · recurring potential
+First step: Show designers suite-entrance and window-well projects you have completed, with photos of shoring and drainage details.
+Watch for: Permit drawings show a new side entrance or egress window wells
+8.
+Concrete & foundation forming contractors · High (76) · recurring potential
+First step: Coordinate on a shared job first, then propose a standing arrangement to recommend each other to builders without exclusivity.
+Watch for: A forming crew is booked for a new foundation
+9.
+Landlords & investors converting basements to rental units · High (76) · recurring potential
+First step: Present at local real-estate investor meetups about the true cost of moisture in rental basements, and offer portfolio pricing.
+Watch for: An investor buys a property to add a basement unit
+10.
+Commercial general contractors · High (75) · recurring potential
+First step: Ask to be added to the GC's bidders list and complete their prequalification package (insurance certificates, safety records, equipment list, references).
+Watch for: The GC is awarded a tender or negotiated contract
+11Assumptions requiring validation
+REQUIRES VALIDATION
+Most waterproofing jobs begin as someone else's problem: a failed inspection, a denied insurance claim, a warranty call, or a renovation that uncovered moisture. The professionals present at those moments matter more than homeowners searching online.
+Trust is fragile in this category because homeowners fear being oversold. Partners who see you recommend the cheaper fix first are more likely to keep referring.
+Site work is largely won through relationships with whoever controls the project before excavation starts (builders, engineers, GCs, property owners' advisors).
+Seasonality matters: most residential site work is scheduled before and during the main build season, so relationship-building is most effective in the off-season.
+No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing.
+Every criterion rating in this report is a strategic inference, not a measurement. Referral volumes, conversion rates and contract values were not estimated.
+12Guardrails
+Diagnose before you sell. Many wet basements are caused by grading, downspouts, or plumbing rather than the foundation. Referral partners, especially inspectors, insurers, and engineers, will stop referring if their clients feel oversold. Documented diagnosis protects the relationship.
+Prequalification is the real gatekeeper for commercial work. General contractors and property managers typically require proof of insurance, workplace-safety clearance (e.g. WSIB clearance in Ontario), and sometimes a recognised safety certification before you can be referred or invited to bid. Having these ready often matters more than the introduction itself.
+Partnerships are not paid-referral arrangements. This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals.
+Outreach in Canada: CASL applies. Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA).
+No automated outreach. This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline.
+13Methodology
+
+Priority scores are weighted averages of nine 1–5 ratings, normalised to 0–100 (High ≥ 70, Medium ≥ 52). Weights used: Need encounter 3, Service relevance 3, Referral frequency 2, Commercial value 2, Decision-maker access 2, Recurring potential 2, Mutual benefit 2, Geographic fit 1, Ease of establishing 1.
+
+Recommendations come from industry referral playbooks and automated analysis of the answers you gave. They are a starting point for your own judgement, not legal, financial, or professional advice.
+
+=== http://localhost:3200/ecosystem/demo
+Referral Ecosystem
+Example
+Pricing
+Saved
+Generate
+Example: a hypothetical business, not research
+Example Excavation Co. (illustrative)
+
+Excavation contractor · Sarnia, Ontario and Lambton County · 20 partner types
+
+Image
+CSV
+View report
+Map
+Opportunities
+Triggers
+Companies
+Upstream
+Distribution
+Complementary
+Downstream
+Shared audience
+YOUR BUSINESS
+Example Excavation Co. (illustrative)
+Excavation contractor · Sarnia, Ontario and Lambton County
+Upstream
+4
+Secondary-suite designers (walk-outs, separate entrances, basement lowering)
+High 79
+recurring
+Land surveyors (stake-outs & grading certification)
+High 72
+recurring
+Plumbers & drain inspection specialists
+High 72
+Inground pool installers
+Medium 69
+recurring
+Distribution
+3
+Custom & infill home builders
+High 82
+recurring
+Property management companies
+High 79
+recurring
+Commercial general contractors
+High 71
+recurring
+Complementary
+4
+Waterproofing & foundation repair companies
+High 82
+recurring
+Electricians, HVAC & geothermal installers needing trenching
+High 81
+recurring
+Landscape & hardscape contractors
+High 78
+Concrete & foundation forming contractors
+High 76
+recurring
+Shared audience
+1
+Aggregate, topsoil & landscape supply yards
+Medium 65
+Upstream
+Distribution
+Complementary
+Downstream
+Shared audience
+recurring channel
+occasional
+Arrows show referral direction · line weight shows priority
+Showing your top 12 of 20 partner types.
+Show all
+The full list is under Opportunities.
+
+Click a partner for details. Click a group label to collapse or expand it. Scroll or pinch to zoom.
+
+How this ecosystem works
+Upstream: secondary-suite designers (walk-outs, separate entrances, basement lowering), land surveyors (stake-outs & grading certification), and plumbers & drain inspection specialists and 4 more. A typical moment: permit drawings show a new side entrance or egress window wells. Usually spotted first by: designer.
+Distribution: custom & infill home builders, property management companies, and commercial general contractors. A typical moment: a builder purchases a lot or secures a building permit. Usually spotted first by: builder or site superintendent.
+Complementary: waterproofing & foundation repair companies, electricians, HVAC & geothermal installers needing trenching, and landscape & hardscape contractors and 4 more. A typical moment: a homeowner reports a wet basement. Usually spotted first by: waterproofing estimator.
+Downstream: asphalt paving & interlock contractors. A typical moment: a customer wants a new or widened driveway. Usually spotted first by: paving estimator.
+Shared audience: aggregate, topsoil & landscape supply yards and home builders' & construction associations. A typical moment: a homeowner orders material for a driveway or yard project. Usually spotted first by: supply yard counter staff.
+PRIORITISATION PRESET
+Balanced
+Even emphasis on volume, value, and feasibility.
+Quick wins
+Favour partners who are easy to reach and refer often.
+High-value projects
+Favour channels that surface larger engagements.
+Recurring channels
+Favour partners who could send work repeatedly.
+CRITERIA WEIGHTS
+Reset
+Need encounter
+2
+Service relevance
+2
+Referral frequency
+3
+Commercial value
+2
+Decision-maker access
+2
+Recurring potential
+3
+Mutual benefit
+2
+Geographic fit
+1
+Ease of establishing
+1
+
+Scores are a weighted average of 1–5 strategic ratings. They rank where to start. They do not estimate referral volume, conversion rates, or revenue.
+
+Assumptions to validate
+Site work is largely won through relationships with whoever controls the project before excavation starts (builders, engineers, GCs, property owners' advisors).
+Seasonality matters: most residential site work is scheduled before and during the main build season, so relationship-building is most effective in the off-season.
+No typical project value was provided, so commercial-value ratings are relative to the industry, not your own pricing.
+All priority ratings are strategic inferences. Validate them in conversations with real partners before committing significant time.
+Guardrails
+Prequalification is the real gatekeeper for commercial work. General contractors and property managers typically require proof of insurance, workplace-safety clearance (e.g. WSIB clearance in Ontario), and sometimes a recognised safety certification before you can be referred or invited to bid. Having these ready often matters more than the introduction itself.
+Partnerships are not paid-referral arrangements. This analysis recommends building relationships based on mutual value. It does not assume that referral fees, commissions, exclusivity, or endorsements are permitted in your industry. Check professional, regulatory, and contractual rules before compensating anyone for referrals.
+Outreach in Canada: CASL applies. Commercial electronic messages generally need express or implied consent, sender identification, and a working unsubscribe mechanism. Implied consent can exist when a business email address is conspicuously published, the message relates to the recipient's role, and they have not said they don't want such messages. Keep records of how consent was obtained. Personal information you collect is also subject to privacy law (e.g. PIPEDA).
+No automated outreach. This tool does not contact anyone on your behalf. Every introduction should be personal, relevant to the recipient, and easy to decline.
+
+=== http://localhost:3200/saved
+Referral Ecosystem
+Example
+Pricing
+Saved
+Generate
+Saved ecosystems
+
+Stored in this browser only. Clearing site data removes them.
+
+Northshore Excavating
+Excavation and basement waterproofing contractor · 11/24/2026

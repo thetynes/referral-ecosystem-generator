@@ -1,5 +1,5 @@
 /**
- * Render complete sample ecosystems as Markdown (docs/beta/samples/<slug>.md).
+ * Render complete sample ecosystems as Markdown (docs/internal/samples/<slug>.md).
  * Uses the curated engine directly (no AI cost). If an AI run exists for the sample
  * (<slug>.ai.json from compare-engines), its categories are listed for comparison.
  *
@@ -16,7 +16,7 @@ import type { Analysis } from "@/lib/schema";
 import { SAMPLES } from "./samples";
 
 setStoreForTesting(new MemoryStore());
-const outDir = path.resolve("docs/beta/samples");
+const outDir = path.resolve("docs/internal/samples");
 mkdirSync(outDir, { recursive: true });
 
 const esc = (s: string) => s.replace(/\|/g, "\\|").replace(/\n/g, " ");
